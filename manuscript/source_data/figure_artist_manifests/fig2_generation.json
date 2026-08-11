@@ -1,0 +1,1281 @@
+{
+  "all_validated": true,
+  "binding_count": 33,
+  "bindings": [
+    {
+      "actual_payload_sha256": "d26dc72ba6078371b8ec5f518fbb19d7b993f8fdc9ddfded26010060353f7b14",
+      "artist_id": "fig2.a.convective_time_definition",
+      "artist_type": "Text",
+      "evidence": "definition of the nondimensional time used for the two snapshots",
+      "expected_payload_sha256": "d26dc72ba6078371b8ec5f518fbb19d7b993f8fdc9ddfded26010060353f7b14",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "definition.unit_meaning",
+          "kind": "json",
+          "path": "fig2/cube3d_timeline.json",
+          "resolved_payload_sha256": "aacd1f35399a75a09fc2d4292cc0f2647e1cfbb74567c70b1397ea89090e1dee",
+          "source_sha256": "54d58415d44a11d7b30b26cba66583ae83a37f439644b5a3bf54f11c8e512d32"
+        }
+      ],
+      "transform": "express the source convective-time definition as dimensionless time",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ef47cdab97bd10fab0d510d49664baf30c912ecc8cd3e0cbd132091b0ad1680a",
+      "artist_id": "fig2.a.displayed_target_time",
+      "artist_type": "Text",
+      "evidence": "producer-fixed first displayed evaluation target",
+      "expected_payload_sha256": "ef47cdab97bd10fab0d510d49664baf30c912ecc8cd3e0cbd132091b0ad1680a",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "displayed_target.time_Ubar_over_h",
+          "kind": "json",
+          "path": "fig2/cube3d_timeline.json",
+          "resolved_payload_sha256": "347091bbb8039235691bbde9368671bb12b7019155005fb283206a76e842540d",
+          "source_sha256": "54d58415d44a11d7b30b26cba66583ae83a37f439644b5a3bf54f11c8e512d32"
+        }
+      ],
+      "transform": "format exact dimensionless time to four decimals",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "48e0a20362ed2088e82395e90d9c45f0cf6b75906da1a5ced21caebd1e47d33f",
+      "artist_id": "fig2.a.donor_section_z13",
+      "artist_type": "AxesImage",
+      "evidence": "real donor LES section from the frozen temporal pair",
+      "expected_payload_sha256": "48e0a20362ed2088e82395e90d9c45f0cf6b75906da1a5ced21caebd1e47d33f",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "donor",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "9590d46beb345d8618050d813a5944513c782973e9b6e5079557a5cbdd60c317",
+          "slice": [
+            0,
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        }
+      ],
+      "transform": "streamwise component on an exact retained spanwise section; transpose x/y; mask solid cells; place in its source-derived temporal volume",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e51b652a62f62b23c6864ee291bbd2cd815486d6046acbd4f2795ec6915ced45",
+      "artist_id": "fig2.a.donor_section_z24",
+      "artist_type": "AxesImage",
+      "evidence": "real donor LES section from the frozen temporal pair",
+      "expected_payload_sha256": "e51b652a62f62b23c6864ee291bbd2cd815486d6046acbd4f2795ec6915ced45",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "donor",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "d55ff916c4d8940581a11e772a82f97b5377fa8d26f542f297f99ffad6ef8f8f",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        }
+      ],
+      "transform": "streamwise component on an exact retained spanwise section; transpose x/y; mask solid cells; place in its source-derived temporal volume",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "a7ffc99cc1aee3314f69e43588b1b911d5fd7c08bc525141475451edc73a8014",
+      "artist_id": "fig2.a.donor_section_z34",
+      "artist_type": "AxesImage",
+      "evidence": "real donor LES section from the frozen temporal pair",
+      "expected_payload_sha256": "a7ffc99cc1aee3314f69e43588b1b911d5fd7c08bc525141475451edc73a8014",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "donor",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "df8edce1de9b3e6ea02d3ab2f05e9f33adc230e82b83a9dc570295071fc1b260",
+          "slice": [
+            0,
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        }
+      ],
+      "transform": "streamwise component on an exact retained spanwise section; transpose x/y; mask solid cells; place in its source-derived temporal volume",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "beb5dcfb3b6bd7d77d664946cb42688e3349d290d1a0fe1c182aeaba6c38a2c3",
+      "artist_id": "fig2.a.far_time_donor_time",
+      "artist_type": "Text",
+      "evidence": "far-time source of the deliberately mismatched wall condition",
+      "expected_payload_sha256": "beb5dcfb3b6bd7d77d664946cb42688e3349d290d1a0fe1c182aeaba6c38a2c3",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "far_time_condition_for_displayed_target.time_Ubar_over_h",
+          "kind": "json",
+          "path": "fig2/cube3d_timeline.json",
+          "resolved_payload_sha256": "ce70e678f84fda4d4e057f36aa988965559c7e4f5df0c7e67cf4f32584dc5fca",
+          "source_sha256": "54d58415d44a11d7b30b26cba66583ae83a37f439644b5a3bf54f11c8e512d32"
+        }
+      ],
+      "transform": "format exact dimensionless time to four decimals",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "f18342feccb1a1b933788555880d917fec9e10e6867c683ab0acb57036e6c029",
+      "artist_id": "fig2.a.intermediate_0_section_z13",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "f18342feccb1a1b933788555880d917fec9e10e6867c683ab0acb57036e6c029",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "5305727e39bcfe2512c3be63bb69552bd4a5454b3f8732f7dc3d390f0e10017d",
+          "slice": [
+            0,
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "3591e992a8d362a6b21d46e989c3530b38ecc5f7627bd1fef8aafbdf7d103816",
+      "artist_id": "fig2.a.intermediate_0_section_z24",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "3591e992a8d362a6b21d46e989c3530b38ecc5f7627bd1fef8aafbdf7d103816",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "6cc30113f180ade8a120c5d23616eca58db189e7b9b08d3d195ea5d7f115e4b5",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "edfaa31be58a23901c7f53a4d362d2a4147c0681e909fac06c3025956fb9348c",
+      "artist_id": "fig2.a.intermediate_0_section_z34",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "edfaa31be58a23901c7f53a4d362d2a4147c0681e909fac06c3025956fb9348c",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "b54608245a98c30d4a308711fe44b8b15a1f02c6942848d8b8ebaf1f89522f50",
+          "slice": [
+            0,
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e58ed1a090109a83d201a675ff4f8fc20ed6c2febe9af1dcd111de9f944877b1",
+      "artist_id": "fig2.a.intermediate_1_section_z13",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "e58ed1a090109a83d201a675ff4f8fc20ed6c2febe9af1dcd111de9f944877b1",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "7808944f9b23505aaa20fd474a5894afbc1cf48f5a8a249f31107dbd7accae41",
+          "slice": [
+            1,
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "38e2d3e5ce46f1fad61a8dca79e2daca5f67b471409decb2a9cb54b6086aecf8",
+      "artist_id": "fig2.a.intermediate_1_section_z24",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "38e2d3e5ce46f1fad61a8dca79e2daca5f67b471409decb2a9cb54b6086aecf8",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "cb06f8f83daf3f253019cfe5b0ac2afed69ee0503df1e0a48b3ef7bc914b588d",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "bf1203187ff17aaac622477986bd1570191a79e4cd722fa76a7a96558aea7dcc",
+      "artist_id": "fig2.a.intermediate_1_section_z34",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "bf1203187ff17aaac622477986bd1570191a79e4cd722fa76a7a96558aea7dcc",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "7a851bb8f850d7de12ac470b30bdf134ffb34eb91dd8a34fd0bd0542dc6d2003",
+          "slice": [
+            1,
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "741f9c7f64734a9823b959c78cb4d5f28ba778f563447463647709f801de527a",
+      "artist_id": "fig2.a.intermediate_2_section_z13",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "741f9c7f64734a9823b959c78cb4d5f28ba778f563447463647709f801de527a",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "22f9fcffb11d0981374a7cae9132452530c331aef9bce5ba5d47e0663d4bff44",
+          "slice": [
+            2,
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b484fa41d799d5452814d9dd2184019c00aa12a0c83d2016c3c878c6a390185f",
+      "artist_id": "fig2.a.intermediate_2_section_z24",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "b484fa41d799d5452814d9dd2184019c00aa12a0c83d2016c3c878c6a390185f",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "6af417bb27a516d879b6a6e117dbb2d1d8245128bca87503b5ba7da30ec3bdc1",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "05472d1b23563b52f591dde09361f27a3da78c111bb60b7f82691a29d430a867",
+      "artist_id": "fig2.a.intermediate_2_section_z34",
+      "artist_type": "AxesImage",
+      "evidence": "real intermediate LES section between the displayed endpoints",
+      "expected_payload_sha256": "05472d1b23563b52f591dde09361f27a3da78c111bb60b7f82691a29d430a867",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "intermediate_u",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "f90926e7714618db34e09efc08ab0b58618ada4c80bb66e224e735c7b4c7b07b",
+          "slice": [
+            2,
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_sequence.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+        }
+      ],
+      "transform": "streamwise component on an exact retained intermediate section; transpose x/y; mask solid cells; scale into temporal sequence",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "073be554ce54de0bb914a263de6b676e36fedde4ef1fd18980be6424b5463a6e",
+      "artist_id": "fig2.a.target_section_z13",
+      "artist_type": "AxesImage",
+      "evidence": "real target LES section from the frozen temporal pair",
+      "expected_payload_sha256": "073be554ce54de0bb914a263de6b676e36fedde4ef1fd18980be6424b5463a6e",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "target",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "87dfab39095edba33f5de7139ea1bcc57cfcea303a980ac25e274560b3d3cb1a",
+          "slice": [
+            0,
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            13
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        }
+      ],
+      "transform": "streamwise component on an exact retained spanwise section; transpose x/y; mask solid cells; place in its source-derived temporal volume",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "2d597d0925de8bf400cdaa9cc85dd3b452baac6f160094745baf935ac3216639",
+      "artist_id": "fig2.a.target_section_z24",
+      "artist_type": "AxesImage",
+      "evidence": "real target LES section from the frozen temporal pair",
+      "expected_payload_sha256": "2d597d0925de8bf400cdaa9cc85dd3b452baac6f160094745baf935ac3216639",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "target",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        }
+      ],
+      "transform": "streamwise component on an exact retained spanwise section; transpose x/y; mask solid cells; place in its source-derived temporal volume",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "d49b51c702a4f38e9d410aaeca8d90f53f64ee767a3f9faa7d2ba6e544a2c5a9",
+      "artist_id": "fig2.a.target_section_z34",
+      "artist_type": "AxesImage",
+      "evidence": "real target LES section from the frozen temporal pair",
+      "expected_payload_sha256": "d49b51c702a4f38e9d410aaeca8d90f53f64ee767a3f9faa7d2ba6e544a2c5a9",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "target",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "8085f7f7fc5ca28f29560453cad0b677b8779feae40cf2ff00977749df968c57",
+          "slice": [
+            0,
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_time_pair.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            34
+          ],
+          "source_sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+        }
+      ],
+      "transform": "streamwise component on an exact retained spanwise section; transpose x/y; mask solid cells; place in its source-derived temporal volume",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "71ac1b937ee33aa40c0986c2f7f7f4e3fac1951a8ce63858e91affffce9aada9",
+      "artist_id": "fig2.b.correct_section",
+      "artist_type": "AxesImage",
+      "evidence": "contacted M2 illustrative field; LES reference is numerical, not truth",
+      "expected_payload_sha256": "71ac1b937ee33aa40c0986c2f7f7f4e3fac1951a8ce63858e91affffce9aada9",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3480c1e31188ca2371b3c0e2e006fc9a17224c350fc115346a48466dcc95e773",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "streamwise component at producer-fixed middle-span section; transpose x/y; mask solid cells; shared symmetric full-range linear colour scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "a859c55327fcc5bfa4038cfa05ffe7b5d2999aa657438aabf4f77361fc7c8711",
+      "artist_id": "fig2.b.no_wall_section",
+      "artist_type": "AxesImage",
+      "evidence": "contacted M2 illustrative field; LES reference is numerical, not truth",
+      "expected_payload_sha256": "a859c55327fcc5bfa4038cfa05ffe7b5d2999aa657438aabf4f77361fc7c8711",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "no_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3fc26e24d54f6d973b80b41157e0ad2d71b40d19165b8bc758c81b44dd5e695d",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "streamwise component at producer-fixed middle-span section; transpose x/y; mask solid cells; shared symmetric full-range linear colour scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c1a52e988f8f9da8a6c3f9ff4171bba171013b28d7492a7091a52b27cbfc8fa8",
+      "artist_id": "fig2.b.truth_section",
+      "artist_type": "AxesImage",
+      "evidence": "contacted M2 illustrative field; LES reference is numerical, not truth",
+      "expected_payload_sha256": "c1a52e988f8f9da8a6c3f9ff4171bba171013b28d7492a7091a52b27cbfc8fa8",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "streamwise component at producer-fixed middle-span section; transpose x/y; mask solid cells; shared symmetric full-range linear colour scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "67af32953360d54b9a0fc1b5d1d0b0fc499b07ddbb73d78cd3bcbede902cc3fa",
+      "artist_id": "fig2.b.wrong_wall_section",
+      "artist_type": "AxesImage",
+      "evidence": "contacted M2 illustrative field; LES reference is numerical, not truth",
+      "expected_payload_sha256": "67af32953360d54b9a0fc1b5d1d0b0fc499b07ddbb73d78cd3bcbede902cc3fa",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "wrong_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "bc2df666997aadf5b17e87e0fd288a984332a0122000756640623ab9e973aeb6",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "streamwise component at producer-fixed middle-span section; transpose x/y; mask solid cells; shared symmetric full-range linear colour scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "36c967f5d3875db48bad907b613ecde135f1709001b43c3555c8d481ee54e5eb",
+      "artist_id": "fig2.c.correct_absolute_error",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative error field; aggregate scores use all 160 targets",
+      "expected_payload_sha256": "36c967f5d3875db48bad907b613ecde135f1709001b43c3555c8d481ee54e5eb",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3480c1e31188ca2371b3c0e2e006fc9a17224c350fc115346a48466dcc95e773",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "absolute difference from the same LES section after transpose; mask solid cells; shared full-range linear error scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "23ac5b2bc8179faafa999b85c0c1eab27c723db73d6ff638142590a91f32797a",
+      "artist_id": "fig2.c.no_wall_absolute_error",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative error field; aggregate scores use all 160 targets",
+      "expected_payload_sha256": "23ac5b2bc8179faafa999b85c0c1eab27c723db73d6ff638142590a91f32797a",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "no_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3fc26e24d54f6d973b80b41157e0ad2d71b40d19165b8bc758c81b44dd5e695d",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "absolute difference from the same LES section after transpose; mask solid cells; shared full-range linear error scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c687683948f96d50be6f05ac604884ed9e8d9db0c3c9a40472bb3e07bac7e472",
+      "artist_id": "fig2.c.truth_absolute_error",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative error field; aggregate scores use all 160 targets",
+      "expected_payload_sha256": "c687683948f96d50be6f05ac604884ed9e8d9db0c3c9a40472bb3e07bac7e472",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "absolute difference from the same LES section after transpose; mask solid cells; shared full-range linear error scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b1b4d4d607296de2ad24b379a2d7046ce130f354865bd292eaadd7c3ebe34082",
+      "artist_id": "fig2.c.wrong_wall_absolute_error",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative error field; aggregate scores use all 160 targets",
+      "expected_payload_sha256": "b1b4d4d607296de2ad24b379a2d7046ce130f354865bd292eaadd7c3ebe34082",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "wrong_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "bc2df666997aadf5b17e87e0fd288a984332a0122000756640623ab9e973aeb6",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "absolute difference from the same LES section after transpose; mask solid cells; shared full-range linear error scale",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ef0e5517fbece8bead76cda105a57e8701cc14be84a862b0f894d359107c4514",
+      "artist_id": "fig2.d.correct_mean_profile",
+      "artist_type": "Line2D",
+      "evidence": "displayed producer-fixed 3-D target only; not the 160-time aggregate",
+      "expected_payload_sha256": "ef0e5517fbece8bead76cda105a57e8701cc14be84a862b0f894d359107c4514",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "f005d499f598c6403546961038ceb9579eefc7a714c915360b8276063b632ca0",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "789546c017fad5981a6e764feb4ba5fe56a4385be0b72a51f01811dec5fb3a34",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c368737f1ac0268c684b2f93f85f445861fd932448c0ce4172bca329f0468f85",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "mean streamwise velocity over x-z cells outside the supplied envelope at each y",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "6bf19eaba8019a037b5d2fb43f909679521665302669b0f8e5904fd79026833d",
+      "artist_id": "fig2.d.no_wall_mean_profile",
+      "artist_type": "Line2D",
+      "evidence": "displayed producer-fixed 3-D target only; not the 160-time aggregate",
+      "expected_payload_sha256": "6bf19eaba8019a037b5d2fb43f909679521665302669b0f8e5904fd79026833d",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "no_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c7fefa084e840411a9af5fa639abae8559a2ee154fca3ed7dddb7be4750b5f20",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "789546c017fad5981a6e764feb4ba5fe56a4385be0b72a51f01811dec5fb3a34",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c368737f1ac0268c684b2f93f85f445861fd932448c0ce4172bca329f0468f85",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "mean streamwise velocity over x-z cells outside the supplied envelope at each y",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ff2b120a5025d641b34dc139070f208159a545a5e5eebf02cfc81b8fc2aec206",
+      "artist_id": "fig2.d.truth_mean_profile",
+      "artist_type": "Line2D",
+      "evidence": "displayed producer-fixed 3-D target only; not the 160-time aggregate",
+      "expected_payload_sha256": "ff2b120a5025d641b34dc139070f208159a545a5e5eebf02cfc81b8fc2aec206",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c52823ec99d9acd0cf6027c0e0d55684ae1cde50f8e31c628b65981e5b37d81e",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "789546c017fad5981a6e764feb4ba5fe56a4385be0b72a51f01811dec5fb3a34",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c368737f1ac0268c684b2f93f85f445861fd932448c0ce4172bca329f0468f85",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "mean streamwise velocity over x-z cells outside the supplied envelope at each y",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "17ca9da3aa70354e6058091c9218c8efc9b1f5a837b1b37f780864ddc2bdc701",
+      "artist_id": "fig2.d.wrong_wall_mean_profile",
+      "artist_type": "Line2D",
+      "evidence": "displayed producer-fixed 3-D target only; not the 160-time aggregate",
+      "expected_payload_sha256": "17ca9da3aa70354e6058091c9218c8efc9b1f5a837b1b37f780864ddc2bdc701",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "wrong_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "889f52efa36c512f05d9b46f2ba02e05a1f34e6da3b46567a2065669e9d5fc81",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "789546c017fad5981a6e764feb4ba5fe56a4385be0b72a51f01811dec5fb3a34",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c368737f1ac0268c684b2f93f85f445861fd932448c0ce4172bca329f0468f85",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "mean streamwise velocity over x-z cells outside the supplied envelope at each y",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "d2f5926e8ece4853f1a8fac2c655b01458ac711c9666c4f7cb99c214cf07e9cd",
+      "artist_id": "fig2.e.correct_rmse_profile",
+      "artist_type": "Line2D",
+      "evidence": "displayed producer-fixed 3-D target only; legend gives its volume RMSE",
+      "expected_payload_sha256": "d2f5926e8ece4853f1a8fac2c655b01458ac711c9666c4f7cb99c214cf07e9cd",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "f005d499f598c6403546961038ceb9579eefc7a714c915360b8276063b632ca0",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c52823ec99d9acd0cf6027c0e0d55684ae1cde50f8e31c628b65981e5b37d81e",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "789546c017fad5981a6e764feb4ba5fe56a4385be0b72a51f01811dec5fb3a34",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c368737f1ac0268c684b2f93f85f445861fd932448c0ce4172bca329f0468f85",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "x-z root-mean-square streamwise error outside the supplied envelope at each y",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b36e1ab1f466aab92fe798e934cb9a9ffe0116c2551406fd86f0f41dd59dc7d2",
+      "artist_id": "fig2.e.no_wall_rmse_profile",
+      "artist_type": "Line2D",
+      "evidence": "displayed producer-fixed 3-D target only; legend gives its volume RMSE",
+      "expected_payload_sha256": "b36e1ab1f466aab92fe798e934cb9a9ffe0116c2551406fd86f0f41dd59dc7d2",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "no_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c7fefa084e840411a9af5fa639abae8559a2ee154fca3ed7dddb7be4750b5f20",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c52823ec99d9acd0cf6027c0e0d55684ae1cde50f8e31c628b65981e5b37d81e",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "789546c017fad5981a6e764feb4ba5fe56a4385be0b72a51f01811dec5fb3a34",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c368737f1ac0268c684b2f93f85f445861fd932448c0ce4172bca329f0468f85",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "x-z root-mean-square streamwise error outside the supplied envelope at each y",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "084e31a29c3f176f276c7ddc1d8f72a2310f52a951edb8d8f24519b2066c4150",
+      "artist_id": "fig2.e.wrong_wall_rmse_profile",
+      "artist_type": "Line2D",
+      "evidence": "displayed producer-fixed 3-D target only; legend gives its volume RMSE",
+      "expected_payload_sha256": "084e31a29c3f176f276c7ddc1d8f72a2310f52a951edb8d8f24519b2066c4150",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "wrong_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "889f52efa36c512f05d9b46f2ba02e05a1f34e6da3b46567a2065669e9d5fc81",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c52823ec99d9acd0cf6027c0e0d55684ae1cde50f8e31c628b65981e5b37d81e",
+          "slice": [
+            0,
+            ":",
+            ":",
+            ":"
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "789546c017fad5981a6e764feb4ba5fe56a4385be0b72a51f01811dec5fb3a34",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "c368737f1ac0268c684b2f93f85f445861fd932448c0ce4172bca329f0468f85",
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "x-z root-mean-square streamwise error outside the supplied envelope at each y",
+      "validated": true
+    }
+  ],
+  "figure": "fig2_generation",
+  "grouping": "One record per semantically indivisible plotted group (image, bar series, scatter series, error-bar series or data-bearing text).",
+  "schema": "gwt-producer-emitted-artist-manifest-v1"
+}

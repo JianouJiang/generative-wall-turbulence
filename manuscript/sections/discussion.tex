@@ -1,0 +1,86 @@
+\section{Discussion}\label{sec:discussion}
+
+This paper evaluates one integrated system end to end: a physics-grounded wall closure connected
+to a conditional generator.
+Reading matching-height flow state, the closure predicts held-out traction better than its
+equilibrium law ($0.540$ against $0.413$); supplying it improves source-excluded fluctuation
+$R^2$ by $+0.061\,[0.057,0.064]$ under a pre-fixed rule. The unit was prospectively unscored,
+not independent.
+
+On the separating hill, the diffusion positive control passes and closure traction gains
+$+0.062\,[+0.017,+0.106]$, not resolved from exact traction and better than wrong-time
+traction. Roughly three effective samples make this indicative rather than precise.
+
+One preregistered arm was adverse: flow matching fails its positive control and cannot adjudicate
+the interface. We tested the obvious under-dispersion explanation prospectively with a stochastic
+sampler on byte-identical weights; dispersion improved while the control failed \emph{more}
+clearly. A model-family difference in how sparse wall information is used remains plausible, but
+no mechanism is established. Ensemble dispersion is therefore reported as a diagnostic, never an
+acceptance criterion (Supplementary Note~10).
+
+Two properties make the cube number interpretable: its decisive
+control is a real traction of the wrong instant, scoring worse than supplying nothing, so the
+model is rewarded for \emph{this instant's} wall state; and the gain is distributional, the
+closure arm best on every proper score at every ensemble size.
+
+The practical reading is specific: expanding wall stress into an equilibrium-law velocity band
+and clamping it fails, whereas the same quantity transmits through conditioning trained to read
+it. The instantaneous field a generator needs is not the field an equilibrium law describes.
+
+The limits are stated once, each marking where the evidence ends and the next study begins. The
+composition is established offline and a priori, never inside a time-evolving solver.
+Complete-volume absolute skill on the cube record stays negative for every
+arm ($-0.028$ closure against $-0.088$ absence)---wall information moves the field towards the
+target without yet making it accurate---while the re-test's near-wall region and the channel
+record reach positive absolute skill. All three records carry few effective independent events,
+so every interval is conditional on them---the price of difficult engineering records over
+abundant homogeneous ones. The farther-from-wall gain, $+0.009\,[0.003,0.016]$, is
+the honest measure of reach; the out-of-training probes are sensitivity checks, not causal
+controls; and the fitted target is a first-cell viscous traction on the model raster, not the
+native spectral-element gradient. The closure reads its matching heights at fixed multiples of
+the local cell size, $2.5\Delta$ and $4.5\Delta$---the seam a wall-modelled solver carries---so
+the multiples and the mesh setting $\Delta$ are parameters of the interface itself, and the
+natural first task for a deployment study is charting the gain's response to coarser rasters and
+different seams. The same standard then extends to the regimes most likely to strain the
+interface: unresolved near-wall bands, spanwise three-dimensional near-wall structure, rough
+walls and Reynolds numbers far above these records, where the wall's far-field footprint
+grows.
+
+The supportable engineering consequence is offline and specific: the implied streamwise viscous
+wall-force error falls by almost two-fifths with the closure, while the equilibrium closure is
+worse than absence on this endpoint despite a similar field-$R^2$ gain---a wall-load criterion
+discriminates between closures that a volume-averaged score does not. Additional closure-side
+geometry-transfer, separation, two-to-three-dimensional-transfer and diversity-scaling strengths
+come from separate frozen companion models preserved by unchanged source hashes; the present
+generator compositions do not revalidate those claims.
+
+Wall-observation studies show that deployable pressure and shear signals can inform turbulent
+fields \cite{guemes2021coarse,cuellar2024three,parikh2026conditional}, and field-generative
+studies demonstrate wall-bounded generation, super-resolution and sparse reconstruction
+\cite{gao2023bayesian,du2024confild,oommen2026learning}. This work complements them by taking
+the wall quantity from a closure rather than an observation, excluding supplied and read
+cells from every score, and testing against an in-distribution wrong-information control. It
+establishes no superiority over prior architectures: no head-to-head comparison was run.
+
+What a reader can take from this is separable from our own closure. The conditioning slot is a
+harness, not a result: a wall model supplying a signed two-component wall-on-fluid traction enters as a
+surface field on the wall faces alone, the generator never sees which model occupies it, and a
+sublayer projection makes the generated wall gradient equal the supplied traction identically, so
+two wall models compete with no generator-side advantage (Fig.~\ref{fig:slot}). The
+fidelity--gain response measured through it, monotone from $+0.104$ to $+0.153$ across traction
+fidelities $0.082$--$0.797$, states how accurate a wall model must become before a generative
+reconstruction benefits; its limit is equally usable, since a data-only regressor of better
+scalar fidelity gains more than the ladder predicts, so error \emph{structure} matters beyond any
+scalar. We propose the oracle positive control as the minimum adequacy standard such a study needs
+before reading a conditioning contrast, and the grouped physical-time protocol, with the $0.839$ inflation a naive
+flattened split produces, applies to anyone evaluating this widely used public corpus. All are
+released with the code and data.
+
+The three records show that generative models do not bypass the wall problem: they demonstrate
+the framework on pinned, attached and separating cases, not a claim to have covered wall
+modelling. What remains is runtime composition: a solver-coupled calculation supplying a momentum
+boundary condition as the flow evolves. Transmission holds in both generative families on the
+pinned cube and attached channel records, and in one of the two on the separating record,
+the other an adverse preregistered arm for which no mechanism is claimed. Within those bounds a
+physics-grounded wall closure can supply information a generative model demonstrably propagates
+through the field.

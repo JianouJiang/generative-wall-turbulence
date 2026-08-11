@@ -1,0 +1,388 @@
+{
+  "all_pass": true,
+  "approach": "publication-outward scientific-consequence audit; not a numeric string census",
+  "checks": {
+    "capacity_negative_result_visible": {
+      "consequence": "At fixed updates, absolute skill and its crossed slope are negative; absent convergence parity, no capacity-scaling claim is supported.",
+      "convergence_parity": false,
+      "crossed_slope": {
+        "crossed_ci95": [
+          -0.03451147130217835,
+          -0.0002980902633140714
+        ],
+        "mean": -0.018546443450980978,
+        "units": "R2 per natural-log parameter"
+      },
+      "largest_width_aligned_skill": {
+        "crossed_ci95": [
+          -0.1123900932537887,
+          -0.04276143260266073
+        ],
+        "mean_across_seed_point_estimates": -0.0712697556631628,
+        "per_seed_point_estimates": {
+          "1234": -0.059894934522160215,
+          "2234": -0.053409949554121594,
+          "3234": -0.10050438291320662
+        }
+      },
+      "pass": true,
+      "scaling_claim_pass": false
+    },
+    "closure_interface_and_evidence_boundary": {
+      "branch_weights_present": false,
+      "closure_output_relative_rmse": 0.40805516702006367,
+      "consequence": "The load-bearing closure-to-generator interface is not source-general; E2 remains unestablished and cannot be promoted to runtime or solver evidence.",
+      "pass": true,
+      "pressure_surrogate_pearson": 0.09774023832390974,
+      "pressure_surrogate_relative_rmse": 0.9614344091404543,
+      "set_normalisation_present": false
+    },
+    "fair_energy_score_from_retained_arrays": {
+      "audited_means": {
+        "correct": 0.5223475791451458,
+        "far_time_wall": 0.548380648512697,
+        "no_wall": 0.5273397689032656
+      },
+      "consequence": "The unbiased finite-ensemble correction preserves the aligned-arm ordering, with both paired control-minus-aligned intervals strictly positive.",
+      "paired_control_minus_aligned_improvements": {
+        "far_time_wall_minus_correct": {
+          "ci95": [
+            0.02090773631545104,
+            0.03144291672329966
+          ],
+          "ci_positive": true,
+          "mean": 0.02603306936755126
+        },
+        "no_wall_minus_correct": {
+          "ci95": [
+            0.0016775691113284543,
+            0.009190284071544284
+          ],
+          "ci_positive": true,
+          "mean": 0.00499218975811978
+        }
+      },
+      "pass": true,
+      "recomputed_means": {
+        "correct": 0.5223475944071195,
+        "far_time_wall": 0.5483806637618304,
+        "no_wall": 0.527339783331401
+      }
+    },
+    "m0_absolute_and_differential_consequence": {
+      "aligned_absolute_skill": {
+        "full_support_excluded": 0.1030838276633651,
+        "near_support_excluded_d_le_0p5h": 0.24310613742681053,
+        "outer_d_gt_0p5h": -0.04029970494285218
+      },
+      "consequence": "The aligned band improves every reported region over both controls, but its farther-region absolute skill remains negative.",
+      "paired_differences": {
+        "correct_minus_no_wall": {
+          "full_support_excluded": 0.17548029930792042,
+          "near_support_excluded_d_le_0p5h": 0.31979801384881,
+          "outer_d_gt_0p5h": 0.027736034269691956
+        },
+        "correct_minus_wrong_wall": {
+          "full_support_excluded": 0.3068832641687512,
+          "near_support_excluded_d_le_0p5h": 0.5636172111429024,
+          "outer_d_gt_0p5h": 0.044075418742121064
+        }
+      },
+      "pass": true
+    },
+    "m2_interval_consequence": {
+      "aligned_complete": {
+        "R2_fluct_balanced": 0.12049183548255804,
+        "ci95": [
+          0.10265152234364688,
+          0.13436029471756522
+        ]
+      },
+      "aligned_farther": {
+        "R2_fluct_balanced": -0.04678465834898504,
+        "ci95": [
+          -0.06523535006583968,
+          -0.02843147049274847
+        ]
+      },
+      "aligned_minus_absent_farther": {
+        "ci95": [
+          0.005822317959948276,
+          0.03655004253823372
+        ],
+        "ci_positive": true,
+        "point": 0.020558281974426107
+      },
+      "aligned_near": {
+        "R2_fluct_balanced": 0.283862513741454,
+        "ci95": [
+          0.2673224152514689,
+          0.2973130266541125
+        ]
+      },
+      "consequence": "Conservative block intervals preserve the differential farther-region gain while rejecting positive farther-region absolute skill.",
+      "pass": true
+    },
+    "method_attribution_controls": {
+      "consequence": "Simple contacted controls reproduce only near-wall skill; retrieval fails everywhere; the overlapping interior comparator remains excluded.",
+      "deterministic_seeds": [
+        {
+          "complete": 0.05523250353895226,
+          "near": 0.15646779539446976,
+          "outer": -0.04842439143722177,
+          "training_seed": 2234
+        },
+        {
+          "complete": 0.058027283662751894,
+          "near": 0.1612071187762949,
+          "outer": -0.04761995919336304,
+          "training_seed": 3234
+        }
+      ],
+      "linear_wiener_near_wall_band": {
+        "complete": -0.05068230628967285,
+        "near": 0.029966115951538086,
+        "outer": -0.13327014446258545
+      },
+      "nearest_training_retrieval": {
+        "full_support_excluded": -0.8025478955866716,
+        "near_support_excluded_d_le_0p5h": -0.7325145181482597,
+        "outer_d_gt_0p5h": -0.8742958713259352
+      },
+      "pass": true,
+      "quarantined_shell_overlap_cells": 13984
+    },
+    "physical_corroboration_null_preserved": {
+      "consequence": "Both valid physical families beat absence but neither separates from far-time; interval hits remain descriptive and the registered distributional gate fails.",
+      "descriptive_hit_fractions": {
+        "correct": {
+          "coverage80": 0.5140762648935093,
+          "mean_standardized_width": 0.9580061167605651
+        },
+        "far_time_wall": {
+          "coverage80": 0.48959417999909993,
+          "mean_standardized_width": 0.9570965781409092
+        },
+        "no_wall": {
+          "coverage80": 0.5198070137318437,
+          "mean_standardized_width": 0.9709091600836989
+        }
+      },
+      "pass": true,
+      "quadratic_profile": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.4032793080456984,
+              0.4771601455148685
+            ],
+            "mean": 0.4392412174690891
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.4199866954350283,
+              0.47423893648879056
+            ],
+            "mean": 0.44875384617940534
+          },
+          "no_wall": {
+            "ci95": [
+              0.46138449049538405,
+              0.5288981780465356
+            ],
+            "mean": 0.49294993567902434
+          }
+        },
+        "improvements": {
+          "far_time_wall_minus_correct": {
+            "ci95": [
+              -0.004254088110994994,
+              0.024182110082331246
+            ],
+            "ci_positive": false,
+            "mean": 0.009512628710316258
+          },
+          "no_wall_minus_correct": {
+            "ci95": [
+              0.046513971390169495,
+              0.060773353857843646
+            ],
+            "ci_positive": true,
+            "mean": 0.053708718209935224
+          }
+        }
+      },
+      "spectrum": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.1564148496250723,
+              0.24694806402606878
+            ],
+            "mean": 0.2002317914270228
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.16585816756452273,
+              0.2402022407596581
+            ],
+            "mean": 0.2019693266213304
+          },
+          "no_wall": {
+            "ci95": [
+              0.22397856785052023,
+              0.3089365205483543
+            ],
+            "mean": 0.2641703678072421
+          }
+        },
+        "improvements": {
+          "far_time_wall_minus_correct": {
+            "ci95": [
+              -0.018797910643977747,
+              0.02278962771708777
+            ],
+            "ci_positive": false,
+            "mean": 0.0017375351943075656
+          },
+          "no_wall_minus_correct": {
+            "ci95": [
+              0.0515809120094424,
+              0.07661254611080379
+            ],
+            "ci_positive": true,
+            "mean": 0.0639385763802193
+          }
+        }
+      }
+    },
+    "public_figure_semantics": {
+      "consequence": "All eight release displays use public semantic labels; historical array keys do not escape into the reader-facing interpretation.",
+      "forbidden_historical_label_hits": {
+        "fig11_reachgated_composition": [],
+        "fig14_slot_interface": [],
+        "fig1_architecture": [],
+        "fig2_generation": [],
+        "fig3_propagation": [],
+        "fig6_interface": [],
+        "fig7_direct_traction": [],
+        "fig8_closure_composition": []
+      },
+      "pass": true,
+      "required_token_misses": {
+        "fig11_reachgated_composition": [],
+        "fig14_slot_interface": [],
+        "fig1_architecture": [],
+        "fig2_generation": [],
+        "fig3_propagation": [],
+        "fig6_interface": [],
+        "fig7_direct_traction": [],
+        "fig8_closure_composition": []
+      }
+    },
+    "publication_size_layout": {
+      "consequence": "Every active or explicitly withdrawn release display passes the 180-mm font, stroke, overflow and collision audit.",
+      "figures": {
+        "fig11_reachgated_composition": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0528683914510688
+        },
+        "fig14_slot_interface": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0528683914510688
+        },
+        "fig1_architecture": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0123734533183353
+        },
+        "fig2_generation": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0123734533183353
+        },
+        "fig3_propagation": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0123734533183353
+        },
+        "fig6_interface": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0528683914510688
+        },
+        "fig7_direct_traction": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0123734533183353
+        },
+        "fig8_closure_composition": {
+          "all_pass": true,
+          "font_range_pt_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "minimum_stroke_pt_at_180mm": 1.0528683914510688
+        }
+      },
+      "pass": true
+    },
+    "reader_wording_contract": {
+      "consequence": "Title, main-text estimands and withdrawn Supplementary controls preserve the same evaluated contribution and evidence ladder.",
+      "pass": true
+    },
+    "support_geometry": {
+      "band_percent": 6.755401234567901,
+      "consequence": "All reported field scores exclude the 6.76% supplied band and cover the remaining 93.24% of fluid cells.",
+      "fluid_cells": 207360,
+      "pass": true,
+      "scored_percent": 93.2445987654321,
+      "supplied_band_cells": 14008,
+      "unsupplied_scored_cells": 193352
+    },
+    "temporal_dependence_and_control_separation": {
+      "consequence": "The 160 thinned fields are correlated observations over 2.800 integral times, not 160 independent events; far-time donors are 172--173 snapshots away.",
+      "evaluated_correlated_fields": 160,
+      "evaluation_span_integral_times_count_convention": 2.800417656595749,
+      "far_time_absolute_gaps": [
+        172,
+        173
+      ],
+      "pass": true,
+      "split_gap_integral_times": 0.8001193304559283,
+      "test_index_steps": [
+        2,
+        3
+      ]
+    }
+  },
+  "compute_boundary": "Deterministic inspection and arithmetic from committed arrays, JSON and built PDFs; no simulation, training or neural inference.",
+  "schema": "gwt-level3-reader-consequence-verification-v1",
+  "summary": {
+    "passed": 12,
+    "total": 12
+  }
+}

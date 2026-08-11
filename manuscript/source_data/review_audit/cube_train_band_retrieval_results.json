@@ -1,0 +1,77 @@
+{
+  "components": {
+    "path": "manuscript/source_data/review_audit/cube_train_band_retrieval_components.npz",
+    "sha256": "02b412daeaf5314c237291534c7c995876c66c81794ac07f19327eea93fec0ce"
+  },
+  "compute_boundary": "Frozen-record CPU diagnostic; no simulation, training or neural inference.",
+  "inputs": {
+    "indices": {
+      "path": "manuscript/source_data/fig3/cube_periodic_topology_components.npz",
+      "sha256": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18"
+    },
+    "record": {
+      "path": "codes/data/cube_record/cube_ds2_float16.npy",
+      "sha256": "8bac93f1537eab6667d692282b76c7bccd28f28965d35ea97668bcc2567bc45a"
+    },
+    "times": {
+      "path": "codes/data/cube_record/cube_ds2_times.npy",
+      "sha256": "99e8e0a45cf6c361bcefc10b251ceac15bd60992d42255cf76c945eae9655482"
+    }
+  },
+  "interpretation_boundary": "This control tests one simple correlated-record retrieval explanation. Failure to match the learned endpoint does not prove temporal independence, population generalisation, or causal closure composition.",
+  "nearest_training_band": {
+    "block57_sensitivity": {
+      "full_support_excluded": {
+        "conditional_interval": [
+          -0.8498113619699269,
+          -0.7637437150551427
+        ],
+        "point": -0.8025478955866716
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "conditional_interval": [
+          -0.7876834868016822,
+          -0.684468469357956
+        ],
+        "point": -0.7325145181482597
+      },
+      "outer_d_gt_0p5h": {
+        "conditional_interval": [
+          -0.9183116181482031,
+          -0.8387384326112838
+        ],
+        "point": -0.8742958713259352
+      }
+    },
+    "lag_nondimensional": {
+      "maximum": 317.70032218471,
+      "median": 144.89980950965,
+      "minimum": 32.399978855499995
+    },
+    "lag_snapshots": {
+      "maximum": 1059,
+      "median": 483.0,
+      "minimum": 108
+    },
+    "r2_fluctuation": {
+      "full_support_excluded": -0.8025478955866716,
+      "near_support_excluded_d_le_0p5h": -0.7325145181482597,
+      "outer_d_gt_0p5h": -0.8742958713259352
+    }
+  },
+  "protocol": {
+    "block_evaluation_samples": 57,
+    "bootstrap_draws": 4000,
+    "bootstrap_seed": 20260730,
+    "distance": "exact squared Euclidean",
+    "evaluation_count": 160,
+    "prediction": "unchanged associated training full field",
+    "retrieval_feature": "all three channel-standardised values on the 14,008-cell supplied band",
+    "support_excluded": true,
+    "train_indices": [
+      0,
+      659
+    ]
+  },
+  "schema": "gwt-cube-train-band-retrieval-v1"
+}

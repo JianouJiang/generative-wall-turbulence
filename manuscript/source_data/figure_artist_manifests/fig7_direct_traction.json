@@ -1,0 +1,1118 @@
+{
+  "all_validated": true,
+  "binding_count": 24,
+  "bindings": [
+    {
+      "actual_payload_sha256": "b3448b33aeb0da46fdb96eb41d77a52354bfcb0d3f57cff87329c0ac87afc978",
+      "artist_id": "fig7.a.floor_direction",
+      "artist_type": "Quiver",
+      "evidence": "associated first-cell tangential-flow direction on the physical floor",
+      "expected_payload_sha256": "b3448b33aeb0da46fdb96eb41d77a52354bfcb0d3f57cff87329c0ac87afc978",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "34c460221dc0112e4b0c16b22dab6ddd8912d5bd990629c88d0d9698660e4905",
+          "slice": [
+            ":",
+            ":",
+            0,
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply the frozen wall-on-fluid traction relation; reverse its direction to recover the associated first-cell tangential-flow direction; normalise, subsample uniformly and project onto the displayed physical face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "dbd74dc6352afa77b692e4103fac3d992a321d7f4fdcb0c052fccc613bf6a1e7",
+      "artist_id": "fig7.a.floor_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction reconstructed from held-out LES target 758",
+      "expected_payload_sha256": "dbd74dc6352afa77b692e4103fac3d992a321d7f4fdcb0c052fccc613bf6a1e7",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "34c460221dc0112e4b0c16b22dab6ddd8912d5bd990629c88d0d9698660e4905",
+          "slice": [
+            ":",
+            ":",
+            0,
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply tau=-nu*u_t/d on the floor face; take vector magnitude; transpose x/z; mask the cube footprint; project the untouched array onto the ground plane",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "84be0e8d7850453f8c8d47b4f8951fe8203b578afa7c7dbc52e74f7498d3cf96",
+      "artist_id": "fig7.a.top_direction",
+      "artist_type": "Quiver",
+      "evidence": "associated first-cell tangential-flow direction on cube top face",
+      "expected_payload_sha256": "84be0e8d7850453f8c8d47b4f8951fe8203b578afa7c7dbc52e74f7498d3cf96",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "3510c8103888c4fd663f8d0650896448b2683aabe7da4d5e09b00985c5cb0e87",
+          "slice": [
+            ":",
+            ":",
+            24,
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply the frozen wall-on-fluid traction relation; reverse its direction to recover the associated first-cell tangential-flow direction; normalise, subsample uniformly and project onto the displayed physical face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "f0123f315d35d49f5860a6ed42413ef214f500c1870020b3845e65032fc13c9a",
+      "artist_id": "fig7.a.top_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction on the cube top face of target 758",
+      "expected_payload_sha256": "f0123f315d35d49f5860a6ed42413ef214f500c1870020b3845e65032fc13c9a",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "3510c8103888c4fd663f8d0650896448b2683aabe7da4d5e09b00985c5cb0e87",
+          "slice": [
+            ":",
+            ":",
+            24,
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply the exact face-normal tangential traction relation; crop the wall-adjacent 24x24 face; take vector magnitude; project the untouched array directly onto the corresponding physical cube face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "2878906a7a6a9bae23943f257fd9c3300469775d35efa8d6480a309fed8298c3",
+      "artist_id": "fig7.a.xhi_direction",
+      "artist_type": "Quiver",
+      "evidence": "associated first-cell tangential-flow direction on cube $x+$ face",
+      "expected_payload_sha256": "2878906a7a6a9bae23943f257fd9c3300469775d35efa8d6480a309fed8298c3",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "d23bcc98def8ba3ed51ac536e9bad9e7c603112379785dddffd77c57f173e1f2",
+          "slice": [
+            ":",
+            36,
+            ":",
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply the frozen wall-on-fluid traction relation; reverse its direction to recover the associated first-cell tangential-flow direction; normalise, subsample uniformly and project onto the displayed physical face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "5bcbca10cf434fcbeb588b2136cc56247640157eca6887679f2d4fc619d46b95",
+      "artist_id": "fig7.a.xhi_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction on the cube $x+$ face of target 758",
+      "expected_payload_sha256": "5bcbca10cf434fcbeb588b2136cc56247640157eca6887679f2d4fc619d46b95",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "d23bcc98def8ba3ed51ac536e9bad9e7c603112379785dddffd77c57f173e1f2",
+          "slice": [
+            ":",
+            36,
+            ":",
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply the exact face-normal tangential traction relation; crop the wall-adjacent 24x24 face; take vector magnitude; project the untouched array directly onto the corresponding physical cube face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "948349b83b0d45dc95a6cc3d3ea17ec77a49b9a5d0cef72f936428377751247a",
+      "artist_id": "fig7.a.zlo_direction",
+      "artist_type": "Quiver",
+      "evidence": "associated first-cell tangential-flow direction on cube $z-$ face",
+      "expected_payload_sha256": "948349b83b0d45dc95a6cc3d3ea17ec77a49b9a5d0cef72f936428377751247a",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "67e2cb03dbb7cc790adf0813a1a498e53d3d6b003ecea475ccdc83999c037a4a",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            11
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply the frozen wall-on-fluid traction relation; reverse its direction to recover the associated first-cell tangential-flow direction; normalise, subsample uniformly and project onto the displayed physical face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ddfb33071a8bfa0891977c50e7c38ab2f93450d1246d4760bdf8da84b351a608",
+      "artist_id": "fig7.a.zlo_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction on the cube $z-$ face of target 758",
+      "expected_payload_sha256": "ddfb33071a8bfa0891977c50e7c38ab2f93450d1246d4760bdf8da84b351a608",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "67e2cb03dbb7cc790adf0813a1a498e53d3d6b003ecea475ccdc83999c037a4a",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            11
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "apply the exact face-normal tangential traction relation; crop the wall-adjacent 24x24 face; take vector magnitude; project the untouched array directly onto the corresponding physical cube face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "6e4b251136fddb2d69f928b56a176a41a6aaf12fab60386ac4a6ed07fca0f9b2",
+      "artist_id": "fig7.b.response_section",
+      "artist_type": "AxesImage",
+      "evidence": "fixed target 758, seed 7701; positive means lower local error",
+      "expected_payload_sha256": "6e4b251136fddb2d69f928b56a176a41a6aaf12fab60386ac4a6ed07fca0f9b2",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "26a3449b0143f3dd065ad457e5deeb40cb07f954ce4ce349ff5cd7a3147c540e",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        },
+        {
+          "key": "rep_tau_native",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "8aec79cf9a90ad8e1c83512dd7d368e325a421f194fab0236e617cdc6874a83c",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        },
+        {
+          "key": "rep_absent",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "d4b8526ced812cbcba3dc629458b1b0f655963a0f8a4647205d0140cdc3ff251",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "reuse the retained midspan error-reduction section as a compact visual symbol for the generated field response",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "31e889993b93ffce4defdc02567064a836e8600e3db7d145f2ae99844e50f416",
+      "artist_id": "fig7.b.traction_floor_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction reconstructed from held-out LES target 758",
+      "expected_payload_sha256": "31e889993b93ffce4defdc02567064a836e8600e3db7d145f2ae99844e50f416",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "34c460221dc0112e4b0c16b22dab6ddd8912d5bd990629c88d0d9698660e4905",
+          "slice": [
+            ":",
+            ":",
+            0,
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "reuse the retained oracle wall-traction magnitude as the compact input-floor symbol",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "319e459a696b857da8732bb8c64902a4a51d47c67ad30dca7df1d2b1b9240896",
+      "artist_id": "fig7.b.traction_top_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction on the cube top face of target 758",
+      "expected_payload_sha256": "319e459a696b857da8732bb8c64902a4a51d47c67ad30dca7df1d2b1b9240896",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "3510c8103888c4fd663f8d0650896448b2683aabe7da4d5e09b00985c5cb0e87",
+          "slice": [
+            ":",
+            ":",
+            24,
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "reuse the retained oracle traction magnitude on the compact cube face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "f9bf8bda4867647564ab946f164bc2b60d0b2aa1fe58f8fb90459ad92cdd3713",
+      "artist_id": "fig7.b.traction_xhi_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction on the cube $x+$ face of target 758",
+      "expected_payload_sha256": "f9bf8bda4867647564ab946f164bc2b60d0b2aa1fe58f8fb90459ad92cdd3713",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "d23bcc98def8ba3ed51ac536e9bad9e7c603112379785dddffd77c57f173e1f2",
+          "slice": [
+            ":",
+            36,
+            ":",
+            ":"
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "reuse the retained oracle traction magnitude on the compact cube face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "0a07b7aba57a9dcd3864b99afb868b09dd4fb5b40224571cc5196170d9928dd1",
+      "artist_id": "fig7.b.traction_zlo_magnitude",
+      "artist_type": "AxesImage",
+      "evidence": "actual oracle traction on the cube $z-$ face of target 758",
+      "expected_payload_sha256": "0a07b7aba57a9dcd3864b99afb868b09dd4fb5b40224571cc5196170d9928dd1",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "67e2cb03dbb7cc790adf0813a1a498e53d3d6b003ecea475ccdc83999c037a4a",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            11
+          ],
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "reuse the retained oracle traction magnitude on the compact cube face",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "6e4b251136fddb2d69f928b56a176a41a6aaf12fab60386ac4a6ed07fca0f9b2",
+      "artist_id": "fig7.c.midspan_error_improvement",
+      "artist_type": "AxesImage",
+      "evidence": "fixed target 758, seed 7701; positive means lower local error",
+      "expected_payload_sha256": "6e4b251136fddb2d69f928b56a176a41a6aaf12fab60386ac4a6ed07fca0f9b2",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "26a3449b0143f3dd065ad457e5deeb40cb07f954ce4ce349ff5cd7a3147c540e",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        },
+        {
+          "key": "rep_tau_native",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "8aec79cf9a90ad8e1c83512dd7d368e325a421f194fab0236e617cdc6874a83c",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        },
+        {
+          "key": "rep_absent",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "d4b8526ced812cbcba3dc629458b1b0f655963a0f8a4647205d0140cdc3ff251",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "subtract traction-conditioned three-component vector-error magnitude from the absent-arm magnitude at each fluid cell; take the z/h=1 section over 0<y/h<2, transpose to y/x, mask the solid and project the untouched array as a vertical cut",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e3db1076853491bc029d5b4e87df74c8ea5beee63886c30c12fc781aaf446056",
+      "artist_id": "fig7.c.nearwall_error_improvement",
+      "artist_type": "AxesImage",
+      "evidence": "fixed target 758, seed 7701; positive means lower local error",
+      "expected_payload_sha256": "e3db1076853491bc029d5b4e87df74c8ea5beee63886c30c12fc781aaf446056",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "truth_rep",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "26a3449b0143f3dd065ad457e5deeb40cb07f954ce4ce349ff5cd7a3147c540e",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        },
+        {
+          "key": "rep_tau_native",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "8aec79cf9a90ad8e1c83512dd7d368e325a421f194fab0236e617cdc6874a83c",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        },
+        {
+          "key": "rep_absent",
+          "kind": "npz",
+          "path": "fig7_direct/e2_direct_traction_components.npz",
+          "resolved_payload_sha256": "d4b8526ced812cbcba3dc629458b1b0f655963a0f8a4647205d0140cdc3ff251",
+          "source_sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+        }
+      ],
+      "transform": "subtract traction-conditioned three-component vector-error magnitude from the absent-arm magnitude; take the first fluid-row x-z section, transpose to z/x, mask the cube footprint and project the untouched array onto the horizontal plane",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "af0f302697dc79db6a8044d16cfc1ccb8e6e7c1cbb4e3fc117f167cf6ddc7b20",
+      "artist_id": "fig7.d.absolute_ci",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "conditional moving-block intervals on one LES record",
+      "expected_payload_sha256": "af0f302697dc79db6a8044d16cfc1ccb8e6e7c1cbb4e3fc117f167cf6ddc7b20",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.band_phys.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "70b39c670908f77f07f59f5308de2b4786641acd20e078e9ea0ba09e6297208b",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.absent_B.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "6fe4d580cba5816386a31d0d84c186370e2ed06e1d37c62017a7f0f92124bbdf",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_native.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "faa876ce268ed56d61fbcc856053eb443dad4d6d70cde7354b81415cbff11f2e",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.absent.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "b9ec0ac6ff9eb05bec145234d370b8e2a30656de458f53f2f02f6227c697abc3",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_trainmean.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1a53502094101994812f9b9e3f5ee3ee4dc757c1cce307e932baa28a3b98043f",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_shuffle.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1dd0d86ae707177959965ed7e2b727c1a82f34f2206b80dabe63373ba75e55ef",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_signflip.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "65e0da771488236991b2d6ff04af3ea138a670b32c0657e97bd6b445fce0e1a1",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_fartime.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "edec9c66648d439572d37d79a4c5b0a920fc5e0d62219f340f398be9b46be7c0",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.det_tau.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1f998c750c7d1e70d8ac8f898d74ba372109af32b447642458a6b6607e8a3ced",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.det_absent.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1a39bf3d8120ebb024c78dd1e07f17b670debc9de993967b4467bf142873eae0",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.band_phys.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "6cbf5429f1fda6458f4c20ea826efe00a2329af9c6fdc2f05150f0372d65c78d",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.absent_B.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "9e3363e6158f58d7a600e3dd3852c1c4d790099d36989992f3ff79a2a781e8de",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_native.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "9e00f8401c06364bfe2aef7f55cecf32578a33e0578a3522ec544b1e6cc4c43f",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.absent.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "debcff874facaa34508ac09c0d28a3bc18168a78825d14607540e9bfc37dcb59",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_trainmean.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "9401c1e9bb6334199eb3fa18003719ae563724c3b05a8f2fa965e1a983d159ba",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_shuffle.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "2b6fe0ca3c0dc98c3cd305f29b219a2144a0b46abafb5fba80aae4d09498d0a1",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_signflip.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "83e674a173585cf0a7f49805f24dac0347cfa9176bc19de2a940b2dfc78a9221",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_fartime.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "9d2728260b59172cca9f57111de583dc64750b9b9dda2eb9ad256c1027c58112",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.det_tau.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "91baade8033468d45dc11c54465c9085b9de6bea083a3c480e229a7e8ff54045",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.det_absent.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "e8cb133388c891f56665f87c243a0e7f405b8ef6cae880539a59dbb5a419fc32",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "draw horizontal conservative-block intervals for all evaluated arms",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "bdf9565324b9d44f5a7f69549849eed05f9e828b71d77fdffbfa65c03fa9af47",
+      "artist_id": "fig7.d.absolute_points",
+      "artist_type": "PathCollection",
+      "evidence": "traction arms use no clamp; supplied support is excluded from scoring",
+      "expected_payload_sha256": "bdf9565324b9d44f5a7f69549849eed05f9e828b71d77fdffbfa65c03fa9af47",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.band_phys.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "70b39c670908f77f07f59f5308de2b4786641acd20e078e9ea0ba09e6297208b",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.absent_B.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "6fe4d580cba5816386a31d0d84c186370e2ed06e1d37c62017a7f0f92124bbdf",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_native.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "faa876ce268ed56d61fbcc856053eb443dad4d6d70cde7354b81415cbff11f2e",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.absent.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "b9ec0ac6ff9eb05bec145234d370b8e2a30656de458f53f2f02f6227c697abc3",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_trainmean.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1a53502094101994812f9b9e3f5ee3ee4dc757c1cce307e932baa28a3b98043f",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_shuffle.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1dd0d86ae707177959965ed7e2b727c1a82f34f2206b80dabe63373ba75e55ef",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_signflip.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "65e0da771488236991b2d6ff04af3ea138a670b32c0657e97bd6b445fce0e1a1",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.tau_fartime.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "edec9c66648d439572d37d79a4c5b0a920fc5e0d62219f340f398be9b46be7c0",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.det_tau.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1f998c750c7d1e70d8ac8f898d74ba372109af32b447642458a6b6607e8a3ced",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.arms.det_absent.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "1a39bf3d8120ebb024c78dd1e07f17b670debc9de993967b4467bf142873eae0",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot complete support-excluded score of every evaluated arm",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e8722a5bafcf291337ec2b914b086cb6467bdbd92cd7fe1ecc9f48b9691e6692",
+      "artist_id": "fig7.e.band_phys_minus_absentB",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "matched targets and sampler noise; OOD probes are open markers",
+      "expected_payload_sha256": "e8722a5bafcf291337ec2b914b086cb6467bdbd92cd7fe1ecc9f48b9691e6692",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "d8fdb8d47cd7245db67fc0c4e6fa64cbd268516b715bdf371e1dc5b4ddfd93ad",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "91bf6e02c99dd58e04f7b6981f13474b136513d8721ae006f30b4e8629367bc3",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "5c5c96687124f24f9a7341d06e58ad96f2c6be4ae27e6c74ab0d4c0f3d67156e",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.uniq_raster_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "26c6e1138b733bf7c55c12912bc2df72d912b30ca439c21bef3293e5f7ef7c4e",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "6bdff00a96db51f91b2238db7e8fc4380f88570d731ded5a24153b4eac3a6295",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "291194a6bed081f44b68978fc8d8db775aa83ce61a2712aafc8863e2b88cab09",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "bb824b7d809a70777956b9ed23b42f1b24351a30a5b5e1668b8f7eee97cb0956",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.band_phys_minus_absentB.uniq_raster_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "3121adf61543be23779663a9625f523d955caf4b09e10c698057d00e23d2b2d7",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot each paired contrast over four overlapping scoring regions",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "a733839a7312e4f20554e1ab0f349e816c31316fd6b3d269fc7dfb98781dacd1",
+      "artist_id": "fig7.e.det_tau_minus_det_absent",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "matched targets and sampler noise; OOD probes are open markers",
+      "expected_payload_sha256": "a733839a7312e4f20554e1ab0f349e816c31316fd6b3d269fc7dfb98781dacd1",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "266050488e1fd5a4a319370e7ea4dfd281daf8c02dc89d2c2196e229e70237ce",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "d85314ce8e592b2963a12689884f08b456a8f2fbe051b770ff482af1c404d258",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "c2e89f74f215b68a2015b8f1c8ecbd796120cc9bf9f6725b97f5af8a2c7b556c",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.uniq_raster_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "65ac9107f0e6727c1529b389d5e29b762ffead058717e88e56105286396df734",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "cb2db5e6747e45d74226101afea46112640501dbd4609e2452d31d701906ac24",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "750cd91135995b159792cf91e50ae22286a87d262ff4919639904aee94ca83e8",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "c2b44b99fe08fcaf77cb3616ad7616f1236638e8f0ed107928497c2b758d9f7a",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.det_tau_minus_det_absent.uniq_raster_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "8dc5a46b4e6fcf9129ead93941e3f7cb29e5737bd8aa5df0ab6b33f3cf6e9b69",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot each paired contrast over four overlapping scoring regions",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "d5ca597b25cd8c47d7a052e6500351bf1e2122e4b38e93a97e9b9c764ed04084",
+      "artist_id": "fig7.e.tau_native_minus_absent",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "matched targets and sampler noise; OOD probes are open markers",
+      "expected_payload_sha256": "d5ca597b25cd8c47d7a052e6500351bf1e2122e4b38e93a97e9b9c764ed04084",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "24280e30661986a616f19f7856a3757a775fc13f1d76552a27ff1b49cba236bc",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "a19e33dbdd18b2fc974ce260613733be7dd0c65d2437256e2f30211895960e0f",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "7b16c3b005c07622c2ede3b221c6fc4cbc4257182caa745bf4bce53f10af9701",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.uniq_raster_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "5e7097fd170851ed20f87b49cf7fecde3c465fafae757a3901acd68d0b6202d8",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "80f9308089f4dc918a09c42371bdd84d5ca807a25d8f8123172a25f3373a08a4",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "55e027d26925731ed595701c583c914d4ef87695065df1504a6bd911b6f149ea",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "d03ae926e3143e5067758e69fedd0c171553be4cf5612bb56f6629a506e349c7",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_absent.uniq_raster_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "c2fd2aaa38a74797bef29db6855c3ca73a3b138cc074683a63946a3769c5fb77",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot each paired contrast over four overlapping scoring regions",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "9ce2dabb37789b7d2c6c905618ce44ecca37bfe5fa16956c6ab8c1ce48ecf524",
+      "artist_id": "fig7.e.tau_native_minus_fartime",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "matched targets and sampler noise; OOD probes are open markers",
+      "expected_payload_sha256": "9ce2dabb37789b7d2c6c905618ce44ecca37bfe5fa16956c6ab8c1ce48ecf524",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "0267890b80d24c9cfe64c9f5ea6bc85804e9638e143f3575ffcfe201b3a4b9ce",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "fa2853f73a38c8f2f7653a9a4d6b7ecb01f51d20a0e312d663f7e18e9b587c3e",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "e11af95aabf13f32c2f543faea6b23844005642dc6afae1820662ac9ea8a18d0",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.uniq_raster_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "d7af7d43ea5d75b74e1da6eb1a60f3b47c1762b3dca62e356529b4c428ea57a5",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "36a76969d03d44c1ed0675d1db2088949a160afa3511bb25a4e0947e2ce84f42",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "a768d704959b910f8b3dd6a2488a290573f132939f30fcb2cb686093f41fa970",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "4e9d2157e9ab9b735a6182f957d948c8637b9d0ae50829272b12103e2cd49c93",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_fartime.uniq_raster_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "7ef2ac17a353cd75d8eaceda28104a109bee37986cfc43d6f83fc972f3088b66",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot each paired contrast over four overlapping scoring regions",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "192447874e29c481f457b7b436258ffa9eb400a1d919c404ffa7628834341e62",
+      "artist_id": "fig7.e.tau_native_minus_shuffle",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "matched targets and sampler noise; OOD probes are open markers",
+      "expected_payload_sha256": "192447874e29c481f457b7b436258ffa9eb400a1d919c404ffa7628834341e62",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "606a4adcb57bb905d4368f6924ded0b4ec08f8532dd12024f112c309ece4aa10",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "dd7418a4afc07c50cfb71031e00cf4582696a57d5db2e8f37355aff983ed9c23",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "b02b2714290700bfadb749cc8061de2a4b6e3a2c1bf09b71ad8a60ff7efcab03",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.uniq_raster_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "7c2cc1d2fa57b9ca4f393dec7bd361fa0ef7e03d0152b250b777db9e1df96bfa",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "6e424310629bbbd08ac83a51450d5f63dba3b49912b8f38475c76eeb089fa834",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "dc12ac60cbd183f05859ac41e27d419733d8eecfd404016da69887c2ad90bc05",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "f20056453ef9c9fbef50e16e0404c05db9268a2522327c1f799202bc7840d6d3",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_shuffle.uniq_raster_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "8d71dee432429637add8c31325079e24cb255271b7d016218c5b8414ad3f19ba",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot each paired contrast over four overlapping scoring regions",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e8e8e36c8ee20270081ba2dd5f3dbdea459d279d0abdf785944e9c8b744a65b0",
+      "artist_id": "fig7.e.tau_native_minus_signflip",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "matched targets and sampler noise; OOD probes are open markers",
+      "expected_payload_sha256": "e8e8e36c8ee20270081ba2dd5f3dbdea459d279d0abdf785944e9c8b744a65b0",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "c0b6c5277f2e17535422a28ab95d19cb3c2e40e51ee36b576992ab1a92d1768a",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "6de0e0cf6e098b13b6dd91e8950232402d219c37c02edf60c451eb6c3fddc67c",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "b9cd0013e3c7872f33dfef63c523c3357a8fb77fb555815fd928dd0338bfd119",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.uniq_raster_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "9252026725c42835d590f3776a92f9d88f6d86ed6418022b238003342d593ae5",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "2e3b9648e16b6ed1f1cf46bee141342c046d1a150be5b608ddd9cc96da210422",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "e1cd56bd65f39bb82626d23a82f6bb5b45523d1bede3c07b46f0f53be89b9484",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "c3101d86e0daae093a8e3669095a745434ec75a4b62869e457f217abc9d6054a",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_signflip.uniq_raster_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "c734d9d3dbf01d7ecf477c2fb43230f648d765bc4b08678415e8500f09fed9f6",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot each paired contrast over four overlapping scoring regions",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "7699d091cf7b2d052ccf0b60660a546a64f46dd211d678f6b586f4cd4f2ed243",
+      "artist_id": "fig7.e.tau_native_minus_trainmean",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "matched targets and sampler noise; OOD probes are open markers",
+      "expected_payload_sha256": "7699d091cf7b2d052ccf0b60660a546a64f46dd211d678f6b586f4cd4f2ed243",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "2355b0f90d73e6dd0d716f8662c7705edf03377dc8cd0016683c88b45d00dae9",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "374b397fd0859729e04ebb6b0a7f0cacf67a37cd8a92c58c70f5a826db652fa7",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "600d48fb8b6ca3edc87c7fbf95aa9053a8ff14de6cc132f4264485577f5f3593",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.uniq_raster_support_excluded.point",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "866e1afd2b94c5b2dc842b34408f8f41cff332ecb55bf82d778924408fc8b3a2",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "ac126001615a922fac59f23d43f02c9a57868b6c2bae24b07629e84050283d65",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "c77df3ff22004ce94c04cb59b3dfd9c5cd556a82af9c6b55a4d5b69e2375200d",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "d7dc7276e8533ff0d46caf5b6e696a211524ffac7f5252b1902aa54b7fef5073",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        },
+        {
+          "key": "evaluation.deltas.tau_native_minus_trainmean.uniq_raster_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig7_direct/e2_direct_traction_results.json",
+          "resolved_payload_sha256": "5e994c24fcfb7efc9075a511ac18624c6b05f5219370f874fba9d66806e93b5e",
+          "source_sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+        }
+      ],
+      "transform": "plot each paired contrast over four overlapping scoring regions",
+      "validated": true
+    }
+  ],
+  "figure": "fig7_direct_traction",
+  "grouping": "One record per semantically indivisible plotted group (image, bar series, scatter series, error-bar series or data-bearing text).",
+  "schema": "gwt-producer-emitted-artist-manifest-v1"
+}

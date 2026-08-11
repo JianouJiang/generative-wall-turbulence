@@ -1,0 +1,188 @@
+{
+ "node": "development/nodes/node_007",
+ "level": 3,
+ "attempt": 5,
+ "frozen_at_utc": "2026-07-31T22:40:42.696114+00:00",
+ "frozen_at_unix": 1785537642.6961622,
+ "_timestamp_note": "the clock value and every recorded mtime are written in one pass by this script; node 006's certificate stated a time later than its own file chronology and that inconsistency is documented in ERRATUM_NODE006.md",
+ "git_head": "4cc3f609ecba380fb0993ba30b0e79ca513cffec",
+ "design_artifacts": {
+  "development/nodes/node_007/PREREGISTRATION_E2_GENERALITY.md": {
+   "sha256": "382e3737fc70002979215a4d1d58f9930ec2ead1fcd9abc24bf5dd8db43551fd",
+   "bytes": 23009,
+   "mtime_utc": "2026-07-31T22:32:14.298710+00:00"
+  },
+  "development/nodes/node_007/CONTACT_LEDGER.json": {
+   "sha256": "a4fd79a0f82d90e56623a443b442b1a366d45bd5029f52d98da64118e441a10b",
+   "bytes": 7378,
+   "mtime_utc": "2026-07-31T22:23:36.589505+00:00"
+  },
+  "codes/gpu/eval_e2_generality.py": {
+   "sha256": "9a0136c60609b7f216f139e419cb13741949641d396eb11b5f8f72169c01dd70",
+   "bytes": 77431,
+   "mtime_utc": "2026-07-31T22:39:38.161436+00:00"
+  },
+  "codes/probes/build_contact_ledger.py": {
+   "sha256": "958618daeca935d89c8ce05ec9b6948909944a4fce9b861f44e3146239a90b3f",
+   "bytes": 6341,
+   "mtime_utc": "2026-07-31T22:23:33.505486+00:00"
+  },
+  "codes/probes/complete_non_regression_node007.py": {
+   "sha256": "be9423f8196ed7815ab12288e4fabef3067c5fcab5387dd95d405f75bbe1f1b9",
+   "bytes": 13912,
+   "mtime_utc": "2026-07-31T22:40:00.838575+00:00"
+  },
+  "development/nodes/node_007/AMENDMENT_1_BLOCK_LENGTH.md": {
+   "sha256": "10ca9b37ce78eadce35d7dbb2c322860161c7071a96412081def0b1165e58bb9",
+   "bytes": 4798,
+   "mtime_utc": "2026-07-31T22:40:35.645788+00:00"
+  }
+ },
+ "must_not_change": {
+  "codes/results/e2_closure_composition_closure_LA.pt": {
+   "sha256": "79d75a303216c574b2cab9cd1ab89a978baf6d177e9ae109fff291dad04f11ac",
+   "bytes": 25634,
+   "mtime_utc": "2026-07-31T18:14:18.700562+00:00"
+  },
+  "codes/results/e2_closure_composition_results.json": {
+   "sha256": "ee1ea27e2d0d79aa76fde34c2f4ae63510ccd5fb4ce92be61ca4d335eb8d2fbc",
+   "bytes": 155814,
+   "mtime_utc": "2026-07-31T21:07:54.420310+00:00"
+  },
+  "codes/results/e2_closure_composition_components.npz": {
+   "sha256": "29964a938801524364350cbfcc109ab9264db63ccfa00ad0b63589f0621c4c55",
+   "bytes": 27018734,
+   "mtime_utc": "2026-07-31T21:07:55.949318+00:00"
+  },
+  "codes/results/e2_direct_traction_results.json": {
+   "sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7",
+   "bytes": 37998,
+   "mtime_utc": "2026-07-31T16:58:13.588031+00:00"
+  },
+  "codes/results/e2_direct_traction_components.npz": {
+   "sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d",
+   "bytes": 25309096,
+   "mtime_utc": "2026-07-31T16:58:15.177041+00:00"
+  },
+  "codes/results/e2_direct_traction_T_s7701.pt": {
+   "sha256": "f3de7d7da875fe62f3850269cf5fe94b66a0d7b1a280b945202ea765042be199",
+   "bytes": 15569122,
+   "mtime_utc": "2026-07-31T14:02:57.202416+00:00"
+  },
+  "codes/results/e2_direct_traction_T_s7702.pt": {
+   "sha256": "27add29b8da77c0b74b479433e4370afa13d6f077fbd6412b94e6640c36239fb",
+   "bytes": 15569122,
+   "mtime_utc": "2026-07-31T14:47:03.975220+00:00"
+  },
+  "codes/results/e2_direct_traction_T_s7703.pt": {
+   "sha256": "bda5dbedb84e87e8f1b102fde8be5d8272f056c85b830e5b1928474edad74963",
+   "bytes": 15569122,
+   "mtime_utc": "2026-07-31T15:13:16.561423+00:00"
+  },
+  "codes/results/e2_traction_interface_results.json": {
+   "sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0",
+   "bytes": 27144,
+   "mtime_utc": "2026-07-31T12:19:23.337409+00:00"
+  },
+  "codes/results/e2_traction_interface_components.npz": {
+   "sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131",
+   "bytes": 18971741,
+   "mtime_utc": "2026-07-31T12:19:23.317409+00:00"
+  }
+ },
+ "companion_artifacts": {
+  "codes/figures/fig6_3d.py": {
+   "sha256": "4c57081f906ff978e1f85ebfc704082f814122e21b5594303d7775a501117304",
+   "bytes": 5223,
+   "mtime_utc": "2026-07-31T10:18:30.444699+00:00"
+  },
+  "codes/figures/fig7_scaling.py": {
+   "sha256": "e4099c5b4d768c71a7670799167b6b94e2459ca0e94e61a95335055a02b525ea",
+   "bytes": 8384,
+   "mtime_utc": "2026-07-31T10:26:59.626927+00:00"
+  },
+  "codes/gpu/eval_cube_3d_coupling.py": {
+   "sha256": "b9082a36f0dc856eed15acab929cd7c3dc35e42b500fd0059971e74ed8d8e514",
+   "bytes": 23038,
+   "mtime_utc": "2026-07-26T14:46:27.160114+00:00"
+  },
+  "codes/gpu/eval_cube_3d_coupling_adequate.py": {
+   "sha256": "7a744be63b44368896f02ff72ea1a9ba0e709c61037df18efb0314e7ddde7d30",
+   "bytes": 8005,
+   "mtime_utc": "2026-07-26T14:46:27.161114+00:00"
+  },
+  "codes/results/cube3d_coupling_adequate_results.json": {
+   "sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b",
+   "bytes": 8733,
+   "mtime_utc": "2026-07-22T00:56:49.522774+00:00"
+  },
+  "codes/results/cube3d_coupling_results.json": {
+   "sha256": "61e7d09d297bd6fa6a5aa8d55476e1c2a6fe56ddda0e7efe93b7eab25c3ce2a2",
+   "bytes": 7988,
+   "mtime_utc": "2026-07-26T14:46:27.162114+00:00"
+  },
+  "codes/results/cube3d_native_yplus_temporally_separated.json": {
+   "sha256": "bddf92ed67c25250dced3569829603da4461abd9a8a001cf668bdad1c6bab54e",
+   "bytes": 8768,
+   "mtime_utc": "2026-07-31T04:49:22.151311+00:00"
+  },
+  "figure_drafts/fig45/fig5_composition_transfer_v3.py": {
+   "sha256": "c6d79020572886d6406bb385b77736d94012efc4b5d18af6ccd21669a5cb6255",
+   "bytes": 8520,
+   "mtime_utc": "2026-07-31T10:31:09.687477+00:00"
+  },
+  "manuscript/figures/fig6_3d.pdf": {
+   "sha256": "1bfbef0077da1c04303a6cdbaafcb166b19f0440c4423bbdd35b35d51e3523a4",
+   "bytes": 27499,
+   "mtime_utc": "2026-07-31T21:54:50.103496+00:00"
+  },
+  "manuscript/figures/fig6_3d.png": {
+   "sha256": "50f8c5b01ce640136c7dc4c0efe4a6ef44121e57eb21265c6aa0a68f23a62bfd",
+   "bytes": 213222,
+   "mtime_utc": "2026-07-31T21:54:49.329492+00:00"
+  },
+  "manuscript/figures/fig7_scaling.pdf": {
+   "sha256": "a2522668062db8f9c20f9dea617414a2d8a0479be8ebb282bc354b4c6df22e97",
+   "bytes": 32175,
+   "mtime_utc": "2026-07-31T21:54:53.277512+00:00"
+  },
+  "manuscript/figures/fig7_scaling.png": {
+   "sha256": "632ec41c776c2d309741ea99966825fa096da5d385ca1aaa9f540cf94eeb416a",
+   "bytes": 270611,
+   "mtime_utc": "2026-07-31T21:54:52.233507+00:00"
+  },
+  "manuscript/source_data/fig2/cube3d_representative_fields.npz": {
+   "sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f",
+   "bytes": 3948444,
+   "mtime_utc": "2026-07-31T21:54:19.669344+00:00"
+  },
+  "manuscript/source_data/figure_artist_manifests/fig6_3d.json": {
+   "sha256": "5188b52d5cb7d2f767e4e620aee4e3a1a55e68ff9b3d7d597afd4702fe1a2c9f",
+   "bytes": 5876,
+   "mtime_utc": "2026-07-31T21:54:48.377487+00:00"
+  },
+  "manuscript/source_data/figure_artist_manifests/fig7_scaling.json": {
+   "sha256": "4380acb38678dca421b4f7276cd9fdb865388a40be25fa9b4578e52dc3994963",
+   "bytes": 20246,
+   "mtime_utc": "2026-07-31T21:54:50.903500+00:00"
+  },
+  "manuscript/source_data/methods/cube3d_native_yplus_temporally_separated.json": {
+   "sha256": "bddf92ed67c25250dced3569829603da4461abd9a8a001cf668bdad1c6bab54e",
+   "bytes": 8768,
+   "mtime_utc": "2026-07-31T21:54:20.059345+00:00"
+  },
+  "manuscript/source_data/review_audit/cube3d_coupling_adequate_results.json": {
+   "sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b",
+   "bytes": 8733,
+   "mtime_utc": "2026-07-31T21:54:20.082346+00:00"
+  },
+  "manuscript/source_data/review_audit/cube3d_coupling_results.json": {
+   "sha256": "61e7d09d297bd6fa6a5aa8d55476e1c2a6fe56ddda0e7efe93b7eab25c3ce2a2",
+   "bytes": 7988,
+   "mtime_utc": "2026-07-31T21:54:20.081346+00:00"
+  }
+ },
+ "_companion_note": "recorded PRE-run so post-run re-verification is a real byte-preservation proof. This node does NOT revalidate the geometry, separation, thermal, 2-D-to-3-D or scaling regimes; it only proves their evidence is untouched.",
+ "supersedes": "FROZEN_HASHES_v1.json (22:32:49Z) -- superseded by AMENDMENT_1_BLOCK_LENGTH.md, applied before any node-007 held-out outcome existed; see that document for the log evidence and the arithmetic",
+ "production_launch_allowed_after_this_file_exists": true
+}

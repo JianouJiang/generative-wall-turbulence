@@ -1,0 +1,85 @@
+{
+  "schema": "gwt-legacy-metadata-supersession-v1",
+  "status": "authoritative_review_values_supersede_preserved_producer_metadata",
+  "preservation_rule": "Producer JSON remains byte-identical custody evidence; this sidecar changes its interpretation rather than rewriting it.",
+  "authoritative_source": {
+    "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+    "sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+  },
+  "authoritative_dependence": {
+    "conservative_block_evaluation_samples": 57,
+    "evaluation_span_in_integral_times": 2.800417656595749,
+    "evaluation_span_snapshots": 343,
+    "gap_in_integral_times": 0.8001193304559283,
+    "gap_snapshots": 98,
+    "post_spinup_effective_events": 8.989095743183439,
+    "rule": "Use the maximum audited integral time over the retained cube velocity channels.",
+    "tau_integral_snapshots": 122.48173024910811
+  },
+  "prohibited_legacy_interpretations": [
+    "Do not use tau_integral_snapshots=97.59202614855501 as the current conservative dependence scale.",
+    "Do not use effective_independent_post_spinup=11.281659408567387 as the current effective-event count.",
+    "Do not read 'one integral-correlation-time gap' in a producer split_rule as a claim that the 98-snapshot gap is at least one current conservative integral time."
+  ],
+  "affected_release_records": [
+    {
+      "path": "codes/results/cube3d_coupling_results.json",
+      "preserved_fields": [
+        "_meta.tau_integral_snapshots",
+        "_meta.effective_independent_post_spinup",
+        "_meta.split_rule"
+      ],
+      "sha256": "61e7d09d297bd6fa6a5aa8d55476e1c2a6fe56ddda0e7efe93b7eab25c3ce2a2"
+    },
+    {
+      "path": "codes/results/cube3d_coupling_adequate_results.json",
+      "preserved_fields": [
+        "_meta.tau_integral_snapshots",
+        "_meta.effective_independent_post_spinup",
+        "_meta.split_rule"
+      ],
+      "sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b"
+    },
+    {
+      "path": "manuscript/source_data/review_audit/cube3d_coupling_results.json",
+      "preserved_fields": [
+        "_meta.tau_integral_snapshots",
+        "_meta.effective_independent_post_spinup",
+        "_meta.split_rule"
+      ],
+      "sha256": "61e7d09d297bd6fa6a5aa8d55476e1c2a6fe56ddda0e7efe93b7eab25c3ce2a2"
+    },
+    {
+      "path": "manuscript/source_data/review_audit/cube3d_coupling_adequate_results.json",
+      "preserved_fields": [
+        "_meta.tau_integral_snapshots",
+        "_meta.effective_independent_post_spinup",
+        "_meta.split_rule"
+      ],
+      "sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b"
+    },
+    {
+      "path": "manuscript/source_data/fig3/cube_periodic_topology_results.json",
+      "preserved_fields": [
+        "_meta.tau_integral_snapshots",
+        "_meta.effective_independent_post_spinup",
+        "_meta.split_rule"
+      ],
+      "sha256": "0fc302421d622879e00ef16a14636fb8849ee65c0680c85491659788807f914d"
+    },
+    {
+      "path": "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed2234.json",
+      "preserved_fields": [
+        "split.rule"
+      ],
+      "sha256": "77e6ff62f926130616cd8b09b044024c02a953f1f3d463758f85e5bca753f48c"
+    },
+    {
+      "path": "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed3234.json",
+      "preserved_fields": [
+        "split.rule"
+      ],
+      "sha256": "1ee765378277f3264db777574bbe8ef8e91c75a1c2a20fb6d1ca1051af704918"
+    }
+  ]
+}

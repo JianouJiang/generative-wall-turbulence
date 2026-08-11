@@ -1,0 +1,505 @@
+% References — generative_wall_turbulence.
+% Incumbents + wedge read in full (related_papers/); wall-model + turbulence + generative
+% foundations reused from the two champion bibs (turb_gen_recon, familyclass).
+
+% ================= The generative-turbulence incumbents (our wedge) =================
+@article{du2024confild,
+  author  = {Du, Pan and Parikh, Meet Hemant and Fan, Xiantao and Liu, Xin-Yang and Wang, Jian-Xun},
+  title   = {Conditional neural field latent diffusion model for generating spatiotemporal turbulence},
+  journal = {Nature Communications},
+  volume  = {15},
+  pages   = {10416},
+  year    = {2024},
+  doi     = {10.1038/s41467-024-54712-1}}
+
+@article{oommen2026learning,
+  author  = {Oommen, Vivek and Khodakarami, Siavash and Bora, Aniruddha and Wang, Zhicheng and Karniadakis, George Em},
+  title   = {Learning turbulent flows with generative models for super resolution and sparse flow reconstruction},
+  journal = {Nature Communications},
+  volume  = {17},
+  pages   = {3707},
+  year    = {2026},
+  doi     = {10.1038/s41467-026-70145-4}}
+
+@article{gao2023bayesian,
+  author  = {Gao, Han and Han, Xu and Fan, Xiantao and Sun, Luning and Liu, Li-Ping and Duan, Lian and Wang, Jian-Xun},
+  title   = {Bayesian conditional diffusion models for versatile spatiotemporal turbulence generation},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume  = {427},
+  pages   = {117023},
+  year    = {2024},
+  doi     = {10.1016/j.cma.2024.117023}}
+
+@article{parikh2026conditional,
+  author  = {Parikh, Meet Hemant and Fan, Xiantao and Wang, Jian-Xun},
+  title   = {Conditional flow matching for generative modelling of near-wall turbulence with quantified uncertainty},
+  journal = {Journal of Fluid Mechanics},
+  volume  = {1029},
+  pages   = {A32},
+  year    = {2026},
+  doi     = {10.1017/jfm.2026.11193}}
+
+@article{guemes2021coarse,
+  author  = {G{\"u}emes, Alejandro and Discetti, Stefano and Ianiro, Andrea and Sirmacek, Beril and Azizpour, Hossein and Vinuesa, Ricardo},
+  title   = {From coarse wall measurements to turbulent velocity fields through deep learning},
+  journal = {Physics of Fluids},
+  volume  = {33},
+  pages   = {075121},
+  year    = {2021},
+  doi     = {10.1063/5.0058346}}
+
+@article{cuellar2024three,
+  author  = {Cu{\'e}llar, Antonio and G{\"u}emes, Alejandro and Ianiro, Andrea and Flores, {\'O}scar and Vinuesa, Ricardo and Discetti, Stefano},
+  title   = {Three-dimensional generative adversarial networks for turbulent flow estimation from wall measurements},
+  journal = {Journal of Fluid Mechanics},
+  volume  = {991},
+  pages   = {A1},
+  year    = {2024},
+  doi     = {10.1017/jfm.2024.432}}
+
+@article{fan2025wallpressure,
+  author  = {Fan, Xiantao and Parikh, Meet Hemant and Liu, Yulong and Liu, Xin-Yang and Guo, Meng and Wang, Meng and Wang, Jian-Xun},
+  title   = {Generative reconstruction of spatiotemporal wall-pressure in turbulent boundary layers via patchwise latent diffusion},
+  journal = {arXiv preprint arXiv:2511.12455},
+  year    = {2025}}
+
+% ================= Prandtl and boundary-layer theory (the intellectual frame) =================
+@article{prandtl1904,
+  author    = {Prandtl, Ludwig},
+  title     = {{\"U}ber Fl{\"u}ssigkeitsbewegung bei sehr kleiner Reibung},
+  journal = {Verhandlungen des III. Internationalen Mathematiker-Kongresses, Heidelberg},
+  pages     = {484--491},
+  year      = {1904}}
+
+@book{schlichting2017boundary,
+  author    = {Schlichting, Hermann and Gersten, Klaus},
+  title     = {Boundary-Layer Theory},
+  edition   = {9},
+  publisher = {Springer},
+  year      = {2017}}
+
+@book{pope2000,
+  author = {Pope, Stephen B.}, title = {Turbulent Flows},
+  publisher = {Cambridge University Press}, year = {2000}}
+
+@article{kolmogorov1941,
+  author = {Kolmogorov, Andrey N.},
+  title = {The local structure of turbulence in incompressible viscous fluid for very large {R}eynolds numbers},
+  journal = {Dokl. Akad. Nauk SSSR}, volume = {30}, pages = {301--305}, year = {1941}}
+
+% ================= Classical + ML wall models (the closure baselines) =================
+@article{piomelli2002wall,
+  author = {Piomelli, Ugo and Balaras, Elias},
+  title = {Wall-layer models for large-eddy simulations},
+  journal = {Annual Review of Fluid Mechanics}, volume = {34}, pages = {349--374}, year = {2002}}
+
+@article{larsson2016wmles,
+  author = {Larsson, Johan and Kawai, Soshi and Bodart, Julien and Bermejo-Moreno, Ivan},
+  title = {Large eddy simulation with modeled wall-stress: recent progress and future directions},
+  journal = {Mechanical Engineering Reviews}, volume = {3}, number = {1}, pages = {15-00418}, year = {2016}}
+
+@article{bose2018wmles,
+  author = {Bose, Sanjeeb T. and Park, George Ilhwan},
+  title = {Wall-modeled large-eddy simulation for complex turbulent flows},
+  journal = {Annual Review of Fluid Mechanics}, volume = {50}, pages = {535--561}, year = {2018}}
+
+@article{yang2015integral,
+  author = {Yang, Xiang I. A. and Sadique, Jasim and Mittal, Rajat and Meneveau, Charles},
+  title = {Integral wall model for large eddy simulations of wall-bounded turbulent flows},
+  journal = {Physics of Fluids}, volume = {27}, pages = {025112}, year = {2015}}
+
+@article{park2014improved,
+  author = {Park, George Ilhwan and Moin, Parviz},
+  title = {An improved dynamic non-equilibrium wall-model for large eddy simulation},
+  journal = {Physics of Fluids}, volume = {26}, pages = {015108}, year = {2014}}
+
+@article{kawai2012wall,
+  author = {Kawai, Soshi and Larsson, Johan},
+  title = {Wall-modeling in large eddy simulation: length scales, grid resolution, and accuracy},
+  journal = {Physics of Fluids}, volume = {24}, pages = {015105}, year = {2012}}
+
+@article{bae2022scientific,
+  author = {Bae, H. Jane and Koumoutsakos, Petros},
+  title = {Scientific multi-agent reinforcement learning for wall-models of turbulent flows},
+  journal = {Nature Communications}, volume = {13}, pages = {1443}, year = {2022}}
+
+@article{lozanoduran2023building,
+  author = {Lozano-Dur{\'a}n, Adri{\'a}n and Bae, H. Jane},
+  title = {Machine learning building-block-flow wall model for large-eddy simulation},
+  journal = {Journal of Fluid Mechanics}, volume = {963}, pages = {A35}, year = {2023}}
+
+@article{dupuy2023wallmodel,
+  author = {Dupuy, Dorian and Odier, Nicolas and Lapeyre, Corentin},
+  title = {Data-driven wall modeling for turbulent separated flows},
+  journal = {Journal of Computational Physics}, volume = {487}, pages = {112173}, year = {2023}}
+
+@article{yang2019predictive,
+  author = {Yang, X. I. A. and Zafar, S. and Wang, J.-X. and Xiao, H.},
+  title = {Predictive large-eddy-simulation wall modeling via physics-informed neural networks},
+  journal = {Physical Review Fluids}, volume = {4}, pages = {034602}, year = {2019}}
+
+@article{yang2017llm,
+  author = {Yang, Xiang I. A. and Park, George Ilhwan and Moin, Parviz},
+  title = {Log-layer mismatch and modeling of the fluctuating wall stress in wall-modeled large-eddy simulations},
+  journal = {Physical Review Fluids}, volume = {2}, pages = {104601}, year = {2017}}
+
+% ================= Separated-flow / periodic-hill DNS benchmarks =================
+@article{coceal2007cubes,
+  author = {Coceal, Omduth and Dobre, Adrian and Thomas, Thomas G. and Belcher, Stephen E.},
+  title = {Structure of turbulent flow over regular arrays of cubical roughness},
+  journal = {Journal of Fluid Mechanics}, volume = {589}, pages = {375--409}, year = {2007},
+  doi = {10.1017/S002211200700794X}}
+
+@article{breuer2009hill,
+  author = {Breuer, Michael and Peller, Nikolaus and Rapp, Christoph and Manhart, Michael},
+  title = {Flow over periodic hills -- numerical and experimental study in a wide range of {R}eynolds numbers},
+  journal = {Computers \& Fluids}, volume = {38}, number = {2}, pages = {433--457}, year = {2009}}
+
+@article{xiao2020hills,
+  author = {Xiao, Heng and Wu, Jin-Long and Laizet, Sylvain and Duan, Lian},
+  title = {Flows over periodic hills of parameterized geometries: a dataset for data-driven turbulence modeling from direct simulations},
+  journal = {Computers \& Fluids}, volume = {200}, pages = {104431}, year = {2020}}
+
+@article{krank2018hills,
+  author = {Krank, Benjamin and Kronbichler, Martin and Wall, Wolfgang A.},
+  title = {Direct numerical simulation of flow over periodic hills up to {$Re_H=10{,}595$}},
+  journal = {Flow, Turbulence and Combustion}, volume = {101}, pages = {521--551}, year = {2018}}
+
+@article{kawamura1999dns,
+  author = {Kawamura, Hiroshi and Abe, Hiroyuki and Matsuo, Yuichi},
+  title = {{DNS} of turbulent heat transfer in channel flow with respect to {R}eynolds and {P}randtl number effects},
+  journal = {International Journal of Heat and Fluid Flow}, volume = {20}, number = {3}, pages = {196--207}, year = {1999}}
+
+@article{fischer2022nekrs,
+  author = {Fischer, Paul and Kerkemeier, Stefan and Min, Misun and Lan, Yu-Hsiang and Phillips,
+  Malachi and Rathnayake, Thilina and Merzari, Elia and Tomboulides, Ananias and Karakus, Ali
+  and Chalmers, Noel and Warburton, Tim},
+  title = {{NekRS}, a {GPU}-accelerated spectral element {Navier--Stokes} solver},
+  journal = {Parallel Computing}, volume = {114}, pages = {102982}, year = {2022},
+  doi = {10.1016/j.parco.2022.102982}}
+
+% ================= Generative model + flow-matching foundations =================
+@article{ho2020ddpm,
+  author = {Ho, Jonathan and Jain, Ajay and Abbeel, Pieter},
+  title = {Denoising diffusion probabilistic models},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)}, year = {2020}}
+
+@article{song2021sde,
+  author = {Song, Yang and Sohl-Dickstein, Jascha and Kingma, Diederik P. and Kumar, Abhishek and Ermon, Stefano and Poole, Ben},
+  title = {Score-based generative modeling through stochastic differential equations},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2021}}
+
+@article{karras2022edm,
+  author = {Karras, Tero and Aittala, Miika and Aila, Timo and Laine, Samuli},
+  title = {Elucidating the design space of diffusion-based generative models},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)}, year = {2022}}
+
+@article{lipman2023flow,
+  author = {Lipman, Yaron and Chen, Ricky T. Q. and Ben-Hamu, Heli and Nickel, Maximilian and Le, Matt},
+  title = {Flow matching for generative modeling},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2023}}
+
+@article{albergo2023stochastic,
+  author = {Albergo, Michael S. and Boffi, Nicholas M. and Vanden-Eijnden, Eric},
+  title = {Stochastic interpolants: a unifying framework for flows and diffusions},
+  journal = {arXiv:2303.08797}, year = {2023}}
+
+@article{ma2024sit,
+  author = {Ma, Nanye and Goldstein, Mark and Albergo, Michael S. and Boffi, Nicholas M. and Vanden-Eijnden, Eric and Xie, Saining},
+  title = {{SiT}: exploring flow and diffusion-based generative models with scalable interpolant transformers},
+  journal = {European Conference on Computer Vision (ECCV)}, year = {2024}}
+
+@article{liu2023rectified,
+  author = {Liu, Xingchao and Gong, Chengyue and Liu, Qiang},
+  title = {Flow straight and fast: learning to generate and transfer data with rectified flow},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2023}}
+
+@article{goodfellow2014gan,
+  author = {Goodfellow, Ian J. and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  title = {Generative adversarial nets},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)}, year = {2014}}
+
+@article{isola2017pix2pix,
+  author = {Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A.},
+  title = {Image-to-image translation with conditional adversarial networks},
+  journal = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, year = {2017}}
+
+@article{miyato2018sngan,
+  author = {Miyato, Takeru and Kataoka, Toshiki and Koyama, Masanori and Yoshida, Yuichi},
+  title = {Spectral normalization for generative adversarial networks},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2018}}
+
+@article{mescheder2018r1,
+  author = {Mescheder, Lars and Geiger, Andreas and Nowozin, Sebastian},
+  title = {Which training methods for {GANs} do actually converge?},
+  journal = {International Conference on Machine Learning (ICML)}, year = {2018}}
+
+% ================= Diffusion for inverse problems (conditioning design space) =================
+@article{chung2023dps,
+  author = {Chung, Hyungjin and Kim, Jeongsol and McCann, Michael T. and Klasky, Marc L. and Ye, Jong Chul},
+  title = {Diffusion posterior sampling for general noisy inverse problems},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2023}}
+
+@article{song2023pigdm,
+  author = {Song, Jiaming and Vahdat, Arash and Mardani, Morteza and Kautz, Jan},
+  title = {Pseudoinverse-guided diffusion models for inverse problems},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2023}}
+
+@article{wang2023ddnm,
+  author = {Wang, Yinhuai and Yu, Jiwen and Zhang, Jian},
+  title = {Zero-shot image restoration using denoising diffusion null-space model},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2023}}
+
+@article{shu2023pidiffusion,
+  author = {Shu, Dule and Li, Zijie and Farimani, Amir Barati},
+  title = {A physics-informed diffusion model for high-fidelity flow field reconstruction},
+  journal = {Journal of Computational Physics}, volume = {478}, pages = {111972}, year = {2023}}
+
+@article{rybchuk2023,
+  author = {Rybchuk, Alex and Hassanaly, Malik and Hamilton, Nicholas and Doubrawa, Paula and Fulton, Mike J. and Mart{\'i}nez-Tossas, Luis A.},
+  title = {Ensemble flow reconstruction in the atmospheric boundary layer from spatially limited measurements through latent diffusion models},
+  journal = {Physics of Fluids}, volume = {35}, number = {12}, pages = {126604}, year = {2023}}
+
+% ================= Neural operators + data-driven flow reconstruction =================
+@article{li2021fno,
+  author = {Li, Zongyi and Kovachki, Nikola and Azizzadenesheli, Kamyar and Liu, Burigede and Bhattacharya, Kaushik and Stuart, Andrew and Anandkumar, Anima},
+  title = {Fourier neural operator for parametric partial differential equations},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2021}}
+
+@article{lu2021deeponet,
+  author = {Lu, Lu and Jin, Pengzhan and Pang, Guofei and Zhang, Zhongqiang and Karniadakis, George Em},
+  title = {Learning nonlinear operators via {DeepONet} based on the universal approximation theorem of operators},
+  journal = {Nature Machine Intelligence}, volume = {3}, pages = {218--229}, year = {2021}}
+
+@article{fukami2019jfm,
+  author = {Fukami, Kai and Fukagata, Koji and Taira, Kunihiko},
+  title = {Super-resolution reconstruction of turbulent flows with machine learning},
+  journal = {Journal of Fluid Mechanics}, volume = {870}, pages = {106--120}, year = {2019},
+  doi = {10.1017/jfm.2019.238}}
+
+@article{fukami2021nmi,
+  author = {Fukami, Kai and Maulik, Romit and Ramachandra, Nesar and Fukagata, Koji and Taira, Kunihiko},
+  title = {Global field reconstruction from sparse sensors with {V}oronoi tessellation-assisted deep learning},
+  journal = {Nature Machine Intelligence}, volume = {3}, number = {11}, pages = {945--951}, year = {2021},
+  doi = {10.1038/s42256-021-00402-2}}
+
+% ================= ML for fluid mechanics (context) =================
+@article{brunton2020machine,
+  author = {Brunton, Steven L. and Noack, Bernd R. and Koumoutsakos, Petros},
+  title = {Machine learning for fluid mechanics},
+  journal = {Annual Review of Fluid Mechanics}, volume = {52}, pages = {477--508}, year = {2020}}
+
+@article{vinuesa2022enhancing,
+  author = {Vinuesa, Ricardo and Brunton, Steven L.},
+  title = {Enhancing computational fluid dynamics with machine learning},
+  journal = {Nature Computational Science}, volume = {2}, pages = {358--366}, year = {2022}}
+
+@article{kochkov2021machine,
+  author = {Kochkov, Dmitrii and Smith, Jamie A. and Alieva, Ayya and Wang, Qing and Brenner, Michael P. and Hoyer, Stephan},
+  title = {Machine learning-accelerated computational fluid dynamics},
+  journal = {Proceedings of the National Academy of Sciences}, volume = {118}, number = {21}, pages = {e2101784118}, year = {2021}}
+
+@article{duraisamy2019turbulence,
+  author = {Duraisamy, Karthik and Iaccarino, Gianluca and Xiao, Heng},
+  title = {Turbulence modeling in the age of data},
+  journal = {Annual Review of Fluid Mechanics}, volume = {51}, pages = {357--377}, year = {2019}}
+
+@article{ling2016reynolds,
+  author = {Ling, Julia and Kurzawski, Andrew and Templeton, Jeremy},
+  title = {Reynolds averaged turbulence modelling using deep neural networks with embedded invariance},
+  journal = {Journal of Fluid Mechanics}, volume = {807}, pages = {155--166}, year = {2016}}
+
+% ================= Statistics / calibration =================
+@article{kunsch1989,
+  author = {K{\"u}nsch, Hans R.},
+  title = {The jackknife and the bootstrap for general stationary observations},
+  journal = {The Annals of Statistics}, volume = {17}, number = {3}, pages = {1217--1241}, year = {1989}}
+
+@article{talts2018sbc,
+  author = {Talts, Sean and Betancourt, Michael and Simpson, Daniel and Vehtari, Aki and Gelman, Andrew},
+  title = {Validating {B}ayesian inference algorithms with simulation-based calibration},
+  journal = {arXiv preprint arXiv:1804.06788}, year = {2018}}
+
+@article{gneiting2007crps,
+  author = {Gneiting, Tilmann and Raftery, Adrian E.},
+  title = {Strictly proper scoring rules, prediction, and estimation},
+  journal = {Journal of the American Statistical Association}, volume = {102}, number = {477},
+  pages = {359--378}, year = {2007}}
+
+@article{hersbach2000crps,
+  author = {Hersbach, Hans},
+  title = {Decomposition of the continuous ranked probability score for ensemble prediction systems},
+  journal = {Weather and Forecasting}, volume = {15}, number = {5}, pages = {559--570}, year = {2000}}
+
+% ================= Our own champion papers (reused) =================
+
+@article{robinson1991coherent,
+  author = {Robinson, Stephen K.},
+  title = {Coherent motions in the turbulent boundary layer},
+  journal = {Annual Review of Fluid Mechanics}, volume = {23}, pages = {601--639}, year = {1991}}
+
+@article{jimenez1999autonomous,
+  author = {Jim\'enez, Javier and Pinelli, Alfredo},
+  title = {The autonomous cycle of near-wall turbulence},
+  journal = {Journal of Fluid Mechanics}, volume = {389}, pages = {335--359}, year = {1999}}
+
+@article{smits2011highre,
+  author = {Smits, Alexander J. and McKeon, Beverley J. and Marusic, Ivan},
+  title = {High-{R}eynolds number wall turbulence},
+  journal = {Annual Review of Fluid Mechanics}, volume = {43}, pages = {353--375}, year = {2011}}
+
+@article{mathis2009amplitude,
+  author = {Mathis, Romain and Hutchins, Nicholas and Marusic, Ivan},
+  title = {Large-scale amplitude modulation of the small-scale structures in turbulent boundary layers},
+  journal = {Journal of Fluid Mechanics}, volume = {628}, pages = {311--337}, year = {2009}}
+
+@article{marusic2010predictive,
+  author = {Marusic, Ivan and Mathis, Romain and Hutchins, Nicholas},
+  title = {Predictive model for wall-bounded turbulent flow},
+  journal = {Science}, volume = {329}, pages = {193--196}, year = {2010}}
+
+@article{chapman1979computational,
+  author = {Chapman, Dean R.},
+  title = {Computational aerodynamics development and outlook},
+  journal = {AIAA Journal}, volume = {17}, pages = {1293--1313}, year = {1979}}
+
+@article{choi2012grid,
+  author = {Choi, Haecheon and Moin, Parviz},
+  title = {Grid-point requirements for large eddy simulation: {C}hapman's estimates revisited},
+  journal = {Physics of Fluids}, volume = {24}, pages = {011702}, year = {2012}}
+
+@article{schumann1975subgrid,
+  author = {Schumann, Ulrich},
+  title = {Subgrid scale model for finite difference simulations of turbulent flows in plane channels and annuli},
+  journal = {Journal of Computational Physics}, volume = {18}, pages = {376--404}, year = {1975}}
+
+@article{cabot2000approximate,
+  author = {Cabot, William and Moin, Parviz},
+  title = {Approximate wall boundary conditions in the large-eddy simulation of high {R}eynolds number flow},
+  journal = {Flow, Turbulence and Combustion}, volume = {63}, pages = {269--291}, year = {2000}}
+
+@article{bae2019dynamic,
+  author = {Bae, H. Jane and Lozano-Dur\'an, Adri\'an and Bose, Sanjeeb T. and Moin, Parviz},
+  title = {Dynamic slip wall model for large-eddy simulation},
+  journal = {Journal of Fluid Mechanics}, volume = {859}, pages = {400--432}, year = {2019}}
+
+@article{milano2002neural,
+  author = {Milano, Michele and Koumoutsakos, Petros},
+  title = {Neural network modeling for near wall turbulent flow},
+  journal = {Journal of Computational Physics}, volume = {182}, pages = {1--26}, year = {2002}}
+
+@article{guastoni2021convolutional,
+  author = {Guastoni, Luca and G{\"u}emes, Alejandro and Ianiro, Andrea and Discetti, Stefano and Schlatter, Philipp and Azizpour, Hossein and Vinuesa, Ricardo},
+  title = {Convolutional-network models to predict wall-bounded turbulence from wall quantities},
+  journal = {Journal of Fluid Mechanics}, volume = {928}, pages = {A27}, year = {2021}}
+
+@article{kim2021unsupervised,
+  author = {Kim, Hyojin and Kim, Junhyuk and Won, Sungjin and Lee, Changhoon},
+  title = {Unsupervised deep learning for super-resolution reconstruction of turbulence},
+  journal = {Journal of Fluid Mechanics}, volume = {910}, pages = {A29}, year = {2021}}
+
+@article{srinivasan2019predictions,
+  author = {Srinivasan, P. A. and Guastoni, Luca and Azizpour, Hossein and Schlatter, Philipp and Vinuesa, Ricardo},
+  title = {Predictions of turbulent shear flows using deep neural networks},
+  journal = {Physical Review Fluids}, volume = {4}, pages = {054603}, year = {2019}}
+
+@article{nakamura2021convolutional,
+  author = {Nakamura, Taichi and Fukami, Kai and Hasegawa, Kazuto and Nabae, Yusuke and Fukagata, Koji},
+  title = {Convolutional neural network and long short-term memory based reduced order surrogate for minimal turbulent channel flow},
+  journal = {Physics of Fluids}, volume = {33}, pages = {025116}, year = {2021}}
+
+@article{fukami2019synthetic,
+  author = {Fukami, Kai and Nabae, Yusuke and Kawai, Ken and Fukagata, Koji},
+  title = {Synthetic turbulent inflow generator using machine learning},
+  journal = {Physical Review Fluids}, volume = {4}, pages = {064603}, year = {2019}}
+
+@article{wu2017inflow,
+  author = {Wu, Xiaohua},
+  title = {Inflow turbulence generation methods},
+  journal = {Annual Review of Fluid Mechanics}, volume = {49}, pages = {23--49}, year = {2017}}
+
+@article{kim2020deep,
+  author = {Kim, Junhyuk and Lee, Changhoon},
+  title = {Deep unsupervised learning of turbulence for inflow generation at various {R}eynolds numbers},
+  journal = {Journal of Computational Physics}, volume = {406}, pages = {109216}, year = {2020}}
+
+@article{rahaman2019spectral,
+  author = {Rahaman, Nasim and Baratin, Aristide and Arpit, Devansh and Draxler, Felix and Lin, Min and Hamprecht, Fred A. and Bengio, Yoshua and Courville, Aaron},
+  title = {On the spectral bias of neural networks},
+  journal = {International Conference on Machine Learning, Proceedings of Machine Learning Research (PMLR)}, volume = {97}, pages = {5301--5310}, year = {2019}}
+
+@article{hamill2001interpretation,
+  author = {Hamill, Thomas M.},
+  title = {Interpretation of rank histograms for verifying ensemble forecasts},
+  journal = {Monthly Weather Review}, volume = {129}, pages = {550--560}, year = {2001}}
+
+@article{drygala2022generative,
+  author = {Drygala, Claudia and Winhart, Benjamin and di Mare, Francesca and Gottschalk, Hanno},
+  title = {Generative modeling of turbulence},
+  journal = {Physics of Fluids}, volume = {34}, pages = {035114}, year = {2022}}
+
+@article{buzzicotti2021reconstruction,
+  author = {Buzzicotti, Michele and Bonaccorso, Fabio and Clark Di Leoni, Patricio and Biferale, Luca},
+  title = {Reconstruction of turbulent data with deep generative models for semantic inpainting from {TURB-Rot} database},
+  journal = {Physical Review Fluids}, volume = {6}, pages = {050503}, year = {2021}}
+
+@article{stengel2020adversarial,
+  author = {Stengel, Karen and Glaws, Andrew and Hettinger, Dylan and King, Ryan N.},
+  title = {Adversarial super-resolution of climatological wind and solar data},
+  journal = {Proceedings of the National Academy of Sciences}, volume = {117}, pages = {16805--16815}, year = {2020}}
+
+@article{bode2021piesrgan,
+  author = {Bode, Mathis and Gauding, Michael and Lian, Zeyu and Denker, Dominik and Davidovic, Marco and Kleinheinz, Konstantin and Jitsev, Jenia and Pitsch, Heinz},
+  title = {Using physics-informed enhanced super-resolution generative adversarial networks for subfilter modeling in turbulent reactive flows},
+  journal = {Proceedings of the Combustion Institute}, volume = {38}, pages = {2617--2625}, year = {2021}}
+
+@article{lienen2024zero,
+  author = {Lienen, Marten and L{\"u}dke, David and Hansen-Palmus, Jan and G{\"u}nnemann, Stephan},
+  title = {From zero to turbulence: {G}enerative modeling for {3D} flow simulation},
+  journal = {International Conference on Learning Representations (ICLR)}, year = {2024}}
+
+@article{kohl2024benchmarking,
+  author = {Kohl, Georg and Chen, Li-Wei and Thuerey, Nils},
+  title = {Benchmarking autoregressive conditional diffusion models for turbulent flow simulation},
+  journal = {Neural Networks}, volume = {199}, pages = {108641}, year = {2026}}
+
+@article{frohlich2005highly,
+  author = {Fr{\"o}hlich, Jochen and Mellen, Christopher P. and Rodi, Wolfgang and Temmerman, Lionel and Leschziner, Michael A.},
+  title = {Highly resolved large-eddy simulation of separated flow in a channel with streamwise periodic constrictions},
+  journal = {Journal of Fluid Mechanics}, volume = {526}, pages = {19--66}, year = {2005}}
+
+@article{xie2006les,
+  author = {Xie, Zheng-Tong and Castro, Ian P.},
+  title = {{LES} and {RANS} for turbulent flow over arrays of wall-mounted obstacles},
+  journal = {Flow, Turbulence and Combustion}, volume = {76}, pages = {291--312}, year = {2006}}
+
+@article{kim1987turbulence,
+  author = {Kim, John and Moin, Parviz and Moser, Robert},
+  title = {Turbulence statistics in fully developed channel flow at low {R}eynolds number},
+  journal = {Journal of Fluid Mechanics}, volume = {177}, pages = {133--166}, year = {1987}}
+
+@article{lee2015direct,
+  author = {Lee, Myoungkyu and Moser, Robert D.},
+  title = {Direct numerical simulation of turbulent channel flow up to $\mathit{Re}_{\tau} \approx 5200$},
+  journal = {Journal of Fluid Mechanics}, volume = {774}, pages = {395--415}, year = {2015}}
+
+@article{coceal2006aligned,
+  author = {Coceal, Omduth and Thomas, T. Glyn and Castro, Ian P. and Belcher, Stephen E.},
+  title = {Mean flow and turbulence statistics over groups of urban-like cubical obstacles},
+  journal = {Boundary-Layer Meteorology}, volume = {121}, pages = {491--519}, year = {2006}}
+
+@incollection{politis1992circular,
+  author = {Politis, Dimitris N. and Romano, Joseph P.},
+  title = {A circular block-resampling procedure for stationary data},
+  booktitle = {Exploring the Limits of Bootstrap}, editor = {LePage, Raoul and Billard, Lynne},
+  publisher = {Wiley}, address = {New York}, pages = {263--270}, year = {1992}}
+
+@article{dong2025stochclosure,
+  author  = {Dong, Xinghao and Chen, Chuanqi and Wu, Jin-Long},
+  title   = {Data-driven stochastic closure modeling via conditional diffusion model and neural operator},
+  journal = {Journal of Computational Physics},
+  volume  = {534},
+  pages   = {114005},
+  year    = {2025},
+  doi     = {10.1016/j.jcp.2025.114005}
+}

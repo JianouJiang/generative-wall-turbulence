@@ -1,0 +1,11 @@
+{
+ "source": "case3_grid_64x192_full.npz (public CoNFiLD Case3 raster)",
+ "source_sha256": "1fcc866a66e7eff9769ad9b82027a28e8178d487c2093ce39a252a15dfe5dbc9",
+ "instantaneous_array_index": 590,
+ "window_array_indices": [
+  590,
+  959
+ ],
+ "plane": 0,
+ "note": "plane-0 physical times 590-959 = the grouped test window; u_std is the stored standardised streamwise channel of time 590; u_mean_std and u_rms_std are its mean and standard deviation over the test window; physical u = std*sd[0]+mu[0]; physical rms = u_rms_std*sd[0]"
+}

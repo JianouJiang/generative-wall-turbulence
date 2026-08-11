@@ -1,0 +1,830 @@
+{
+  "committed_comparators": {
+    "claim_boundary": "Contacted methodology controls on the same chronological allocation. Estimator and training protocols differ from M0, so the valid values bound generative-method attribution rather than establish a clean ranking. The interior-shell arm is quarantined because its observations overlap its score support.",
+    "deterministic_direct_correct_band": [
+      {
+        "complete": 0.05523250353895226,
+        "near": 0.15646779539446976,
+        "outer": -0.04842439143722177,
+        "training_seed": 2234
+      },
+      {
+        "complete": 0.058027283662751894,
+        "near": 0.1612071187762949,
+        "outer": -0.04761995919336304,
+        "training_seed": 3234
+      }
+    ],
+    "linear_wiener": {
+      "climatological_no_wall": {
+        "complete": -7.903575897216797e-05,
+        "near": -1.049041748046875e-05,
+        "outer": -0.00018334388732910156
+      },
+      "near_wall_band": {
+        "complete": -0.05068230628967285,
+        "near": 0.029966115951538086,
+        "outer": -0.13327014446258545
+      },
+      "random_value": {
+        "complete": -0.009493470191955566,
+        "near": -0.009710073471069336,
+        "outer": -0.009306550025939941
+      },
+      "spatial_permutation": {
+        "complete": -0.0031839609146118164,
+        "near": -0.0032759904861450195,
+        "outer": -0.003124237060546875
+      },
+      "wrong_time": {
+        "complete": -0.23280560970306396,
+        "near": -0.29626238346099854,
+        "outer": -0.16789376735687256
+      }
+    },
+    "quarantined_location_comparator": {
+      "active_claim": false,
+      "complete_overlap_cells": 13984,
+      "label": "nominal equal-support interior shell",
+      "near_overlap_cells": 9112,
+      "near_overlap_fraction": 0.12174656619101064,
+      "outer_overlap_cells": 4872,
+      "outer_overlap_fraction": 0.041111148614439534,
+      "reason": "All 13,984 observed shell cells remain inside the arm's complete score. Of these, 9,112 are in the near score and 4,872 are in the outer score, whereas every observed near-wall-band cell is excluded for the wall arm. The arm cannot support a location comparison.",
+      "shell_cells": 13984,
+      "values_retained_for_forensic_custody": {
+        "complete": 0.054725468158721924,
+        "near": 0.1060757040977478,
+        "outer": 0.0021306872367858887
+      }
+    }
+  },
+  "compute_boundary": "Deterministic CPU derivation from committed terminal records and stored sufficient statistics; no simulation, training, or neural inference.",
+  "dependence": {
+    "conservative_block_evaluation_samples": 57,
+    "conservative_tau_snapshots": 122.48173024910811,
+    "evaluation_span_in_conservative_integral_times": 2.800417656595749,
+    "evaluation_span_snapshots": 343,
+    "gap_in_conservative_integral_times": 0.8001193304559283,
+    "gap_snapshots": 98,
+    "post_spinup_effective_events": 8.989095743183439,
+    "post_spinup_snapshots": 1101,
+    "primary_rule": "maximum audited integral time over band mean energy, band mean streamwise velocity, first-cell shear proxy, outer-plane streamwise velocity, and volume TKE",
+    "signals": {
+      "band_mean_energy": {
+        "efold": 26,
+        "first_zero": 46,
+        "tau_integral": 39.54933814251069
+      },
+      "band_mean_u": {
+        "efold": 53,
+        "first_zero": 138,
+        "tau_integral": 103.46602264095772
+      },
+      "floor_shear_proxy_u1": {
+        "efold": 32,
+        "first_zero": 181,
+        "tau_integral": 96.30141842306396
+      },
+      "outer_plane_u_y2h": {
+        "efold": 76,
+        "first_zero": 156,
+        "tau_integral": 122.48173024910811
+      },
+      "volume_tke": {
+        "efold": 48,
+        "first_zero": 82,
+        "tau_integral": 77.45152984936352
+      }
+    }
+  },
+  "fair_energy_score": {
+    "block49_historical": {
+      "arms": {
+        "correct": {
+          "ci95": [
+            0.5073900061458795,
+            0.5392442125025768
+          ],
+          "mean": 0.5223475791451458
+        },
+        "far_time_wall": {
+          "ci95": [
+            0.5282587532959936,
+            0.5703209618183915
+          ],
+          "mean": 0.548380648512697
+        },
+        "no_wall": {
+          "ci95": [
+            0.5092788655326107,
+            0.5474220109549993
+          ],
+          "mean": 0.5273397689032656
+        }
+      },
+      "improvements": {
+        "far_time_wall_minus_correct": {
+          "ci95": [
+            0.0206208635187577,
+            0.03138697032368874
+          ],
+          "ci_positive": true,
+          "mean": 0.02603306936755126
+        },
+        "no_wall_minus_correct": {
+          "ci95": [
+            0.001384716330072316,
+            0.009377822418645577
+          ],
+          "ci_positive": true,
+          "mean": 0.00499218975811978
+        }
+      }
+    },
+    "block57_conservative": {
+      "arms": {
+        "correct": {
+          "ci95": [
+            0.5078591073254163,
+            0.5398288958615481
+          ],
+          "mean": 0.5223475791451458
+        },
+        "far_time_wall": {
+          "ci95": [
+            0.5290839050929865,
+            0.571197675181849
+          ],
+          "mean": 0.548380648512697
+        },
+        "no_wall": {
+          "ci95": [
+            0.5101629010836936,
+            0.5478160794262289
+          ],
+          "mean": 0.5273397689032656
+        }
+      },
+      "improvements": {
+        "far_time_wall_minus_correct": {
+          "ci95": [
+            0.02090773631545104,
+            0.03144291672329966
+          ],
+          "ci_positive": true,
+          "mean": 0.02603306936755126
+        },
+        "no_wall_minus_correct": {
+          "ci95": [
+            0.0016775691113284543,
+            0.009190284071544284
+          ],
+          "ci_positive": true,
+          "mean": 0.00499218975811978
+        }
+      }
+    },
+    "estimand": "off-diagonal U-statistic estimate of the multivariate energy score of the fitted continuous conditional sampler",
+    "members": 8,
+    "normalization": "Euclidean distances divided by sqrt(D)"
+  },
+  "first_contact_m0": {
+    "arms": {
+      "correct": {
+        "full_support_excluded": 0.1030838276633651,
+        "near_support_excluded_d_le_0p5h": 0.24310613742681053,
+        "outer_d_gt_0p5h": -0.04029970494285218
+      },
+      "no_wall": {
+        "full_support_excluded": -0.07239647164455532,
+        "near_support_excluded_d_le_0p5h": -0.07669187642199948,
+        "outer_d_gt_0p5h": -0.06803573921254413
+      },
+      "wrong_wall": {
+        "full_support_excluded": -0.20379943650538612,
+        "near_support_excluded_d_le_0p5h": -0.3205110737160919,
+        "outer_d_gt_0p5h": -0.08437512368497324
+      }
+    },
+    "claim_boundary": "First arm output after the allocation freeze. Only terminal aggregate JSON is retained; per-time SSE/SST arrays are unavailable, so this audit does not claim an independent M0 endpoint replay or a 122.48-snapshot block sensitivity.",
+    "differences": {
+      "correct_minus_no_wall": {
+        "full_support_excluded": 0.17548029930792042,
+        "near_support_excluded_d_le_0p5h": 0.31979801384881,
+        "outer_d_gt_0p5h": 0.027736034269691956
+      },
+      "correct_minus_wrong_wall": {
+        "full_support_excluded": 0.3068832641687512,
+        "near_support_excluded_d_le_0p5h": 0.5636172111429024,
+        "outer_d_gt_0p5h": 0.044075418742121064
+      }
+    },
+    "historical_resampling": {
+      "block_evaluation_samples": 49,
+      "status": "terminal summaries only; not promoted as conservative population-confidence intervals"
+    }
+  },
+  "inputs": {
+    "ensemble_components": {
+      "path": "manuscript/source_data/fig4/cube_distributional_rapid_components.npz",
+      "sha256": "a7f1c74f909e1a805d4a3642db83285371ecd80e4a59cd11a873a14253010e2d"
+    },
+    "ensemble_result": {
+      "path": "manuscript/source_data/fig4/cube_distributional_rapid_results.json",
+      "sha256": "c70342f6fc4bf8e21f0883ba76de806f01eb8cfc34f9b0d52018443beba00588"
+    },
+    "m0_result": {
+      "path": "manuscript/source_data/review_audit/cube3d_coupling_results.json",
+      "sha256": "61e7d09d297bd6fa6a5aa8d55476e1c2a6fe56ddda0e7efe93b7eab25c3ce2a2"
+    },
+    "m1_result": {
+      "path": "manuscript/source_data/review_audit/cube3d_coupling_adequate_results.json",
+      "sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b"
+    },
+    "m2_components": {
+      "path": "manuscript/source_data/fig3/cube_periodic_topology_components.npz",
+      "sha256": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18"
+    },
+    "m2_result": {
+      "path": "manuscript/source_data/fig3/cube_periodic_topology_results.json",
+      "sha256": "0fc302421d622879e00ef16a14636fb8849ee65c0680c85491659788807f914d"
+    },
+    "retrieval_components": {
+      "path": "manuscript/source_data/review_audit/cube_train_band_retrieval_components.npz",
+      "sha256": "02b412daeaf5314c237291534c7c995876c66c81794ac07f19327eea93fec0ce"
+    },
+    "retrieval_result": {
+      "path": "manuscript/source_data/review_audit/cube_train_band_retrieval_results.json",
+      "sha256": "94fa34214b23c2ae2ed046e846ba84bbed642ce4c90618be04417c3e82d5674f"
+    },
+    "wiener_chain": {
+      "path": "manuscript/source_data/review_audit/wiener_seed_chain_node005.json",
+      "sha256": "52cac551f0d1f7f4661053a6bd81f4322c466dbb75457970189c8aa2093f2842"
+    },
+    "wiener_seed2234": {
+      "path": "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed2234.json",
+      "sha256": "77e6ff62f926130616cd8b09b044024c02a953f1f3d463758f85e5bca753f48c"
+    },
+    "wiener_seed3234": {
+      "path": "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed3234.json",
+      "sha256": "1ee765378277f3264db777574bbe8ef8e91c75a1c2a20fb6d1ca1051af704918"
+    }
+  },
+  "local_reviewer_assets": {
+    "cube_record": {
+      "expected_sha256": "8bac93f1537eab6667d692282b76c7bccd28f28965d35ea97668bcc2567bc45a",
+      "external_reviewer_access_route": "requires author confirmation",
+      "included_in_compact_release": false,
+      "repository_relative_path": "codes/data/cube_record/cube_ds2_float16.npy"
+    },
+    "cube_times": {
+      "expected_sha256": "99e8e0a45cf6c361bcefc10b251ceac15bd60992d42255cf76c945eae9655482",
+      "external_reviewer_access_route": "requires author confirmation",
+      "included_in_compact_release": false,
+      "repository_relative_path": "codes/data/cube_record/cube_ds2_times.npy"
+    },
+    "m0_checkpoint": {
+      "expected_sha256": "a78dcd506d16be8ee81077cefbf29918b76086a5c0f1ac32f2e90c52f0c733d6",
+      "external_reviewer_access_route": "requires author confirmation",
+      "included_in_compact_release": false,
+      "repository_relative_path": "codes/results/cube3d_rectified_flow.pt"
+    },
+    "m2_checkpoint": {
+      "expected_sha256": "6f507fd1fb97a7e52dd60a631507dbc37d2005fdd12abd856f165eed8f6135c2",
+      "external_reviewer_access_route": "requires author confirmation",
+      "included_in_compact_release": false,
+      "repository_relative_path": "codes/results/cube_periodic_topology/cube_periodic_topology.pt"
+    }
+  },
+  "m2_point_block_sensitivity": {
+    "block49_historical": {
+      "arms": {
+        "correct": {
+          "full_support_excluded": {
+            "ci95": [
+              0.1026514851048809,
+              0.13436029429137872
+            ],
+            "point": 0.12049182570877914
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              0.2673223890342711,
+              0.2973130367685188
+            ],
+            "point": 0.2838625115959995
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              -0.06523535130953406,
+              -0.02843145142755565
+            ],
+            "point": -0.046784600033298096
+          }
+        },
+        "no_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              -0.08050389116365961,
+              -0.07325443398483752
+            ],
+            "point": -0.07691636705884952
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              -0.09120312305474387,
+              -0.08162296479201517
+            ],
+            "point": -0.08630636368737243
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              -0.0720213259828454,
+              -0.06276412579207474
+            ],
+            "point": -0.06734288086243567
+          }
+        },
+        "wrong_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              -0.34421929554316744,
+              -0.2771815139720096
+            ],
+            "point": -0.31371033501147094
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              -0.546765241088465,
+              -0.418359261341037
+            ],
+            "point": -0.48587744895313323
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              -0.14940728031767309,
+              -0.12583270138943264
+            ],
+            "point": -0.13752729962948695
+          }
+        }
+      },
+      "block_evaluation_samples": 49,
+      "differences": {
+        "correct_minus_no_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              0.18182029416284246,
+              0.20924542412523323
+            ],
+            "ci_positive": true,
+            "point": 0.19740819276762867
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              0.3547120404358049,
+              0.38420244938126397
+            ],
+            "ci_positive": true,
+            "point": 0.37016887528337195
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              0.005822317841113889,
+              0.03655004266380241
+            ],
+            "ci_positive": true,
+            "point": 0.020558280829137576
+          }
+        },
+        "correct_minus_wrong_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              0.4066229294897018,
+              0.4576592137477467
+            ],
+            "ci_positive": true,
+            "point": 0.4342021607202501
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              0.7039800957152536,
+              0.8258823251420169
+            ],
+            "ci_positive": true,
+            "point": 0.7697399605491327
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              0.06880939828249177,
+              0.11187989361468689
+            ],
+            "ci_positive": true,
+            "point": 0.09074269959618886
+          }
+        }
+      }
+    },
+    "block57_conservative": {
+      "arms": {
+        "correct": {
+          "full_support_excluded": {
+            "ci95": [
+              0.10309910331558822,
+              0.13483432512018442
+            ],
+            "point": 0.12049182570877914
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              0.26880561546408305,
+              0.29577924637218855
+            ],
+            "point": 0.2838625115959995
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              -0.06498932327280951,
+              -0.027305548242896063
+            ],
+            "point": -0.046784600033298096
+          }
+        },
+        "no_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              -0.08029445150242251,
+              -0.07324795398913948
+            ],
+            "point": -0.07691636705884952
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              -0.09120063156686026,
+              -0.0818354825567695
+            ],
+            "point": -0.08630636368737243
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              -0.07193616794520842,
+              -0.0628001811263828
+            ],
+            "point": -0.06734288086243567
+          }
+        },
+        "wrong_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              -0.34432212768543113,
+              -0.2769208061144602
+            ],
+            "point": -0.31371033501147094
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              -0.5484417557857639,
+              -0.41567929703355255
+            ],
+            "point": -0.48587744895313323
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              -0.14940334730706314,
+              -0.12636776402258995
+            ],
+            "point": -0.13752729962948695
+          }
+        }
+      },
+      "block_evaluation_samples": 57,
+      "differences": {
+        "correct_minus_no_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              0.18218522514730415,
+              0.2090596510102932
+            ],
+            "ci_positive": true,
+            "point": 0.19740819276762867
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              0.35567627459837314,
+              0.3819496095951835
+            ],
+            "ci_positive": true,
+            "point": 0.37016887528337195
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              0.005988667610471999,
+              0.036739117667602704
+            ],
+            "ci_positive": true,
+            "point": 0.020558280829137576
+          }
+        },
+        "correct_minus_wrong_wall": {
+          "full_support_excluded": {
+            "ci95": [
+              0.40878099601565177,
+              0.45541276532379227
+            ],
+            "ci_positive": true,
+            "point": 0.4342021607202501
+          },
+          "near_support_excluded_d_le_0p5h": {
+            "ci95": [
+              0.7054194396906346,
+              0.8249971971922795
+            ],
+            "ci_positive": true,
+            "point": 0.7697399605491327
+          },
+          "outer_d_gt_0p5h": {
+            "ci95": [
+              0.06828596027370931,
+              0.11224998781775507
+            ],
+            "ci_positive": true,
+            "point": 0.09074269959618886
+          }
+        }
+      }
+    }
+  },
+  "physical_statistics": {
+    "block49_historical": {
+      "component_spectrum_log_rmse": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.15648665592188207,
+              0.2454282362529155
+            ],
+            "mean": 0.2002317914270228
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.16704095467555427,
+              0.23886115479623293
+            ],
+            "mean": 0.2019693266213304
+          },
+          "no_wall": {
+            "ci95": [
+              0.22358035943910973,
+              0.3077835623224561
+            ],
+            "mean": 0.2641703678072421
+          }
+        },
+        "improvements": {
+          "far_time_wall_minus_correct": {
+            "ci95": [
+              -0.018657840253034994,
+              0.02257910938517538
+            ],
+            "ci_positive": false,
+            "mean": 0.0017375351943075656
+          },
+          "no_wall_minus_correct": {
+            "ci95": [
+              0.050833240967826175,
+              0.07759768302836008
+            ],
+            "ci_positive": true,
+            "mean": 0.0639385763802193
+          }
+        }
+      },
+      "coverage80": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.4996738660751454,
+              0.5277392190822561
+            ],
+            "mean": 0.5140762648935093
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.47549731874641377,
+              0.5029459298106457
+            ],
+            "mean": 0.48959417999909993
+          },
+          "no_wall": {
+            "ci95": [
+              0.4999150281521079,
+              0.5366620647445742
+            ],
+            "mean": 0.5198070137318437
+          }
+        }
+      },
+      "reynolds_stress_profile_nrmse": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.40211411815803555,
+              0.4751429332536067
+            ],
+            "mean": 0.4392412174690891
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.41733832614839617,
+              0.4745383131002818
+            ],
+            "mean": 0.44875384617940534
+          },
+          "no_wall": {
+            "ci95": [
+              0.45900485762122234,
+              0.5272837806746591
+            ],
+            "mean": 0.49294993567902434
+          }
+        },
+        "improvements": {
+          "far_time_wall_minus_correct": {
+            "ci95": [
+              -0.004513906262355141,
+              0.02430774735375634
+            ],
+            "ci_positive": false,
+            "mean": 0.009512628710316258
+          },
+          "no_wall_minus_correct": {
+            "ci95": [
+              0.046098294812859354,
+              0.0616791370536856
+            ],
+            "ci_positive": true,
+            "mean": 0.053708718209935224
+          }
+        }
+      }
+    },
+    "block57_conservative": {
+      "component_spectrum_log_rmse": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.1564148496250723,
+              0.24694806402606878
+            ],
+            "mean": 0.2002317914270228
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.16585816756452273,
+              0.2402022407596581
+            ],
+            "mean": 0.2019693266213304
+          },
+          "no_wall": {
+            "ci95": [
+              0.22397856785052023,
+              0.3089365205483543
+            ],
+            "mean": 0.2641703678072421
+          }
+        },
+        "improvements": {
+          "far_time_wall_minus_correct": {
+            "ci95": [
+              -0.018797910643977747,
+              0.02278962771708777
+            ],
+            "ci_positive": false,
+            "mean": 0.0017375351943075656
+          },
+          "no_wall_minus_correct": {
+            "ci95": [
+              0.0515809120094424,
+              0.07661254611080379
+            ],
+            "ci_positive": true,
+            "mean": 0.0639385763802193
+          }
+        }
+      },
+      "coverage80": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.49927306990878256,
+              0.5278639135473272
+            ],
+            "mean": 0.5140762648935093
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.4752267282764314,
+              0.5024733355729851
+            ],
+            "mean": 0.48959417999909993
+          },
+          "no_wall": {
+            "ci95": [
+              0.4992467469671527,
+              0.5367131196663234
+            ],
+            "mean": 0.5198070137318437
+          }
+        }
+      },
+      "reynolds_stress_profile_nrmse": {
+        "arms": {
+          "correct": {
+            "ci95": [
+              0.4032793080456984,
+              0.4771601455148685
+            ],
+            "mean": 0.4392412174690891
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.4199866954350283,
+              0.47423893648879056
+            ],
+            "mean": 0.44875384617940534
+          },
+          "no_wall": {
+            "ci95": [
+              0.46138449049538405,
+              0.5288981780465356
+            ],
+            "mean": 0.49294993567902434
+          }
+        },
+        "improvements": {
+          "far_time_wall_minus_correct": {
+            "ci95": [
+              -0.004254088110994994,
+              0.024182110082331246
+            ],
+            "ci_positive": false,
+            "mean": 0.009512628710316258
+          },
+          "no_wall_minus_correct": {
+            "ci95": [
+              0.046513971390169495,
+              0.060773353857843646
+            ],
+            "ci_positive": true,
+            "mean": 0.053708718209935224
+          }
+        }
+      }
+    },
+    "estimand": "two valid farther-from-wall physical-statistic families; the eight-member interpolated 0.1/0.9 sample-quantile hit fraction is retained descriptively but withdrawn from calibration adjudication",
+    "members": 8,
+    "valid_family_names": [
+      "component_spectrum_log_rmse",
+      "reynolds_stress_profile_nrmse"
+    ],
+    "withdrawn_family": {
+      "name": "coverage80_abs_error",
+      "reason": "0.8 is not a finite-ensemble-valid reference for linearly interpolated 0.1/0.9 sample quantiles with M=8; retained arrays lack ranks/member fields for a valid replacement",
+      "used_for_adjudication": false
+    }
+  },
+  "schema": "gwt-level1-peer-review-derived-audit-v1",
+  "train_band_retrieval": {
+    "claim_boundary": "This control tests one simple correlated-record retrieval explanation. Failure to match the learned endpoint does not prove temporal independence, population generalisation, or causal closure composition.",
+    "components_sha256": "02b412daeaf5314c237291534c7c995876c66c81794ac07f19327eea93fec0ce",
+    "lag_snapshots": {
+      "maximum": 1059,
+      "median": 483.0,
+      "minimum": 108
+    },
+    "regions": {
+      "full_support_excluded": {
+        "conditional_interval": [
+          -0.8498113619699269,
+          -0.7637437150551427
+        ],
+        "point": -0.8025478955866716
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "conditional_interval": [
+          -0.7876834868016822,
+          -0.684468469357956
+        ],
+        "point": -0.7325145181482597
+      },
+      "outer_d_gt_0p5h": {
+        "conditional_interval": [
+          -0.9183116181482031,
+          -0.8387384326112838
+        ],
+        "point": -0.8742958713259352
+      }
+    }
+  }
+}

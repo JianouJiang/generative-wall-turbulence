@@ -1,0 +1,543 @@
+{
+  "all_validated": true,
+  "binding_count": 17,
+  "bindings": [
+    {
+      "actual_payload_sha256": "c985a8ef40ee89ae5cd3792f75c8a0b06b69a8121e81947b9d13d9c1ff99125d",
+      "artist_id": "fig14.a.channel_plane",
+      "artist_type": "AxesImage",
+      "evidence": "wall-resolved channel record; the frame is in the never-scored FINAL window",
+      "expected_payload_sha256": "c985a8ef40ee89ae5cd3792f75c8a0b06b69a8121e81947b9d13d9c1ff99125d",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "u_plane",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "2e912650900cc799a4740786dc562b69d59ee951bcde2a15fa47540538fa1664",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        },
+        {
+          "key": "u_mean_profile",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "d0ad6268910a097e376e63729046326399cf385caf3f9cb3e8224548194fa329",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        }
+      ],
+      "transform": "subtract the eval-window mean profile from the lower-wall streamwise plane of the first held-out frame",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "089636d64358c28efb2b27a70d3020da2c98b642fede76c02e66d68fa6ce48d7",
+      "artist_id": "fig14.b.uv_plane",
+      "artist_type": "AxesImage",
+      "evidence": "the instantaneous field of the registered turbulent-shear endpoint",
+      "expected_payload_sha256": "089636d64358c28efb2b27a70d3020da2c98b642fede76c02e66d68fa6ce48d7",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "u_plane",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "2e912650900cc799a4740786dc562b69d59ee951bcde2a15fa47540538fa1664",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        },
+        {
+          "key": "v_plane",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "0100ceaaa7c5651030e30c9d2d45a00f75bd838dffdeb238f0ef54c9ad189394",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        },
+        {
+          "key": "u_mean_profile",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "d0ad6268910a097e376e63729046326399cf385caf3f9cb3e8224548194fa329",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        },
+        {
+          "key": "v_mean_profile",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "f25385469288f6846dfa17fda4efadbd18bab0963e928225bc59eee271494369",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        }
+      ],
+      "transform": "multiply the fluctuations of u and v about the eval-window mean profiles, same frame and wall as panel a, x1e4",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e0c3660b837a63baf6c41a1a986971da8a08cc557826fd009e49113153024d24",
+      "artist_id": "fig14.c.rms_map",
+      "artist_type": "AxesImage",
+      "evidence": "the unsteadiness of the never-scored window itself",
+      "expected_payload_sha256": "e0c3660b837a63baf6c41a1a986971da8a08cc557826fd009e49113153024d24",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "u_rms_map",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "aa8c572732808b49e2ce0501a22b8c36c3661ba28d90722c3a229ea6e66f4637",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        }
+      ],
+      "transform": "plot the per-pixel standard deviation of u over the 46 held-out frames, lower wall",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "3e84b861b584ad28158bcac4b92a9448286830371344d31c7c73a40b6829e78f",
+      "artist_id": "fig14.d.mean_profile",
+      "artist_type": "Line2D",
+      "evidence": "both walls and all 46 held-out frames enter the mean",
+      "expected_payload_sha256": "3e84b861b584ad28158bcac4b92a9448286830371344d31c7c73a40b6829e78f",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "u_mean_profile",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "d0ad6268910a097e376e63729046326399cf385caf3f9cb3e8224548194fa329",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        },
+        {
+          "key": "u_tau",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "4c7149141d671644940934d9ab05e6d9c872328e20a03dc88fa9d9fcd3ce3b70",
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        },
+        {
+          "key": "y_plus",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "69c170f9f9ed21b484e648b21e3af60e0453da828c307560ddb4945121c7df61",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "divide the eval-window mean profile by u_tau, plot against the wall-unit coordinate",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c3588c44dc19efc7bc74faefa1656edfa42a8962bd7879500840a29d952f37f6",
+      "artist_id": "fig14.e.tau_wall0",
+      "artist_type": "Line2D",
+      "evidence": "the record's own traction: the strongest arm and the training modality of the slot",
+      "expected_payload_sha256": "c3588c44dc19efc7bc74faefa1656edfa42a8962bd7879500840a29d952f37f6",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "tau_walls",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "feae71d423bb510a8f10948d9ae797a4a1feb8bad57374932e122b3fa9279d1c",
+          "slice": [
+            "0",
+            ":"
+          ],
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        }
+      ],
+      "transform": "plot the first-cell viscous wall traction of the held-out frame along the wall, x1000",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "79757fd2b8ee263547bbf5739fefd7c72fdc9afad274c8c76271835b70ad00ce",
+      "artist_id": "fig14.e.tau_wall1",
+      "artist_type": "Line2D",
+      "evidence": "the record's own traction: the strongest arm and the training modality of the slot",
+      "expected_payload_sha256": "79757fd2b8ee263547bbf5739fefd7c72fdc9afad274c8c76271835b70ad00ce",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "tau_walls",
+          "kind": "npz",
+          "path": "fig_slot/channel_context_frame.npz",
+          "resolved_payload_sha256": "d2a924fa060079017bb548262e511e8a91752dbcd4bcfbc4f5eb14ede746b6a7",
+          "slice": [
+            "1",
+            ":"
+          ],
+          "source_sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+        }
+      ],
+      "transform": "plot the first-cell viscous wall traction of the held-out frame along the wall, x1000",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "0985815ce9dc8d23200146de1ad8fe72d096e03f98c722b18a7db80228717900",
+      "artist_id": "fig14.f.reach_closure",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "the gain decays away from the wall in both arms",
+      "expected_payload_sha256": "0985815ce9dc8d23200146de1ad8fe72d096e03f98c722b18a7db80228717900",
+      "panel": "f",
+      "source_refs": [
+        {
+          "key": "contrasts.flow_matching|closure-absent|buffer_yp_lt30.delta",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "b0f12a65a6c58dedccfa318a75b4ebfc95195cb3ac8774ae8ea4e5df549859f7",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|closure-absent|log_yp30_100.delta",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "ef2628994b909ce760b0ed863718a29ac1f91273b9924942d56be0460761a78c",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|closure-absent|outer_yp_gt100.delta",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "83c43543ff716ab6842b1e08719bf17cdbd01b48d03eb221bd4a329a6fafdfb8",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|closure-absent|buffer_yp_lt30.boot_ci95",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "c85aae6ec985312007ecb5ab6f6fd4db4980c97edbdad3a91d65f26da1fd4424",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|closure-absent|log_yp30_100.boot_ci95",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "c798533f93027d01eb6531e9e5468246151aa35c32821a74582aad33ec05e563",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|closure-absent|outer_yp_gt100.boot_ci95",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "b9b86e8e9c575c9ced823e6c1dc9b116597c2afcca6e454c27de593924b80fa1",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        }
+      ],
+      "transform": "plot each registered band gain at a representative wall-unit position with its bootstrap interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "4b64de42b1b643404386be91ba1f16c54ec737c8032bc326e2a08f589fc16cc9",
+      "artist_id": "fig14.f.reach_exact",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "the gain decays away from the wall in both arms",
+      "expected_payload_sha256": "4b64de42b1b643404386be91ba1f16c54ec737c8032bc326e2a08f589fc16cc9",
+      "panel": "f",
+      "source_refs": [
+        {
+          "key": "contrasts.flow_matching|exact-absent|buffer_yp_lt30.delta",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "d09bf3678ed5d2cb71d29c447ccfb39fc9288ec4048aa5d188b8b24a773526c1",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|exact-absent|log_yp30_100.delta",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "106051e9eba150209cb9bc4b36db456b500d875905535beea820e581f70b30be",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|exact-absent|outer_yp_gt100.delta",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "359cfcb26e3c838ebd9294a48edc04913ffc22c2457c29188120f200837b6d1d",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|exact-absent|buffer_yp_lt30.boot_ci95",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "e305c195262336dca61cc6f711a9c57e283411ccb1013ad9a1bb9dbb3504bc42",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|exact-absent|log_yp30_100.boot_ci95",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "23e0bbcba296548592ec13efe56b20ed434968a06c934d267d0f88100bc8c3fb",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        },
+        {
+          "key": "contrasts.flow_matching|exact-absent|outer_yp_gt100.boot_ci95",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "97da4be32f470a0191ad193f9f53c8b93d8e005a85801adaf7a6ee02c7fa48d7",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        }
+      ],
+      "transform": "plot each registered band gain at a representative wall-unit position with its bootstrap interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "fbf38c32807256655c814144ad07dfe71eb83583a67729f5de4a455e62fc1911",
+      "artist_id": "fig14.g.dose_response_curve",
+      "artist_type": "Line2D",
+      "evidence": "registered node_011 dose-response; ladder arms are oracle-graded references, not deployable methods",
+      "expected_payload_sha256": "fbf38c32807256655c814144ad07dfe71eb83583a67729f5de4a455e62fc1911",
+      "panel": "g",
+      "source_refs": [
+        {
+          "key": "dose_response.curve",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "a035aeab624ea24aa7cfd119e2a2aba2a07548b55a93ca88a958a32b33622648",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        }
+      ],
+      "transform": "plot each registered reference arm's (measured fidelity, whole-scorable gain) pair in fidelity order",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "1cd3d2eb1cb18606b6d91db224cdbdbb2d07017e9234f4cc5827f89c3732d18f",
+      "artist_id": "fig14.h.closure_primary_t",
+      "artist_type": "Text",
+      "evidence": "registered C2 primary inference, 3 physical-time blocks, calibrated t*",
+      "expected_payload_sha256": "1cd3d2eb1cb18606b6d91db224cdbdbb2d07017e9234f4cc5827f89c3732d18f",
+      "panel": "h",
+      "source_refs": [
+        {
+          "key": "contrasts.flow_matching|closure-absent|whole_scorable.primary.t",
+          "kind": "json",
+          "path": "fig_slot/e2_slot_channel_final_results.json",
+          "resolved_payload_sha256": "12cdb582a30f8ceda929f261abc8502313876a941b89d35c12dd762e5875407d",
+          "source_sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+        }
+      ],
+      "transform": "round the registered primary t statistic to one decimal",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "737c7817f59a18be051fa874cbc86acd081ceff018254fe2fbee83cb0af6c186",
+      "artist_id": "fig14.i.flux_absent",
+      "artist_type": "Line2D",
+      "evidence": "strictly outside every conditioning and read row",
+      "expected_payload_sha256": "737c7817f59a18be051fa874cbc86acd081ceff018254fe2fbee83cb0af6c186",
+      "panel": "i",
+      "source_refs": [
+        {
+          "key": "flow_matching|absent|8821|flux_pred_buffer",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "8756cd58e1d0a8138f74839034ababd4382040330d7d7c347fe06f8de488de57",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "flow_matching|absent|8822|flux_pred_buffer",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "01a85087ada1c3b7decbb28d81594eacf25fee9e0f2831e89ef225ce7efa47a5",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "eval_idx",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0ff1be1a0a34410b172b778998eeae84d48ac7e4c1cd963fd04e85320b591710",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "average the reconstructed buffer-band turbulent shear over the two seeds per held-out frame, x1e4",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "d64cb74eae1a0e3ce5daef85f1a0f5e827db0147eee5960eca4eabd9abf6ebfa",
+      "artist_id": "fig14.i.flux_closure",
+      "artist_type": "Line2D",
+      "evidence": "strictly outside every conditioning and read row",
+      "expected_payload_sha256": "d64cb74eae1a0e3ce5daef85f1a0f5e827db0147eee5960eca4eabd9abf6ebfa",
+      "panel": "i",
+      "source_refs": [
+        {
+          "key": "flow_matching|closure|8821|flux_pred_buffer",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "28ec657c730ae52219dfa93058a0244331328baacb7269890944a94aef1120a9",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "flow_matching|closure|8822|flux_pred_buffer",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "ce90943df6e1b4c6aef869bf6be4ca59fb431d11b90af040258951d304ca4f27",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "eval_idx",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0ff1be1a0a34410b172b778998eeae84d48ac7e4c1cd963fd04e85320b591710",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "average the reconstructed buffer-band turbulent shear over the two seeds per held-out frame, x1e4",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "38831189ae1cbec639ae39cb681e6cd36be5f2f2b9a62297f83f91981d9636a1",
+      "artist_id": "fig14.i.flux_truth",
+      "artist_type": "Line2D",
+      "evidence": "the registered C9 engineering endpoint's target series",
+      "expected_payload_sha256": "38831189ae1cbec639ae39cb681e6cd36be5f2f2b9a62297f83f91981d9636a1",
+      "panel": "i",
+      "source_refs": [
+        {
+          "key": "flow_matching|closure|8821|flux_true_buffer",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "2eb86eea0f6fc001da3405dc80e869bca8aecbf8295c6c891525e055d10dd56c",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "eval_idx",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0ff1be1a0a34410b172b778998eeae84d48ac7e4c1cd963fd04e85320b591710",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "plot the record's buffer-band spanwise-mean turbulent shear at each held-out frame, x1e4",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c342202fdc64284617eb6bb396f7af9e242265515a88304a89b54f548fd1e6b2",
+      "artist_id": "fig14.j.frames_diffusion_9921",
+      "artist_type": "Line2D",
+      "evidence": "every frame, every seed and both families are positive",
+      "expected_payload_sha256": "c342202fdc64284617eb6bb396f7af9e242265515a88304a89b54f548fd1e6b2",
+      "panel": "j",
+      "source_refs": [
+        {
+          "key": "diffusion|closure|9921|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "572a4f0e876a622b256fe5bfd6b8c81237c98d2d06f001f2bbf053b3ade67358",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "diffusion|absent|9921|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "dfb5857843e96f058df5716fa957b6071f8d0437c25bcf5b84316cb85b89a9de",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "eval_idx",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0ff1be1a0a34410b172b778998eeae84d48ac7e4c1cd963fd04e85320b591710",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "subtract the absent arm's per-frame whole-scorable score from the closure arm's",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b6b2ef6ad323b303967b1826d6d4fc035d550013fb938805bab51b06bbd0a609",
+      "artist_id": "fig14.j.frames_diffusion_9922",
+      "artist_type": "Line2D",
+      "evidence": "every frame, every seed and both families are positive",
+      "expected_payload_sha256": "b6b2ef6ad323b303967b1826d6d4fc035d550013fb938805bab51b06bbd0a609",
+      "panel": "j",
+      "source_refs": [
+        {
+          "key": "diffusion|closure|9922|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "caf8854ee7306f0b73c1245e4df3b79587bfb7b7de336ed41d9682b11c459302",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "diffusion|absent|9922|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "ed54a512b567291999a490b4d272dccea1d9cf5377ff7a371c57ff2362add5a6",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "eval_idx",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0ff1be1a0a34410b172b778998eeae84d48ac7e4c1cd963fd04e85320b591710",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "subtract the absent arm's per-frame whole-scorable score from the closure arm's",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "5e92bb19fb7fdcad8049f5a32ec699838d409ce9e1cc3d34a20fea512f016899",
+      "artist_id": "fig14.j.frames_flow_matching_8821",
+      "artist_type": "Line2D",
+      "evidence": "every frame, every seed and both families are positive",
+      "expected_payload_sha256": "5e92bb19fb7fdcad8049f5a32ec699838d409ce9e1cc3d34a20fea512f016899",
+      "panel": "j",
+      "source_refs": [
+        {
+          "key": "flow_matching|closure|8821|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "97f073a47485dd756b3e7f136a38f91a054f406c76490c7f3a78287f64344af8",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "flow_matching|absent|8821|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "305f8f573ebd7c475ffb143a9ac01be125dd6d9941e8adc2cf84c35632ae2afe",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "eval_idx",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0ff1be1a0a34410b172b778998eeae84d48ac7e4c1cd963fd04e85320b591710",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "subtract the absent arm's per-frame whole-scorable score from the closure arm's",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "2165d2b0d9281550833a07ca412326f40df7b6336d788ebb63e40543dd350322",
+      "artist_id": "fig14.j.frames_flow_matching_8822",
+      "artist_type": "Line2D",
+      "evidence": "every frame, every seed and both families are positive",
+      "expected_payload_sha256": "2165d2b0d9281550833a07ca412326f40df7b6336d788ebb63e40543dd350322",
+      "panel": "j",
+      "source_refs": [
+        {
+          "key": "flow_matching|closure|8822|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "03d5fe0833533e8e2803c80205d665f2e03e0caa1e2fe7fc2c544a5e8143ff4d",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "flow_matching|absent|8822|whole_scorable",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0cfc6268908cf60155672048ff553f96ec852f6299e5aa2996929770e519c9c3",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        },
+        {
+          "key": "eval_idx",
+          "kind": "npz",
+          "path": "fig_slot/e2_slot_channel_final_components.npz",
+          "resolved_payload_sha256": "0ff1be1a0a34410b172b778998eeae84d48ac7e4c1cd963fd04e85320b591710",
+          "source_sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+        }
+      ],
+      "transform": "subtract the absent arm's per-frame whole-scorable score from the closure arm's",
+      "validated": true
+    }
+  ],
+  "figure": "fig14_slot_interface",
+  "grouping": "One record per semantically indivisible plotted group (image, bar series, scatter series, error-bar series or data-bearing text).",
+  "schema": "gwt-producer-emitted-artist-manifest-v1"
+}

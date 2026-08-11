@@ -1,0 +1,142 @@
+{
+  "schema": "gwt-legacy-research-gate-disposition-v1",
+  "purpose": "Explicitly prevent pre-review research targets from being mistaken for validated claims in the active Nature Communications revision.",
+  "audited_legacy_files": {
+    "research/metrics.json": "775b392c46787f84dcb6c00b6bfcd291c876862f594ab2a7d4b353b0ab38110e",
+    "research/success_criteria.json": "37270261e5f1b196815e1b10139a083c7c0694b3aa4a4ab3cb08f101b0ea60a4"
+  },
+  "decision_rule": "A legacy target is not carried forward merely because its ledger said MET. It must be supported by the active source package, preserve the current interface and split semantics, and belong to the correct evidence class. Otherwise it is marked not transferred, adverse, withdrawn or author-confirmation pending.",
+  "active_evidence_boundary": "The only evaluated component contribution is target-derived oracle-band E1 propagation on the aligned cube. Offline closure composition E2 is not established; closure-side companion evidence is E3; solver-coupled WMLES E4 was not performed.",
+  "metrics": [
+    {
+      "id": "M2.1a",
+      "disposition": "not transferred",
+      "reason": "The active release does not evaluate the legacy Case3 unconditional Reynolds-stress gate; the cube E1 experiment is conditional reconstruction and cannot substitute for it."
+    },
+    {
+      "id": "M2.1b",
+      "disposition": "not transferred",
+      "reason": "The active spectrum diagnostic is a conditional farther-region comparison, not the legacy unconditional Case3 slope gate."
+    },
+    {
+      "id": "M2.1c",
+      "disposition": "not transferred",
+      "reason": "No active source artefact evaluates the legacy Case3 reattachment-location gate."
+    },
+    {
+      "id": "M2.2a",
+      "disposition": "superseded by narrower E1 estimand",
+      "reason": "The active result uses a target-derived oracle band, excludes supplied support, and reports complete/near/farther fluctuation R-squared. It is not a physics-closure-conditioned unobserved-field claim."
+    },
+    {
+      "id": "M2.2b",
+      "disposition": "superseded",
+      "reason": "The active matched control is an equal-support far-time oracle band. It is not a data-only wall closure and is not compared with the R-squared-zero mean predictor as the legacy gate specified."
+    },
+    {
+      "id": "M2.2c",
+      "disposition": "not established",
+      "reason": "The active near/farther partition demonstrates spatially resolved sensitivity but does not validate the legacy monotone reach law or its closure-conditioned interpretation."
+    },
+    {
+      "id": "M2.2d",
+      "disposition": "not transferred",
+      "reason": "The active package contains no admissible A1-versus-A0 prior-necessity experiment."
+    },
+    {
+      "id": "M2.2e",
+      "disposition": "not transferred",
+      "reason": "The active aligned-cube release does not use the legacy spatially shuffled random-wall falsification arm."
+    },
+    {
+      "id": "M2.2f",
+      "disposition": "superseded by active E1 fluctuation estimand",
+      "reason": "Fluctuation-only scoring remains active, but only for aligned, absent and far-time target-derived bands on the aligned cube; the broader legacy closure and family claim is not transferred."
+    },
+    {
+      "id": "M2.3",
+      "disposition": "E3 companion only; author confirmation pending",
+      "reason": "Geometry-transfer performance belongs to closure-side companion evidence and cannot validate the integrated E2 interface without a citable, author-confirmed source."
+    },
+    {
+      "id": "M2.4",
+      "disposition": "E3 companion only; author confirmation pending",
+      "reason": "Thermal transfer belongs to closure-side companion evidence and is not an evaluated output of the active generator composition."
+    },
+    {
+      "id": "M2.5",
+      "disposition": "unmet",
+      "reason": "The active cube experiment is three-dimensional E1 oracle propagation, not a closure-coupled 2D-to-3D extension and not a test of the legacy unconditional G0 bars."
+    },
+    {
+      "id": "M2.6",
+      "disposition": "failed",
+      "reason": "The retained three-width, three-seed fixed-update matrix fails convergence parity and its registered scaling-claim gate is false."
+    },
+    {
+      "id": "M2.7",
+      "disposition": "adverse and underpowered",
+      "reason": "Grouped-hill diffusion preserves a positive contrast but negative absolute skill; flow matching reverses the contrast; the test contains only 3.19 estimated events. Family robustness is therefore not established."
+    },
+    {
+      "id": "M2.8",
+      "disposition": "withdrawn from active claims",
+      "reason": "The legacy attached-case demonstration and its dependencies are not present as an admissible, release-native integrated result."
+    }
+  ],
+  "success_criteria": [
+    {
+      "id": "SC1_propagation_advantage",
+      "disposition": "not met for the integrated system",
+      "reason": "Active positive differentials are E1 target-derived oracle-band sensitivity, not runtime physics-closure conditioning."
+    },
+    {
+      "id": "SC2_falsification_bar",
+      "disposition": "not evaluated",
+      "reason": "No active spatially random wall arm."
+    },
+    {
+      "id": "SC3_wrong_wall_harms",
+      "disposition": "not evaluated as written",
+      "reason": "The active far-time target-derived band is a temporal mismatch control, not a data-only wall model."
+    },
+    {
+      "id": "SC4_error_hiding_wall_concentration",
+      "disposition": "not transferred",
+      "reason": "The legacy near-to-outer RMSE ratio is not part of the active source-native aligned-cube contract."
+    },
+    {
+      "id": "SC5_reach",
+      "disposition": "not established as a reach law",
+      "reason": "The active geometric regions bound sensitivity but do not support a monotone closure-conditioned reach claim."
+    },
+    {
+      "id": "SC6_separation",
+      "disposition": "E3 companion only; author confirmation pending",
+      "reason": "Not an active integrated-system evaluation."
+    },
+    {
+      "id": "SC7_heat",
+      "disposition": "E3 companion only; author confirmation pending",
+      "reason": "Not an active integrated-system evaluation."
+    },
+    {
+      "id": "SC8_scaling",
+      "disposition": "failed in active capacity adjudication",
+      "reason": "The current matrix does not support a positive scaling claim."
+    },
+    {
+      "id": "SC9_generation_G0",
+      "disposition": "unmet and not replaced",
+      "reason": "The current conditional E1 experiment does not establish unconditional whole-field generation quality."
+    }
+  ],
+  "global_criteria": {
+    "single_integrated_central_claim": "not yet established beyond E1 oracle propagation",
+    "two_qualitatively_different_integrated_demonstrations": "not met",
+    "quantified_cost_quality_frontier": "not established in the active release",
+    "beyond_convenient_scale_integrated_demonstration": "not met",
+    "solver_coupled_wmles": "not performed",
+    "submission_decision": "DO NOT SUBMIT until the authors resolve the E2 composition boundary and submission metadata decisions"
+  }
+}

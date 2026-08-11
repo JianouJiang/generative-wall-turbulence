@@ -1,0 +1,20 @@
+{
+  "schema": "gwt-source-invalidation-v1",
+  "status": "source_invalid_for_scientific_claims",
+  "scope": [
+    "SOURCE_INVALID_evaluated_bridge_rendering.png",
+    "l2_case1_closure_results.json",
+    "wallstress_cond_case1_bh1_results.json"
+  ],
+  "reason": "The files derive from CoNFiLD Case1, a two-dimensional irregular-pipe (u,v,p) record that was locally assigned unsupported wall-jet geometry, characteristic height, Reynolds number, viscosity and wall stress.",
+  "permitted_use": "forensic custody and reproduction of the withdrawn diagnostic only",
+  "rendering_status": "retained_with_unmistakable_source_invalid_filename",
+  "submission_staging": "included only for forensic reproduction under the source-invalid filename",
+  "prohibited_use": [
+    "wall-jet or backward-expansion interpretation",
+    "skin-friction or separation claim",
+    "closure-to-generator composition evidence",
+    "cross-kind transfer evidence"
+  ],
+  "active_scientific_replacement": "manuscript/source_data/diagnostic_e2 documents both this source-invalid path and the separate source-valid adverse periodic-hill scalar-proxy study."
+}

@@ -1,0 +1,618 @@
+\section{Methods}\label{sec:methods}
+
+\subsection{Evidence classes, data contact and estimands}\label{sec:evidence}
+
+We distinguish three evidence classes. The first, \emph{oracle wall-band propagation}, supplies
+instantaneous large-eddy-simulation (LES) velocity to the generator and excludes that support from
+every score. The second, \emph{closure-supplyable wall information}, splits into
+$L_A:\mathbf q^{\rm coarse}\!\to\!\boldsymbol\tau_w$, the closure's own accuracy, and
+$L_B:\boldsymbol\tau_w\!\to\!\mathbf o\!\to\!p_\theta$, the propagation of a wall traction into the
+field. The third, \emph{closure-side transfer}, comprises companion evidence from separate
+frozen models.
+
+\textbf{Oracle-band propagation, $L_B$ and the composition $L_A\!\circ\!L_B$ are evaluated offline.}
+$L_B$ is evaluated twice and independently: through a frozen equilibrium velocity reconstruction and by conditioning a
+generator directly on the native signed wall traction of Eq.~\eqref{eq:nativetau}
+(Sec.~\ref{sec:interfaceexec}). Both use an \emph{oracle} traction read from the held-out target,
+so they bound what a closure could transmit and are not closure-accuracy measurements. $L_A$ is
+closed in Sec.~\ref{sec:closuremethodfit}: a closure is fitted on the training window, frozen by
+hash, and used to predict held-out traction from matching-height state alone, so the composed
+chain is evaluated end to end. Earlier candidates for $L_A$ are excluded and retained as labelled
+diagnostics (Sec.~\ref{sec:closuremethod}); nothing in this work
+advances a momentum equation.
+
+Chronological separation does not make the oracle-band record untouched. M0 encountered the evaluation interval after
+allocation and arm definitions were frozen; M1 then changed capacity, optimisation and sampling,
+and M2 changed padding, all on the same targets; the ensemble endpoint was frozen after M2
+selection but before its inference. We call these the \emph{first-contact comparison},
+\emph{model-development sensitivity} and \emph{post-selection registered endpoint}, and none is
+called an independent confirmatory test.
+
+Point estimands are absolute fluctuation $R^2$ for the aligned band and aligned-minus-control differences over complete, near and geometrically
+farther ($d/h>0.5$) support-excluded regions. The registered ensemble estimand is farther-region
+energy score.
+
+\emph{Statistical and scope conventions, used throughout the paper.} Every evaluation is
+offline and a priori. Reported intervals are conservative moving-block resampling intervals,
+conditional on the finite record and fitted model, and not multiplicity-adjusted; evaluated
+frames are temporally correlated rather than independent events, with effective event counts
+stated where decisive (the cube record's 343-output span is $2.800$ conservative integral
+times), and each generative point estimate is one realised eight-sample mean. The absent arm is always
+a conditioning-dropout branch of the same network, not a budget-matched unconditional
+generator, so each paired gain is a matched information intervention inside one conditional
+model. M0 retains only terminal aggregates. No evaluation unit in this work is claimed to be
+untouched: units are prospectively unscored, with all prior contact recorded in a global
+contact ledger (Supplementary Note~1).
+
+\subsection{Wall-to-field interface and evidence boundary}\label{sec:interfaceaudit}
+
+The intended integrated map is
+\begin{equation}
+\mathbf q_t^{\rm coarse}
+\xrightarrow{\ \mathcal H\ }
+(\boldsymbol\Phi_t,\mathbf S_t)
+\xrightarrow{\ \mathcal C\ }
+\boldsymbol\tau_{w,t}^{\,\mathrm{W\to F}}
+\xrightarrow{\ \mathcal L\ }
+\mathbf o_t
+\xrightarrow{\ \mathcal G\ }
+p_\theta(\mathbf u_t\mid\mathbf o_t),
+\label{eq:integrated}
+\end{equation}
+where $\mathcal H$ constructs the local rows $\boldsymbol\Phi_t$ and family-level station set
+$\mathbf S_t$, $\mathcal C$ is the closure,
+$\boldsymbol\tau_w^{\,\mathrm{W\to F}}$ is wall-on-fluid traction, $\mathcal L$ lifts it to the
+generator representation and $\mathcal G$ samples the field. A causal claim additionally requires
+runtime-available or prospectively calibrated inputs, an executed lift, untouched evaluation
+targets and information-matched controls.
+
+The frozen companion closure does not supply such a general runtime map: its inference header
+stores a fixed 16-dimensional branch embedding exported from the Krank $Re=10{,}595$
+periodic-hill member's own wall-stress-free station set \cite{krank2018hills}, without the branch weights or set normalisation needed to recompute
+it for a new source, so the custody of $\mathbf S_t$ and the calibration-consistent
+pressure-gradient and displacement-thickness features remain unresolved closure-composition dependencies
+(Sec.~\ref{sec:closuremethod}).
+
+For the present nonplanar surface the required closure output is a tangential vector, not one
+signed global scalar. Let the unit wall normal $\mathbf n$ point from the solid into the fluid.
+The kinematic traction exerted by the wall on the fluid is
+\begin{equation}
+\mathbf P_t=\mathbf I-\mathbf n\mathbf n^\mathsf T,\qquad
+\boldsymbol\tau_w^{\,\mathrm{kin},\,\mathrm{W\to F}}
+=-\mathbf P_t\!\left[\nu(\nabla\mathbf u+\nabla\mathbf u^\mathsf T)\mathbf n\right]
+=\tau_1^{\,\mathrm{W\to F}}\mathbf t_1+\tau_2^{\,\mathrm{W\to F}}\mathbf t_2 ,
+\label{eq:traction}
+\end{equation}
+with the fluid-on-wall traction of opposite sign. For a lower wall with
+$\mathbf n=\mathbf e_y$, $\mathbf t_1=\mathbf e_x$ and $\partial u/\partial y>0$,
+Eq.~\eqref{eq:traction} gives $\tau_1^{\,\mathrm{W\to F}}=-\nu\,\partial u/\partial y<0$. Here
+$\mathbf t_1$ is a geometry-anchored unit tangent fixed independently of the instantaneous flow
+and $\mathbf t_2=\mathbf n\times\mathbf t_1$, declared face by face, so flow reversal changes the
+signed components in this fixed basis. A valid $\mathcal L$
+must carry both signed tangential components, normals, local bases, volumetric support and the
+stress scaling.
+
+Oracle-band propagation starts at the final map, $\mathbf o_t=\mathbf 1_B\odot\mathbf u_t^{\rm LES}$ supplied by the
+target LES itself.
+
+\subsection{Aligned-cube simulation, masks and allocation}\label{sec:data}
+
+The aligned-cube record was generated with NekRS, a graphics-processing-unit (GPU)
+spectral-element incompressible
+Navier--Stokes solver \cite{fischer2022nekrs}. The $2h\times4h\times2h$ domain contains one
+$h\times h\times h$ wall-mounted cube, giving pitch $2h$, plan solidity $\lambda_p=0.25$ and
+$Re_h=\overline U h/\nu=5000$; streamwise and spanwise boundaries are periodic, the floor, cube
+faces and ceiling no-slip, and a constant-flow-rate controller holds $\overline U=1$. The mesh has
+14,176 hexahedra; order-7 Gauss--Lobatto--Legendre (GLL) discretisation gives 7,258,112 points
+with order-9 cubature, two operator-integration-factor-splitting (OIFS) advection substeps at a
+target Courant--Friedrichs--Lewy (CFL) number of 2, maximum
+$\Delta t=1.5\times10^{-3}h/\overline U$, pressure/velocity tolerances $10^{-4}/10^{-6}$ and
+one-mode high-pass filtering (coefficient 10) without explicit subgrid viscosity. The run ended
+normally at $t\overline U/h=370.0005$ with 1,234 fields at spacing 0.3; after discarding
+$t<40.2$, volume-mean kinetic-energy drift between the middle and final halves is
+$1.55\times10^{-3}$.
+
+Each GLL field is mapped to a $96\times192\times96$ Cartesian raster by nearest-GLL lookup and
+exactly averaged over non-overlapping $2\times2\times2$ cells to the $48\times96\times48$ model
+grid. The fluid mask $F$ contains 207,360 cells. The condition mask $B\subset F$ comprises fluid
+points within $2.01(4/96)h=0.08375h$ of the floor, ceiling, cube tops or vertical faces---the
+nominal two-cell band of thickness $2(4/96)h=0.08333h$---and contains 14,008 cells. We define
+\begin{equation}
+ U=F\setminus B,\quad
+ U_{\mathrm{near}}=U\cap\{d/h\leq0.5\},\quad
+ U_{\mathrm{far}}=U\cap\{d/h>0.5\},
+\end{equation}
+with $|U|=193{,}352$, $|U_{\rm near}|=74{,}844$ and $|U_{\rm far}|=118{,}508$; the latter two are
+disjoint and partition $U$.
+
+The nearest-GLL lookup does not preserve full wall-normal resolution in the upper domain.
+Comparing adjacent Cartesian rows over nine snapshots identifies exactly 30 row pairs, all at
+$y/h\gtrsim1.7$, with bitwise-identical fluid values, and one ceiling-adjacent row (index 95)
+identically zero at every retained time: 34.56\% of $U$ lies on rows that repeat the row below.
+All 4,608 ceiling cells of the supplied band are affected, 2,304 identically zero and 2,304
+bitwise identical to the first scored row beneath them---a leak handing the generator the exact
+values of 1.19\% of $U$.
+Restricting the band to the physical walls removes both defects, and
+Sec.~\ref{sec:interface} reports every arm under that restriction; a fourth scoring region
+$U_{\rm uniq}$, the 126,536 support-excluded cells on raster-unique rows, is reported alongside
+the three published regions. The paired interventions share the same mask and remain valid, but
+the farther-from-wall region is partly an interpolation artefact.
+
+A native first-cell audit differentiates unrasterised GLL wall-face velocity on separate
+continuation fields at $t\overline U/h=390.0003$ and 420.0001 (not independent replicates):
+maximum $y^+$ is 0.31631 on the exposed floor, 1.33684 on cube tops and 1.92126 on vertical
+faces. The ceiling was not classified, so the ceiling-containing band supports no
+ceiling-specific native $y^+$ claim.
+
+After spin-up, 1,101 fields remain. Before any arm output, the feasible allocation was frozen as
+660 training fields, a 98-field exclusion gap and a 343-field chronological remainder, whose
+first index 758 lies 99 output spacings after the last training index 659. Evaluation selects 160
+evenly spaced fields. No separate validation interval exists, so later use of the 160 fields for
+model development is disclosed explicitly. Training-only statistics determine channel
+normalisation and the spatial mean used for fluctuations.
+
+\subsection{Conditional flow models, sampler and intervention arms}\label{sec:model}\label{sec:sampler}
+
+Let $\mathbf x_0\in\mathbb R^{3\times N_x\times N_y\times N_z}$ be a standardised training field
+and $\mathbf z\sim\mathcal N(0,I)$ a Gaussian endpoint on fluid cells. For
+$t\sim\mathcal U(0,1)$, the rectified path and target velocity are
+\cite{lipman2023flow,liu2023rectified}
+\begin{equation}
+ \mathbf x_t=(1-t)\mathbf x_0+t\mathbf z,\qquad
+ \mathbf v^\star=\mathbf z-\mathbf x_0 .
+\end{equation}
+The network input is $[\,\mathbf x_t,\ \mathbf o,\ \mathbf 1_B,\ \mathbf 1_F\,]$, where
+$\mathbf o=\mathbf 1_B\odot\mathbf x_0$ is a three-channel wall-band observation, and the
+fluid-masked flow-matching loss is
+\begin{equation}
+\mathcal L(\theta)=
+\mathbb E\left[
+\frac{\sum_i\mathbf 1_F(i)
+\left\|\mathbf v_\theta(\mathbf x_t,t,\mathbf o,B,F)_i
+-(\mathbf z-\mathbf x_0)_i\right\|_2^2}{3|F|}
+\right].
+\label{eq:fm}
+\end{equation}
+With probability 0.25, $\mathbf o$ and $\mathbf 1_B$ are set to zero, training the absent-band
+branch; the far-time condition is not a training class.
+
+All three sequential models are two-level three-dimensional U-Nets with sinusoidal time embeddings
+and group normalisation, trained by AdamW with learning rate $2\times10^{-4}$, betas $(0.9,0.99)$,
+weight decay $10^{-4}$, batch size 2, gradient clip 2 and exponential moving average (EMA) decay 0.9995. M0 has width 24,
+2,213,139 parameters, 30,000 updates and 16 sampler steps; M1 width 48, 8,647,587 parameters,
+90,000 updates and 32 steps; M2 keeps M1's budgets but uses circular streamwise/spanwise padding.
+Each configuration has one fit and eight samples per target. Training and inference are
+deterministically seeded, with frozen inference seeds reused across matched arms; exact bitwise
+retraining is not claimed (Code availability).
+
+Sampling integrates the learned velocity from $t=1$ to $t=0$ by explicit Euler updates. For arm
+$a$ with conditioning $c_a=[\mathbf o_a,\mathbf 1_{B_a},\mathbf 1_F]$, a supplied band follows the
+exact rectified bridge,
+\begin{equation}
+\mathbf x_{t_{j+1}}\leftarrow
+(1-\mathbf 1_{B_a})\odot
+\left[\mathbf x_{t_j}+\Delta t\,
+\mathbf v_\theta(\mathbf x_{t_j},t_j,c_a)\right]
++\mathbf 1_{B_a}\odot
+\left[(1-t_{j+1})\mathbf o_a+t_{j+1}\mathbf z_{B_a}\right].
+\label{eq:hard}
+\end{equation}
+The aligned arm uses $\mathbf o=\mathbf x_{q,B}$ with $B_a=B$; the absent arm uses zero
+observation and $B_a=\varnothing$ and is not clamped; the far-time arm uses $\mathbf x_{d(q),B}$,
+where $d(q)$ is a frozen circular shift by 80 evaluation positions (paired indices 172 or 173
+native snapshots apart, approximately $1.40T_{\rm int}$), preserving support while changing
+temporal alignment. All arms are scored on the same mask $U=F\setminus B$, and checkpoint,
+targets, integrator and sampler noise are identical across arms within each model
+(Algorithm~\ref{alg:matched}).
+
+\begin{algorithm}[t]
+\caption{Matched wall-information intervention}\label{alg:matched}
+\begin{algorithmic}[1]
+\Require Chronological evaluation fields, masks $B,F$, fitted network and frozen sampler seeds
+\State Define common score mask $U\gets F\setminus B$ and load training-only normalisation
+\For{each evaluation field $q$}
+  \State Set $(o_{\rm aligned},B_{\rm aligned})\gets(x_{q,B},B)$,
+  $(o_{\rm absent},B_{\rm absent})\gets(0,\varnothing)$ and
+  $(o_{\rm far},B_{\rm far})\gets(x_{d(q),B},B)$
+  \For{each stochastic sample $m\in\{1,\ldots,8\}$}
+    \State Draw one $z_{q,m}$ and reuse it in all three arms
+    \For{arm in \{aligned, absent, far-time\}}
+      \State Integrate Eq.~\eqref{eq:hard} with $(o_a,B_a)$ for the model-specific steps
+      \State Retain the generated field only on $U$
+    \EndFor
+  \EndFor
+\EndFor
+\State Resample shared physical-time blocks and recompute absolute scores and paired contrasts
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Traction interface: equilibrium lift and direct conditioning}\label{sec:interfaceexec}\label{sec:directtraction}
+
+The load-bearing approximation in Eq.~\eqref{eq:integrated} is the composition
+$\mathcal L\circ\mathcal C$, separated into
+$L_A:\mathbf q^{\rm coarse}\!\to\!\boldsymbol\tau_w$ and
+$L_B:\boldsymbol\tau_w\!\to\!\mathbf o\!\to\!p_\theta$. Because the frozen companion closure
+cannot be executed source-generally on this record (Sec.~\ref{sec:interfaceaudit}), $L_A$ must be
+fitted on this record, which Sec.~\ref{sec:closuremethodfit} does. Two earlier
+overgeneralisations do not hold: that ``$L_A$ cannot be executed'' at all, and that a failed
+adapter bounds every composition from above---a failure of one adapter constrains that adapter,
+not the class. Three executions are reported in
+the order run---an equilibrium velocity reconstruction, direct traction conditioning, and the
+closure composition---and each protocol was registered before any of its arms was sampled.
+
+\emph{Wall surfaces and anchors.} The model grid resolves seven no-slip surfaces: floor, lid,
+cube top and the four cube vertical faces. Six are \emph{physical} walls; the lid is a
+computational closure whose adjacent raster row is identically zero (Sec.~\ref{sec:data}), so it
+carries no wall observation. Each supplied-band cell is assigned to the surface of smallest
+perpendicular distance among surfaces whose in-plane extent, dilated by two cells, contains it;
+ties follow a fixed surface order. The anchor of a band cell is the first fluid cell of its owning
+surface, at perpendicular distance $\Delta/2=0.02083h$.
+
+\emph{Equilibrium traction estimator and lift.} With $\mathbf u_a$ the anchor velocity,
+$u_a=|\mathbf P_t\mathbf u_a|$ and $\hat{\mathbf t}=\mathbf P_t\mathbf u_a/u_a$, the friction
+velocity solves $u_a=u_\tau f_R(d_a u_\tau/\nu)$ by bisection, with the Reichardt profile
+\begin{equation}
+f_R(y^+)=\kappa^{-1}\ln(1+\kappa y^+)
++C\left[1-e^{-y^+/11}-(y^+/11)\,e^{-y^+/3}\right],
+\label{eq:reichardt}
+\end{equation}
+$\kappa=0.41$, $C=7.8$ and $\nu=2\times10^{-4}$. Anchor $y^+$ spans $0.169$--$11.58$ (mean
+$3.80$), operating in the viscous and buffer layers. The wall-on-fluid traction is
+$\boldsymbol\tau_w^{\,\mathrm{W\to F}}=-u_\tau^2\hat{\mathbf t}$. Because $\mathbf u_a$ is read
+from the evaluation target, this is a \emph{target-velocity equilibrium inversion}, not native
+traction (Eq.~\eqref{eq:nativetau}). Every band cell at wall distance $d$ from its owning surface
+receives
+\begin{equation}
+\mathcal L(\boldsymbol\tau_w)(d)=u_\tau f_R(d\,u_\tau/\nu)\,\hat{\mathbf t},
+\label{eq:lift}
+\end{equation}
+with zero wall-normal component; $\kappa$, $C$ and $\nu$ were fixed before any field score was
+computed. Because no equilibrium observation exists at the lid, all traction arms condition on the
+physical-wall support---9{,}400 of the 14{,}008 supplied cells---and an additional oracle arm
+supplies the LES band on exactly that support, a ceiling matched to the same information geometry;
+scoring masks are unchanged. Three arms reproduce the published aligned/absent/far-time comparison
+as a non-fabrication guard. Four arms are new: the target-velocity inversion through
+Eq.~\eqref{eq:lift}; far-time traction through the same lift; the mean wall load, from the
+training-split mean field, carrying the same lift but no instantaneous wall information; and a
+model-predicted traction from the absent-band posterior mean's own anchor velocities, containing
+no target-derived wall information at any point. The interface is also scored a priori by the
+fluctuation $R^2$ of the lifted band against the true band on the physical-wall support.
+
+\emph{Direct native-traction conditioning.} The direct experiment removes the adapter and its two
+confounds (Sec.~\ref{sec:interface}). The tangential projector in Eq.~\eqref{eq:traction}
+annihilates the isotropic pressure term identically, so for each fluid cell adjacent to a no-slip
+surface, with $d=\Delta/2$, no-slip gives the one-sided estimate
+\begin{equation}
+\boldsymbol\tau_w^{\,\mathrm{W\to F}}\simeq-\frac{\nu}{d}\,\mathbf u_t,
+\qquad \mathbf u_t=\mathbf u-(\mathbf u\!\cdot\!\mathbf n)\mathbf n .
+\label{eq:nativetau}
+\end{equation}
+Because the raster velocity came from nearest-node lookup and $2\times2\times2$ averaging, this is
+a \emph{first-cell viscous traction}, not the native spectral-element wall gradient; we use that
+name throughout. Two physical-consistency checks ran before any arm was sampled: the signed convention
+$\boldsymbol\tau_w^{\,\mathrm{W\to F}}\!\cdot\mathbf u_t<0$ is asserted as fatal on every face,
+and the implied streamwise wall-on-fluid viscous force ($-0.00766$ with each cell--face pair
+counted once) is compared against an independent
+spectral-element quadrature of the same stationary flow ($-0.00742$ and $-0.00639$;
+continuation-block audits, physical
+walls only)---an integral time-mean check, not a local instantaneous validation. Each
+(cell, face) pair contributes to the force exactly once; an earlier double count of the 96
+two-face cells is corrected. Traction is carried by the six physical faces
+(4,512 cells), the lid again excluded, and cells touching two faces sum the per-face tractions.
+
+Three generative models are trained prospectively from scratch under one budget: base width 32,
+20,000 updates, batch 4, three independent seeds. Family~T conditions on the traction of
+Eq.~\eqref{eq:nativetau}; family~B conditions on the oracle velocity band restricted to the same
+physical walls (the matched ceiling); an identical architecture trained as a deterministic
+regressor gives an information-matched non-generative baseline. A 25\% conditioning-dropout
+schedule means one network serves both the conditioned and absent arms of each family, so the
+primary contrast carries no between-model confound. The traction arms use \emph{no} clamp: the
+surface information enters only through conditioning channels. Controls on family~T are the
+training-window mean traction, a far-time traction, a sign-reversed traction and a traction
+shuffled across wall cells, all on identical targets, support and sampler noise; traction is
+normalised by training-window statistics only. The chronological split, exclusion gap and
+bootstrap block are inherited from the published evaluation by reusing its integral-time estimator
+verbatim; 240 held-out targets are scored, against 160 in the published run. Intervals are
+circular moving-block bootstraps at the release and conservative $1.2551\tau$ blocks, the latter
+governing the registered decision rule, and every contrast reports its across-seed spread. The
+protocol, arms, estimands, decision rule and cost ceiling were frozen and hash-bound before the
+production run. The traction is read from the held-out target, so it is an
+\emph{oracle} traction: the experiment bounds what a closure could transmit through this interface
+and is not solver-coupled.
+
+\subsection{Closure-to-generator composition: fitting and freezing $L_A$}
+\label{sec:closuremethodfit}
+
+The direct experiment supplies a traction read from the held-out target; this section closes
+$L_A$ on the same record. A closure is fitted on the training window only and frozen before any
+held-out outcome is observed. For every (wall cell, face) pair it reads velocity at wall distances
+$2.5\Delta$ and $4.5\Delta$ along the face normal---the standard wall-modelled-LES matching-height
+seam---and never the wall-adjacent cell. Eight dimensionless features are formed: the matching-point $y^+$;
+the speed ratio $|\mathbf u_t(y_{m2})|/|\mathbf u_t(y_{m1})|$; two wall-normal transpiration
+ratios; the sine and cosine of the skew between the two heights; $\log|\mathbf u_t(y_{m1})|$; and
+a local acceleration proxy
+$\log(|\mathbf u_t(y_{m1})|/\langle|\mathbf u_t(y_{m1})|\rangle_{3\times3\times3})$. A six-way
+face embedding carries geometry, which is known a priori.
+
+With $\mathbf e_1=\mathbf u_t(y_{m1})/|\mathbf u_t(y_{m1})|$,
+$\mathbf e_2=\mathbf n\times\mathbf e_1$, and $u_\tau^{\rm eq}$ solving Eq.~\eqref{eq:reichardt}
+at $y_{m1}$ by bisection,
+\begin{equation}
+\widehat{\boldsymbol\tau}_w^{\,\mathrm{W\to F}}
+=-\,(u_\tau^{\rm eq})^2\,e^{a}\left[\cos\theta\,\mathbf e_1+\sin\theta\,\mathbf e_2\right],
+\qquad a=\tfrac32\tanh(\cdot),\quad \theta=\tfrac{\pi}{3}\tanh(\cdot),
+\label{eq:closuretau}
+\end{equation}
+where $(a,\theta)$ come from a $14\to64\to64\to2$ multilayer perceptron with zero-initialised
+output, so training begins \emph{at} the classical equilibrium wall model (evaluated as its own arm,
+the special case $a=\theta=0$) and departs only where the data pay for it.
+Because $|\theta|\leq\pi/3<\pi/2$, the sign convention
+$\widehat{\boldsymbol\tau}_w\!\cdot\mathbf u_t<0$ holds architecturally for every cell and
+parameter value. The closure is fitted on snapshots 0--599 against the first-cell traction of
+Eq.~\eqref{eq:nativetau}, normalised by the training-window traction root-mean-square, for 12,000
+AdamW steps and monitored on snapshots 600--659, a validation window \emph{inside} the training
+span; the terminal state is retained rather than the best-validation checkpoint, so this is
+validation monitoring, not model selection. It is then frozen by hash and applied unchanged. One
+stochastic closure fit is shared by all three generator seeds, which therefore probe
+generator-initialisation robustness conditional on a single closure.
+
+A generator family~K is trained from scratch under the same budget as family~T with a declared
+conditioning mixture: oracle first-cell traction $0.40$, closure-predicted traction $0.40$, zero
+conditioning $0.20$. Both primary traction arms and the absent arm are training classes, so no
+primary contrast carries a distribution-shift confound. The wrong-information control is
+a genuine traction from a far-time donor, inside the training distribution,
+isolating instantaneous correspondence; the mean-load, shuffled and sign-reversed arms are
+retained as \emph{out-of-training sensitivity probes} carrying no decision-rule clause. Family~T's
+frozen checkpoints are additionally re-evaluated unchanged on the predicted traction. The primary
+source-excluded region removes every supplied wall cell \emph{and} every cell the closure
+read, so no cell that carried information into the system is ever scored; its near and outer
+restrictions use $d/h\leq0.5$ and $d/h>0.5$, and the four regions of the direct-traction
+experiment are retained verbatim for identical-definition comparison. The registered
+decision rule is evaluated on a strict unit: the 103 held-out frames outside the
+direct-traction experiment's evaluation index---\emph{prospectively unscored, not untouched}: the
+global contact ledger records that 48 of them carry a score from the earlier equilibrium-adapter
+experiment. A full unit, the direct-traction experiment's exact 240 frames, is retained for the
+frozen non-regression table. Intervals are circular moving-block bootstraps at the release and
+conservative $1.2551\tau$ blocks plus a crossed seed\,$\times$\,time-block interval. The protocol,
+arms, mixture, controls, metrics, decision rule, tolerances and an eight-GPU-hour ceiling were
+frozen and hash-bound before the production run; the single preceding software check evaluated
+training frames only.
+
+\subsection{Scores, diagnostics and dependence-aware resampling}\label{sec:pointmethod}\label{sec:energymethod}\label{sec:statistics}
+
+For every target and arm, the point prediction is the arithmetic mean of eight generated samples
+from one realised sampler draw set. With $\boldsymbol\mu_{\rm tr}(\mathbf r)$ the training-only
+spatial mean and $s_c$ the training-only scale, standardised fluctuations are
+$\widetilde x_{q,c}(\mathbf r)=(x_{q,c}(\mathbf r)-\mu_{{\rm tr},c}(\mathbf r))/s_c$. For region
+$R$, the stored sufficient statistics are one sum of squared errors (SSE) and one shared total
+sum of squares (SST) per physical time,
+\begin{align}
+\mathrm{SSE}_{q,a,R}
+&=\sum_{c,\mathbf r\in R}
+(\widetilde{\widehat x}_{q,a,c}(\mathbf r)-\widetilde x_{q,c}(\mathbf r))^2,\\
+\mathrm{SST}_{q,R}
+&=\sum_{c,\mathbf r\in R}
+(\widetilde x_{q,c}(\mathbf r)-\overline{\widetilde x}^{\,\mathrm{pool}}_R)^2 ,
+\end{align}
+and the pooled score is
+\begin{equation}
+\Rfluct(a,R)=1-\frac{\sum_q\mathrm{SSE}_{q,a,R}}
+{\sum_q\mathrm{SST}_{q,R}}.
+\label{eq:r2}
+\end{equation}
+For every resampling replicate, Eq.~\eqref{eq:r2} is recomputed for each arm from the same sampled
+blocks before subtraction; independently bootstrapped limits are never subtracted. Because each
+region has its own pooled centre and SST, the complete score is not an arithmetic average of the
+near and farther scores.
+
+The retrieval diagnostic divides every three-component band value by its training-only channel
+scale, flattens, and for each of the 160 evaluation indices selects
+$i^\star(q)=\arg\min_{i\leq659}\|\mathbf x_{q,B}/\mathbf s-\mathbf x_{i,B}/\mathbf s\|_2^2$, using
+the associated training field unchanged as the prediction, scored by Eq.~\eqref{eq:r2} with
+block-selection intervals from 4,000 shared circular draws of 57 samples; it was
+frozen before execution, with no tuned neighbour count or metric.
+
+For $M=8$ samples and $D$ standardised degrees of freedom on $U_{\rm far}$, the multivariate
+energy score (ES) uses the off-diagonal U-statistic
+\begin{equation}
+\ES=
+\frac{1}{M}\sum_{m=1}^{M}\frac{\|\mathbf X^{(m)}-\mathbf y\|_2}{\sqrt D}
+-\frac{1}{2M(M-1)}\sum_{m\ne\ell}
+\frac{\|\mathbf X^{(m)}-\mathbf X^{(\ell)}\|_2}{\sqrt D},
+\label{eq:es}
+\end{equation}
+lower better \cite{gneiting2007crps,hersbach2000crps}; the original evaluation used the $2M^2$ empirical
+formula, and its retained truth and pairwise distances permit the deterministic correction. The
+two secondary families are component-spectrum log RMSE (48-point streamwise transforms over the 48
+complete $d/h>0.5$ planes, modes 1--12) and normalised RMSE (NRMSE) of six standardised
+plane-averaged
+quadratic-fluctuation profiles ($u'u'$, $v'v'$, $w'w'$, $u'v'$, $u'w'$, $v'w'$)---instantaneous
+standardised spatial summaries, not conventional dimensional Reynolds stresses. The withdrawn
+coverage diagnostic compares interpolated 0.1/0.9 quantiles from eight members against 0.8, which
+is not a finite-ensemble-valid calibration test \cite{talts2018sbc}; block-57 hit fractions are
+reported descriptively only.
+
+The integral-time convention is $T_{\rm int}/\Delta t=1+2\sum_{k=1}^{k_0-1}\rho(k)$, with $k_0$
+the first non-positive autocorrelation lag, audited on five signals whose integral times are
+39.55, 103.47, 96.30, 122.48 and 77.45 native snapshots; the conservative rule uses the maximum,
+$T_{\rm int}=122.4817$. The 98 omitted fields give $0.800T_{\rm int}$ and the 1,101-field record
+has count ratio 8.99. After thinning, a conservative block contains 57 evaluation samples, and M2
+sensitivities use 4,000 circular moving-block replicates with shared indices across arms
+\cite{kunsch1989,politis1992circular}; historical terminal records used a 49-sample block. Moving-block resampling
+preserves serial structure and pairing without creating independent physical events. Because
+the evaluation interval was reused for model development, reported 95\% intervals describe
+conditional variation under block selection for a fixed record and configuration; they are not
+frequentist population-confidence intervals, are not multiplicity-adjusted, and exclude
+model-selection and between-training-seed uncertainty.
+
+\subsection{Periodic-hill protocols}\label{sec:supportmethods}\label{sec:groupedmethods}
+
+For the early hill support test, all spanwise planes from one time remain together: training,
+validation and test ranges are 0--479, 500--569 and 590--959, with $N_{\rm eff}=3.19$; separate
+diffusion and flow-matching checkpoints use aligned, absent, random and far-time wall arms. The
+capacity matrix contains widths 48, 96 and 120 under three fixed seeds at 90,000 updates,
+resampled by shared circular 116-time blocks crossed with training seeds (10,000 replicates); its
+preregistered scaling criterion fails.
+
+The two generative families of the generality cells differ in forward process (linear
+interpolation versus a variance-preserving cosine schedule), training target (velocity versus
+noise) and sampler (deterministic probability flow versus stochastic ancestral sampling). Their
+sampler budgets are not matched: each is selected separately by the rule stated below, and the
+two families converge at different budgets.
+The grouped re-test uses CoNFiLD Case3 (periodic hills, $Re_h=2800$), rasterised to $64\times192$
+with a curved-lower-wall mask; the corpus is 3 spanwise planes $\times$ 960 physical times stored
+plane-major, and the experimental unit is the physical time. Train times $[0,479]$ on all three
+planes (1,440 arrays); development window $[500,569]$ on plane~0; decisive unit $[590,959]$ on
+plane~0 (370 arrays) with a 110-time gap, plus a robustness subsample of planes~1--2 at every
+fourth test time; the pipeline asserts pairwise disjointness and aborts otherwise. Viscosity,
+normalisation, the
+fluctuation mean and the conditioning scale $\tau_{\rm rms}$ come from training times only; the
+closure's own fit/validation split is by physical time (0--431 fit, 432--479 validate). The only
+quantity selected from data is the sampler budget, chosen per family on the development window
+over $\{32,64,128,256\}$ steps using the absent and native-traction arms only (flow
+matching selects 32; diffusion 256); selecting on the baseline arm cannot favour the closure
+contrast. Arms are inference-time conditioning swaps over \{absent, closure traction, oracle DNS
+traction, equilibrium-only traction, far-time traction, spatially permuted traction\}, with the
+training mixture (oracle 0.40, closure 0.40, absent 0.20); scoring excludes the conditioning
+support and the closure's matching-height source cells. Traction is a first-cell viscous shear
+surrogate on the raster staircase of the lower curved wall,
+$\boldsymbol{\tau}=-(\nu/d_a)\,\boldsymbol{u}_t$, upper boundary and pressure/form drag excluded.
+In the band-lift repair, each band cell takes $u_\tau=\sqrt{|\boldsymbol{\tau}|}$ from its nearest
+wall face and receives $\boldsymbol{u}(d)=u_\tau f_{\rm Reichardt}(d u_\tau/\nu)\,
+\hat{\boldsymbol{e}}_t$ with zero wall-normal component; band cells coinciding with the closure's
+matching-height cells are removed from the conditioning support.
+
+\emph{One named interval estimator.} Every periodic-hill interval in this paper is the same
+hierarchical bootstrap ($B=4000$): the three realised seeds are resampled with replacement, then
+a circular moving-block resample is taken in physical time with block
+$\lceil1.2551\tau\rceil$ capped to keep at least three blocks. The measured $\tau=112.3$ physical
+times gives block 123 and $N_{\rm eff}\simeq3.3$, more conservative than the retained $\tau=58$;
+both are reported. Every contrast is recomputed inside each replicate from the same
+$(\text{seed},\text{time})$ draw before subtraction, including the arm-minus-arm contrasts of
+Supplementary Note~10, so paired quantities are never formed by subtracting independently
+bootstrapped limits. An earlier released audit averaged the per-frame sum of squared errors over
+the realised seeds \emph{before} resampling time; that estimator conditions on the sampler draws
+and is narrower. Both estimators are reported for every arm, and the declared hierarchical one is
+quoted throughout. Adopting it changes the zero-exclusion verdict of $7$ of $180$
+arm/region/cell contrasts, always from excluding zero to spanning it, and in five of the seven
+the affected arm is a control rather than a method arm.
+
+\emph{Selection-to-test separation.} The grouped contract separates \emph{training} from the
+decisive unit by 110 physical times. The development window used for sampler-budget and $\lambda$
+selection ends at 569 and the decisive unit begins at 590, a gap of about 20 physical times
+against an integral time of $112.3$. Selection is therefore not separated from the test window in
+the way training is: it carries strong serial dependence, which a test-set block bootstrap does
+not cure. No same-time spanwise twin is shared and no selection was revised after test contact,
+but the two gaps are not interchangeable. The two repairs trained one wall closure and thirteen
+generators under 8 and 3 GPU-hour ceilings, writing only newly named outputs.
+
+\textbf{Stochastic sampler for the flow-matching cell.} To test whether ensemble
+under-dispersion \emph{causes} that cell's failure, the deterministic sampler is generalised to
+the stochastic-interpolant family sharing its marginals
+\cite{albergo2023stochastic,ma2024sit}. With $\hat{\boldsymbol z}=\boldsymbol x_t+(1-t)v$ the
+interpolant's noise estimate---so that $\nabla\log p_t=-\hat{\boldsymbol z}/t$---and
+$\Delta=t-t_n$, the step is
+$\boldsymbol x_{t_n}=\boldsymbol x_t-\Delta v-\Delta\lambda\hat{\boldsymbol z}
++\sqrt{2\lambda t\Delta}\,\boldsymbol\xi$, terminating deterministically at
+$\boldsymbol x_t-tv$; at $\lambda=0$ every added term vanishes and the step is algebraically the
+released Euler step, so the family is enlarged rather than redefined. No network is retrained:
+the frozen checkpoints are loaded by hash and only the integration rule changes. $\lambda$ is
+selected on the development window over $\{0,0.5,2,8,32\}$, scoring the absent arm alone, by
+minimising $|e(\lambda)-2/(M{+}1)|$ where $e$ is the rank-histogram extreme-bin mass---a
+two-sided criterion on calibration, not accuracy, which returns $\lambda=0$ if no positive value
+is better calibrated. The test window is contacted once at the selected $\lambda$, with a
+$\lambda=0$ port-fidelity control. Both candidate stochastic constructions were first checked on
+an analytically solvable Gaussian problem; the denoising-diffusion implicit model (DDIM)
+$\eta$ transport was rejected there for
+failing to preserve the terminal marginal and for reducing ensemble spread, and was replaced
+before any outcome on this record was observed (Supplementary Note~10).
+
+\subsection{Single-slot channel protocol}\label{sec:slotmethods}
+
+The slot experiment uses the smooth-wall channel record of the public CoNFiLD release
+(nominal $Re_\tau=180$; measured $Re_\tau=184$ on the record, the value used throughout), the
+canonical low-Reynolds-number channel configuration \cite{kim1987turbulence}. The generator is trained with exactly one traction-carrying condition: the
+record's own signed two-component viscous wall traction, corrupted by a variance-preserving
+fidelity ladder whose mixing coefficient is drawn uniformly per sample, and withheld with
+probability $0.2$. No wall model's output is ever seen in training, so at inference the fitted
+physics closure (reading two matching-height velocity lines and never any cell below
+$y^+\approx29$), the classical equilibrium law, a trunk- and budget-matched data-only regressor,
+wrong-instant and spanwise-shuffled tractions, and exact-plus-noise references at four frozen
+fidelity rungs all enter through the same slot with identical (zero) generator-side training
+exposure. The conditioning occupies only the four viscous-sublayer rows ($y^+\leq3.2$) and is
+machine-verified absent from every scored cell; at every sampling step those rows are replaced by
+the sublayer profile implied by the supplied traction, so the generated field's wall gradient
+equals the supplied traction identically (relative residual $<2\times10^{-7}$ on every arm). The
+46-frame evaluation window had never been scored by any earlier analysis, certified by a machine
+contact ledger over 127 index sets; every decision rule, control, margin and cost ceiling was
+frozen in a two-stage preregistration before that window was contacted, and block inference uses
+three physical-time blocks with a simulation-calibrated critical value $t^\ast=4.5$. Both walls
+and two training seeds are evaluated, and a denoising-diffusion family repeats the primary
+contrast. The two-phase experiment cost 1.07 GPU-hours; the preregistration, frozen decision
+applicator and computed outcome are archived with the source data.
+
+\subsection{Companion closure, withdrawn diagnostics and quarantine}\label{sec:closuremethod}\label{sec:repro}
+
+The frozen companion closure is an empirically trained family-conditioned operator. Its local
+trunk consumes
+\begin{equation}
+\boldsymbol\Phi=
+\left(U_m/U_e,\ y_m/\delta_{99},\
+\delta_{99}\partial_xp/U_e^2,\
+\delta^\ast_{\rm res}\partial_xp/U_e^2\right),
+\label{eq:localfeatures}
+\end{equation}
+while its permutation-invariant branch consumes the member station set
+$\mathbf S=\{U_m/U_e,\ y_m/\delta_{99},\ \delta_{99}\partial_xp/U_e^2,\
+\delta^\ast_{\rm res}\partial_xp/U_e^2,\ \beta_p\}_{\rm stations}$, where $p$ is kinematic
+pressure and the fifth feature is the signed, wall-stress-free pressure-gradient coordinate
+\begin{equation}
+\beta_p=\frac{\delta^\ast_{\rm res}\,\partial_xp}{u_p^2},\qquad
+u_p=(\nu|\partial_xp|)^{1/3},
+\label{eq:betap}
+\end{equation}
+with $\delta^\ast_{\rm res}$ on the resolved interval $y_m\leq y\leq\delta_{99}$ and
+$\beta_p=0$ when $\partial_xp=0$. The prediction is
+$\widehat C_f=\langle T_\theta(\boldsymbol\Phi),B_\theta(\mathbf S)\rangle+b$ with
+$\tau_w=\tfrac12 C_f U_e^2$, a signed streamwise kinematic stress under the companion convention,
+not the wall-on-fluid vector of Eq.~\eqref{eq:traction}; ``physics-grounded'' denotes
+dimensionless outer inputs with a signed target and stress scaling. Replaying ten retained Krank profiles without
+fitting quantifies the extractor substitutions: the pressure surrogate has relative RMSE $0.961$
+and correlation $0.098$ against the native pressure gradient, full-wall thickness is
+$1.292$--$2.366$ times $\delta^\ast_{\rm res}$ (median $1.345$), and substitution changes $C_f$ by
+relative RMSE $0.408$, flips one sign, and reduces descriptive all-station $R^2$ from $0.558$ to
+$0.171$; header replay agrees with the export to $2.55\times10^{-10}$. These facts, not a
+preference, are why the closure of Sec.~\ref{sec:closuremethodfit} is fitted on the cube record.
+
+Two withdrawn diagnostics are documented in the Supplementary Information. Case1 has shape
+$(16001,918,3)$ and is a stochastically forced two-dimensional irregular pipe with $(u,v,p)$
+\cite{du2024confild}, not a wall jet; the local pipeline imposed an unsupported obstacle scale,
+Reynolds number, viscosity and stress and normalised all frames before splitting, so several
+defects independently preclude attribution (Supplementary Note~8). The archived grouped-time
+experiment uses a first-cell gradient proxy as its ``oracle'' and lets the closure consume a
+subsample of the target field, precluding promotion. Companion geometry-transfer results
+remain evidence for $\mathcal C$ only.
+
+The release entry point verifies sources, rebuilds every released display, compiles both
+documents and replays available M2 endpoints; a manifest-only clean tree repeats it, and
+automated checks compare every headline claim and plotted value with source values selected in
+advance.
+Legacy 527-frame planar hill results are quarantined because physical-time counterparts crossed
+the training/test boundary; their derivatives do not support this manuscript. No new flow
+simulation was performed at any point in this study: every field analysed comes from the frozen
+LES records. Model training was performed and is declared---seven networks for direct
+conditioning, one wall closure plus three generators for the closure composition, and the slot
+experiment's own generators---all written under new names so that no frozen checkpoint is
+overwritten.
+
+\subsection{Computational resources and AI assistance}
+
+Model fitting and GPU inference used a single NVIDIA A800 80\,GB PCIe GPU. The released
+environment pins Python 3.10, NumPy 2.2.6, SciPy 1.15.3, Matplotlib 3.10.8, PyTorch 2.10.0,
+Pillow 12.1.1 and pymech 2.0.1. Experiment-specific GPU-hour costs and ceilings are reported
+above and in the Supplementary Information; no carbon-footprint estimate was made.
+
+Large language models were used to assist with drafting and editing manuscript text, writing and
+reviewing analysis and figure-generation code, and organisational consistency checks. Every
+scientific claim, computation, source-data item, code change and item of final prose was reviewed
+and approved by the authors, who take full responsibility for the submitted work.

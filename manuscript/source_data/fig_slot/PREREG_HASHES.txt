@@ -1,0 +1,38 @@
+# node_011 prospective custody chain — every hash has a retained snapshot file
+# frozen 2026-08-02T04:17:53Z before any node_011 producer outcome
+d6e44b0e1971319598cdce96470c7b1b7073f640d10a02925337119c0cc6ea2b  development/nodes/node_011/PREREG_SNAPSHOT_v1.md
+2c2a82dad5120b95657c206283b1531918ad3a56c292311e4df6b425eeb0e7c6  codes/gpu/eval_e2_slot_channel.py
+4d0ad4f10c927c04b545493efd518c7196fc68db93c9067cb2ace2100db7668e  codes/probes/build_case2_contact_ledger.py
+e3d154464c19257418a34ae4b98a9a1bdef23e001e366c1f10f36573f4be9e24  codes/probes/freeze_node011_expected_hashes.py
+5a6cb4d79cf732d0feef99d641fb5dcd5224b52ea76d2e10853a7b55a77d124e  development/nodes/node_011/EXPECTED_HASHES_FROZEN.json
+cd3be10804bb7be89886b7babfc13c0e5f15086a6805b6035c092a20444d5ec6  codes/results/case2_contact_ledger.json
+
+# AMENDMENT A1 (pre-outcome): producer after diffusion terminal projection fix
+0a0dcb45cea9a6827505bb71eb26a255afd6d6747fcab49d26e0c7676c60ebd0  codes/gpu/eval_e2_slot_channel.py
+b43dc9c5202ae19a693c37effde792e1357bcfe71670ebcbd034a26eacc7bea7  development/nodes/node_011/PREREGISTRATION_SLOT_INTERFACE.md
+
+# AMENDMENT A2 (pre-final-outcome): freeze-script scope clarification
+ebe290ddd419a1be8378e92382ae9a0f7ca244c2a4558b67729e1be078dd6bf3  codes/probes/freeze_node011_expected_hashes.py
+db449fefebab2d4be436d577b8ed4135923db168b4b83ca05ddb25b802c46079  development/nodes/node_011/PREREGISTRATION_SLOT_INTERFACE.md
+
+# v2 FREEZE (pre-FINAL-contact): snapshot, params, applicator, verifier
+2083399956c8412e0e1eafcacbe710a21d1b8e3737e9891c85a749066119acd5  development/nodes/node_011/PREREG_SNAPSHOT_v2.md
+7e7651cab7c44226be3c5e7c53e5e6140d527bd1e6e33241662f2d2f7e1f02e7  development/nodes/node_011/V2_FROZEN_PARAMS.json
+6e4112da530339180b68bd8c7b4b0bd4b1d9f33d815e2f36fcedba490d9e97e5  development/nodes/node_011/apply_decision_rule_node011.py
+5cec622f300267addfb5f603b51fd8190e47bee5187c96da8560b04ceabf65c7  development/nodes/node_011/freeze_v2_from_rehearsal.py
+3775d10fa7d351f0cd376f7d5942ee068591c4c26e688228f9848bf0e1fbf384  codes/results/e2_slot_channel_rehearsal_results.json
+2c31584d85a33711a713fa30246dbfb51f36c079b18fcfc73379aeea7a0f36e9  codes/results/block_inference_calibration.json
+24e30cff6d31f11d0f6d59d4562bb4e6deb5ed56019e676d1e2e9b6e72ca47ec  codes/probes/verify_node011.py
+
+# A2b: release-suite outputs recorded-mutable
+ba30a20c070d9c139d69f9b11268fcfc5d86ab53deddf07937321e1d7868cba9  codes/probes/freeze_node011_expected_hashes.py
+92c5f1a5d9be65d1726943056492a958d7e93c70470f132ecd94b327b64b4b06  development/nodes/node_011/PREREGISTRATION_SLOT_INTERFACE.md
+
+# A2b addendum: two further suite-regenerated outputs + the fig14 artist manifest classified
+e98717f9f8d624f627f4e730c5ffbbead75e883f362f7533b570b02ddf6e3eb7  codes/probes/freeze_node011_expected_hashes.py
+
+# recovered byte-prefix snapshot of the post-A1 preregistration (proves append-only evolution)
+b43dc9c5202ae19a693c37effde792e1357bcfe71670ebcbd034a26eacc7bea7  development/nodes/node_011/PREREG_SNAPSHOT_v1a_postA1.md
+
+# verifier updated post-final for append-only custody semantics + recovered snapshot (supersedes 24e30cff)
+da53128cd3cbf182204d7d9ea50baa30bcf7786523fff2f5e58db8dee680e9c0  codes/probes/verify_node011.py

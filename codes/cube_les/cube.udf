@@ -1,0 +1,36 @@
+// nekRS UDF -- cube-array LES.  Sets a perturbed initial condition to trip
+// turbulence (the wall-mounted cube's separated shear layers are strongly
+// unstable and sustain it).  constFlowRate rescales the bulk to Ubar=1.
+#include <cmath>
+#include <vector>
+#include <random>
+
+#ifdef __okl__
+// no custom device kernels needed (builtin wall BC + constFlowRate)
+#endif
+
+void UDF_Setup0(MPI_Comm comm, setupAide &options) {}
+
+void UDF_Setup()
+{
+  auto mesh = nrs->meshV;
+
+  if (platform->options.getArgs("RESTART FILE NAME").empty()) {
+    auto [x, y, z] = mesh->xyzHost();
+    std::vector<dfloat> U(mesh->dim * nrs->fieldOffset, 0.0);
+    std::mt19937 rng(2026 + platform->comm.mpiRank());
+    std::uniform_real_distribution<double> uni(-1.0, 1.0);
+    const dfloat ub = 1.2;      // seed streamwise; constFlowRate fixes bulk
+    const dfloat amp = 0.35 * ub;
+    for (int n = 0; n < mesh->Nlocal; n++) {
+      // taper the seed to zero at the floor/cube (y=0) so BCs stay consistent
+      const dfloat ytap = std::min(1.0, (double)y[n] / 0.2);
+      U[n + 0 * nrs->fieldOffset] = ytap * (ub + amp * uni(rng));
+      U[n + 1 * nrs->fieldOffset] = ytap * amp * uni(rng);
+      U[n + 2 * nrs->fieldOffset] = ytap * amp * uni(rng);
+    }
+    nrs->fluid->o_U.copyFrom(U.data(), U.size());
+  }
+}
+
+void UDF_ExecuteStep(double time, int tstep) {}

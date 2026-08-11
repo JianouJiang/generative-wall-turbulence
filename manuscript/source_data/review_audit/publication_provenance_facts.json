@@ -1,0 +1,39 @@
+{
+  "schema": "gwt-publication-provenance-facts-v1",
+  "claim_boundary": "Compact facts needed by the publication contract that are deterministic transformations of retained artefacts or explicit custody facts, not new simulation or inference.",
+  "aligned_cube": {
+    "plan_solidity": 0.25,
+    "pitch_over_h": 2,
+    "Re_h": 5000,
+    "distance_threshold_multiplier": 2.01,
+    "fine_grid_wall_normal_cells": 96,
+    "production_dt_max": 0.0015,
+    "source": "codes/cube_les/cube_prod.par and codes/gpu/eval_cube_3d_coupling.py"
+  },
+  "far_time_arm": {
+    "shift_evaluation_positions": 80,
+    "conservative_integral_time_ratio": 1.404778127771699,
+    "ratio_formula": "80 * (343 - 1) / (160 - 1) / 122.48173024910811",
+    "producer_source": "codes/gpu/eval_cube_distributional_rapid.py:371"
+  },
+  "representative_field": {
+    "eval_index": 758,
+    "time_Ubar_over_h": 267.6007,
+    "z_over_h": 1.0208333333333333,
+    "source": "fig2/cube3d_representative_fields.npz and its frozen producer annotation"
+  },
+  "interior_comparator": {
+    "d_lo_over_h": 0.44000000000000006,
+    "shell_thickness_over_h": 0.08333333333333333,
+    "d_hi_over_h": 0.5233333333333334,
+    "formula": "d_lo_over_h + shell_thickness_over_h"
+  },
+  "legacy_flattened_split": {
+    "nearest_neighbour_R2_fluct": 0.9822234511375427,
+    "n_test_frames": 527,
+    "source_path": "codes/results/split_integrity_adequacy_l0_results.json",
+    "source_sha256": "2ed0b8c3914f9faa28157a9a30e07de960f7ba2b6739f1af982254be03b8898f",
+    "source_key": "retrieval.legacy_flattened.retrieval_nn.R2_fluct",
+    "status": "quarantined; same-time spanwise counterparts cross the flattened split"
+  }
+}

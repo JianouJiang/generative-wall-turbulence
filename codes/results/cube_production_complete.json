@@ -1,0 +1,19 @@
+{
+  "exit_code": 0,
+  "manifest_sha256": "23961c32c7cc97aac8166f4fadd17ce4aa63814158cd36bb9b9d60df89bdd8a9",
+  "mesh_sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128",
+  "n_post_spinup": 1101,
+  "n_rasters": 1234,
+  "production_log_sha256": "d2b7cbce1199ddf63290267d475b940bf29cffd35e8c4b0a05104e67d2499720",
+  "production_par_sha256": "99c9d69542b8ebcd72f075926d170b81bc32411b8379916d31a8b49a320a3e9d",
+  "time_minmax": [
+    0.30009301,
+    370.00048748
+  ],
+  "time_minmax_post_spinup": [
+    40.20043129,
+    370.00048748
+  ],
+  "udf_sha256": "2452be22431242e4932bcd104c5d47cea62a5a13cf3dffcdd9d878a18be7ff51",
+  "wall_seconds": 41393.7
+}

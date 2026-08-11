@@ -1,0 +1,941 @@
+{
+  "all_validated": true,
+  "binding_count": 23,
+  "bindings": [
+    {
+      "actual_payload_sha256": "04d071d1c984d6a070b43893fab90206ba2cae5e92886097abc90f2a0cb136ff",
+      "artist_id": "fig3draft.a.correct_midspan_u",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative M2 field; quantitative first-contact evidence remains in panels c-d",
+      "expected_payload_sha256": "04d071d1c984d6a070b43893fab90206ba2cae5e92886097abc90f2a0cb136ff",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3480c1e31188ca2371b3c0e2e006fc9a17224c350fc115346a48466dcc95e773",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select producer-fixed M2 mid-span streamwise component; transpose x/y; mask solid cells; use a shared symmetric colour range",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b9d72b8b956dc9d54c3378676c5d3e50fa68f6b16714ccfbe89454f1be21cf7c",
+      "artist_id": "fig3draft.a.truth_midspan_u",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative M2 field; quantitative first-contact evidence remains in panels c-d",
+      "expected_payload_sha256": "b9d72b8b956dc9d54c3378676c5d3e50fa68f6b16714ccfbe89454f1be21cf7c",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select producer-fixed M2 mid-span streamwise component; transpose x/y; mask solid cells; use a shared symmetric colour range",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "011441e0bae5ea56ec0d1fbc35b048d27c89be8c5d25f6c042865e14a3134d9b",
+      "artist_id": "fig3draft.b.aligned_gain_over_no_wall",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative M2 local error consequence outside the supplied support",
+      "expected_payload_sha256": "011441e0bae5ea56ec0d1fbc35b048d27c89be8c5d25f6c042865e14a3134d9b",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "01cc59f158ca924644373cd5af66dd5000e514da8d7dbe3924f9f23f5926fe19",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "1824c769ed3abff3c579c745298451ec0b693292efe5c354f18cfd1ec383886c",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "no_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9be7b25e0af379f141dc0e9cd39e7c40215f8da7b00e7660132795b43f2aca27",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "efa6da57184f9d1b34cc47031d6bfa282f519d21a63c1b1338f6bbb92f9b7158",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "sum squared error over three velocity components for control minus aligned; select mid-span; transpose x/y; exclude solid and supplied-band cells; positive values mean aligned conditioning lowers local error",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "63c0f74ffa7473a94bcc9b6284a781b3e6d73b9d7d290c34320ffb3955de273e",
+      "artist_id": "fig3draft.b.aligned_gain_over_wrong_wall",
+      "artist_type": "AxesImage",
+      "evidence": "illustrative M2 local error consequence outside the supplied support",
+      "expected_payload_sha256": "63c0f74ffa7473a94bcc9b6284a781b3e6d73b9d7d290c34320ffb3955de273e",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "01cc59f158ca924644373cd5af66dd5000e514da8d7dbe3924f9f23f5926fe19",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "1824c769ed3abff3c579c745298451ec0b693292efe5c354f18cfd1ec383886c",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "wrong_wall",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "ee21b9b16c03c5aab10a4ffb785bd19e57f5bf0ed44a80469d3f7a95107572f8",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "efa6da57184f9d1b34cc47031d6bfa282f519d21a63c1b1338f6bbb92f9b7158",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "sum squared error over three velocity components for control minus aligned; select mid-span; transpose x/y; exclude solid and supplied-band cells; positive values mean aligned conditioning lowers local error",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c6b66030d3ccf7eee042405d9771d0f9f78d05c2f259ddd66145328203732527",
+      "artist_id": "fig3draft.c.correct_mean_midspan",
+      "artist_type": "AxesImage",
+      "evidence": "actual retained ensemble-mean output; individual member fields were not retained",
+      "expected_payload_sha256": "c6b66030d3ccf7eee042405d9771d0f9f78d05c2f259ddd66145328203732527",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3480c1e31188ca2371b3c0e2e006fc9a17224c350fc115346a48466dcc95e773",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select retained correct-time M2 eight-sample mean mid-span streamwise component; transpose x/y; mask solid cells",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "1ea79776cdbf3b866de1dba6f9f269d2779a1105a47ead92a88383fdcee8356b",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_1",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "1ea79776cdbf3b866de1dba6f9f269d2779a1105a47ead92a88383fdcee8356b",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "901969857af605d4779edcb4eb64886d23134f23a985712d72de5c3d25ae8187",
+          "slice": [
+            0,
+            ":",
+            ":",
+            3
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "a398f6a5514976cc2d3fa958e3ed80ac8ec3d73a4115e92546cb03ca9f67ae2c",
+          "slice": [
+            ":",
+            ":",
+            3
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "37543e2c6909686ca248ff6441299d805100dc739e33f6a08fbc760153b2c540",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_2",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "37543e2c6909686ca248ff6441299d805100dc739e33f6a08fbc760153b2c540",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "6877d114f93fa99a41d5c498e98206a9f18cf7a4e21351d96ffb15cd484fe247",
+          "slice": [
+            0,
+            ":",
+            ":",
+            9
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "a398f6a5514976cc2d3fa958e3ed80ac8ec3d73a4115e92546cb03ca9f67ae2c",
+          "slice": [
+            ":",
+            ":",
+            9
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "4d5feede6593fd076180d11914b020287481834db49248bd329c8bc9e3da7638",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_3",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "4d5feede6593fd076180d11914b020287481834db49248bd329c8bc9e3da7638",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "13b4ff2955a8f683041df1e798d8d6968673fac51c74d7b7dfec16a97cfa1bbf",
+          "slice": [
+            0,
+            ":",
+            ":",
+            15
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            15
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "0190901d212304cdb8665ffdfabbf4255ee0e8f82cb7d8d53869fc744d25112f",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_4",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "0190901d212304cdb8665ffdfabbf4255ee0e8f82cb7d8d53869fc744d25112f",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "247f8452e6a083025b1dccc093a198dd502cb97c5fe7747bee13a4687d18d0ec",
+          "slice": [
+            0,
+            ":",
+            ":",
+            21
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            21
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e577c9ee7217121c10f37a7cc880f38c62d2aec354e1f0660c0016e274f96977",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_5",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "e577c9ee7217121c10f37a7cc880f38c62d2aec354e1f0660c0016e274f96977",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "94fa5275a99a53dee849cab44ef42cfc75e89bda43999aaac6fa81bbf3339bf0",
+          "slice": [
+            0,
+            ":",
+            ":",
+            26
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            26
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "488036b83d1799b0d26b5e41dc7a744675eec9f97b06ddd653d8e22c023d46db",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_6",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "488036b83d1799b0d26b5e41dc7a744675eec9f97b06ddd653d8e22c023d46db",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "84feca8310bd9e98bf38fe9633f82f2a1d8c45d9f99fb578feb620fc04c0c4c4",
+          "slice": [
+            0,
+            ":",
+            ":",
+            32
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            32
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b7dd07fe5192abad1e00c8a31462df68de71b767f6de1c9bc2a94fdc7175a19a",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_7",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "b7dd07fe5192abad1e00c8a31462df68de71b767f6de1c9bc2a94fdc7175a19a",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "b76c31dbf6912f6ae5a1e95a9defbc4d1d353d12b3b8e250c0b5dfcebf3665d1",
+          "slice": [
+            0,
+            ":",
+            ":",
+            38
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "a398f6a5514976cc2d3fa958e3ed80ac8ec3d73a4115e92546cb03ca9f67ae2c",
+          "slice": [
+            ":",
+            ":",
+            38
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "840a5729d20be067e07244a48219e4ab1fdc1a83274ee9f8de6838ea7686f705",
+      "artist_id": "fig3draft.c.illustrative_draw_texture_8",
+      "artist_type": "AxesImage",
+      "evidence": "source-faithful illustrative texture from the retained mean; not a claim that an individual stochastic member was archived",
+      "expected_payload_sha256": "840a5729d20be067e07244a48219e4ab1fdc1a83274ee9f8de6838ea7686f705",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "668cc5a65faf21412f6f79edf991f57f8f5f66d602e1681452e33316ebb5d8bf",
+          "slice": [
+            0,
+            ":",
+            ":",
+            44
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "a398f6a5514976cc2d3fa958e3ed80ac8ec3d73a4115e92546cb03ca9f67ae2c",
+          "slice": [
+            ":",
+            ":",
+            44
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "select one streamwise z-section of the retained correct-time M2 mean; transpose x/y and mask solid cells; use only as texture for the explicitly illustrative stochastic-draw card",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "a84fe6659a35670152a5384e93156a9f541701e7d0f47068755f2d0e455b8ce2",
+      "artist_id": "fig3draft.d.absolute_generated_icon",
+      "artist_type": "AxesImage",
+      "evidence": "actual generated field entering the field-to-target R-squared score",
+      "expected_payload_sha256": "a84fe6659a35670152a5384e93156a9f541701e7d0f47068755f2d0e455b8ce2",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3480c1e31188ca2371b3c0e2e006fc9a17224c350fc115346a48466dcc95e773",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "repeat the retained generated mean as the absolute-score comparison icon",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "7e24322287a87e02c1d43eeaf39b1e056f48319eb9d119a3716d12fd29863934",
+      "artist_id": "fig3draft.d.absolute_les_icon",
+      "artist_type": "AxesImage",
+      "evidence": "actual LES target entering the field-to-target R-squared score",
+      "expected_payload_sha256": "7e24322287a87e02c1d43eeaf39b1e056f48319eb9d119a3716d12fd29863934",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "repeat the retained LES field as the absolute-score comparison icon",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ee85baad1638aa5b39cac200c30beeda478cb484e4daab3139d2c8d0dddc901c",
+      "artist_id": "fig3draft.d.generated_mean_cube",
+      "artist_type": "AxesImage",
+      "evidence": "actual retained generated mean used by the support-excluded evaluation",
+      "expected_payload_sha256": "ee85baad1638aa5b39cac200c30beeda478cb484e4daab3139d2c8d0dddc901c",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "3480c1e31188ca2371b3c0e2e006fc9a17224c350fc115346a48466dcc95e773",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "show the retained correct-time M2 mean as an isometric generated-field cube",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "a6c18ea307949f6ecea2af7fe810e2c55ed96d6c529be2c9cd12995b39aa6ddb",
+      "artist_id": "fig3draft.d.les_target_cube",
+      "artist_type": "AxesImage",
+      "evidence": "actual retained LES target used by the support-excluded evaluation",
+      "expected_payload_sha256": "a6c18ea307949f6ecea2af7fe810e2c55ed96d6c529be2c9cd12995b39aa6ddb",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "95acec26533121c638089f0615bd7f0867475fda009594c66ac0595bf66c3709",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "show the matched LES target as an isometric field cube",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "bbb115128fc25968fe571acfe9d217b09db195d2e3c638bb4b5381091407ff07",
+      "artist_id": "fig3draft.d.support_excluded_error_cube",
+      "artist_type": "AxesImage",
+      "evidence": "actual local reconstruction error outside the orange supplied support",
+      "expected_payload_sha256": "bbb115128fc25968fe571acfe9d217b09db195d2e3c638bb4b5381091407ff07",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "correct",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "1824c769ed3abff3c579c745298451ec0b693292efe5c354f18cfd1ec383886c",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "truth",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "01cc59f158ca924644373cd5af66dd5000e514da8d7dbe3924f9f23f5926fe19",
+          "slice": [
+            ":",
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "fluid",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "9581e7b9fd3556578352af347764bcac00be06ff7ac8ff5f53b12fbbef167994",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        },
+        {
+          "key": "band",
+          "kind": "npz",
+          "path": "fig2/cube3d_representative_fields.npz",
+          "resolved_payload_sha256": "efa6da57184f9d1b34cc47031d6bfa282f519d21a63c1b1338f6bbb92f9b7158",
+          "slice": [
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+        }
+      ],
+      "transform": "take the Euclidean three-component generated-minus-LES error at mid-span; exclude solid and supplied-band cells; render on an isometric cube",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "4cd55c9b9fb2976feefc924dbd9b6724cc4e84987261f2aa8b7fd22c1eb602f3",
+      "artist_id": "fig3draft.e.correct_absolute_skill",
+      "artist_type": "Line2D",
+      "evidence": "E1 first-contact terminal aggregates; no replayable M0 interval",
+      "expected_payload_sha256": "4cd55c9b9fb2976feefc924dbd9b6724cc4e84987261f2aa8b7fd22c1eb602f3",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "first_contact_m0.arms.correct.full_support_excluded",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "1827605ee580c7d3362799f67b9b6925615f8288860694cfa118ee75896f73a0",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.arms.correct.near_support_excluded_d_le_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "58af8a726c9ddecfc8fd986387e9a8dc2f702a724b3ab87d2957f7695a68a12f",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.arms.correct.outer_d_gt_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "c5c5937ce7be4139a538f27280aa05647505808a3c2b1b91c4a2f35b78c49976",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        }
+      ],
+      "transform": "connect complete/near/farther M0 point estimates at fixed horizontal offsets",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c8014cd2b12deaf66f531d3f21cb5d55cb2305451cac2b3745fb7faa20085c96",
+      "artist_id": "fig3draft.e.no_wall_absolute_skill",
+      "artist_type": "Line2D",
+      "evidence": "E1 first-contact terminal aggregates; no replayable M0 interval",
+      "expected_payload_sha256": "c8014cd2b12deaf66f531d3f21cb5d55cb2305451cac2b3745fb7faa20085c96",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "first_contact_m0.arms.no_wall.full_support_excluded",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "e7868cf75101a68118dca97e24c16565bb4a9396a321f4d5f6ac557fe082ba28",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.arms.no_wall.near_support_excluded_d_le_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "4b65ffe676d10ecd1cd3496e0edceaf17842894a1f649012247e93e182e05a72",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.arms.no_wall.outer_d_gt_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "45f1b6d0f373dad75bab801a56eac7dca34162c63ed8b4368382a762fa1ab6dc",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        }
+      ],
+      "transform": "connect complete/near/farther M0 point estimates at fixed horizontal offsets",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "21765d269f3c5b5a2e74fba0bf707883f8f4d5e2bb7fae0ba8e856caa88cf9b0",
+      "artist_id": "fig3draft.e.wrong_wall_absolute_skill",
+      "artist_type": "Line2D",
+      "evidence": "E1 first-contact terminal aggregates; no replayable M0 interval",
+      "expected_payload_sha256": "21765d269f3c5b5a2e74fba0bf707883f8f4d5e2bb7fae0ba8e856caa88cf9b0",
+      "panel": "e",
+      "source_refs": [
+        {
+          "key": "first_contact_m0.arms.wrong_wall.full_support_excluded",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "a2c32259cc7a3292d442d2829b8489c6d4081488b719c249753c1ddadbfe88ac",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.arms.wrong_wall.near_support_excluded_d_le_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "8ffc573e14bc0b3b969177b4de16579fb05a097443123023aa612c5d595f2edd",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.arms.wrong_wall.outer_d_gt_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "527b770cdc2b9ba2d5aa88a814669aaefa1b7fd18dff7310f5af4e5568e653c5",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        }
+      ],
+      "transform": "connect complete/near/farther M0 point estimates at fixed horizontal offsets",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b9d25e6ea74c427c42f07a233e1ba8636c0774d862dfb8318143261363f1fbd5",
+      "artist_id": "fig3draft.f.correct_minus_no_wall",
+      "artist_type": "Line2D",
+      "evidence": "E1 first-contact terminal aggregates; positive differences do not imply positive absolute skill",
+      "expected_payload_sha256": "b9d25e6ea74c427c42f07a233e1ba8636c0774d862dfb8318143261363f1fbd5",
+      "panel": "f",
+      "source_refs": [
+        {
+          "key": "first_contact_m0.differences.correct_minus_no_wall.full_support_excluded",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "dc30a5c102f694021e63ec0304fa1deb22c3081723f9638223ccc6d9bb8a2cce",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.differences.correct_minus_no_wall.near_support_excluded_d_le_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "6f9f66949235a71bf87b8899ac58cff472918dbb08791d785a7dba248fb72a7f",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.differences.correct_minus_no_wall.outer_d_gt_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "4d9aaec0dd546e49635586748bb6cb793de97e6307f1f386489cf2dc585c313a",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        }
+      ],
+      "transform": "connect paired M0 differences for complete/near/farther regions",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "92243c430c30b35fecaedfda0bc97798a926fab86e850843a7b8ca3de27e963b",
+      "artist_id": "fig3draft.f.correct_minus_wrong_wall",
+      "artist_type": "Line2D",
+      "evidence": "E1 first-contact terminal aggregates; positive differences do not imply positive absolute skill",
+      "expected_payload_sha256": "92243c430c30b35fecaedfda0bc97798a926fab86e850843a7b8ca3de27e963b",
+      "panel": "f",
+      "source_refs": [
+        {
+          "key": "first_contact_m0.differences.correct_minus_wrong_wall.full_support_excluded",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "73e028551139bae62692116efecc7c3547d60d9a92e0473aee616ad6e1f9a90c",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.differences.correct_minus_wrong_wall.near_support_excluded_d_le_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "d6f8774188fd3702f96a645bc326e207c3d51225088c159dec8284877b191d8b",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        },
+        {
+          "key": "first_contact_m0.differences.correct_minus_wrong_wall.outer_d_gt_0p5h",
+          "kind": "json",
+          "path": "review_audit/derived_peer_review_statistics.json",
+          "resolved_payload_sha256": "3e0332e5705946e625702f039fdc8e78f90c7e0d8ee71ba7c3f0c0b8cdb86848",
+          "source_sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+        }
+      ],
+      "transform": "connect paired M0 differences for complete/near/farther regions",
+      "validated": true
+    }
+  ],
+  "figure": "fig3_propagation",
+  "grouping": "One record per semantically indivisible plotted group (image, bar series, scatter series, error-bar series or data-bearing text).",
+  "schema": "gwt-producer-emitted-artist-manifest-v1"
+}

@@ -1,0 +1,93 @@
+{
+  "case_files": {
+    "acquisition_driver": {
+      "bytes": 8997,
+      "path": "codes/gpu/run_cube_les_and_coupling.py",
+      "sha256": "884251a128e5307580edeab54282f2bcece068c66825290f7a7a84e173a55d80"
+    },
+    "mesh": {
+      "bytes": 3142500,
+      "path": "codes/cube_les/cube.re2",
+      "sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128"
+    },
+    "mesh_generator": {
+      "bytes": 7370,
+      "path": "codes/cube_les/gen_cube_mesh.py",
+      "sha256": "9f8accbfd9acc2bdb51e85518858887839307f66281fba35dbf40128daf38514"
+    },
+    "native_yplus_finalizer": {
+      "bytes": 4246,
+      "path": "codes/gpu/finalize_cube_yplus_temporal.py",
+      "sha256": "67548547f45a3dbaaa16c27c68464660fee863d7c0a19fde25182d672057f7e9"
+    },
+    "native_yplus_producer": {
+      "bytes": 10011,
+      "path": "codes/gpu/eval_cube_native_yplus.py",
+      "sha256": "8d4e3f812a0a5079306cfc142dd072e5af598a9d5637094b4e4d75b621b2f0ed"
+    },
+    "production_parameters": {
+      "bytes": 1085,
+      "path": "codes/cube_les/cube_prod.par",
+      "sha256": "99c9d69542b8ebcd72f075926d170b81bc32411b8379916d31a8b49a320a3e9d"
+    },
+    "rasterizer": {
+      "bytes": 6446,
+      "path": "codes/cube_les/rasterize_cube.py",
+      "sha256": "09f86291c2eb0bfe0b7d8a13d02000d25de8cc4209a93c9e511dedc20f1e8414"
+    },
+    "udf": {
+      "bytes": 1340,
+      "path": "codes/cube_les/cube.udf",
+      "sha256": "2452be22431242e4932bcd104c5d47cea62a5a13cf3dffcdd9d878a18be7ff51"
+    },
+    "usr": {
+      "bytes": 667,
+      "path": "codes/cube_les/cube.usr",
+      "sha256": "3c716f1771bcf4b5111e652c43c44274bf453711c8275e92ca6337fbcd22a079"
+    }
+  },
+  "claim_boundary": "Exact evidence-producing LES case and compact audits; raw fields and checkpoints are not included.",
+  "mesh_semantics": {
+    "domain_h": [
+      2.0,
+      4.0,
+      2.0
+    ],
+    "elements": 14176,
+    "gll_points": 7258112,
+    "periodic_faces": 2464,
+    "polynomial_order": 7,
+    "unreciprocated_periodic_faces": 0,
+    "wall_faces": 2336
+  },
+  "native_yplus": {
+    "ceiling_classified": false,
+    "classified_surfaces": [
+      "floor_between_cubes",
+      "cube_top",
+      "cube_vertical_faces"
+    ],
+    "current_conservative_integral_time": 36.74451907473243,
+    "current_conservative_integral_time_separated": false,
+    "field_times": [
+      390.0003162817,
+      420.0001096262
+    ],
+    "historical_signal_specific_integral_time": 29.2776078445665,
+    "historical_signal_specific_integral_time_separated": true,
+    "origin_machine_paths_redacted": true,
+    "origin_sha256_before_path_sanitization": "cb40ca68c6ad076681f236f6126149daee9a0f1f6efc917766d737beb5123bc1",
+    "path": "manuscript/source_data/methods/cube3d_native_yplus_temporally_separated.json",
+    "primary_record_end_time": 370.00048748,
+    "retained_time_separation": 29.999793344500006,
+    "separate_continuation": true,
+    "sha256": "bddf92ed67c25250dced3569829603da4461abd9a8a001cf668bdad1c6bab54e",
+    "temporal_independence_claim": false
+  },
+  "production": {
+    "path": "manuscript/source_data/methods/cube_production_complete.json",
+    "sha256": "44c28d22481e67bce5202af558ede1dee19d2dd0d4dd31de09ec09799e910c73",
+    "stationarity_energy_drift_middle_to_final": 0.0015475580402026837
+  },
+  "schema": "gwt-cube-les-release-provenance-v1"
+}

@@ -1,0 +1,1620 @@
+{
+  "entries": [
+    {
+      "bytes": 1055,
+      "path": "FIGURE_DATA.md",
+      "role": "release_support",
+      "sha256": "3311508ccc6a19209031213e21ed8a6cbab272d1abb96fc7c9dfb9728c30b917"
+    },
+    {
+      "bytes": 25400,
+      "path": "FIGURE_DATA_SHA256SUMS",
+      "role": "release_support",
+      "sha256": "88d7329f8f1b5c7ae572a827a9c8a0dd94005b632ef8c0b862e901bb6fff9cab"
+    },
+    {
+      "bytes": 4371,
+      "path": "FIGURE_LAYOUT_AUDIT.json",
+      "role": "render_audit",
+      "sha256": "68d0887718b54a703f9f80f61a173d7bcf802b3c2f98ebd604bcf6f7259a8d87"
+    },
+    {
+      "bytes": 321,
+      "path": "PROJECT_STATUS.md",
+      "role": "build_code",
+      "sha256": "d5165925657e03f32e1ce88b24cc4acc34e3e4e1a034d814a87b1b0872074116"
+    },
+    {
+      "bytes": 9067,
+      "path": "README.md",
+      "role": "build_code",
+      "sha256": "c0e95b77e2493751fabbaadafef456bd30527716a24eab9b56c49772faee0909"
+    },
+    {
+      "bytes": 1019,
+      "path": "SYSTEM_REQUIREMENTS.md",
+      "role": "build_code",
+      "sha256": "37ecc767c60a06689abf6e2655ae172edbd578b3d221c2e8a08dec0b8424d2f2"
+    },
+    {
+      "bytes": 20810,
+      "path": "codes/build_submission_source_data.py",
+      "role": "build_code",
+      "sha256": "b57d09e23bb23fd1bfd5441001c3c6f20c157b438c312d9dc6d7a1de4964884b"
+    },
+    {
+      "bytes": 19112,
+      "path": "codes/closure/wall_closure.py",
+      "role": "reproduction_case",
+      "sha256": "416def80313ea09af25daeebe93561b1b6c6a2e2a0f04e708d396554d877d85a"
+    },
+    {
+      "bytes": 98754,
+      "path": "codes/closure/x2fam_weights.h",
+      "role": "reproduction_case",
+      "sha256": "63e4941f682996ef2f95f8882363d73ca440199cd7b5ccee61002f1c5fa99280"
+    },
+    {
+      "bytes": 3142500,
+      "path": "codes/cube_les/cube.re2",
+      "role": "reproduction_case",
+      "sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128"
+    },
+    {
+      "bytes": 1340,
+      "path": "codes/cube_les/cube.udf",
+      "role": "reproduction_case",
+      "sha256": "2452be22431242e4932bcd104c5d47cea62a5a13cf3dffcdd9d878a18be7ff51"
+    },
+    {
+      "bytes": 667,
+      "path": "codes/cube_les/cube.usr",
+      "role": "reproduction_case",
+      "sha256": "3c716f1771bcf4b5111e652c43c44274bf453711c8275e92ca6337fbcd22a079"
+    },
+    {
+      "bytes": 1085,
+      "path": "codes/cube_les/cube_prod.par",
+      "role": "reproduction_case",
+      "sha256": "99c9d69542b8ebcd72f075926d170b81bc32411b8379916d31a8b49a320a3e9d"
+    },
+    {
+      "bytes": 14706,
+      "path": "codes/cube_les/extract_wall_pressure_shear.py",
+      "role": "reproduction_case",
+      "sha256": "bbc96cc45d87c4d3e00591f6d201e9f11fd629705bffb1172675d1f067db9286"
+    },
+    {
+      "bytes": 7370,
+      "path": "codes/cube_les/gen_cube_mesh.py",
+      "role": "reproduction_case",
+      "sha256": "9f8accbfd9acc2bdb51e85518858887839307f66281fba35dbf40128daf38514"
+    },
+    {
+      "bytes": 6446,
+      "path": "codes/cube_les/rasterize_cube.py",
+      "role": "reproduction_case",
+      "sha256": "09f86291c2eb0bfe0b7d8a13d02000d25de8cc4209a93c9e511dedc20f1e8414"
+    },
+    {
+      "bytes": 18583,
+      "path": "codes/derive_peer_review_audit.py",
+      "role": "build_code",
+      "sha256": "aabcb149948605e39f03b9b1d1297624e76767fe095913bfa1d62d9c4e7fd4b7"
+    },
+    {
+      "bytes": 24568,
+      "path": "codes/figures/_submission.py",
+      "role": "build_code",
+      "sha256": "ede0fa3caeb0a0c9096ade0f8cd925a40dc46d734fe189d78cf4d126f758350d"
+    },
+    {
+      "bytes": 3682,
+      "path": "codes/figures/build_fig2_time_pair.py",
+      "role": "build_code",
+      "sha256": "2fa7fe78a5bdeb2f8dbad3ea123f7c94e2ca4e6f2984f3aa9853045b86174b79"
+    },
+    {
+      "bytes": 31090,
+      "path": "codes/figures/fig11_reachgated_composition.py",
+      "role": "build_code",
+      "sha256": "59f625971c89d6c4ebccbc26d760502f2011a9e7d93ee5fad84aa9ddeeb79078"
+    },
+    {
+      "bytes": 27868,
+      "path": "codes/figures/fig14_slot_interface.py",
+      "role": "build_code",
+      "sha256": "70b0d4c3c60834d066c0a61eb8c6327fec7a8c536f820be078833257a4eaec60"
+    },
+    {
+      "bytes": 29461,
+      "path": "codes/figures/fig1_architecture.py",
+      "role": "build_code",
+      "sha256": "1d7b6e3521bd75f0fe5bf1e1252bd8390788800cd3c2d0f13afee28a4797352a"
+    },
+    {
+      "bytes": 33557,
+      "path": "codes/figures/fig2_generation.py",
+      "role": "build_code",
+      "sha256": "0676e041153ad3a42fe7a121d5c4c333fcca74418ac90fc55093b6eb1b8ce254"
+    },
+    {
+      "bytes": 1454,
+      "path": "codes/figures/fig3_propagation.py",
+      "role": "build_code",
+      "sha256": "aa36e144e9c4dc4cce6d0914b5e5b9bba49e62cea5f19d9e49ac825f92eb5a10"
+    },
+    {
+      "bytes": 6188,
+      "path": "codes/figures/fig4_mechanism_robustness.py",
+      "role": "release_support",
+      "sha256": "da123cdfa284de0e07ff3d26c3b2a4ef3b3ba1bbc56786a756fdb833ba88dc5c"
+    },
+    {
+      "bytes": 7288,
+      "path": "codes/figures/fig5_physical_composite.py",
+      "role": "release_support",
+      "sha256": "f3bcd0d777d051fc2b72447941460784da6f1ee985ef44dac38c428d93b24068"
+    },
+    {
+      "bytes": 5223,
+      "path": "codes/figures/fig6_3d.py",
+      "role": "release_support",
+      "sha256": "4c57081f906ff978e1f85ebfc704082f814122e21b5594303d7775a501117304"
+    },
+    {
+      "bytes": 307,
+      "path": "codes/figures/fig6_composition.py",
+      "role": "release_support",
+      "sha256": "c6ea52fd4c15d876d966c01b01b0b75c19e41a2a40ca977c4b265b4a1c573844"
+    },
+    {
+      "bytes": 24290,
+      "path": "codes/figures/fig6_interface.py",
+      "role": "build_code",
+      "sha256": "a4befa2c33b6717284c30c39d6a8d90e3db676684025f57a8d64fb907f16bbbb"
+    },
+    {
+      "bytes": 50331,
+      "path": "codes/figures/fig7_direct_traction.py",
+      "role": "build_code",
+      "sha256": "dd759cd67d91346b780b1b30f624505cdad3d294917fd5e9045719d2976d98f2"
+    },
+    {
+      "bytes": 438,
+      "path": "codes/figures/fig7_scaling.py",
+      "role": "release_support",
+      "sha256": "72bc7b76c5a5054a98fd7d225ade6f7e6f3ed24ba25a04cee79de5bc3e079f23"
+    },
+    {
+      "bytes": 22295,
+      "path": "codes/figures/fig8_closure_composition.py",
+      "role": "build_code",
+      "sha256": "cda11f1ddfeb8fc844bc96032c92615e880fb0f9f7707d208607c7cf00f4ad27"
+    },
+    {
+      "bytes": 12008,
+      "path": "codes/figures/fig9_generality.py",
+      "role": "build_code",
+      "sha256": "1172f6623f0f00aad86c2fcb9e154501674335dce8bb3755855000325373c0ac"
+    },
+    {
+      "bytes": 19475,
+      "path": "codes/figures/rebuild_submission_figures.py",
+      "role": "build_code",
+      "sha256": "06e761e2c72d882904ab1b31ee58458d26baa3274d467427288d00ca45dc2192"
+    },
+    {
+      "bytes": 12588,
+      "path": "codes/figures/stage_fig1_overview.py",
+      "role": "build_code",
+      "sha256": "dd2cecdad9cae10b723e8dde810fb1ff6e9636f698ac651a4f35ec3aad369367"
+    },
+    {
+      "bytes": 17016,
+      "path": "codes/gpu/eval_causal_wall_history.py",
+      "role": "reproduction_case",
+      "sha256": "c6b251c157e9990ab542d502b27f2a8c4982890b88d2fbd3cf5839fd44534350"
+    },
+    {
+      "bytes": 23038,
+      "path": "codes/gpu/eval_cube_3d_coupling.py",
+      "role": "reproduction_case",
+      "sha256": "b9082a36f0dc856eed15acab929cd7c3dc35e42b500fd0059971e74ed8d8e514"
+    },
+    {
+      "bytes": 8005,
+      "path": "codes/gpu/eval_cube_3d_coupling_adequate.py",
+      "role": "reproduction_case",
+      "sha256": "7a744be63b44368896f02ff72ea1a9ba0e709c61037df18efb0314e7ddde7d30"
+    },
+    {
+      "bytes": 23469,
+      "path": "codes/gpu/eval_cube_distributional_rapid.py",
+      "role": "reproduction_case",
+      "sha256": "464b52df572c136fe23c60b19a67de7f9564c16bbd81d0c97a82777d7460958f"
+    },
+    {
+      "bytes": 10011,
+      "path": "codes/gpu/eval_cube_native_yplus.py",
+      "role": "reproduction_case",
+      "sha256": "8d4e3f812a0a5079306cfc142dd072e5af598a9d5637094b4e4d75b621b2f0ed"
+    },
+    {
+      "bytes": 8257,
+      "path": "codes/gpu/eval_cube_periodic_topology.py",
+      "role": "reproduction_case",
+      "sha256": "559f065d5ef3dc3e42ff85362059a037aec7f4ee434d3de3a7bff69e2cbd7ae7"
+    },
+    {
+      "bytes": 41351,
+      "path": "codes/gpu/eval_cube_wiener_floor_bench.py",
+      "role": "reproduction_case",
+      "sha256": "90b72cb3297be710155935d004131f968a93ffe60d8667af3954fdf5a0cc5d8d"
+    },
+    {
+      "bytes": 60668,
+      "path": "codes/gpu/eval_e2_closure_composition.py",
+      "role": "reproduction_case",
+      "sha256": "faf1eb643e80af9499387e21adb6ffd541d691e95b3f637ef6cfeb9ee4f597df"
+    },
+    {
+      "bytes": 46330,
+      "path": "codes/gpu/eval_e2_cube_reachgated.py",
+      "role": "reproduction_case",
+      "sha256": "01d77716ea6f739f968817278a915af62d07dfd44cff3c0f4f3dbdbe9da380c1"
+    },
+    {
+      "bytes": 39285,
+      "path": "codes/gpu/eval_e2_direct_traction.py",
+      "role": "reproduction_case",
+      "sha256": "f53372b2e3cbb33c9a54637e598aa4fe1fcc20096f991e492ee0f2c974f7424c"
+    },
+    {
+      "bytes": 77431,
+      "path": "codes/gpu/eval_e2_generality.py",
+      "role": "reproduction_case",
+      "sha256": "9a0136c60609b7f216f139e419cb13741949641d396eb11b5f8f72169c01dd70"
+    },
+    {
+      "bytes": 55405,
+      "path": "codes/gpu/eval_e2_slot_channel.py",
+      "role": "reproduction_case",
+      "sha256": "0a0dcb45cea9a6827505bb71eb26a255afd6d6747fcab49d26e0c7676c60ebd0"
+    },
+    {
+      "bytes": 30410,
+      "path": "codes/gpu/eval_e2_traction_interface.py",
+      "role": "reproduction_case",
+      "sha256": "9ea494d62d4aa2eba98e5108f44486ab9cdc553ad88744f645cb7ea9361de395"
+    },
+    {
+      "bytes": 13156,
+      "path": "codes/gpu/eval_runtime_closure_conditioning.py",
+      "role": "reproduction_case",
+      "sha256": "52857050efed77b3a1f57ecda73fba422a1729e51fc01c8d19af0de6f5449c8a"
+    },
+    {
+      "bytes": 35224,
+      "path": "codes/gpu/eval_wallstress_cond.py",
+      "role": "reproduction_case",
+      "sha256": "9d8a979942d23a2928de6154ec77dc7de305b1add8a033314623a95e8963af01"
+    },
+    {
+      "bytes": 4246,
+      "path": "codes/gpu/finalize_cube_yplus_temporal.py",
+      "role": "reproduction_case",
+      "sha256": "67548547f45a3dbaaa16c27c68464660fee863d7c0a19fde25182d672057f7e9"
+    },
+    {
+      "bytes": 8997,
+      "path": "codes/gpu/run_cube_les_and_coupling.py",
+      "role": "reproduction_case",
+      "sha256": "884251a128e5307580edeab54282f2bcece068c66825290f7a7a84e173a55d80"
+    },
+    {
+      "bytes": 3281,
+      "path": "codes/gpu/run_wiener_bench_seed_chain.py",
+      "role": "reproduction_case",
+      "sha256": "e6a1c2cc0b6900962cd956d3dfadae371fd6bca3306e2fb58a1e632dd3e8764e"
+    },
+    {
+      "bytes": 19199,
+      "path": "codes/probes/audit_closure_interface_custody.py",
+      "role": "build_code",
+      "sha256": "a80923caad716252495e0199559d8fab6576c849a136a870659c2f0b4050eba3"
+    },
+    {
+      "bytes": 11631,
+      "path": "codes/probes/audit_cube_train_band_retrieval.py",
+      "role": "build_code",
+      "sha256": "158523c2fd37dd4899caa3ee2a347c9c5e5210ddab77d40d78b080631fafb519"
+    },
+    {
+      "bytes": 8448,
+      "path": "codes/probes/audit_hill_positive_control.py",
+      "role": "release_support",
+      "sha256": "d80441d604989f00d8f2badef461df2b4c50502e2a59d778d19c26f10be229ec"
+    },
+    {
+      "bytes": 23054,
+      "path": "codes/probes/audit_level1_protocol.py",
+      "role": "build_code",
+      "sha256": "e5bdd5204494dd4d94faedc69212f401098a588f7dfb92f27c37241436d8a9f5"
+    },
+    {
+      "bytes": 6341,
+      "path": "codes/probes/build_contact_ledger.py",
+      "role": "reproduction_case",
+      "sha256": "958618daeca935d89c8ce05ec9b6948909944a4fce9b861f44e3146239a90b3f"
+    },
+    {
+      "bytes": 13912,
+      "path": "codes/probes/complete_non_regression_node007.py",
+      "role": "reproduction_case",
+      "sha256": "be9423f8196ed7815ab12288e4fabef3067c5fcab5387dd95d405f75bbe1f1b9"
+    },
+    {
+      "bytes": 9434,
+      "path": "codes/probes/freeze_node007.py",
+      "role": "reproduction_case",
+      "sha256": "a842c9a6846e060c2eca73d2c10dd57dfd52afbb050f93cb6ff051721731978c"
+    },
+    {
+      "bytes": 16797,
+      "path": "codes/probes/hill_hierarchical_intervals.py",
+      "role": "release_support",
+      "sha256": "4e569ac447afc84b93af31ac5a180f1a0cf456c2d453c3f30f953a05f0f8544c"
+    },
+    {
+      "bytes": 9057,
+      "path": "codes/probes/recompute_fig6_conservative_blocks.py",
+      "role": "build_code",
+      "sha256": "9b16c971fe2637184a92887e9ebbef622945e8e18d426d64f825dbc8cf319444"
+    },
+    {
+      "bytes": 3204,
+      "path": "codes/probes/verify_clean_release.py",
+      "role": "build_code",
+      "sha256": "ceeb978c9f4bc473967a5e51f21bf03c0eab590ef2bd386249120f1587c592a6"
+    },
+    {
+      "bytes": 18772,
+      "path": "codes/probes/verify_level3_reader_consequences.py",
+      "role": "build_code",
+      "sha256": "65052be835b58b6ef66ca14788c44a848f1bb335ccf328ec388238c3377ab90e"
+    },
+    {
+      "bytes": 20175,
+      "path": "codes/probes/verify_revision_semantics.py",
+      "role": "build_code",
+      "sha256": "e1ee6df6d77172c5ebf8e27367bf5600e355e89ec5d776c30dcae2b07a7ff261"
+    },
+    {
+      "bytes": 4465,
+      "path": "codes/probes/verify_runtime_closure.py",
+      "role": "reproduction_case",
+      "sha256": "dfd29e2b31fe6d52279fa86359c25e4a8a9a3886361ac09ee88c3c5e12a4db68"
+    },
+    {
+      "bytes": 75681,
+      "path": "codes/probes/verify_submission_methodology.py",
+      "role": "build_code",
+      "sha256": "f80c1336e9bf18c8ae7c43bb16047dd8496427600db28a91619131a66837fbab"
+    },
+    {
+      "bytes": 2926,
+      "path": "codes/release_manifest.txt",
+      "role": "build_code",
+      "sha256": "eec655273878fcf246bc7a3bce5b464dc336692ebe1f63c712b82509d435319b"
+    },
+    {
+      "bytes": 1886,
+      "path": "codes/reproduce_all.sh",
+      "role": "build_code",
+      "sha256": "16cb30ccd1d71fe76fd04220ed66fad9e4c5a867769ef0f05343cf1efa6f20bd"
+    },
+    {
+      "bytes": 21531,
+      "path": "codes/results/causal_wall_history_results.json",
+      "role": "reproduction_case",
+      "sha256": "0eb97c78b80d569b067dfec58f4ee4d9213335b57395eba1d2f7fadf819cf641"
+    },
+    {
+      "bytes": 8733,
+      "path": "codes/results/cube3d_coupling_adequate_results.json",
+      "role": "reproduction_case",
+      "sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b"
+    },
+    {
+      "bytes": 7988,
+      "path": "codes/results/cube3d_coupling_results.json",
+      "role": "reproduction_case",
+      "sha256": "61e7d09d297bd6fa6a5aa8d55476e1c2a6fe56ddda0e7efe93b7eab25c3ce2a2"
+    },
+    {
+      "bytes": 8768,
+      "path": "codes/results/cube3d_native_yplus_temporally_separated.json",
+      "role": "reproduction_case",
+      "sha256": "bddf92ed67c25250dced3569829603da4461abd9a8a001cf668bdad1c6bab54e"
+    },
+    {
+      "bytes": 668,
+      "path": "codes/results/cube_production_complete.json",
+      "role": "reproduction_case",
+      "sha256": "44c28d22481e67bce5202af558ede1dee19d2dd0d4dd31de09ec09799e910c73"
+    },
+    {
+      "bytes": 43436,
+      "path": "codes/results/e2_cube_reachgated_results.json",
+      "role": "reproduction_case",
+      "sha256": "3d7d23e6acca9f7d6d56f028104d8f4cfe19e3073ad7d33abc11d3d31f8ae6ea"
+    },
+    {
+      "bytes": 7154,
+      "path": "codes/results/e2_grouped_hills_band_results.json",
+      "role": "reproduction_case",
+      "sha256": "bf1924a67e0b864bf5611fa00220b33ae0a8d1af147569bae94fae8cd5970b85"
+    },
+    {
+      "bytes": 27144,
+      "path": "codes/results/e2_traction_interface_results.json",
+      "role": "reproduction_case",
+      "sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+    },
+    {
+      "bytes": 152829,
+      "path": "codes/results/hill_hierarchical_intervals.json",
+      "role": "release_support",
+      "sha256": "26ac4624dad2d02017d6a801abcdfd1af67bdbdedbc2a234ff77098ad86588eb"
+    },
+    {
+      "bytes": 12856,
+      "path": "codes/results/level3_reader_consequence_verification.json",
+      "role": "release_support",
+      "sha256": "0c95951cd1befabdb87ebaea4ef24da9700768ed9723255ee2107746f8b05377"
+    },
+    {
+      "bytes": 265727,
+      "path": "codes/results/revision_semantic_verification.json",
+      "role": "release_support",
+      "sha256": "eee56f2053a7bd383a000f84afe43e37990a7365b4603070b00996a4e3fa2466"
+    },
+    {
+      "bytes": 20730,
+      "path": "codes/results/runtime_closure_conditioning_results.json",
+      "role": "reproduction_case",
+      "sha256": "d96b352e146f23f94bd16011337051c7993bea15b8ead7d638b96496163e6457"
+    },
+    {
+      "bytes": 90061,
+      "path": "codes/results/submission_verification.json",
+      "role": "release_support",
+      "sha256": "92213a6b0166a0baa38d8370206e05dfbc2a70e55a77c973c43c83691161bed1"
+    },
+    {
+      "bytes": 5235,
+      "path": "development/iteration_20260723T150839/nodes/node_006/preregistration.md",
+      "role": "reproduction_case",
+      "sha256": "3f4bfdace6efb5d4162ca0b129dfb4d42077960010ead234be66edff745cc4de"
+    },
+    {
+      "bytes": 10178,
+      "path": "development/nodes/node_004/PREREGISTRATION_E2_INTERFACE.md",
+      "role": "reproduction_case",
+      "sha256": "9b12979a3ef3bec7c116c1e58c17981d3ff2771061e97aa9d2fb14065a5a7dfc"
+    },
+    {
+      "bytes": 1208,
+      "path": "development/nodes/node_005/FROZEN_HASHES.json",
+      "role": "reproduction_case",
+      "sha256": "4bc3c73b468873dc34e610e6eba784c373625e500b53e611a5a4f4bcfc527198"
+    },
+    {
+      "bytes": 13121,
+      "path": "development/nodes/node_005/PREREGISTRATION_E2_DIRECT.md",
+      "role": "reproduction_case",
+      "sha256": "cfbc221075c8c23a9462a86c291c36c9cb805d157a47868149c0fc6d1e142c4f"
+    },
+    {
+      "bytes": 14333,
+      "path": "development/nodes/node_005/verify_node005.py",
+      "role": "reproduction_case",
+      "sha256": "7530beee886d1dd402f72025c52e0c6de80c190a1816e5e52bffddb29d1dca15"
+    },
+    {
+      "bytes": 5427,
+      "path": "development/nodes/node_006/DECISION_RULE_OUTCOME.json",
+      "role": "reproduction_case",
+      "sha256": "2686ad74a10127e2eb5d5d00ef31db123e4559535a2870c8cfdd7efac12ba778"
+    },
+    {
+      "bytes": 2641,
+      "path": "development/nodes/node_006/FROZEN_HASHES.json",
+      "role": "reproduction_case",
+      "sha256": "b9335ac61d09fd058fee8dc3918f86130cd823745bdc454c3dd66c851bd3605a"
+    },
+    {
+      "bytes": 17472,
+      "path": "development/nodes/node_006/PREREGISTRATION_E2_CLOSURE.md",
+      "role": "reproduction_case",
+      "sha256": "b29dfb6309c9e404ce1eb0fc587c8e2a390ab4dc7f72ad75601f979fc6f91245"
+    },
+    {
+      "bytes": 7011,
+      "path": "development/nodes/node_006/apply_decision_rule.py",
+      "role": "reproduction_case",
+      "sha256": "548e835dfcd9ee807c496223e0551f5216bb759abef869d09d0ee428417a6ea9"
+    },
+    {
+      "bytes": 10838,
+      "path": "development/nodes/node_006/verify_node006.py",
+      "role": "reproduction_case",
+      "sha256": "6b07f3dfc5aabb02a7f07b132157b5d8a232ea498f5296f85a2bca4815037732"
+    },
+    {
+      "bytes": 4798,
+      "path": "development/nodes/node_007/AMENDMENT_1_BLOCK_LENGTH.md",
+      "role": "reproduction_case",
+      "sha256": "10ca9b37ce78eadce35d7dbb2c322860161c7071a96412081def0b1165e58bb9"
+    },
+    {
+      "bytes": 7378,
+      "path": "development/nodes/node_007/CONTACT_LEDGER.json",
+      "role": "reproduction_case",
+      "sha256": "a4fd79a0f82d90e56623a443b442b1a366d45bd5029f52d98da64118e441a10b"
+    },
+    {
+      "bytes": 8232,
+      "path": "development/nodes/node_007/FROZEN_HASHES.json",
+      "role": "reproduction_case",
+      "sha256": "fcd57208ee06c966166182a015d04f55f5580458452beee8dbf7589c0370ab90"
+    },
+    {
+      "bytes": 10025,
+      "path": "development/nodes/node_007/NON_REGRESSION_COMPLETION.json",
+      "role": "reproduction_case",
+      "sha256": "a58e813931c79ad7fe8ac426fd2cba288114d1d359d732e3e6dfb907119a731a"
+    },
+    {
+      "bytes": 23009,
+      "path": "development/nodes/node_007/PREREGISTRATION_E2_GENERALITY.md",
+      "role": "reproduction_case",
+      "sha256": "382e3737fc70002979215a4d1d58f9930ec2ead1fcd9abc24bf5dd8db43551fd"
+    },
+    {
+      "bytes": 9348,
+      "path": "development/nodes/node_007/apply_decision_rule_node007.py",
+      "role": "reproduction_case",
+      "sha256": "2cb2b85ccb9903f74a834d8216e7ef3207f561a5fc0c34b4a55083336c457103"
+    },
+    {
+      "bytes": 9080,
+      "path": "development/nodes/node_007/verify_node007.py",
+      "role": "reproduction_case",
+      "sha256": "994df8bac5c5da327cde558c8035dfd8f4ba966e03366037c831a3b0b415725e"
+    },
+    {
+      "bytes": 33204,
+      "path": "development/nodes/node_008/CONTACT_LEDGER_PHYSICAL.json",
+      "role": "reproduction_case",
+      "sha256": "217f794ff3c31adb4ecbadfdb4c1c371602ca95e23e2d4fe659dda38d1ca2f62"
+    },
+    {
+      "bytes": 17332,
+      "path": "development/nodes/node_008/DECISION_RULE_OUTCOME.json",
+      "role": "reproduction_case",
+      "sha256": "5200f5fc3b6aa2e4878bf7a19aaeca136ba5513e577bd9a7a36d32f294c2922b"
+    },
+    {
+      "bytes": 8898,
+      "path": "development/nodes/node_008/DECISION_RULE_OUTCOME_REPAIR2.json",
+      "role": "reproduction_case",
+      "sha256": "04152877d2b42d2db2bca0636493777415893b20cbe7eb926dc520a76a8cfe3b"
+    },
+    {
+      "bytes": 32517,
+      "path": "development/nodes/node_008/DECISION_RULE_OUTCOME_REPAIR3.json",
+      "role": "reproduction_case",
+      "sha256": "cd5f9e23276bbe631f99dc584a00b91dc2a451fc240cf20d8114a3615ec55839"
+    },
+    {
+      "bytes": 14724,
+      "path": "development/nodes/node_008/FROZEN_HASHES.json",
+      "role": "reproduction_case",
+      "sha256": "9c631356c8b178c89cb6a8925f41eba7118022cf03f40fbda5ce90cd8e4d2ae0"
+    },
+    {
+      "bytes": 4766,
+      "path": "development/nodes/node_011/DECISION_RULE_OUTCOME_NODE011.json",
+      "role": "reproduction_case",
+      "sha256": "89b23aa5f59441aede886d5b7b6e8430372704164ee07728508216dae5e74813"
+    },
+    {
+      "bytes": 134927,
+      "path": "development/nodes/node_011/EXPECTED_HASHES_FROZEN.json",
+      "role": "reproduction_case",
+      "sha256": "5a6cb4d79cf732d0feef99d641fb5dcd5224b52ea76d2e10853a7b55a77d124e"
+    },
+    {
+      "bytes": 21419,
+      "path": "development/nodes/node_011/PREREGISTRATION_SLOT_INTERFACE.md",
+      "role": "reproduction_case",
+      "sha256": "92c5f1a5d9be65d1726943056492a958d7e93c70470f132ecd94b327b64b4b06"
+    },
+    {
+      "bytes": 3225,
+      "path": "development/nodes/node_011/PREREG_HASHES.txt",
+      "role": "reproduction_case",
+      "sha256": "fe714a21c4cc5c7dd8883827ce708adee928d97142ec383e2817a198b7df0aeb"
+    },
+    {
+      "bytes": 16436,
+      "path": "development/nodes/node_011/PREREG_SNAPSHOT_v1.md",
+      "role": "reproduction_case",
+      "sha256": "d6e44b0e1971319598cdce96470c7b1b7073f640d10a02925337119c0cc6ea2b"
+    },
+    {
+      "bytes": 17300,
+      "path": "development/nodes/node_011/PREREG_SNAPSHOT_v1a_postA1.md",
+      "role": "reproduction_case",
+      "sha256": "b43dc9c5202ae19a693c37effde792e1357bcfe71670ebcbd034a26eacc7bea7"
+    },
+    {
+      "bytes": 20811,
+      "path": "development/nodes/node_011/PREREG_SNAPSHOT_v2.md",
+      "role": "reproduction_case",
+      "sha256": "2083399956c8412e0e1eafcacbe710a21d1b8e3737e9891c85a749066119acd5"
+    },
+    {
+      "bytes": 8414,
+      "path": "development/nodes/node_011/apply_decision_rule_node011.py",
+      "role": "reproduction_case",
+      "sha256": "6e4112da530339180b68bd8c7b4b0bd4b1d9f33d815e2f36fcedba490d9e97e5"
+    },
+    {
+      "bytes": 1403,
+      "path": "development/peer_review_baseline.json",
+      "role": "reproduction_case",
+      "sha256": "e8eb7eb2cc259f05cf35227098b7cce0caacd879032df72e1cac0e1735c24890"
+    },
+    {
+      "bytes": 36743,
+      "path": "figure_drafts/fig3/fig3_propagation_spatial_draft.py",
+      "role": "release_support",
+      "sha256": "1957439e9861cef21e8d57dcaa9d3ac5b2abf0f0666ba1a7f9ad278822ba5712"
+    },
+    {
+      "bytes": 8520,
+      "path": "figure_drafts/fig45/fig5_composition_transfer_v3.py",
+      "role": "build_code",
+      "sha256": "c6d79020572886d6406bb385b77736d94012efc4b5d18af6ccd21669a5cb6255"
+    },
+    {
+      "bytes": 34367,
+      "path": "figure_drafts/fig8/fig8_scaling_v1.py",
+      "role": "release_support",
+      "sha256": "9218a4d6e900a780e283d0ab8cfb869cc6a205c0ba4a6f488941911e92a9b447"
+    },
+    {
+      "bytes": 12276,
+      "path": "manuscript/FIGURE_EVIDENCE_AUDIT.md",
+      "role": "manuscript_source",
+      "sha256": "fb7beec634477e1b87c48bc8d4101f20e46f68524b7b868a2705b45ccb82e849"
+    },
+    {
+      "bytes": 245,
+      "path": "manuscript/cover_letter.md",
+      "role": "manuscript_source",
+      "sha256": "0ad115f8a28f3675036be2a645f1b0569c54f1146d05e28df713ec54f32e4549"
+    },
+    {
+      "bytes": 33257,
+      "path": "manuscript/figures/fig10_grouped_protocol.pdf",
+      "role": "release_support",
+      "sha256": "357fc3ff7f0ecd9e4c56cec6685ebf277ede614fb92a74f4ae64d7609b647492"
+    },
+    {
+      "bytes": 397501,
+      "path": "manuscript/figures/fig10_grouped_protocol.png",
+      "role": "release_support",
+      "sha256": "2aeca820b6a5981f20af0ecc2d33f9d6b4d2a4dcca67a344d453a14a625d8321"
+    },
+    {
+      "bytes": 106353,
+      "path": "manuscript/figures/fig11_reachgated_composition.pdf",
+      "role": "figure",
+      "sha256": "6173e36f9d1d77b1ec4f22ad1621faa2e4f6c3bd02857dc0687216b6290addad"
+    },
+    {
+      "bytes": 836307,
+      "path": "manuscript/figures/fig11_reachgated_composition.png",
+      "role": "figure",
+      "sha256": "1821c3277638592c527bd60a96780fc646fb828a873a91df88b4fa1fac75bcff"
+    },
+    {
+      "bytes": 33313,
+      "path": "manuscript/figures/fig12_rough_infomatched.pdf",
+      "role": "release_support",
+      "sha256": "57b00dcb194076a98b00781960328322164ab1de283ee474b1282bd9e6ed666b"
+    },
+    {
+      "bytes": 898079,
+      "path": "manuscript/figures/fig12_rough_infomatched.png",
+      "role": "release_support",
+      "sha256": "074f0ad983f01b1cc207a9314c2e0d488e231a527d4c40a01276d5ff292b6fc2"
+    },
+    {
+      "bytes": 35327,
+      "path": "manuscript/figures/fig13_compact_support.pdf",
+      "role": "release_support",
+      "sha256": "4e67f6d1dc21ae8910bea5d2e11f04b2ce0b77eb5ad8cb1b764836806180437a"
+    },
+    {
+      "bytes": 512014,
+      "path": "manuscript/figures/fig13_compact_support.png",
+      "role": "release_support",
+      "sha256": "e2b27590ee3e9a2602120b92d12294bf37ad1c7e8c87c4e8379d91aaac561222"
+    },
+    {
+      "bytes": 143537,
+      "path": "manuscript/figures/fig14_slot_interface.pdf",
+      "role": "figure",
+      "sha256": "c3fe611d9c67def4254709cc04aef96e37e6d35543b56921183a45cc8ddde49f"
+    },
+    {
+      "bytes": 1223121,
+      "path": "manuscript/figures/fig14_slot_interface.png",
+      "role": "figure",
+      "sha256": "4352e44ee4c0c176ac6fce41e7df21abf305d50ba9ffb9ceb3a16958c2fcc8ce"
+    },
+    {
+      "bytes": 235799,
+      "path": "manuscript/figures/fig1_architecture.pdf",
+      "role": "figure",
+      "sha256": "ad573e4f6092aa8f2d05837a552f3a767335b92ee6d665fb8b366814456da7cd"
+    },
+    {
+      "bytes": 694627,
+      "path": "manuscript/figures/fig1_architecture.png",
+      "role": "figure",
+      "sha256": "16e8f1687f3076e16a70e751383375fc56f075539961c511f93b36eb09171bbc"
+    },
+    {
+      "bytes": 157989,
+      "path": "manuscript/figures/fig2_generation.pdf",
+      "role": "figure",
+      "sha256": "0348b7c0dc4585913a4b00ec7495ada623ec653bbf57da0caebb35e7a569c297"
+    },
+    {
+      "bytes": 562464,
+      "path": "manuscript/figures/fig2_generation.png",
+      "role": "figure",
+      "sha256": "81be51bd12fe8f08477db6054deceef847eed1b604f9997f7270691bab4174d8"
+    },
+    {
+      "bytes": 98438,
+      "path": "manuscript/figures/fig3_propagation.pdf",
+      "role": "figure",
+      "sha256": "4ea123b9f4a3ec1ef01fc0b674775c5bc4db3aeb51862f1ad888832763f4ddf3"
+    },
+    {
+      "bytes": 628611,
+      "path": "manuscript/figures/fig3_propagation.png",
+      "role": "figure",
+      "sha256": "32951fe26e98c4daa282d264755d0e2b83ca569e1e3c58cbda25be3923bdf87a"
+    },
+    {
+      "bytes": 29802,
+      "path": "manuscript/figures/fig4_mechanism_robustness.pdf",
+      "role": "release_support",
+      "sha256": "6803c336f9a32e56c48a39e47a40045a79c2468f793f2c487c90c843b46038e9"
+    },
+    {
+      "bytes": 271647,
+      "path": "manuscript/figures/fig4_mechanism_robustness.png",
+      "role": "release_support",
+      "sha256": "66832ac71a036352aed6efbca65a46b8a212e2a33827d69b7545138aafbe1bd4"
+    },
+    {
+      "bytes": 218864,
+      "path": "manuscript/figures/fig4_reach_mechanism.pdf",
+      "role": "release_support",
+      "sha256": "6f20faa2e81b28f772ad483a098a963e39a13482cb62fc873281f866c0e61433"
+    },
+    {
+      "bytes": 612465,
+      "path": "manuscript/figures/fig4_reach_mechanism.png",
+      "role": "release_support",
+      "sha256": "5b011490b2be3c344d8b73434e7ee29ebc7a0b650391fb3969a2d44dc067bfb0"
+    },
+    {
+      "bytes": 73206,
+      "path": "manuscript/figures/fig5_composition_transfer.pdf",
+      "role": "release_support",
+      "sha256": "20260cbfd7c2b4a53307ee18efd84ec6e89f6053b7a13d04ab86c43cb92e7a17"
+    },
+    {
+      "bytes": 424898,
+      "path": "manuscript/figures/fig5_composition_transfer.png",
+      "role": "release_support",
+      "sha256": "c587845e43a0e110a7d978e885196b4bb98a56d4e9945fdfcadfc2d66acfc7b0"
+    },
+    {
+      "bytes": 28568,
+      "path": "manuscript/figures/fig5_physical_composite.pdf",
+      "role": "release_support",
+      "sha256": "976703e1d7f479ab0e303a3bbc5bafd5d6ea0a1d977e39472aefa9e0581df920"
+    },
+    {
+      "bytes": 228000,
+      "path": "manuscript/figures/fig5_physical_composite.png",
+      "role": "release_support",
+      "sha256": "1b1da62f55c8f772621d741dc3c263e63228b7c87d9abed981bed3c415032298"
+    },
+    {
+      "bytes": 121005,
+      "path": "manuscript/figures/fig5_transfer.pdf",
+      "role": "release_support",
+      "sha256": "6cfcba708595f296b5647545ad4974107b0d051c56f72696477086106dd48e13"
+    },
+    {
+      "bytes": 1095736,
+      "path": "manuscript/figures/fig5_transfer.png",
+      "role": "release_support",
+      "sha256": "afbdc9faa150d7f98b53ab1c4cd51a26dce68a27335a91997c4998962b7edea1"
+    },
+    {
+      "bytes": 27499,
+      "path": "manuscript/figures/fig6_3d.pdf",
+      "role": "release_support",
+      "sha256": "1bfbef0077da1c04303a6cdbaafcb166b19f0440c4423bbdd35b35d51e3523a4"
+    },
+    {
+      "bytes": 213222,
+      "path": "manuscript/figures/fig6_3d.png",
+      "role": "release_support",
+      "sha256": "50f8c5b01ce640136c7dc4c0efe4a6ef44121e57eb21265c6aa0a68f23a62bfd"
+    },
+    {
+      "bytes": 157466,
+      "path": "manuscript/figures/fig6_composition.pdf",
+      "role": "release_support",
+      "sha256": "d6473315eca5fac6c3606fa02b5d33ba36131b148f53078981c99f6d358ef38b"
+    },
+    {
+      "bytes": 433321,
+      "path": "manuscript/figures/fig6_composition.png",
+      "role": "release_support",
+      "sha256": "3cc2bf9a2ce81cb6e951af41328163e1c6c8f9bc09ab5ed0d4fe479fca97bfd2"
+    },
+    {
+      "bytes": 676319,
+      "path": "manuscript/figures/fig6_interface.pdf",
+      "role": "figure",
+      "sha256": "9a8f9d2c5dd9a2ad74ce208c09fc110d38a25a009576ea84a9ab31e03f50a774"
+    },
+    {
+      "bytes": 1179071,
+      "path": "manuscript/figures/fig6_interface.png",
+      "role": "figure",
+      "sha256": "65ec24ee99d641b33d773bffe618b9831adebd4945dac7ec7391af42691c96f2"
+    },
+    {
+      "bytes": 623563,
+      "path": "manuscript/figures/fig7_direct_traction.pdf",
+      "role": "figure",
+      "sha256": "18eafc5ab18b9e2a060669cf2a4436c2e2fcf1fbcbe7a813587919a3cbf67571"
+    },
+    {
+      "bytes": 1077144,
+      "path": "manuscript/figures/fig7_direct_traction.png",
+      "role": "figure",
+      "sha256": "b6710d409a80e7144eeb0d66f019423b2220087b6e8a7dfd03c8286eaa74d529"
+    },
+    {
+      "bytes": 123396,
+      "path": "manuscript/figures/fig7_scaling.pdf",
+      "role": "release_support",
+      "sha256": "7d060f3452cef002f6d1391a4fb90f65fd7b5d7fddb034f493af3cc43b44ee60"
+    },
+    {
+      "bytes": 721798,
+      "path": "manuscript/figures/fig7_scaling.png",
+      "role": "release_support",
+      "sha256": "bbe705b2247d4a7e842227f8fe19bf6151e8bfb2d49a810699a0cc1f1b96d6ff"
+    },
+    {
+      "bytes": 93823,
+      "path": "manuscript/figures/fig8_closure_composition.pdf",
+      "role": "figure",
+      "sha256": "c94c8402375cd04748e43e32293e85d9221eeeeade7524a8d2edd93db6aae488"
+    },
+    {
+      "bytes": 534995,
+      "path": "manuscript/figures/fig8_closure_composition.png",
+      "role": "figure",
+      "sha256": "22670948860a08a04327be1426ee2c34055697c324cfe936da2b24d0b473181d"
+    },
+    {
+      "bytes": 30850,
+      "path": "manuscript/figures/fig9_generality.pdf",
+      "role": "release_support",
+      "sha256": "c9918862190d30974d61bf377b6a3b64a20e64d4ca965d6947988bc736a368bd"
+    },
+    {
+      "bytes": 320787,
+      "path": "manuscript/figures/fig9_generality.png",
+      "role": "release_support",
+      "sha256": "7af1de342524836ce62d7a0da8bf5ff8893200b719af6e882cc375487ccbe7bc"
+    },
+    {
+      "bytes": 187410,
+      "path": "manuscript/figures/fig_calibration.png",
+      "role": "release_support",
+      "sha256": "99b19ad12a64ffe2ecce358968ec0ed273d2d4e1d05bd305d627cdd034ff3ab5"
+    },
+    {
+      "bytes": 28159,
+      "path": "manuscript/figures/fig_certificate.pdf",
+      "role": "release_support",
+      "sha256": "fe5a116876759fb534b5d0ae16a1f14880c903b24af82459f71951f3b31a5308"
+    },
+    {
+      "bytes": 169664,
+      "path": "manuscript/figures/fig_certificate.png",
+      "role": "release_support",
+      "sha256": "81da1b46092df79f320e4da12421c2e03120c15cb4915983170ab5897a88d7b0"
+    },
+    {
+      "bytes": 29746,
+      "path": "manuscript/figures/fig_closure_composition.pdf",
+      "role": "release_support",
+      "sha256": "7c2c33784b9b4aef3ffc4324cdd242418e44607fcd62416e95389ff736d7a82f"
+    },
+    {
+      "bytes": 93673,
+      "path": "manuscript/figures/fig_closure_composition.png",
+      "role": "release_support",
+      "sha256": "4a6405fef431b4f6fd69b15d65c8e21fb3711575d170960f05674b0ddef0a294"
+    },
+    {
+      "bytes": 1809869,
+      "path": "manuscript/figures/fig_l2_case1_closure.png",
+      "role": "release_support",
+      "sha256": "e8f46ee7a1d94a8a1f030509056cef97fac197e7be60e681dbbbd1b3ee370642"
+    },
+    {
+      "bytes": 219469,
+      "path": "manuscript/figures/fig_l3_wallstress.png",
+      "role": "release_support",
+      "sha256": "57ceb6d08d5aa214dcd8a5a37a1dba1ed2604bdfa69d3f11afff5044fdf350bf"
+    },
+    {
+      "bytes": 20551,
+      "path": "manuscript/figures/fig_protocol_transplant_l1.pdf",
+      "role": "release_support",
+      "sha256": "489db613f462143fcf405a15b7b04cf9e6945c60a596abaae5c10db88627dd69"
+    },
+    {
+      "bytes": 173347,
+      "path": "manuscript/figures/fig_reach_law.png",
+      "role": "release_support",
+      "sha256": "b7e2ebc71ae3022dbb4c81e15dc13eff0719c46668ec02b52d45a2220348454e"
+    },
+    {
+      "bytes": 210815,
+      "path": "manuscript/figures/fig_results_l3.png",
+      "role": "release_support",
+      "sha256": "01d3021f03fc3a65170694c8aa77cf6e4662cc13a5382392814c3680a06183c3"
+    },
+    {
+      "bytes": 329428,
+      "path": "manuscript/figures/fig_spectral_propagation.png",
+      "role": "release_support",
+      "sha256": "c0bea10cc2deabfd06c09e07e779be5378fba3c500ccc035b209c1ffb111a67b"
+    },
+    {
+      "bytes": 226988,
+      "path": "manuscript/figures/fig_split_integrity_l0.png",
+      "role": "release_support",
+      "sha256": "edcd176ee75075b65a92bf4f8b0bb06ae1d6bcea303e20bf359c94fadaafdddd"
+    },
+    {
+      "bytes": 161495,
+      "path": "manuscript/figures/fig_universality.png",
+      "role": "release_support",
+      "sha256": "815af7a4feedca11fa27709d604cb47cfd667f5cb084207db6d0bfe70e0430b4"
+    },
+    {
+      "bytes": 2696969,
+      "path": "manuscript/main.pdf",
+      "role": "rendered_document",
+      "sha256": "b70f711a6815eb821b54d9147cfacdb890392296df3cc4177f1e827bbe8be32d"
+    },
+    {
+      "bytes": 7274,
+      "path": "manuscript/main.tex",
+      "role": "manuscript_source",
+      "sha256": "d019cc118e212980e00bbef9ea9c976bda7238b1008ac2b63f6748ec5ff02e71"
+    },
+    {
+      "bytes": 269,
+      "path": "manuscript/nature_communications_checklist.md",
+      "role": "manuscript_source",
+      "sha256": "04ae7e020bed26e0e425103d5c6d5496e776327d77a467e256a0e3e230976c65"
+    },
+    {
+      "bytes": 27848,
+      "path": "manuscript/references.bib",
+      "role": "manuscript_source",
+      "sha256": "2b17cfd573c37140d80a313c5659e3e3e775bf14f2ece8180c6f0d4eaef739e4"
+    },
+    {
+      "bytes": 6555,
+      "path": "manuscript/sections/discussion.tex",
+      "role": "manuscript_source",
+      "sha256": "0ba74c55b94b7f11c83968f464829291809522cc74bc9b51a174b0cff7593980"
+    },
+    {
+      "bytes": 8668,
+      "path": "manuscript/sections/introduction.tex",
+      "role": "manuscript_source",
+      "sha256": "1613bc5ba57177af80ddec988b66c866840217f85bb4001562ac79b43fe762a2"
+    },
+    {
+      "bytes": 42204,
+      "path": "manuscript/sections/methods.tex",
+      "role": "manuscript_source",
+      "sha256": "ba7c4eac92010954e2d62612efcdad9ba0aef66f5a5a2e90024de5fc9cb5e976"
+    },
+    {
+      "bytes": 34325,
+      "path": "manuscript/sections/results.tex",
+      "role": "manuscript_source",
+      "sha256": "ad79c62915b41e68d7e8c4d71fd14eecf40fd2a319f93540150c01f7a3c76d02"
+    },
+    {
+      "bytes": 55857,
+      "path": "manuscript/sn-jnl.cls",
+      "role": "manuscript_source",
+      "sha256": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc"
+    },
+    {
+      "bytes": 39056,
+      "path": "manuscript/sn-nature.bst",
+      "role": "manuscript_source",
+      "sha256": "638d68f5b0e92ffb25d64d29c7334e1bac6bbf54574b602bc633af8d96e1fd9b"
+    },
+    {
+      "bytes": 1536,
+      "path": "manuscript/source_data/ACCESS_AND_LICENSES.md",
+      "role": "source_data",
+      "sha256": "ef239ec0ce254132094a05b21ee0e2b388e59289c9d398e4df264180f559703d"
+    },
+    {
+      "bytes": 13981,
+      "path": "manuscript/source_data/README.md",
+      "role": "source_data",
+      "sha256": "8c86e24a4b1d4c6d7d950a325ae7f68cd5b0142137176a3caa4e7fe0aac7a836"
+    },
+    {
+      "bytes": 1132,
+      "path": "manuscript/source_data/current_fig5/INVALIDATED.json",
+      "role": "source_data",
+      "sha256": "4c0ce376ed643806c137e5e1d00089b946f25bf0a63d045c4f6cac001b3ba800"
+    },
+    {
+      "bytes": 192686,
+      "path": "manuscript/source_data/current_fig5/SOURCE_INVALID_evaluated_bridge_rendering.png",
+      "role": "source_data",
+      "sha256": "aae86da0e26a47d546279fe29a01e3d8856d00ab23ac6058aef4f728ed6807f1"
+    },
+    {
+      "bytes": 20502,
+      "path": "manuscript/source_data/current_fig5/l2_case1_closure_results.json",
+      "role": "source_data",
+      "sha256": "653a8660a99cbba4a2e240f160f84d77a08878891dee23e508041d280a14474e"
+    },
+    {
+      "bytes": 21710,
+      "path": "manuscript/source_data/current_fig5/wallstress_cond_case1_bh1_results.json",
+      "role": "source_data",
+      "sha256": "f058a9990ebd2e02b059b6629c4aa2d3cc5c77594e6d4a27491b9e895bcb1073"
+    },
+    {
+      "bytes": 86153,
+      "path": "manuscript/source_data/diagnostic_e2/case1_closure_inputs.json",
+      "role": "source_data",
+      "sha256": "7474a8ed7277e77ca4cd900bf7c008553e893d7e1ed77f23d2cfe69802fde3fa"
+    },
+    {
+      "bytes": 21531,
+      "path": "manuscript/source_data/diagnostic_e2/causal_wall_history_results.json",
+      "role": "source_data",
+      "sha256": "0eb97c78b80d569b067dfec58f4ee4d9213335b57395eba1d2f7fadf819cf641"
+    },
+    {
+      "bytes": 20730,
+      "path": "manuscript/source_data/diagnostic_e2/runtime_closure_conditioning_results.json",
+      "role": "source_data",
+      "sha256": "d96b352e146f23f94bd16011337051c7993bea15b8ead7d638b96496163e6457"
+    },
+    {
+      "bytes": 21710,
+      "path": "manuscript/source_data/diagnostic_e2/wallstress_cond_case1_bh1_results.json",
+      "role": "source_data",
+      "sha256": "f058a9990ebd2e02b059b6629c4aa2d3cc5c77594e6d4a27491b9e895bcb1073"
+    },
+    {
+      "bytes": 8898,
+      "path": "manuscript/source_data/fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR2.json",
+      "role": "source_data",
+      "sha256": "04152877d2b42d2db2bca0636493777415893b20cbe7eb926dc520a76a8cfe3b"
+    },
+    {
+      "bytes": 32517,
+      "path": "manuscript/source_data/fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR3.json",
+      "role": "source_data",
+      "sha256": "cd5f9e23276bbe631f99dc584a00b91dc2a451fc240cf20d8114a3615ec55839"
+    },
+    {
+      "bytes": 2475011,
+      "path": "manuscript/source_data/fig11_reachgated/e2_cube_reachgated_components.npz",
+      "role": "source_data",
+      "sha256": "76ecdc84ef8e2e7502f999aa3a957f602a813ed500055e0bf109e1a3f31ac626"
+    },
+    {
+      "bytes": 43436,
+      "path": "manuscript/source_data/fig11_reachgated/e2_cube_reachgated_results.json",
+      "role": "source_data",
+      "sha256": "3d7d23e6acca9f7d6d56f028104d8f4cfe19e3073ad7d33abc11d3d31f8ae6ea"
+    },
+    {
+      "bytes": 7154,
+      "path": "manuscript/source_data/fig11_reachgated/e2_grouped_hills_band_results.json",
+      "role": "source_data",
+      "sha256": "bf1924a67e0b864bf5611fa00220b33ae0a8d1af147569bae94fae8cd5970b85"
+    },
+    {
+      "bytes": 1755782,
+      "path": "manuscript/source_data/fig11_reachgated/e2_grouped_hills_components.npz",
+      "role": "source_data",
+      "sha256": "0d52ddd0ef2bd000f2c1e81129aedf9ccdf7db17db79491ff27f3d35b19a24e4"
+    },
+    {
+      "bytes": 108253,
+      "path": "manuscript/source_data/fig11_reachgated/hill_context_frame.npz",
+      "role": "source_data",
+      "sha256": "ee54bb091a58848ee2467b266669471a9f7be7f7aefb4c326c0e685c0fe4836a"
+    },
+    {
+      "bytes": 530,
+      "path": "manuscript/source_data/fig11_reachgated/hill_context_frame_provenance.json",
+      "role": "source_data",
+      "sha256": "e83084e1f869a556c11a1774b24221cf3491032c8b4c5fce352bac314f7736dd"
+    },
+    {
+      "bytes": 152829,
+      "path": "manuscript/source_data/fig11_reachgated/hill_hierarchical_intervals.json",
+      "role": "source_data",
+      "sha256": "26ac4624dad2d02017d6a801abcdfd1af67bdbdedbc2a234ff77098ad86588eb"
+    },
+    {
+      "bytes": 11961,
+      "path": "manuscript/source_data/fig11_reachgated/hill_positive_control_audit.json",
+      "role": "source_data",
+      "sha256": "696201074149d469441649cae8e54375a2eef05c34e4334b3be16661eb598633"
+    },
+    {
+      "bytes": 250174,
+      "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+      "role": "source_data",
+      "sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+    },
+    {
+      "bytes": 2516,
+      "path": "manuscript/source_data/fig1_v2/fig1_overview_derived_provenance.json",
+      "role": "source_data",
+      "sha256": "0e6abbefdc3d2d6c2d29dd5cf72e42242ec996fa94cd4190f11e156ffcb9033f"
+    },
+    {
+      "bytes": 3948444,
+      "path": "manuscript/source_data/fig2/cube3d_representative_fields.npz",
+      "role": "source_data",
+      "sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+    },
+    {
+      "bytes": 1482349,
+      "path": "manuscript/source_data/fig2/cube3d_time_pair.npz",
+      "role": "source_data",
+      "sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+    },
+    {
+      "bytes": 682128,
+      "path": "manuscript/source_data/fig2/cube3d_time_sequence.npz",
+      "role": "source_data",
+      "sha256": "00b57581997ab568efd0e6c12ce258eb1612658941c07440d209a4302a4b3c27"
+    },
+    {
+      "bytes": 1725,
+      "path": "manuscript/source_data/fig2/cube3d_timeline.json",
+      "role": "source_data",
+      "sha256": "54d58415d44a11d7b30b26cba66583ae83a37f439644b5a3bf54f11c8e512d32"
+    },
+    {
+      "bytes": 12510,
+      "path": "manuscript/source_data/fig3/cube_periodic_topology_components.npz",
+      "role": "source_data",
+      "sha256": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18"
+    },
+    {
+      "bytes": 9277,
+      "path": "manuscript/source_data/fig3/cube_periodic_topology_results.json",
+      "role": "source_data",
+      "sha256": "0fc302421d622879e00ef16a14636fb8849ee65c0680c85491659788807f914d"
+    },
+    {
+      "bytes": 1643486,
+      "path": "manuscript/source_data/fig4/cube_distributional_rapid_components.npz",
+      "role": "source_data",
+      "sha256": "a7f1c74f909e1a805d4a3642db83285371ecd80e4a59cd11a873a14253010e2d"
+    },
+    {
+      "bytes": 7492,
+      "path": "manuscript/source_data/fig4/cube_distributional_rapid_results.json",
+      "role": "source_data",
+      "sha256": "c70342f6fc4bf8e21f0883ba76de806f01eb8cfc34f9b0d52018443beba00588"
+    },
+    {
+      "bytes": 4633,
+      "path": "manuscript/source_data/fig6/grouped_hill_supporting.json",
+      "role": "source_data",
+      "sha256": "c798117f983a2aabf134a0c6ea7a253f35e17f7e490b44103a93081c0fc81754"
+    },
+    {
+      "bytes": 18971741,
+      "path": "manuscript/source_data/fig6_interface/e2_traction_interface_components.npz",
+      "role": "source_data",
+      "sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+    },
+    {
+      "bytes": 30758,
+      "path": "manuscript/source_data/fig6_interface/e2_traction_interface_conservative_blocks.json",
+      "role": "source_data",
+      "sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+    },
+    {
+      "bytes": 27144,
+      "path": "manuscript/source_data/fig6_interface/e2_traction_interface_results.json",
+      "role": "source_data",
+      "sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+    },
+    {
+      "bytes": 8059,
+      "path": "manuscript/source_data/fig7/capacity_crossed_adjudication.json",
+      "role": "source_data",
+      "sha256": "545232f088493f67c17922745ddb046b3a1a70e71676df6aa6a06a90f6b963df"
+    },
+    {
+      "bytes": 25309096,
+      "path": "manuscript/source_data/fig7_direct/e2_direct_traction_components.npz",
+      "role": "source_data",
+      "sha256": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d"
+    },
+    {
+      "bytes": 37998,
+      "path": "manuscript/source_data/fig7_direct/e2_direct_traction_results.json",
+      "role": "source_data",
+      "sha256": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7"
+    },
+    {
+      "bytes": 27018734,
+      "path": "manuscript/source_data/fig8_closure/e2_closure_composition_components.npz",
+      "role": "source_data",
+      "sha256": "29964a938801524364350cbfcc109ab9264db63ccfa00ad0b63589f0621c4c55"
+    },
+    {
+      "bytes": 155814,
+      "path": "manuscript/source_data/fig8_closure/e2_closure_composition_results.json",
+      "role": "source_data",
+      "sha256": "ee1ea27e2d0d79aa76fde34c2f4ae63510ccd5fb4ce92be61ca4d335eb8d2fbc"
+    },
+    {
+      "bytes": 4766,
+      "path": "manuscript/source_data/fig_slot/DECISION_RULE_OUTCOME_NODE011.json",
+      "role": "source_data",
+      "sha256": "89b23aa5f59441aede886d5b7b6e8430372704164ee07728508216dae5e74813"
+    },
+    {
+      "bytes": 21419,
+      "path": "manuscript/source_data/fig_slot/PREREGISTRATION_SLOT_INTERFACE.md",
+      "role": "source_data",
+      "sha256": "92c5f1a5d9be65d1726943056492a958d7e93c70470f132ecd94b327b64b4b06"
+    },
+    {
+      "bytes": 3225,
+      "path": "manuscript/source_data/fig_slot/PREREG_HASHES.txt",
+      "role": "source_data",
+      "sha256": "fe714a21c4cc5c7dd8883827ce708adee928d97142ec383e2817a198b7df0aeb"
+    },
+    {
+      "bytes": 16436,
+      "path": "manuscript/source_data/fig_slot/PREREG_SNAPSHOT_v1.md",
+      "role": "source_data",
+      "sha256": "d6e44b0e1971319598cdce96470c7b1b7073f640d10a02925337119c0cc6ea2b"
+    },
+    {
+      "bytes": 17300,
+      "path": "manuscript/source_data/fig_slot/PREREG_SNAPSHOT_v1a_postA1.md",
+      "role": "source_data",
+      "sha256": "b43dc9c5202ae19a693c37effde792e1357bcfe71670ebcbd034a26eacc7bea7"
+    },
+    {
+      "bytes": 20811,
+      "path": "manuscript/source_data/fig_slot/PREREG_SNAPSHOT_v2.md",
+      "role": "source_data",
+      "sha256": "2083399956c8412e0e1eafcacbe710a21d1b8e3737e9891c85a749066119acd5"
+    },
+    {
+      "bytes": 664,
+      "path": "manuscript/source_data/fig_slot/V2_FROZEN_PARAMS.json",
+      "role": "source_data",
+      "sha256": "7e7651cab7c44226be3c5e7c53e5e6140d527bd1e6e33241662f2d2f7e1f02e7"
+    },
+    {
+      "bytes": 8414,
+      "path": "manuscript/source_data/fig_slot/apply_decision_rule_node011.py",
+      "role": "source_data",
+      "sha256": "6e4112da530339180b68bd8c7b4b0bd4b1d9f33d815e2f36fcedba490d9e97e5"
+    },
+    {
+      "bytes": 1574,
+      "path": "manuscript/source_data/fig_slot/block_inference_calibration.json",
+      "role": "source_data",
+      "sha256": "2c31584d85a33711a713fa30246dbfb51f36c079b18fcfc73379aeea7a0f36e9"
+    },
+    {
+      "bytes": 25021,
+      "path": "manuscript/source_data/fig_slot/case2_contact_ledger.json",
+      "role": "source_data",
+      "sha256": "cd3be10804bb7be89886b7babfc13c0e5f15086a6805b6035c092a20444d5ec6"
+    },
+    {
+      "bytes": 150675,
+      "path": "manuscript/source_data/fig_slot/channel_context_frame.npz",
+      "role": "source_data",
+      "sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+    },
+    {
+      "bytes": 612,
+      "path": "manuscript/source_data/fig_slot/channel_context_frame_provenance.json",
+      "role": "source_data",
+      "sha256": "663ed0b94c7ba80a7770bc2f736f1670d3759c62b35bb784c01cb00083e9be67"
+    },
+    {
+      "bytes": 304995,
+      "path": "manuscript/source_data/fig_slot/e2_slot_channel_final_components.npz",
+      "role": "source_data",
+      "sha256": "0831704f71dda7bdb4824b4d8a707ff94597b1868588e50400ec6533ccbca16b"
+    },
+    {
+      "bytes": 197770,
+      "path": "manuscript/source_data/fig_slot/e2_slot_channel_final_results.json",
+      "role": "source_data",
+      "sha256": "f66a06f5010fa9f6e926ae83d67c9f9ffc134649a1251607a74d26e1a90f3a33"
+    },
+    {
+      "bytes": 101,
+      "path": "manuscript/source_data/fig_slot/e2_slot_channel_final_results.sha256",
+      "role": "source_data",
+      "sha256": "3320b48637130ed1b6d297e19aaf1c2cd8bdfc01b89f1c3e59d793caab13f2a6"
+    },
+    {
+      "bytes": 55405,
+      "path": "manuscript/source_data/fig_slot/eval_e2_slot_channel.py",
+      "role": "source_data",
+      "sha256": "0a0dcb45cea9a6827505bb71eb26a255afd6d6747fcab49d26e0c7676c60ebd0"
+    },
+    {
+      "bytes": 12944,
+      "path": "manuscript/source_data/fig_slot/fig14_slot_interface.py",
+      "role": "source_data",
+      "sha256": "17d00540c40122ccdcf0b5b2a7ee76ddd1d17a6b978c2950c846044e96de69ca"
+    },
+    {
+      "bytes": 48520,
+      "path": "manuscript/source_data/figure_artist_manifests/fig11_reachgated_composition.json",
+      "role": "source_data",
+      "sha256": "c2c20784a66307736a241a2c2afe3951659d77e84a081db51b74c3c0f264995b"
+    },
+    {
+      "bytes": 26629,
+      "path": "manuscript/source_data/figure_artist_manifests/fig14_slot_interface.json",
+      "role": "source_data",
+      "sha256": "b876d568a4343d6b1525eff59a109a7f76c5783d942339b79fa19a01eb48960a"
+    },
+    {
+      "bytes": 32413,
+      "path": "manuscript/source_data/figure_artist_manifests/fig1_architecture.json",
+      "role": "source_data",
+      "sha256": "de5d7a41aa0922b67f0a72919ee32caf49a8d04106b47044c12ef4dcc25c1aa1"
+    },
+    {
+      "bytes": 50638,
+      "path": "manuscript/source_data/figure_artist_manifests/fig2_generation.json",
+      "role": "source_data",
+      "sha256": "4136b2f9d86273c1fe719286bc7eb9bd51a9fb04340049f505e797f84214369e"
+    },
+    {
+      "bytes": 39644,
+      "path": "manuscript/source_data/figure_artist_manifests/fig3_propagation.json",
+      "role": "source_data",
+      "sha256": "d6b04b447839e80963f2eecc408a5aa1aeef8a6732d2977d8fcabd61c7dd67f2"
+    },
+    {
+      "bytes": 133921,
+      "path": "manuscript/source_data/figure_artist_manifests/fig6_interface.json",
+      "role": "source_data",
+      "sha256": "0ccfa9804e904b58e44f350ccd4515e4f3537c349f2e5f40e4dbc6c33ad1ccb6"
+    },
+    {
+      "bytes": 58416,
+      "path": "manuscript/source_data/figure_artist_manifests/fig7_direct_traction.json",
+      "role": "source_data",
+      "sha256": "9f65f0b57e5ed2c4e7d8834f0b54118492be053780abf264e969131cceccf560"
+    },
+    {
+      "bytes": 43821,
+      "path": "manuscript/source_data/figure_artist_manifests/fig8_closure_composition.json",
+      "role": "source_data",
+      "sha256": "10454ecfee58051592efbbc7472804e4ecde52aa6906ff7b4c6c868d3511b2d8"
+    },
+    {
+      "bytes": 8768,
+      "path": "manuscript/source_data/methods/cube3d_native_yplus_temporally_separated.json",
+      "role": "source_data",
+      "sha256": "bddf92ed67c25250dced3569829603da4461abd9a8a001cf668bdad1c6bab54e"
+    },
+    {
+      "bytes": 3339,
+      "path": "manuscript/source_data/methods/cube_les_provenance.json",
+      "role": "source_data",
+      "sha256": "2de3acacbd83c1af4b77d165d21a24ee8f919edb13428d8db17c70ab42eb546b"
+    },
+    {
+      "bytes": 668,
+      "path": "manuscript/source_data/methods/cube_production_complete.json",
+      "role": "source_data",
+      "sha256": "44c28d22481e67bce5202af558ede1dee19d2dd0d4dd31de09ec09799e910c73"
+    },
+    {
+      "bytes": 2883,
+      "path": "manuscript/source_data/review_audit/case1_source_native_audit.json",
+      "role": "source_data",
+      "sha256": "cec89f247e990462ce48b247c2659dde5aba9de0688cc831b1e98f564c883898"
+    },
+    {
+      "bytes": 10585,
+      "path": "manuscript/source_data/review_audit/closure_interface_custody.json",
+      "role": "source_data",
+      "sha256": "a9c415e59ef9fd8db71a9bad09996b4c02a083061f73e2fd018f97ffe5bc16bb"
+    },
+    {
+      "bytes": 8733,
+      "path": "manuscript/source_data/review_audit/cube3d_coupling_adequate_results.json",
+      "role": "source_data",
+      "sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b"
+    },
+    {
+      "bytes": 7988,
+      "path": "manuscript/source_data/review_audit/cube3d_coupling_results.json",
+      "role": "source_data",
+      "sha256": "61e7d09d297bd6fa6a5aa8d55476e1c2a6fe56ddda0e7efe93b7eab25c3ce2a2"
+    },
+    {
+      "bytes": 16938,
+      "path": "manuscript/source_data/review_audit/cube_train_band_retrieval_components.npz",
+      "role": "source_data",
+      "sha256": "02b412daeaf5314c237291534c7c995876c66c81794ac07f19327eea93fec0ce"
+    },
+    {
+      "bytes": 2603,
+      "path": "manuscript/source_data/review_audit/cube_train_band_retrieval_results.json",
+      "role": "source_data",
+      "sha256": "94fa34214b23c2ae2ed046e846ba84bbed642ce4c90618be04417c3e82d5674f"
+    },
+    {
+      "bytes": 64006,
+      "path": "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed2234.json",
+      "role": "source_data",
+      "sha256": "77e6ff62f926130616cd8b09b044024c02a953f1f3d463758f85e5bca753f48c"
+    },
+    {
+      "bytes": 64006,
+      "path": "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed3234.json",
+      "role": "source_data",
+      "sha256": "1ee765378277f3264db777574bbe8ef8e91c75a1c2a20fb6d1ca1051af704918"
+    },
+    {
+      "bytes": 25747,
+      "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+      "role": "source_data",
+      "sha256": "edf5eba7933e067f1f60e888af96f547e60c2f60e247d65843a994697411a4fd"
+    },
+    {
+      "bytes": 3547,
+      "path": "manuscript/source_data/review_audit/legacy_metadata_supersession.json",
+      "role": "source_data",
+      "sha256": "47d3b7053504c2524f72cf4319bafdb167f5c012f498bf995eedc3fb95b4f979"
+    },
+    {
+      "bytes": 7136,
+      "path": "manuscript/source_data/review_audit/legacy_success_gate_disposition.json",
+      "role": "source_data",
+      "sha256": "bef54e5e60bb95d0f9f43f4cda2a5738b63a236f01b113c1c802689e896f222b"
+    },
+    {
+      "bytes": 1675,
+      "path": "manuscript/source_data/review_audit/publication_provenance_facts.json",
+      "role": "source_data",
+      "sha256": "4f1713c2b581e8c530856e455313e519d8a6d702e68ec33488f94c8542527303"
+    },
+    {
+      "bytes": 854358,
+      "path": "manuscript/source_data/review_audit/publication_quantitative_contract.json",
+      "role": "source_data",
+      "sha256": "d3aee250a32bf1a17a507f051129b6533568efb037af8969543e771af83e3872"
+    },
+    {
+      "bytes": 29075,
+      "path": "manuscript/source_data/review_audit/publication_semantic_contract.json",
+      "role": "source_data",
+      "sha256": "206a58dfbc00a795d020e284163292e1e58b61327f90424dd9d39fd050ae425f"
+    },
+    {
+      "bytes": 1192,
+      "path": "manuscript/source_data/review_audit/wiener_seed_chain_node005.json",
+      "role": "source_data",
+      "sha256": "52cac551f0d1f7f4661053a6bd81f4322c466dbb75457970189c8aa2093f2842"
+    },
+    {
+      "bytes": 60737,
+      "path": "manuscript/supplementary.tex",
+      "role": "manuscript_source",
+      "sha256": "812bc2e947afb9372b20c0d20e9789c0ecdf8b3a3631edb0ab6d451212039e32"
+    },
+    {
+      "bytes": 337429,
+      "path": "manuscript/supplementary_information.pdf",
+      "role": "rendered_document",
+      "sha256": "3860e5b16cb590dd1ce6e42e204faf3b6a5fc7cf9fddaceb1c07f6780cc461cd"
+    },
+    {
+      "bytes": 122,
+      "path": "manuscript/supplementary_information.tex",
+      "role": "manuscript_source",
+      "sha256": "b44af2f0a8b3847a1bf6e1b2af930756fbe0a2445636e4a783b3d0753ccef590"
+    },
+    {
+      "bytes": 1551,
+      "path": "manuscript/validate_submission_figures.py",
+      "role": "build_code",
+      "sha256": "dfbef33d7431b48540875fbf5f278a3e9aa3b286cdcd82db2163fc30b4d6e6f9"
+    },
+    {
+      "bytes": 89,
+      "path": "requirements.txt",
+      "role": "build_code",
+      "sha256": "ede8e0951cdef937b40e161e9db54451bbf6488e85c9f7e14cb534d46cbfb83b"
+    }
+  ],
+  "excluded_local_backup_patterns": [
+    "manuscript/figures/_quarantined_*",
+    "manuscript/figures/_stale_*",
+    "manuscript/source_data/_quarantined_*",
+    "manuscript/main_preL1reseed_backup.tex"
+  ],
+  "schema": "gwt-submission-release-manifest-v1",
+  "selection": "Exact active source-data, eleven PDF/PNG figure pairs, manuscript/Supplementary sources and rendered documents, environment specification, and build/audit code. Local backup trees are intentionally outside the release set."
+}

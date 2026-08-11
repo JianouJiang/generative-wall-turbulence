@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Nature Communications manuscript: generative wall turbulence
+%% Main text is split by journal section to keep figure/prose consistency
+%% reviewable. The active evidence set contains eight main figures, two tables and
+%% one algorithmic display.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[pdflatex,sn-nature]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[title]{appendix}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{manyfoot}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{placeins}
+\usepackage{url}
+\hypersetup{
+  hypertexnames=false,
+  bookmarksdepth=2,
+  pdftitle={An interface framework and adequacy standard when generative turbulence models hit the wall},
+  pdfauthor={Jianou Jiang, Haolang Zhu, Sungjong Joo, Peidong Huang, and Budimir Rosic},
+  pdfkeywords={turbulence; near-wall modelling; generative modelling; flow separation}
+}
+
+\newcommand{\Rsep}{R^2_{\mathrm{sep}}}
+\newcommand{\yB}{y_{\mathcal B}}
+\newcommand{\Rfluct}{R^2_{\mathrm{fluct}}}
+\newcommand{\ES}{\mathrm{ES}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\raggedbottom
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.90}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.75}
+\setcounter{topnumber}{2}
+\setcounter{totalnumber}{3}
+
+\begin{document}
+
+% TITLE: 13 words. The 7 August supervisor revision adds the recurring-wall
+% framing; the 10 August meeting locked "interface framework" so the first
+% offered item carries its own noun and cannot be read as "interface standard".
+\title[Generative turbulence models at the wall]{An interface framework and adequacy standard when generative turbulence models hit the wall}
+
+% CORRESPONDING AUTHOR: moved to J.J. on the supervisor's instruction, 5 Aug 2026;
+% address confirmed by the author 5 Aug 2026.
+\author*[1]{\fnm{Jianou} \sur{Jiang}}\email{jianou.jiang@eng.ox.ac.uk}
+\author[1]{\fnm{Haolang} \sur{Zhu}}
+\equalcont{These authors contributed equally and share second authorship.}
+\author[1]{\fnm{Sungjong} \sur{Joo}}
+\equalcont{These authors contributed equally and share second authorship.}
+\author[1]{\fnm{Peidong} \sur{Huang}}
+\equalcont{These authors contributed equally and share second authorship.}
+\author[1]{\fnm{Budimir} \sur{Rosic}}
+\equalcont{These authors contributed equally and share second authorship.}
+
+\affil*[1]{\orgdiv{Department of Engineering Science}, \orgname{University of Oxford},
+\orgaddress{\street{Parks Road}, \city{Oxford}, \postcode{OX1 3PJ},
+\country{United Kingdom}}}
+
+\abstract{Generative models are gaining attention in fluid mechanics amid hopes of a step
+change in turbulence modelling from whole-field reconstruction. Yet they inherit the
+century-old difficulty of computational fluid dynamics: representing the near-wall region.
+It occupies little volume yet sets drag, separation, wall-generated vorticity and
+loads. Volume-averaged training and validation objectives weight its cells by count, not dynamical leverage. We identify why the commonly used wall-closure
+interface fails and build one that works. Expanding predicted wall stress into an
+equilibrium-law velocity band destroys the information; through a conditioning slot
+the generator was trained to read, the stress propagates. Across a bluff-body cube array,
+attached channel and separating periodic hill---the cube and hill deliberately difficult
+engineering flows---cube viscous wall-force error falls by
+two-fifths, the channel recovers
+three-quarters of the exact-traction benefit, and the hill transmits in one of two generative
+families. The result is an interface framework and adequacy standard: an equal-footing slot that delivers any wall model's stress to the generator undistorted, and an oracle control certifying whether a generative family detects wall information, offered to refocus generative turbulence modelling on the wall. Evaluations are offline
+and a priori. Code and controls are available at
+\url{https://github.com/JianouJiang/generative-wall-turbulence}.}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/methods}
+
+\backmatter
+
+\bmhead{Data availability} Source data for every display and the sufficient statistics that replay
+the M2 point and ensemble endpoints are deposited in the associated figshare dataset. The exact
+aligned-cube NekRS case and provenance records are in the repository cited in the abstract. The
+M0 first-contact result is retained only as a
+hash-pinned terminal aggregate and cannot be independently reblocked, and the public CoNFiLD
+Case1 arrays are retained only to audit a withdrawn diagnostic and support no claim. The raw
+aligned-cube LES volume and the M0/M2 checkpoints are byte-verified locally but too large to
+distribute with the source-data package; they are available from the corresponding author on
+request during review and are deposited in a permanent public archive with a DOI on publication.
+The release licence is fixed at that deposit. The source-data archive also records the provenance
+of the companion closure-side data; those data do not support the oracle generator endpoint.
+
+\bmhead{Code availability} The review package contains the exact LES case, release-safe reviewed
+counterparts of the model and evaluation code, deterministic audit derivation, source-data
+builder, plotting scripts, M2/ensemble and retrieval-sufficient-statistic verifiers, and a
+manifest-only clean-room rebuild. Exact hashes of the original scripts are documented, and their
+only differences from the released counterparts are default file paths; the original files
+require inclusion in the author-approved reviewer archive. The code seeds NumPy and PyTorch, but
+cuDNN benchmarking is enabled and checkpoints omit random-number-generator state; exact bitwise
+retraining or continuation is therefore not claimed. The repository cited in the abstract is publicly available at \url{https://github.com/JianouJiang/generative-wall-turbulence}. A versioned archival release with a permanent
+identifier and an explicit open-source licence will accompany publication.
+
+\bibliography{references}
+
+\bmhead{Acknowledgements} The authors thank the Department of Engineering Science, University of
+Oxford, for institutional support.
+
+\bmhead{Funding} This research received no specific grant from any funding agency in the public,
+commercial or not-for-profit sectors.
+
+\bmhead{Author contributions} J.J. conceived the study; built the wall closure, the generative
+models and the evaluation protocols; performed all simulations and analyses; and wrote the
+manuscript. P.H. critically examined the wall-to-field coupling evidence and validated the
+figures against their source data. H.Z. critically assessed the scaling evidence. S.J.
+critically assessed the companion closure-transfer evidence. B.R. supervised the project and
+guided the wall modelling. All authors reviewed the manuscript.
+
+\bmhead{Competing interests} The authors declare no competing interests.
+
+\end{document}

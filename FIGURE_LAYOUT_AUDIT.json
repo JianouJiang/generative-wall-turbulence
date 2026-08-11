@@ -1,0 +1,142 @@
+{
+  "all_pass": true,
+  "figures": [
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+      "stem": "fig1_architecture",
+      "text_artists_checked": 41,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    },
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+      "stem": "fig2_generation",
+      "text_artists_checked": 115,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    },
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+      "stem": "fig3_propagation",
+      "text_artists_checked": 104,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    },
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+      "stem": "fig6_interface",
+      "text_artists_checked": 75,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    },
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+      "stem": "fig7_direct_traction",
+      "text_artists_checked": 60,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    },
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+      "stem": "fig8_closure_composition",
+      "text_artists_checked": 100,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    },
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+      "stem": "fig11_reachgated_composition",
+      "text_artists_checked": 138,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    },
+    {
+      "all_pass": true,
+      "canvas_overflow": [],
+      "effective_font_pt_range_at_180mm": [
+        9.718785151856018,
+        9.718785151856018
+      ],
+      "final_font_size_failures": [],
+      "final_stroke_failures": [],
+      "final_width_mm": 180.0,
+      "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+      "stem": "fig14_slot_interface",
+      "text_artists_checked": 129,
+      "text_patch_containment_failures": [],
+      "text_reference_line_collisions": [],
+      "text_text_collisions": []
+    }
+  ],
+  "schema": "gwt-figure-layout-audit-v1"
+}

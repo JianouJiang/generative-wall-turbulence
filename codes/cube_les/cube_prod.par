@@ -1,0 +1,35 @@
+#
+# nekRS PRODUCTION -- genuinely-3D wall-resolved cube-array LES (Coceal aligned
+# cubes; Re_h=5000 = Ubar*h/nu).  7.26M gridpoints (p=7), x,z periodic, floor +
+# cube + top no-slip, constant flow rate.  Implicit LES (hpfrt).
+#
+# Writes a field every 0.3 t.u. -> ~1230 snapshots over t=[0,370]; the rolling
+# rasterizer harvests them.  Analysis discards t<40 (spin-up transient).
+#
+[GENERAL]
+polynomialOrder = 7
+cubaturePolynomialOrder = 9
+timeStepper = tombo2
+# Keep the exact timestep/subcycling regime that completed the 4,000-step
+# validation (CFL ~= 1.65, exit 0).  The longer horizon and checkpoint cadence
+# below are the only production changes.
+dt = targetCFL=2.0 + max=1.5e-3
+advectionSubCyclingSteps = 2
+stopAt = endTime
+endTime = 370
+checkpointControl = simulationTime
+checkpointInterval = 0.3
+constFlowRate = meanVelocity=1.0 + direction=X
+regularization = hpfrt + nModes=1 + scalingCoeff=10
+
+[PROBLEMTYPE]
+equation = navierStokes
+
+[FLUID VELOCITY]
+boundaryTypeMap = zeroDirichlet
+viscosity = 1/5000.0
+rho = 1.0
+residualTol = 1e-06
+
+[FLUID PRESSURE]
+residualTol = 1e-04

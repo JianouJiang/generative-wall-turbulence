@@ -1,0 +1,47 @@
+{
+  "schema": "gwt-figure2-convective-time-timeline-v1",
+  "definition": {
+    "symbol": "t Ubar / h",
+    "unit_meaning": "One nondimensional unit is the time h/Ubar for the bulk flow to travel one cube height h."
+  },
+  "record": {
+    "index": [0, 1100],
+    "time_Ubar_over_h": [40.20043128999, 370.0004874808],
+    "stored_fields": 1101
+  },
+  "split": {
+    "training": {
+      "index": [0, 659],
+      "time_Ubar_over_h": [40.20043128999, 237.9002391066]
+    },
+    "exclusion_gap": {
+      "index": [660, 757],
+      "time_Ubar_over_h": [238.2002751786, 267.3006406261]
+    },
+    "evaluation_remainder": {
+      "index": [758, 1100],
+      "time_Ubar_over_h": [267.6006766981, 370.0004874808],
+      "available_fields": 343,
+      "evaluated_fields": 160
+    }
+  },
+  "displayed_target": {
+    "index": 758,
+    "time_Ubar_over_h": 267.6006766981,
+    "selection": "producer-fixed first evaluated M2 target"
+  },
+  "far_time_condition_for_displayed_target": {
+    "index": 930,
+    "time_Ubar_over_h": 319.2006140093,
+    "native_index_lag": 172
+  },
+  "provenance": {
+    "time_array_source": "codes/data/cube_record/cube_ds2_times.npy",
+    "time_array_sha256": "99e8e0a45cf6c361bcefc10b251ceac15bd60992d42255cf76c945eae9655482",
+    "field_source": "manuscript/source_data/fig2/cube3d_representative_fields.npz",
+    "field_source_sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f",
+    "index_source": "manuscript/source_data/fig3/cube_periodic_topology_components.npz",
+    "index_source_sha256": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18",
+    "derivation": "Exact values selected at native indices 0, 659, 660, 757, 758, 930 and 1100; no interpolation."
+  }
+}

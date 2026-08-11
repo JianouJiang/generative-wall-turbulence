@@ -1,0 +1,222 @@
+{
+ "registered_estimand": "R2(tau_closure) - R2(absent)",
+ "registered_region": "full_srcex",
+ "registered_unit": "CONFIRM_STRICT",
+ "n_eval": 103,
+ "n_effective": 3.153061224489796,
+ "decision_rule_clauses": [
+  {
+   "clause": 1,
+   "registered": "Delta_closure > 0",
+   "value": 0.06063890283162299,
+   "pass": true
+  },
+  {
+   "clause": 2,
+   "registered": "conservative-block 95% interval excludes zero",
+   "value": [
+    0.056849515435761847,
+    0.06359499520628534
+   ],
+   "pass": true
+  },
+  {
+   "clause": 3,
+   "registered": "same sign on all three training seeds",
+   "value": [
+    0.05906095185359117,
+    0.06257964120280857,
+    0.060276115438469446
+   ],
+   "pass": true
+  },
+  {
+   "clause": 4,
+   "registered": "crossed seed x block 95% interval excludes zero",
+   "value": [
+    0.054653663104625515,
+    0.06477018082271366
+   ],
+   "pass": true
+  },
+  {
+   "clause": 5,
+   "registered": "Delta_closure > Delta_fartime with interval excluding zero",
+   "value": {
+    "delta": 0.10355271117472253,
+    "ci": [
+     0.09195956266595293,
+     0.11379515710027446
+    ]
+   },
+   "pass": true
+  }
+ ],
+ "decision_rule_pass": true,
+ "non_regression_table": [
+  {
+   "id": "NR1",
+   "endpoint": "native_minus_absent/full_support_excluded",
+   "old_node005": 0.07415,
+   "repaired": 0.0666804925076061,
+   "tolerance_min": 0.05,
+   "pass": true
+  },
+  {
+   "id": "NR2",
+   "endpoint": "native_minus_absent/near_support_excluded_d_le_0p5h",
+   "old_node005": 0.14024,
+   "repaired": 0.12260885447900904,
+   "tolerance_min": 0.095,
+   "pass": true
+  },
+  {
+   "id": "NR3",
+   "endpoint": "native_minus_absent/outer_d_gt_0p5h",
+   "old_node005": 0.00649,
+   "repaired": 0.009428872671994437,
+   "tolerance_min": -0.002,
+   "pass": true
+  },
+  {
+   "id": "NR4",
+   "endpoint": "native_minus_absent/uniq_raster_support_excluded",
+   "old_node005": 0.09504,
+   "repaired": 0.08460962485736001,
+   "tolerance_min": 0.065,
+   "pass": true
+  },
+  {
+   "id": "NR5",
+   "endpoint": "K:tau_native/full_support_excluded",
+   "old_node005": -0.01432,
+   "repaired": -0.02253071141276175,
+   "tolerance_min": -0.035,
+   "pass": true
+  },
+  {
+   "id": "NR6",
+   "endpoint": "K:absent/full_support_excluded",
+   "old_node005": -0.08847,
+   "repaired": -0.08921120392036785,
+   "tolerance_min": -0.115,
+   "pass": true
+  },
+  {
+   "id": "NR7",
+   "endpoint": "native > fartime (complete)",
+   "repaired": [
+    0.0666804925076061,
+    -0.06599377164427667
+   ],
+   "pass": true
+  },
+  {
+   "id": "NR8",
+   "endpoint": "native > absent in all four regions",
+   "repaired": {
+    "full_support_excluded": 0.0666804925076061,
+    "near_support_excluded_d_le_0p5h": 0.12260885447900904,
+    "outer_d_gt_0p5h": 0.009428872671994437,
+    "uniq_raster_support_excluded": 0.08460962485736001
+   },
+   "pass": true
+  }
+ ],
+ "non_regression_pass": true,
+ "frozen_familyT_identity_gate": [
+  {
+   "arm": "T:tau_native",
+   "region": "full_support_excluded",
+   "node005_seed7701": -0.014052880882698071,
+   "reevaluated": -0.014052886943936027,
+   "abs_diff": 6.0612379559898955e-09,
+   "tolerance": 0.005,
+   "pass": true
+  },
+  {
+   "arm": "T:tau_native",
+   "region": "near_support_excluded_d_le_0p5h",
+   "node005_seed7701": 0.045508494933566346,
+   "reevaluated": 0.045508499260560664,
+   "abs_diff": 4.326994318404331e-09,
+   "tolerance": 0.005,
+   "pass": true
+  },
+  {
+   "arm": "T:tau_native",
+   "region": "outer_d_gt_0p5h",
+   "node005_seed7701": -0.07506493942963566,
+   "reevaluated": -0.0750649397703651,
+   "abs_diff": 3.4072944465890487e-10,
+   "tolerance": 0.005,
+   "pass": true
+  },
+  {
+   "arm": "T:tau_native",
+   "region": "uniq_raster_support_excluded",
+   "node005_seed7701": 0.004911994876492742,
+   "reevaluated": 0.004911995963724047,
+   "abs_diff": 1.0872313049858917e-09,
+   "tolerance": 0.005,
+   "pass": true
+  },
+  {
+   "arm": "T:absent",
+   "region": "full_support_excluded",
+   "node005_seed7701": -0.08896896115736741,
+   "reevaluated": -0.08896896755534067,
+   "abs_diff": 6.397973262295409e-09,
+   "tolerance": 0.005,
+   "pass": true
+  },
+  {
+   "arm": "T:absent",
+   "region": "near_support_excluded_d_le_0p5h",
+   "node005_seed7701": -0.09537556321222596,
+   "reevaluated": -0.09537556654068302,
+   "abs_diff": 3.3284570655212065e-09,
+   "tolerance": 0.005,
+   "pass": true
+  },
+  {
+   "arm": "T:absent",
+   "region": "outer_d_gt_0p5h",
+   "node005_seed7701": -0.08245174971899893,
+   "reevaluated": -0.08245175210410549,
+   "abs_diff": 2.385106556701544e-09,
+   "tolerance": 0.005,
+   "pass": true
+  },
+  {
+   "arm": "T:absent",
+   "region": "uniq_raster_support_excluded",
+   "node005_seed7701": -0.09093938846865668,
+   "reevaluated": -0.09093939281758212,
+   "abs_diff": 4.348925441988172e-09,
+   "tolerance": 0.005,
+   "pass": true
+  }
+ ],
+ "identity_gate_pass": true,
+ "REGISTERED_VERDICT": "POSITIVE",
+ "result_sha256": "ee1ea27e2d0d79aa76fde34c2f4ae63510ccd5fb4ce92be61ca4d335eb8d2fbc",
+ "closure_apriori": {
+  "train_fit_window": {
+   "R2_tau_closure": 0.5533731618083506,
+   "R2_tau_eqwm": 0.4221513494398337,
+   "mean_direction_cosine": 0.7591380655765534
+  },
+  "train_val_window": {
+   "R2_tau_closure": 0.5394510593072389,
+   "R2_tau_eqwm": 0.4156665536258304,
+   "mean_direction_cosine": 0.7657206316788991
+  },
+  "confirm_strict": {
+   "R2_tau_closure": 0.5404371866375814,
+   "R2_tau_eqwm": 0.4128308921986519,
+   "mean_direction_cosine": 0.745719687296794
+  }
+ },
+ "gpu_hours": 2.947
+}

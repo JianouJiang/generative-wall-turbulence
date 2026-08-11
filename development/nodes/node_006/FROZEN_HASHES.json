@@ -1,0 +1,42 @@
+{
+ "node": "node_006",
+ "level": 3,
+ "attempt": 4,
+ "frozen_at": "2026-07-31T19:15:00+01:00",
+ "purpose": "Hash binding of the E2 closure-composition preregistration, its producer, and every node-005 artifact that must remain byte-identical.",
+ "declared_pre_freeze_execution": {
+  "smoke_runs": 1,
+  "smoke_tag": "e2_closure_smoke",
+  "smoke_log": "gpu_jobs/foshan_20260731T190533.log",
+  "held_out_frames_contacted_before_freeze": 0,
+  "note": "The --smoke path reassigns strict_idx=train_idx[:6] and prior_idx=train_idx[6:12] BEFORE any evaluation, so every number printed by the smoke run is a training-window number. No held-out generator or closure outcome was observed before this freeze."
+ },
+ "sha256": {
+  "producer": "faf1eb643e80af9499387e21adb6ffd541d691e95b3f637ef6cfeb9ee4f597df",
+  "preregistration": "b29dfb6309c9e404ce1eb0fc587c8e2a390ab4dc7f72ad75601f979fc6f91245",
+  "prior_node005_components": "70269d735ff2fe7ecf1dee998b1d48cce42ad75dbc8d5d6ee0696f07f412443d",
+  "prior_node005_results": "9bd138e31019c70962b83ca7e54d0271a12c86639b8079bd5877ebdfc0bb9de7",
+  "prior_node005_producer": "f53372b2e3cbb33c9a54637e598aa4fe1fcc20096f991e492ee0f2c974f7424c",
+  "frozen_T_s7701": "f3de7d7da875fe62f3850269cf5fe94b66a0d7b1a280b945202ea765042be199",
+  "frozen_T_s7702": "27add29b8da77c0b74b479433e4370afa13d6f077fbd6412b94e6640c36239fb",
+  "frozen_T_s7703": "bda5dbedb84e87e8f1b102fde8be5d8272f056c85b830e5b1928474edad74963",
+  "frozen_B_s7701": "c46f89459a7a4bf0a3b71f15acca886a116b211a3c7421a3997342c23407e9b2",
+  "frozen_B_s7702": "a52b2ba1c57ea33fe34621f593be6ee686d95968a59ca0443d4a8d55dbc5d772",
+  "frozen_B_s7703": "d74c7b76373128e72468d413ab5f4b15effadeca3c82d844d68bb7f8bae982c9",
+  "frozen_D_s7701": "f3d8ff24ce7194dba23028a2cbbf4e36fe9f9795e0d76d25f2f5ecfedb7ca247"
+ },
+ "paths": {
+  "producer": "codes/gpu/eval_e2_closure_composition.py",
+  "preregistration": "development/nodes/node_006/PREREGISTRATION_E2_CLOSURE.md",
+  "prior_node005_components": "codes/results/e2_direct_traction_components.npz",
+  "prior_node005_results": "codes/results/e2_direct_traction_results.json",
+  "prior_node005_producer": "codes/gpu/eval_e2_direct_traction.py",
+  "frozen_T_s7701": "codes/results/e2_direct_traction_T_s7701.pt",
+  "frozen_T_s7702": "codes/results/e2_direct_traction_T_s7702.pt",
+  "frozen_T_s7703": "codes/results/e2_direct_traction_T_s7703.pt",
+  "frozen_B_s7701": "codes/results/e2_direct_traction_B_s7701.pt",
+  "frozen_B_s7702": "codes/results/e2_direct_traction_B_s7702.pt",
+  "frozen_B_s7703": "codes/results/e2_direct_traction_B_s7703.pt",
+  "frozen_D_s7701": "codes/results/e2_direct_traction_D_s7701.pt"
+ }
+}

@@ -1,0 +1,219 @@
+{
+  "_meta": {
+    "checkpoint_interval": 30.0,
+    "claim_boundary": "native-yplus two-field audit only; fields exceed a historical signal-specific estimate but not the current conservative integral-time convention; no temporal-independence claim",
+    "complete": true,
+    "continuation_log": "yplus_temporal_continuation.log",
+    "continuation_log_sha256": "7745a5c77406acbe1927e0d2dbfd15179b65243c47f56e55224ffa5775cf4535",
+    "continuation_start_time": 370.0004874808,
+    "execution_defect_repair": "postprocess root checkpoints; no LES continuation or model rerun",
+    "failed_launcher_wrapper": "run_cube_yplus_temporal_continuation.py",
+    "failed_launcher_wrapper_sha256": "a0a78972f354dddae6ba247f417b0859a5ea1b5f46efee84624628f50f11f3a0",
+    "field_count": 2,
+    "max_native_wall_speed": 0.0,
+    "current_conservative_integral_time": 36.74451907473243,
+    "current_conservative_integral_time_native_snapshots": 122.48173024910811,
+    "historical_signal_specific_integral_time": 29.2776078445665,
+    "mesh": "codes/cube_les/cube.re2",
+    "origin_artifact_sha256_before_path_sanitization": "cb40ca68c6ad076681f236f6126149daee9a0f1f6efc917766d737beb5123bc1",
+    "origin_machine_paths_redacted": true,
+    "mesh_sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128",
+    "method": "native no-slip GLL-face spectral derivatives; viscous traction only",
+    "nu": 0.0002,
+    "pressure_form_drag_excluded": true,
+    "producer_wrapper": "finalize_cube_yplus_temporal.py",
+    "producer_wrapper_sha256": "357fb5a4f7ea24fd26a42e06f381d185943aa5664465824d9200a6ace2800e6d",
+    "retained_fields_current_conservative_integral_time_separated": false,
+    "retained_fields_historical_signal_specific_integral_time_separated": true,
+    "retained_time_separation": 29.999793344500006,
+    "temporal_independence_claim": false,
+    "script": "eval_cube_native_yplus.py",
+    "script_sha256": "6dbd7a4479728e6d42c76bfba468b43e7c97211da117dc3633663bae72dde65e",
+    "selected_field_paths": [
+      "controlled_raw/cube_les/cube0.f00000",
+      "controlled_raw/cube_les/cube0.f00001"
+    ],
+    "times": [
+      390.0003162817,
+      420.0001096262
+    ]
+  },
+  "per_field": [
+    {
+      "classes": {
+        "cube_top": {
+          "area": 0.9999999999999994,
+          "viscous_traction_magnitude": {
+            "area_weighted_mean": 0.007009728894463268,
+            "area_weighted_p50": 0.006448602618504429,
+            "area_weighted_p95": 0.013130671350393641,
+            "area_weighted_p99": 0.016747342343758048,
+            "maximum": 0.20015782493819187
+          },
+          "yplus": {
+            "area_weighted_mean": 0.20748817889239238,
+            "area_weighted_p50": 0.20599350917309184,
+            "area_weighted_p95": 0.29394372543171554,
+            "area_weighted_p99": 0.331966055003081,
+            "maximum": 1.1476435359708559
+          }
+        },
+        "cube_vertical_faces": {
+          "area": 3.9999999999999973,
+          "viscous_traction_magnitude": {
+            "area_weighted_mean": 0.0029657990773753686,
+            "area_weighted_p50": 0.0020867200967361684,
+            "area_weighted_p95": 0.008614074384129053,
+            "area_weighted_p99": 0.02377272295409086,
+            "maximum": 0.2206687275027934
+          },
+          "yplus": {
+            "area_weighted_mean": 0.1828346163873261,
+            "area_weighted_p50": 0.17576973047049982,
+            "area_weighted_p95": 0.3571217460304281,
+            "area_weighted_p99": 0.5932687216146485,
+            "maximum": 1.8075169673708875
+          }
+        },
+        "floor_between_cubes": {
+          "area": 2.9999999999999987,
+          "viscous_traction_magnitude": {
+            "area_weighted_mean": 0.0017650092833371741,
+            "area_weighted_p50": 0.0012104921372398992,
+            "area_weighted_p95": 0.00532596440960126,
+            "area_weighted_p99": 0.007215275428965851,
+            "maximum": 0.015204866919738649
+          },
+          "yplus": {
+            "area_weighted_mean": 0.09775646262963633,
+            "area_weighted_p50": 0.08924866217027926,
+            "area_weighted_p95": 0.1872060407327294,
+            "area_weighted_p99": 0.2178949602378622,
+            "maximum": 0.3163093575376479
+          }
+        }
+      },
+      "face_counts": {
+        "cube_top": 256,
+        "cube_vertical_faces": 768,
+        "floor_between_cubes": 528
+      },
+      "field": "cube0.f00000",
+      "field_sha256": "41b2bc5347795652bf51abbb41f348ea42d3c9e36a2e2bb47b1a85a14a4bc123",
+      "time": 390.0003162817
+    },
+    {
+      "classes": {
+        "cube_top": {
+          "area": 0.9999999999999994,
+          "viscous_traction_magnitude": {
+            "area_weighted_mean": 0.005690465534125787,
+            "area_weighted_p50": 0.0052442835106447,
+            "area_weighted_p95": 0.010755590608291066,
+            "area_weighted_p99": 0.012559902943967008,
+            "maximum": 0.2715914328434645
+          },
+          "yplus": {
+            "area_weighted_mean": 0.18653962225357323,
+            "area_weighted_p50": 0.18576496470323076,
+            "area_weighted_p95": 0.26603443835240803,
+            "area_weighted_p99": 0.28748412654998545,
+            "maximum": 1.336837937014454
+          }
+        },
+        "cube_vertical_faces": {
+          "area": 3.9999999999999973,
+          "viscous_traction_magnitude": {
+            "area_weighted_mean": 0.0027636280013921587,
+            "area_weighted_p50": 0.0014552231214227294,
+            "area_weighted_p95": 0.008507293517750708,
+            "area_weighted_p99": 0.01663111901446758,
+            "maximum": 0.24931391295834757
+          },
+          "yplus": {
+            "area_weighted_mean": 0.1742458588043882,
+            "area_weighted_p50": 0.14678334505989188,
+            "area_weighted_p95": 0.3549013864555684,
+            "area_weighted_p99": 0.49621823899803197,
+            "maximum": 1.92125603598742
+          }
+        },
+        "floor_between_cubes": {
+          "area": 2.9999999999999987,
+          "viscous_traction_magnitude": {
+            "area_weighted_mean": 0.0014094091631417919,
+            "area_weighted_p50": 0.0008487718832807523,
+            "area_weighted_p95": 0.004547245980681325,
+            "area_weighted_p99": 0.006653101741978826,
+            "maximum": 0.009718627552562465
+          },
+          "yplus": {
+            "area_weighted_mean": 0.08570746562576559,
+            "area_weighted_p50": 0.07473365462674765,
+            "area_weighted_p95": 0.17297962539378614,
+            "area_weighted_p99": 0.20923426649369412,
+            "maximum": 0.25288507461908305
+          }
+        }
+      },
+      "face_counts": {
+        "cube_top": 256,
+        "cube_vertical_faces": 768,
+        "floor_between_cubes": 528
+      },
+      "field": "cube0.f00001",
+      "field_sha256": "c646f8525666c6d03c256196ab6b8409abc12a7a28e0202aee3a9ffbe499e590",
+      "time": 420.0001096262
+    }
+  ],
+  "pooled_two_terminal_fields": {
+    "cube_top": {
+      "viscous_traction_magnitude": {
+        "area_weighted_mean": 0.006350097214294527,
+        "area_weighted_p50": 0.0059834020011528075,
+        "area_weighted_p95": 0.011734113667195109,
+        "area_weighted_p99": 0.01573681843515633,
+        "maximum": 0.2715914328434645
+      },
+      "yplus": {
+        "area_weighted_mean": 0.1970139005729828,
+        "area_weighted_p50": 0.19842428294984038,
+        "area_weighted_p95": 0.277872695410155,
+        "area_weighted_p99": 0.3217949285995951,
+        "maximum": 1.336837937014454
+      }
+    },
+    "cube_vertical_faces": {
+      "viscous_traction_magnitude": {
+        "area_weighted_mean": 0.0028647135393837634,
+        "area_weighted_p50": 0.001790781122196108,
+        "area_weighted_p95": 0.008537015563924753,
+        "area_weighted_p99": 0.020808300644974662,
+        "maximum": 0.24931391295834757
+      },
+      "yplus": {
+        "area_weighted_mean": 0.17854023759585713,
+        "area_weighted_p50": 0.16282955696073234,
+        "area_weighted_p95": 0.3555208077888537,
+        "area_weighted_p99": 0.5550476835137552,
+        "maximum": 1.92125603598742
+      }
+    },
+    "floor_between_cubes": {
+      "viscous_traction_magnitude": {
+        "area_weighted_mean": 0.0015872092232394831,
+        "area_weighted_p50": 0.001026459993800943,
+        "area_weighted_p95": 0.004961249443781747,
+        "area_weighted_p99": 0.007005170261102254,
+        "maximum": 0.015204866919738649
+      },
+      "yplus": {
+        "area_weighted_mean": 0.09173196412770097,
+        "area_weighted_p50": 0.08218484531991037,
+        "area_weighted_p95": 0.18068257030303236,
+        "area_weighted_p99": 0.2146990268942875,
+        "maximum": 0.3163093575376479
+      }
+    }
+  }
+}

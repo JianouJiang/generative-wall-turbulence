@@ -1,0 +1,15 @@
+{
+ "source": "case2_channel_f16.npy (CoNFiLD Case2 smooth-wall channel, both walls)",
+ "source_sha256": "49bd3b7b1b6dfecc2159f282f198b38f241a1ba3d6286760b358ce7f8e034d47",
+ "source_sha256_matches_meta": true,
+ "frame": 0,
+ "wall_for_planes": "lower (index 0)",
+ "u_mean_profile,v_mean_profile": "means of u,v over the 46 FINAL eval frames, both walls and x",
+ "u_rms_map": "per-pixel std of u over the 46 FINAL eval frames, lower wall",
+ "tau_walls": "nu * u(first cell) / (dy/2) per wall at the frame, kinematic",
+ "constants": {
+  "nu": 0.0002439164890865374,
+  "dy": 0.005,
+  "u_tau": 0.04482407231097422
+ }
+}

@@ -1,0 +1,1092 @@
+{
+ "_what": "union of every Case2-timeline frame any retained producer scored, plus trained-on-only windows, before node_011 FINAL contact",
+ "final_window_under_test": [
+  0,
+  459
+ ],
+ "artefacts": [
+  {
+   "artefact": "codes/results/calibration_l3_absolute_perframe_diffusion.npz",
+   "key": "n_test",
+   "n": 1,
+   "min": 24,
+   "max": 24,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube3d_coupling_adequate_components.npz",
+   "key": "test_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube3d_coupling_adequate_components.npz",
+   "key": "donor_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube3d_coupling_adequate_smoke_components.npz",
+   "key": "test_idx",
+   "n": 12,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube3d_coupling_adequate_smoke_components.npz",
+   "key": "donor_idx",
+   "n": 12,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube3d_representative_fields.npz",
+   "key": "eval_index",
+   "n": 1,
+   "min": 758,
+   "max": 758,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_distributional_rapid/cube_distributional_rapid_components.npz",
+   "key": "test_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_distributional_rapid/cube_distributional_rapid_components.npz",
+   "key": "donor_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_periodic_topology/cube3d_representative_fields.npz",
+   "key": "eval_index",
+   "n": 1,
+   "min": 758,
+   "max": 758,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_periodic_topology/cube_periodic_topology_components.npz",
+   "key": "test_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_periodic_topology/cube_periodic_topology_components.npz",
+   "key": "donor_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_periodic_topology_smoke/cube3d_representative_fields.npz",
+   "key": "eval_index",
+   "n": 1,
+   "min": 758,
+   "max": 758,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_periodic_topology_smoke/cube_periodic_topology_smoke_components.npz",
+   "key": "test_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_periodic_topology_smoke/cube_periodic_topology_smoke_components.npz",
+   "key": "donor_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_wiener_floor_bench_components.npz",
+   "key": "eval_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_wiener_floor_bench_components_seed2234.npz",
+   "key": "eval_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_wiener_floor_bench_components_seed3234.npz",
+   "key": "eval_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/cube_wiener_floor_bench_smoke_components.npz",
+   "key": "eval_idx",
+   "n": 12,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_closure_composition_components.npz",
+   "key": "CONFIRM_STRICT|eval_idx",
+   "n": 103,
+   "min": 760,
+   "max": 1098,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_closure_composition_components.npz",
+   "key": "CONFIRM_ALL|eval_idx",
+   "n": 240,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_closure_smoke_components.npz",
+   "key": "CONFIRM_STRICT|eval_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_closure_smoke_components.npz",
+   "key": "CONFIRM_ALL|eval_idx",
+   "n": 6,
+   "min": 6,
+   "max": 11,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_compact_channel_components.npz",
+   "key": "test_idx",
+   "n": 46,
+   "min": 746,
+   "max": 1196,
+   "on_case2_timeline": true
+  },
+  {
+   "artefact": "codes/results/e2_compact_channel_smoke_components.npz",
+   "key": "test_idx",
+   "n": 46,
+   "min": 746,
+   "max": 1196,
+   "on_case2_timeline": true
+  },
+  {
+   "artefact": "codes/results/e2_compact_cube_components.npz",
+   "key": "test_idx",
+   "n": 28,
+   "min": 640,
+   "max": 1180,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_compact_cube_smoke_components.npz",
+   "key": "test_idx",
+   "n": 28,
+   "min": 640,
+   "max": 1180,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_cube_reachgated_components.npz",
+   "key": "test_idx",
+   "n": 25,
+   "min": 0,
+   "max": 288,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_cube_reachgated_components.npz",
+   "key": "dev_idx",
+   "n": 8,
+   "min": 390,
+   "max": 418,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_cube_reachgated_components.npz",
+   "key": "train_idx",
+   "n": 681,
+   "min": 420,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_direct_smoke_components.npz",
+   "key": "eval_idx",
+   "n": 8,
+   "min": 754,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_direct_traction_components.npz",
+   "key": "eval_idx",
+   "n": 240,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_components.npz",
+   "key": "C1|eval_idx",
+   "n": 103,
+   "min": 760,
+   "max": 1098,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_components.npz",
+   "key": "C1|donor_idx",
+   "n": 103,
+   "min": 760,
+   "max": 1098,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_components.npz",
+   "key": "C2|eval_idx",
+   "n": 692,
+   "min": 2188,
+   "max": 2879,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_components.npz",
+   "key": "C2|donor_idx",
+   "n": 692,
+   "min": 2188,
+   "max": 2879,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_components.npz",
+   "key": "C3|eval_idx",
+   "n": 692,
+   "min": 2188,
+   "max": 2879,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_components.npz",
+   "key": "C3|donor_idx",
+   "n": 692,
+   "min": 2188,
+   "max": 2879,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_localsmoke_components.npz",
+   "key": "C2|eval_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_localsmoke_components.npz",
+   "key": "C2|donor_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_smoke_components.npz",
+   "key": "C1|eval_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_smoke_components.npz",
+   "key": "C1|donor_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_smoke_components.npz",
+   "key": "C2|eval_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_smoke_components.npz",
+   "key": "C2|donor_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_smoke_components.npz",
+   "key": "C3|eval_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_generality_smoke_components.npz",
+   "key": "C3|donor_idx",
+   "n": 6,
+   "min": 0,
+   "max": 5,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H1|test|0|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H1|test|0|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H1|test|9812|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H1|test|9812|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H1|test|9813|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H1|test|9813|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H2|test|0|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H2|test|0|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H2|test|9822|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H2|test|9822|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H2|test|9823|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_band_components.npz",
+   "key": "H2|test|9823|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|sst|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|sse|tau_closure|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|sse|absent|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|sse|tau_native|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|sse|tau_eqwm|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|sse|tau_fartime|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|0|sse|tau_random|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|planecheck|0|unit_idx",
+   "n": 186,
+   "min": 1550,
+   "max": 2878,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|planecheck|0|donor_idx",
+   "n": 186,
+   "min": 1550,
+   "max": 2878,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|sst|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|sse|tau_closure|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|sse|absent|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|sse|tau_native|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|sse|tau_eqwm|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|sse|tau_fartime|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9811|sse|tau_random|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|sst|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|sse|tau_closure|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|sse|absent|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|sse|tau_native|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|sse|tau_eqwm|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|sse|tau_fartime|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H1|test|9812|sse|tau_random|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|sst|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|sse|tau_closure|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|sse|absent|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|sse|tau_native|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|sse|tau_eqwm|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|sse|tau_fartime|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|0|sse|tau_random|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|planecheck|0|unit_idx",
+   "n": 186,
+   "min": 1550,
+   "max": 2878,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|planecheck|0|donor_idx",
+   "n": 186,
+   "min": 1550,
+   "max": 2878,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|sst|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|sse|tau_closure|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|sse|absent|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|sse|tau_native|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|sse|tau_eqwm|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|sse|tau_fartime|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9821|sse|tau_random|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|sst|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|unit_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|donor_idx",
+   "n": 370,
+   "min": 590,
+   "max": 959,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|sse|tau_closure|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|sse|absent|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|sse|tau_native|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|sse|tau_eqwm|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|sse|tau_fartime|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "H2|test|9822|sse|tau_random|nearwall_015h",
+   "n": 370,
+   "min": 0,
+   "max": 0,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "LK|flat|0|unit_idx",
+   "n": 330,
+   "min": 2188,
+   "max": 2517,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_grouped_hills_components.npz",
+   "key": "LK|flat|0|donor_idx",
+   "n": 330,
+   "min": 2188,
+   "max": 2517,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_rough_dose_components.npz",
+   "key": "test_idx",
+   "n": 28,
+   "min": 640,
+   "max": 1180,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_rough_infomatched_components.npz",
+   "key": "test_idx",
+   "n": 28,
+   "min": 640,
+   "max": 1180,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_traction_interface_components.npz",
+   "key": "test_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_traction_interface_components.npz",
+   "key": "donor_idx",
+   "n": 160,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_traction_interface_smoke_components.npz",
+   "key": "test_idx",
+   "n": 4,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/e2_traction_interface_smoke_components.npz",
+   "key": "donor_idx",
+   "n": 4,
+   "min": 758,
+   "max": 1100,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/patch_momentum_posterior_components.npz",
+   "key": "test_index",
+   "n": 103,
+   "min": 376,
+   "max": 478,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/smoke_dose_components.npz",
+   "key": "test_idx",
+   "n": 28,
+   "min": 640,
+   "max": 1180,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/smoke_rough2_components.npz",
+   "key": "test_idx",
+   "n": 28,
+   "min": 640,
+   "max": 1180,
+   "on_case2_timeline": false
+  },
+  {
+   "artefact": "codes/results/smoke_rough_components.npz",
+   "key": "test_idx",
+   "n": 26,
+   "min": 690,
+   "max": 1190,
+   "on_case2_timeline": false
+  }
+ ],
+ "declared_splits": [
+  {
+   "scored": [
+    746,
+    1199,
+    10
+   ],
+   "why": "node_010 TEST window, e2_compact_channel_results.json _meta"
+  },
+  {
+   "scored": [
+    500,
+    559,
+    1
+   ],
+   "why": "node_010 DEV window (dev selection scored it)"
+  },
+  {
+   "scored": [
+    744,
+    1199,
+    1
+   ],
+   "why": "eval_l3_channel_absolute.py:150 test_times=[744,1199] (train [0,719] is gradients-only)"
+  },
+  {
+   "scored": [
+    992,
+    1199,
+    1
+   ],
+   "why": "conservative envelope of the canonical rasterized-case2 split (train_stats_l2.py: n_tr=912, gap>=80): rough_wall_l2 / adequacy / certificate producers score only >= 992"
+  }
+ ],
+ "scored_frames_union": {
+  "n": 516,
+  "min": 500,
+  "max": 1199
+ },
+ "trained_only_windows": [
+  {
+   "window": [
+    0,
+    719
+   ],
+   "producer": "eval_l3_channel_absolute.py:141",
+   "note": "training gradients + normalization only; system discarded"
+  },
+  {
+   "window": [
+    0,
+    911
+   ],
+   "producer": "train_stats_l2.py canonical rule",
+   "note": "rasterized-case2 training window; gradients only; systems discarded"
+  },
+  {
+   "window": [
+    0,
+    499
+   ],
+   "producer": "eval_e2_compact_channel.py TRAIN_W",
+   "note": "node_010 training window; gradients + normalization only; node_010 system is not reused by node_011"
+  }
+ ],
+ "overlap_with_final_window": [],
+ "verdict": "CLEAN: no retained producer ever scored any frame in [0,459]"
+}

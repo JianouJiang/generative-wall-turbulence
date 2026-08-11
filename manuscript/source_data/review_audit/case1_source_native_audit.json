@@ -1,0 +1,68 @@
+{
+  "all_checks_pass": true,
+  "derived_custody": {
+    "closure_input_producer_sha256": "eea2014c8350c3245069978634c2decb047ca748fcb30077b507f3d2a048c7ff",
+    "evaluator_sha256": "9d8a979942d23a2928de6154ec77dc7de305b1add8a033314623a95e8963af01",
+    "raster_Ly": 67.67246,
+    "raster_h": 11.278743333333333,
+    "raster_meta_sha256": "6509204e06935928826e53f60d1f31c34575d02365ac870ad5cf4013268671f4",
+    "raster_obstacle_cells": 0,
+    "raster_sha256": "2e6549d212e50b8054216a2a2841db82d2420c2f6b2776c5ab252e4f97a7139d",
+    "rasterizer_sha256": "066cf4199fcc5c9dbdf249fb06ec8d1ff181b9467d2c3ffa1a3e159e8605c551",
+    "result_sha256": "f058a9990ebd2e02b059b6629c4aa2d3cc5c77594e6d4a27491b9e895bcb1073"
+  },
+  "independent_data_contact_findings": [
+    "normalisation uses the complete raw record before chronological splitting",
+    "generator training uses instantaneous target-derived first-cell proxy stress",
+    "closure feature is target-time-mean-derived while random control is instantaneous",
+    "one fitted training realisation is retained per generator family"
+  ],
+  "new_compute": false,
+  "pipeline_checks": {
+    "closure_constructs_edge_euler_pressure_gradient": true,
+    "evaluator_derives_viscosity": true,
+    "evaluator_imposes_re_h_2800": true,
+    "evaluator_labels_case1_wall_jet": true,
+    "raster_has_no_embedded_obstacle": true,
+    "rasterizer_comments_third_component_as_w": true,
+    "rasterizer_falls_back_to_Ly_over_6": true,
+    "rasterizer_uses_complete_record_mean_and_std": true
+  },
+  "primary_source": {
+    "article": "Du et al., Nature Communications 15, 10416 (2024)",
+    "doi": "10.1038/s41467-024-54712-1",
+    "local_pdf_sha256": "fca0fdf99d09b837beffa1bf0623ee585a0e0aa25000ad3f912c0b6d54b84e71",
+    "reported_identity": "two-dimensional irregular pipe with stochastic forcing; fields u,v,p"
+  },
+  "raw_arrays": {
+    "coords": {
+      "dtype": "float64",
+      "path": "codes/data/confild/data/Case1/coords.npy",
+      "sha256": "a79d168117aa57042a5272ba8631e271c948fa87821a9a2533ae9baac510feea",
+      "shape": [
+        918,
+        2
+      ]
+    },
+    "data": {
+      "dtype": "float64",
+      "path": "codes/data/confild/data/Case1/data.npy",
+      "sha256": "098ba72feae1e4b03b7db429a1da847cd3c85baa0ba6c7a2748e23c55a6ec01c",
+      "shape": [
+        16001,
+        918,
+        3
+      ]
+    }
+  },
+  "schema": "gwt-case1-source-native-audit-v1",
+  "scientific_decision": "Case1 cannot support wall-jet, separation, skin-friction, signed-stress or cross-kind closure-composition claims. Retain outputs only for custody.",
+  "source_checks": {
+    "paper_identifies_stochastic_forcing": true,
+    "paper_identifies_two_dimensional_irregular_pipe": true,
+    "paper_identifies_u_v_p": true,
+    "raw_coords_shape_918_by_2": true,
+    "raw_data_shape_16001_by_918_by_3": true
+  },
+  "status": "source_invalid_withdrawn"
+}

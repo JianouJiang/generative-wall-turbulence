@@ -1,0 +1,19 @@
+{
+  "_what": "Prospective freeze of the direct native-traction conditioning experiment (E2 repair)",
+  "frozen_at_utc": "2026-07-31T13:44:39.476917Z",
+  "node": "development/nodes/node_005",
+  "level": "3 (Results, statistics and figure review), attempt 3",
+  "target": "foshan (remote A800 80GB) via cloud/gpu_run.sh --target foshan",
+  "orig_used": false,
+  "sha256": {
+    "codes/gpu/eval_e2_direct_traction.py": "f53372b2e3cbb33c9a54637e598aa4fe1fcc20096f991e492ee0f2c974f7424c",
+    "development/nodes/node_005/PREREGISTRATION_E2_DIRECT.md": "cfbc221075c8c23a9462a86c291c36c9cb805d157a47868149c0fc6d1e142c4f"
+  },
+  "command": "cloud/gpu_run.sh --target foshan run codes/gpu/eval_e2_direct_traction.py --tag e2_direct_traction --base 32 --steps-train 20000 --batch 4 --seeds 3 --nmax 240 --members 8 --sample-steps 32 --boot 4000",
+  "primary_estimand": "R2(tau_native) - R2(absent) on full_support_excluded",
+  "decision_rule": "POSITIVE iff delta>0 AND conservative-block 95% CI excludes zero AND same sign on all 3 seeds AND tau_native beats trainmean, fartime and shuffle; otherwise reported straight as null/adverse",
+  "prior_contact_declared": [
+    "e2_direct_smoke",
+    "e2_direct_probe"
+  ]
+}

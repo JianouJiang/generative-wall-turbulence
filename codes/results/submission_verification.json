@@ -1,0 +1,2260 @@
+{
+  "all_pass": true,
+  "artifacts": {
+    "point_components_sha256": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18",
+    "point_result_sha256": "0fc302421d622879e00ef16a14636fb8849ee65c0680c85491659788807f914d",
+    "rapid_components_sha256": "a7f1c74f909e1a805d4a3642db83285371ecd80e4a59cd11a873a14253010e2d",
+    "rapid_result_sha256": "c70342f6fc4bf8e21f0883ba76de806f01eb8cfc34f9b0d52018443beba00588"
+  },
+  "checks": {
+    "active_figure_contract": {
+      "includes": [
+        "fig1_architecture",
+        "fig2_generation",
+        "fig3_propagation",
+        "fig6_interface",
+        "fig7_direct_traction",
+        "fig8_closure_composition",
+        "fig11_reachgated_composition",
+        "fig14_slot_interface"
+      ],
+      "pass": true
+    },
+    "active_source_json_quarantine_content": {
+      "pass": true,
+      "scanned": [
+        "manuscript/source_data/current_fig5/INVALIDATED.json",
+        "manuscript/source_data/current_fig5/l2_case1_closure_results.json",
+        "manuscript/source_data/current_fig5/wallstress_cond_case1_bh1_results.json",
+        "manuscript/source_data/diagnostic_e2/case1_closure_inputs.json",
+        "manuscript/source_data/diagnostic_e2/causal_wall_history_results.json",
+        "manuscript/source_data/diagnostic_e2/runtime_closure_conditioning_results.json",
+        "manuscript/source_data/diagnostic_e2/wallstress_cond_case1_bh1_results.json",
+        "manuscript/source_data/fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR2.json",
+        "manuscript/source_data/fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR3.json",
+        "manuscript/source_data/fig11_reachgated/e2_cube_reachgated_results.json",
+        "manuscript/source_data/fig11_reachgated/e2_grouped_hills_band_results.json",
+        "manuscript/source_data/fig11_reachgated/hill_context_frame_provenance.json",
+        "manuscript/source_data/fig11_reachgated/hill_hierarchical_intervals.json",
+        "manuscript/source_data/fig11_reachgated/hill_positive_control_audit.json",
+        "manuscript/source_data/fig1_v2/fig1_overview_derived_provenance.json",
+        "manuscript/source_data/fig2/cube3d_timeline.json",
+        "manuscript/source_data/fig3/cube_periodic_topology_results.json",
+        "manuscript/source_data/fig4/cube_distributional_rapid_results.json",
+        "manuscript/source_data/fig6/grouped_hill_supporting.json",
+        "manuscript/source_data/fig6_interface/e2_traction_interface_conservative_blocks.json",
+        "manuscript/source_data/fig6_interface/e2_traction_interface_results.json",
+        "manuscript/source_data/fig7/capacity_crossed_adjudication.json",
+        "manuscript/source_data/fig7_direct/e2_direct_traction_results.json",
+        "manuscript/source_data/fig8_closure/e2_closure_composition_results.json",
+        "manuscript/source_data/fig_slot/DECISION_RULE_OUTCOME_NODE011.json",
+        "manuscript/source_data/fig_slot/V2_FROZEN_PARAMS.json",
+        "manuscript/source_data/fig_slot/block_inference_calibration.json",
+        "manuscript/source_data/fig_slot/case2_contact_ledger.json",
+        "manuscript/source_data/fig_slot/channel_context_frame_provenance.json",
+        "manuscript/source_data/fig_slot/e2_slot_channel_final_results.json",
+        "manuscript/source_data/figure_artist_manifests/fig11_reachgated_composition.json",
+        "manuscript/source_data/figure_artist_manifests/fig14_slot_interface.json",
+        "manuscript/source_data/figure_artist_manifests/fig1_architecture.json",
+        "manuscript/source_data/figure_artist_manifests/fig2_generation.json",
+        "manuscript/source_data/figure_artist_manifests/fig3_propagation.json",
+        "manuscript/source_data/figure_artist_manifests/fig6_interface.json",
+        "manuscript/source_data/figure_artist_manifests/fig7_direct_traction.json",
+        "manuscript/source_data/figure_artist_manifests/fig8_closure_composition.json",
+        "manuscript/source_data/methods/cube3d_native_yplus_temporally_separated.json",
+        "manuscript/source_data/methods/cube_les_provenance.json",
+        "manuscript/source_data/methods/cube_production_complete.json",
+        "manuscript/source_data/review_audit/case1_source_native_audit.json",
+        "manuscript/source_data/review_audit/closure_interface_custody.json",
+        "manuscript/source_data/review_audit/cube3d_coupling_adequate_results.json",
+        "manuscript/source_data/review_audit/cube3d_coupling_results.json",
+        "manuscript/source_data/review_audit/cube_train_band_retrieval_results.json",
+        "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed2234.json",
+        "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed3234.json",
+        "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+        "manuscript/source_data/review_audit/legacy_metadata_supersession.json",
+        "manuscript/source_data/review_audit/legacy_success_gate_disposition.json",
+        "manuscript/source_data/review_audit/publication_provenance_facts.json",
+        "manuscript/source_data/review_audit/publication_quantitative_contract.json",
+        "manuscript/source_data/review_audit/publication_semantic_contract.json",
+        "manuscript/source_data/review_audit/wiener_seed_chain_node005.json"
+      ]
+    },
+    "active_source_statuses_nonprovisional": {
+      "pass": true,
+      "statuses": {
+        "manuscript/source_data/current_fig5/INVALIDATED.json": [
+          "source_invalid_for_scientific_claims",
+          "retained_with_unmistakable_source_invalid_filename"
+        ],
+        "manuscript/source_data/current_fig5/l2_case1_closure_results.json": [],
+        "manuscript/source_data/current_fig5/wallstress_cond_case1_bh1_results.json": [],
+        "manuscript/source_data/diagnostic_e2/case1_closure_inputs.json": [],
+        "manuscript/source_data/diagnostic_e2/causal_wall_history_results.json": [],
+        "manuscript/source_data/diagnostic_e2/runtime_closure_conditioning_results.json": [],
+        "manuscript/source_data/diagnostic_e2/wallstress_cond_case1_bh1_results.json": [],
+        "manuscript/source_data/fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR2.json": [
+          "declared SECOND LOOK at the same held-out unit"
+        ],
+        "manuscript/source_data/fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR3.json": [],
+        "manuscript/source_data/fig11_reachgated/e2_cube_reachgated_results.json": [],
+        "manuscript/source_data/fig11_reachgated/e2_grouped_hills_band_results.json": [],
+        "manuscript/source_data/fig11_reachgated/hill_context_frame_provenance.json": [],
+        "manuscript/source_data/fig11_reachgated/hill_hierarchical_intervals.json": [
+          "DIAGNOSTIC, not a gate; see module docstring"
+        ],
+        "manuscript/source_data/fig11_reachgated/hill_positive_control_audit.json": [],
+        "manuscript/source_data/fig1_v2/fig1_overview_derived_provenance.json": [],
+        "manuscript/source_data/fig2/cube3d_timeline.json": [],
+        "manuscript/source_data/fig3/cube_periodic_topology_results.json": [],
+        "manuscript/source_data/fig4/cube_distributional_rapid_results.json": [],
+        "manuscript/source_data/fig6/grouped_hill_supporting.json": [],
+        "manuscript/source_data/fig6_interface/e2_traction_interface_conservative_blocks.json": [],
+        "manuscript/source_data/fig6_interface/e2_traction_interface_results.json": [],
+        "manuscript/source_data/fig7/capacity_crossed_adjudication.json": [],
+        "manuscript/source_data/fig7_direct/e2_direct_traction_results.json": [],
+        "manuscript/source_data/fig8_closure/e2_closure_composition_results.json": [],
+        "manuscript/source_data/fig_slot/DECISION_RULE_OUTCOME_NODE011.json": [],
+        "manuscript/source_data/fig_slot/V2_FROZEN_PARAMS.json": [],
+        "manuscript/source_data/fig_slot/block_inference_calibration.json": [],
+        "manuscript/source_data/fig_slot/case2_contact_ledger.json": [],
+        "manuscript/source_data/fig_slot/channel_context_frame_provenance.json": [],
+        "manuscript/source_data/fig_slot/e2_slot_channel_final_results.json": [
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached",
+          "SECONDARY moving-block percentile range; coverage at this record length is NOT demonstrated and no population-95% claim is attached"
+        ],
+        "manuscript/source_data/figure_artist_manifests/fig11_reachgated_composition.json": [],
+        "manuscript/source_data/figure_artist_manifests/fig14_slot_interface.json": [],
+        "manuscript/source_data/figure_artist_manifests/fig1_architecture.json": [],
+        "manuscript/source_data/figure_artist_manifests/fig2_generation.json": [],
+        "manuscript/source_data/figure_artist_manifests/fig3_propagation.json": [],
+        "manuscript/source_data/figure_artist_manifests/fig6_interface.json": [],
+        "manuscript/source_data/figure_artist_manifests/fig7_direct_traction.json": [],
+        "manuscript/source_data/figure_artist_manifests/fig8_closure_composition.json": [],
+        "manuscript/source_data/methods/cube3d_native_yplus_temporally_separated.json": [],
+        "manuscript/source_data/methods/cube_les_provenance.json": [],
+        "manuscript/source_data/methods/cube_production_complete.json": [],
+        "manuscript/source_data/review_audit/case1_source_native_audit.json": [
+          "source_invalid_withdrawn"
+        ],
+        "manuscript/source_data/review_audit/closure_interface_custody.json": [
+          "diagnostic only; not calibration-consistent or source-general",
+          "hard_launch_block_calibration_and_branch_contract_not_source_general"
+        ],
+        "manuscript/source_data/review_audit/cube3d_coupling_adequate_results.json": [],
+        "manuscript/source_data/review_audit/cube3d_coupling_results.json": [],
+        "manuscript/source_data/review_audit/cube_train_band_retrieval_results.json": [],
+        "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed2234.json": [],
+        "manuscript/source_data/review_audit/cube_wiener_floor_bench_results_seed3234.json": [],
+        "manuscript/source_data/review_audit/derived_peer_review_statistics.json": [
+          "terminal summaries only; not promoted as conservative population-confidence intervals"
+        ],
+        "manuscript/source_data/review_audit/legacy_metadata_supersession.json": [
+          "authoritative_review_values_supersede_preserved_producer_metadata"
+        ],
+        "manuscript/source_data/review_audit/legacy_success_gate_disposition.json": [],
+        "manuscript/source_data/review_audit/publication_provenance_facts.json": [
+          "quarantined; same-time spanwise counterparts cross the flattened split"
+        ],
+        "manuscript/source_data/review_audit/publication_quantitative_contract.json": [],
+        "manuscript/source_data/review_audit/publication_semantic_contract.json": [],
+        "manuscript/source_data/review_audit/wiener_seed_chain_node005.json": [
+          "TERMINAL",
+          "TERMINAL"
+        ]
+      }
+    },
+    "capacity_negative_boundary": {
+      "pass": true
+    },
+    "case1_source_native_withdrawal": {
+      "finding": "local Case1 geometry, height, Reynolds number, viscosity and stress are unsupported; manuscript withdraws E2",
+      "pass": true,
+      "raw_shapes": [
+        [
+          918,
+          2
+        ],
+        [
+          16001,
+          918,
+          3
+        ]
+      ]
+    },
+    "checksum_manifest_matches_release": {
+      "pass": true
+    },
+    "compiled_pdf_contract": {
+      "main": [
+        41,
+        595.276,
+        841.89
+      ],
+      "pass": true,
+      "supplement": [
+        18,
+        595.276,
+        841.89
+      ]
+    },
+    "coverage_correct_raw": {
+      "abs_error": 0.0,
+      "actual": 0.5140762648935093,
+      "expected": 0.5140762648935093,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "coverage_hit_fraction_descriptive_only": {
+      "ensemble_members": 8,
+      "finite_ensemble_calibration_target": null,
+      "observed": 0.5140762648935093,
+      "pass": true
+    },
+    "cube_sequential_contact_artifacts": {
+      "pass": true
+    },
+    "delta_no_wall_full_support_excluded": {
+      "abs_error": 2.1937534011584603e-09,
+      "actual": 0.19740819276762867,
+      "expected": 0.19740819057387526,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_full_support_excluded_ci0": {
+      "abs_error": 2.729176801219424e-09,
+      "actual": 0.18182029416284246,
+      "expected": 0.18182029143366565,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_full_support_excluded_ci1": {
+      "abs_error": 3.3659585119139024e-09,
+      "actual": 0.20924542412523323,
+      "expected": 0.20924542749119174,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_near_support_excluded_d_le_0p5h": {
+      "abs_error": 1.108977576436132e-09,
+      "actual": 0.37016887528337195,
+      "expected": 0.37016887417439437,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_near_support_excluded_d_le_0p5h_ci0": {
+      "abs_error": 1.0972720121404933e-08,
+      "actual": 0.3547120404358049,
+      "expected": 0.3547120294630848,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_near_support_excluded_d_le_0p5h_ci1": {
+      "abs_error": 3.0453442823041854e-08,
+      "actual": 0.38420244938126397,
+      "expected": 0.38420241892782114,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_outer_d_gt_0p5h": {
+      "abs_error": 1.1452885306795224e-09,
+      "actual": 0.020558280829137576,
+      "expected": 0.020558281974426107,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_outer_d_gt_0p5h_ci0": {
+      "abs_error": 1.1883438677529057e-10,
+      "actual": 0.005822317841113889,
+      "expected": 0.005822317959948276,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_no_wall_outer_d_gt_0p5h_ci1": {
+      "abs_error": 1.255686873924411e-10,
+      "actual": 0.03655004266380241,
+      "expected": 0.03655004253823372,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_full_support_excluded": {
+      "abs_error": 4.825192245760945e-09,
+      "actual": 0.4342021607202501,
+      "expected": 0.43420215589505784,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_full_support_excluded_ci0": {
+      "abs_error": 1.6530126323299754e-08,
+      "actual": 0.4066229294897018,
+      "expected": 0.4066229129595755,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_full_support_excluded_ci1": {
+      "abs_error": 1.4091553368622556e-08,
+      "actual": 0.4576592137477467,
+      "expected": 0.45765919965619334,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_near_support_excluded_d_le_0p5h": {
+      "abs_error": 2.306040247646024e-09,
+      "actual": 0.7697399605491327,
+      "expected": 0.7697399582430925,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_near_support_excluded_d_le_0p5h_ci0": {
+      "abs_error": 4.128504649258957e-09,
+      "actual": 0.7039800957152536,
+      "expected": 0.7039800915867489,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_near_support_excluded_d_le_0p5h_ci1": {
+      "abs_error": 7.942344892875042e-09,
+      "actual": 0.8258823251420169,
+      "expected": 0.825882317199672,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_outer_d_gt_0p5h": {
+      "abs_error": 5.055216689697772e-09,
+      "actual": 0.09074269959618886,
+      "expected": 0.09074270465140555,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_outer_d_gt_0p5h_ci0": {
+      "abs_error": 2.025521486648252e-09,
+      "actual": 0.06880939828249177,
+      "expected": 0.06880939625697029,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "delta_wrong_wall_outer_d_gt_0p5h_ci1": {
+      "abs_error": 2.688564454400577e-09,
+      "actual": 0.11187989361468689,
+      "expected": 0.11187989092612244,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "e2_archived_adequacy_failure_disclosed": {
+      "pass": true
+    },
+    "e2_offline_boundary_and_controls": {
+      "pass": true
+    },
+    "e2_runtime_software_test_bounded": {
+      "pass": true
+    },
+    "editorial_check_count_not_stale": {
+      "pass": true
+    },
+    "exact_comparator_producer_preserved_with_data_override": {
+      "pass": true,
+      "producer_sha256": "90b72cb3297be710155935d004131f968a93ffe60d8667af3954fdf5a0cc5d8d"
+    },
+    "exact_les_reproduction_case_released": {
+      "pass": true,
+      "released": [
+        "codes/closure/wall_closure.py",
+        "codes/closure/x2fam_weights.h",
+        "codes/cube_les/cube.re2",
+        "codes/cube_les/cube.udf",
+        "codes/cube_les/cube.usr",
+        "codes/cube_les/cube_prod.par",
+        "codes/cube_les/extract_wall_pressure_shear.py",
+        "codes/cube_les/gen_cube_mesh.py",
+        "codes/cube_les/rasterize_cube.py",
+        "codes/gpu/eval_causal_wall_history.py",
+        "codes/gpu/eval_cube_3d_coupling.py",
+        "codes/gpu/eval_cube_3d_coupling_adequate.py",
+        "codes/gpu/eval_cube_distributional_rapid.py",
+        "codes/gpu/eval_cube_native_yplus.py",
+        "codes/gpu/eval_cube_periodic_topology.py",
+        "codes/gpu/eval_cube_wiener_floor_bench.py",
+        "codes/gpu/eval_e2_closure_composition.py",
+        "codes/gpu/eval_e2_cube_reachgated.py",
+        "codes/gpu/eval_e2_direct_traction.py",
+        "codes/gpu/eval_e2_generality.py",
+        "codes/gpu/eval_e2_slot_channel.py",
+        "codes/gpu/eval_e2_traction_interface.py",
+        "codes/gpu/eval_runtime_closure_conditioning.py",
+        "codes/gpu/eval_wallstress_cond.py",
+        "codes/gpu/finalize_cube_yplus_temporal.py",
+        "codes/gpu/run_cube_les_and_coupling.py",
+        "codes/gpu/run_wiener_bench_seed_chain.py",
+        "codes/probes/build_contact_ledger.py",
+        "codes/probes/complete_non_regression_node007.py",
+        "codes/probes/freeze_node007.py",
+        "codes/probes/verify_runtime_closure.py",
+        "codes/results/causal_wall_history_results.json",
+        "codes/results/cube3d_coupling_adequate_results.json",
+        "codes/results/cube3d_coupling_results.json",
+        "codes/results/cube3d_native_yplus_temporally_separated.json",
+        "codes/results/cube_production_complete.json",
+        "codes/results/e2_cube_reachgated_results.json",
+        "codes/results/e2_grouped_hills_band_results.json",
+        "codes/results/e2_traction_interface_results.json",
+        "codes/results/runtime_closure_conditioning_results.json",
+        "development/iteration_20260723T150839/nodes/node_006/preregistration.md",
+        "development/nodes/node_004/PREREGISTRATION_E2_INTERFACE.md",
+        "development/nodes/node_005/FROZEN_HASHES.json",
+        "development/nodes/node_005/PREREGISTRATION_E2_DIRECT.md",
+        "development/nodes/node_005/verify_node005.py",
+        "development/nodes/node_006/DECISION_RULE_OUTCOME.json",
+        "development/nodes/node_006/FROZEN_HASHES.json",
+        "development/nodes/node_006/PREREGISTRATION_E2_CLOSURE.md",
+        "development/nodes/node_006/apply_decision_rule.py",
+        "development/nodes/node_006/verify_node006.py",
+        "development/nodes/node_007/AMENDMENT_1_BLOCK_LENGTH.md",
+        "development/nodes/node_007/CONTACT_LEDGER.json",
+        "development/nodes/node_007/FROZEN_HASHES.json",
+        "development/nodes/node_007/NON_REGRESSION_COMPLETION.json",
+        "development/nodes/node_007/PREREGISTRATION_E2_GENERALITY.md",
+        "development/nodes/node_007/apply_decision_rule_node007.py",
+        "development/nodes/node_007/verify_node007.py",
+        "development/nodes/node_008/CONTACT_LEDGER_PHYSICAL.json",
+        "development/nodes/node_008/DECISION_RULE_OUTCOME.json",
+        "development/nodes/node_008/DECISION_RULE_OUTCOME_REPAIR2.json",
+        "development/nodes/node_008/DECISION_RULE_OUTCOME_REPAIR3.json",
+        "development/nodes/node_008/FROZEN_HASHES.json",
+        "development/nodes/node_011/DECISION_RULE_OUTCOME_NODE011.json",
+        "development/nodes/node_011/EXPECTED_HASHES_FROZEN.json",
+        "development/nodes/node_011/PREREGISTRATION_SLOT_INTERFACE.md",
+        "development/nodes/node_011/PREREG_HASHES.txt",
+        "development/nodes/node_011/PREREG_SNAPSHOT_v1.md",
+        "development/nodes/node_011/PREREG_SNAPSHOT_v1a_postA1.md",
+        "development/nodes/node_011/PREREG_SNAPSHOT_v2.md",
+        "development/nodes/node_011/apply_decision_rule_node011.py",
+        "development/peer_review_baseline.json"
+      ]
+    },
+    "exact_release_manifest": {
+      "figure_count": 16,
+      "hashes_match": true,
+      "manuscript_source_count": 13,
+      "pass": true,
+      "rendered_document_count": 2,
+      "source_count": 82
+    },
+    "fair_energy_u_statistic_block57": {
+      "pass": true,
+      "values": {
+        "correct": {
+          "ci95": [
+            0.5078591073254163,
+            0.5398288958615481
+          ],
+          "mean": 0.5223475791451458
+        },
+        "far_time_wall": {
+          "ci95": [
+            0.5290839050929865,
+            0.571197675181849
+          ],
+          "mean": 0.548380648512697
+        },
+        "far_time_wall_minus_correct": {
+          "ci95": [
+            0.02090773631545104,
+            0.03144291672329966
+          ],
+          "mean": 0.02603306936755126
+        },
+        "no_wall": {
+          "ci95": [
+            0.5101629010836936,
+            0.5478160794262289
+          ],
+          "mean": 0.5273397689032656
+        },
+        "no_wall_minus_correct": {
+          "ci95": [
+            0.0016775691113284543,
+            0.009190284071544284
+          ],
+          "mean": 0.00499218975811978
+        }
+      }
+    },
+    "figure_geometry_and_content_containment": {
+      "figures": {
+        "fig11_reachgated_composition": {
+          "content_bbox": [
+            14,
+            3,
+            2601,
+            3246
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            788.4
+          ],
+          "png_pixels": [
+            2625,
+            3285
+          ]
+        },
+        "fig14_slot_interface": {
+          "content_bbox": [
+            11,
+            56,
+            3483,
+            4124
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            748.8
+          ],
+          "png_pixels": [
+            3500,
+            4160
+          ]
+        },
+        "fig1_architecture": {
+          "content_bbox": [
+            18,
+            34,
+            2600,
+            2108
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            517.104
+          ],
+          "png_pixels": [
+            2625,
+            2154
+          ]
+        },
+        "fig2_generation": {
+          "content_bbox": [
+            13,
+            29,
+            2616,
+            2654
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            640.8
+          ],
+          "png_pixels": [
+            2625,
+            2670
+          ]
+        },
+        "fig3_propagation": {
+          "content_bbox": [
+            14,
+            30,
+            2609,
+            2545
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            619.2
+          ],
+          "png_pixels": [
+            2625,
+            2580
+          ]
+        },
+        "fig6_interface": {
+          "content_bbox": [
+            43,
+            52,
+            2625,
+            3123
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            770.4
+          ],
+          "png_pixels": [
+            2625,
+            3210
+          ]
+        },
+        "fig7_direct_traction": {
+          "content_bbox": [
+            6,
+            31,
+            2625,
+            2825
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            680.4
+          ],
+          "png_pixels": [
+            2625,
+            2835
+          ]
+        },
+        "fig8_closure_composition": {
+          "content_bbox": [
+            5,
+            17,
+            2590,
+            2778
+          ],
+          "content_contained": true,
+          "pass": true,
+          "pdf_points": [
+            630.0,
+            673.2
+          ],
+          "png_pixels": [
+            2625,
+            2805
+          ]
+        }
+      },
+      "pass": true
+    },
+    "figure_manifest_covers_build_code": {
+      "pass": true,
+      "required": [
+        "requirements.txt",
+        "SYSTEM_REQUIREMENTS.md",
+        "codes/build_submission_source_data.py",
+        "codes/derive_peer_review_audit.py",
+        "codes/release_manifest.txt",
+        "codes/reproduce_all.sh",
+        "codes/probes/verify_submission_methodology.py",
+        "codes/probes/verify_revision_semantics.py",
+        "codes/probes/verify_level3_reader_consequences.py",
+        "codes/probes/audit_level1_protocol.py",
+        "manuscript/validate_submission_figures.py",
+        "codes/figures/rebuild_submission_figures.py",
+        "codes/figures/_submission.py",
+        "codes/figures/fig1_architecture.py",
+        "codes/figures/fig2_generation.py",
+        "codes/figures/fig3_propagation.py",
+        "codes/figures/fig6_interface.py",
+        "codes/figures/fig7_direct_traction.py",
+        "codes/figures/fig8_closure_composition.py",
+        "codes/figures/fig11_reachgated_composition.py",
+        "codes/figures/fig14_slot_interface.py",
+        "manuscript/main.tex",
+        "manuscript/supplementary.tex",
+        "manuscript/main.pdf",
+        "manuscript/supplementary_information.pdf"
+      ]
+    },
+    "figure_statistics_visual_contract": {
+      "figure3": "terminal aggregates shown as points without precision-implying bars",
+      "figure4": "dot-and-interval display; absolute-score ordinate starts at zero",
+      "figure5": "block-57 intervals; no invalid finite-M calibration line",
+      "pass": true
+    },
+    "frozen_train_band_retrieval_replay": {
+      "interpretation": "rejects literal nearest-record retrieval; does not establish independence",
+      "pass": true,
+      "regions": {
+        "full_support_excluded": {
+          "conditional_interval": [
+            -0.8498113619699269,
+            -0.7637437150551427
+          ],
+          "point": -0.8025478955866716
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "conditional_interval": [
+            -0.7876834868016822,
+            -0.684468469357956
+          ],
+          "point": -0.7325145181482597
+        },
+        "outer_d_gt_0p5h": {
+          "conditional_interval": [
+            -0.9183116181482031,
+            -0.8387384326112838
+          ],
+          "point": -0.8742958713259352
+        }
+      }
+    },
+    "grouped_hill_honesty": {
+      "pass": true
+    },
+    "historical_dependence_record": {
+      "pass": true
+    },
+    "implemented_explicit_euler_sampler": {
+      "pass": true
+    },
+    "implemented_scalar_pooled_sst": {
+      "pass": true
+    },
+    "invalid_28_over_45": {
+      "pass": true,
+      "pattern": "28\\s*/\\s*45|28\\s*\\\\over\\s*45"
+    },
+    "invalid_62p2_reference": {
+      "pass": true,
+      "pattern": "62\\.2"
+    },
+    "invalid_finite_ensemble_correction": {
+      "pass": true,
+      "pattern": "finite[- ]ensemble[- ](?:adjusted|corrected|calibrated)"
+    },
+    "latex_logs_clean": {
+      "pass": true
+    },
+    "latex_source_labels_unique": {
+      "duplicates": [],
+      "pass": true
+    },
+    "les_mesh_byte_regeneration": {
+      "pass": true,
+      "regenerated_sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128",
+      "returncode": 0,
+      "stderr": ""
+    },
+    "les_mesh_semantics": {
+      "bounds": [
+        [
+          5.551115123125783e-17,
+          0.0,
+          5.551115123125783e-17
+        ],
+        [
+          2.0,
+          4.0,
+          2.0
+        ]
+      ],
+      "elements": 14176,
+      "pass": true,
+      "periodic_faces": 2464,
+      "unreciprocated_periodic_faces": 0,
+      "wall_faces": 2336
+    },
+    "les_parameter_contract": {
+      "missing": [],
+      "pass": true
+    },
+    "les_primary_artifact_hashes": {
+      "mesh_sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128",
+      "native_yplus_sha256": "bddf92ed67c25250dced3569829603da4461abd9a8a001cf668bdad1c6bab54e",
+      "pass": true,
+      "production_sha256": "44c28d22481e67bce5202af558ede1dee19d2dd0d4dd31de09ec09799e910c73"
+    },
+    "les_terminal_and_stationary_record": {
+      "pass": true
+    },
+    "manuscript_forbidden_backward_euler": {
+      "pass": true,
+      "pattern": "backward[- ]Euler"
+    },
+    "manuscript_forbidden_causal_question": {
+      "pass": true,
+      "pattern": "causal question"
+    },
+    "manuscript_forbidden_latent_architecture": {
+      "pass": true,
+      "pattern": "latent diffusion"
+    },
+    "manuscript_forbidden_legacy_23p6": {
+      "pass": true,
+      "pattern": "23\\.6\\\\s*(?:x|\\\\\\\\times)"
+    },
+    "manuscript_forbidden_phase_selection": {
+      "pass": true,
+      "pattern": "phase selection"
+    },
+    "manuscript_forbidden_registered_breakthrough": {
+      "pass": true,
+      "pattern": "registered distributional breakthrough"
+    },
+    "manuscript_forbidden_topology_law": {
+      "pass": true,
+      "pattern": "topology law"
+    },
+    "native_yplus_temporal_audit": {
+      "field_times": [
+        390.0003162817,
+        420.0001096262
+      ],
+      "max_native_wall_speed": 0.0,
+      "pass": true,
+      "yplus_maxima": {
+        "cube_top": 1.336837937014454,
+        "cube_vertical_faces": 1.92125603598742,
+        "floor_between_cubes": 0.3163093575376479
+      }
+    },
+    "peer_review_dependence_and_comparator_audit": {
+      "pass": true
+    },
+    "physical_statistics_block57_replay": {
+      "correct_coverage": {
+        "ci95": [
+          0.49927306990878256,
+          0.5278639135473272
+        ],
+        "mean": 0.5140762648935093
+      },
+      "details": {
+        "component_spectrum_log_rmse": {
+          "correct": {
+            "ci95": [
+              0.1564148496250723,
+              0.24694806402606878
+            ],
+            "mean": 0.2002317914270228
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.16585816756452273,
+              0.2402022407596581
+            ],
+            "mean": 0.2019693266213304
+          },
+          "no_wall": {
+            "ci95": [
+              0.22397856785052023,
+              0.3089365205483543
+            ],
+            "mean": 0.2641703678072421
+          }
+        },
+        "reynolds_stress_profile_nrmse": {
+          "correct": {
+            "ci95": [
+              0.4032793080456984,
+              0.4771601455148685
+            ],
+            "mean": 0.4392412174690891
+          },
+          "far_time_wall": {
+            "ci95": [
+              0.4199866954350283,
+              0.47423893648879056
+            ],
+            "mean": 0.44875384617940534
+          },
+          "no_wall": {
+            "ci95": [
+              0.46138449049538405,
+              0.5288981780465356
+            ],
+            "mean": 0.49294993567902434
+          }
+        }
+      },
+      "pass": true
+    },
+    "point_claim_boundary": {
+      "pass": true
+    },
+    "point_components_hash": {
+      "actual": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18",
+      "pass": true
+    },
+    "point_correct_full_support_excluded": {
+      "abs_error": 9.773778897326224e-09,
+      "actual": 0.12049182570877914,
+      "expected": 0.12049183548255804,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_full_support_excluded_ci0": {
+      "abs_error": 3.723876598749065e-08,
+      "actual": 0.1026514851048809,
+      "expected": 0.10265152234364688,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_full_support_excluded_ci1": {
+      "abs_error": 4.2618650275549896e-10,
+      "actual": 0.13436029429137872,
+      "expected": 0.13436029471756522,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_near_support_excluded_d_le_0p5h": {
+      "abs_error": 2.1454544807397724e-09,
+      "actual": 0.2838625115959995,
+      "expected": 0.283862513741454,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_near_support_excluded_d_le_0p5h_ci0": {
+      "abs_error": 2.6217197801603476e-08,
+      "actual": 0.2673223890342711,
+      "expected": 0.2673224152514689,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_near_support_excluded_d_le_0p5h_ci1": {
+      "abs_error": 1.0114406256978015e-08,
+      "actual": 0.2973130367685188,
+      "expected": 0.2973130266541125,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_outer_d_gt_0p5h": {
+      "abs_error": 5.8315686946031065e-08,
+      "actual": -0.046784600033298096,
+      "expected": -0.04678465834898504,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_outer_d_gt_0p5h_ci0": {
+      "abs_error": 1.243694383590288e-09,
+      "actual": -0.06523535130953406,
+      "expected": -0.06523535006583968,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_correct_outer_d_gt_0p5h_ci1": {
+      "abs_error": 1.906519282030006e-08,
+      "actual": -0.02843145142755565,
+      "expected": -0.02843147049274847,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_index_contract": {
+      "pass": true
+    },
+    "point_no_wall_full_support_excluded": {
+      "abs_error": 1.1967532298484684e-08,
+      "actual": -0.07691636705884952,
+      "expected": -0.07691635509131722,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_full_support_excluded_ci0": {
+      "abs_error": 1.7517774342223902e-08,
+      "actual": -0.08050389116365961,
+      "expected": -0.08050387364588527,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_full_support_excluded_ci1": {
+      "abs_error": 4.971359754413207e-09,
+      "actual": -0.07325443398483752,
+      "expected": -0.07325442901347777,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_near_support_excluded_d_le_0p5h": {
+      "abs_error": 3.2544320571759044e-09,
+      "actual": -0.08630636368737243,
+      "expected": -0.08630636043294038,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_near_support_excluded_d_le_0p5h_ci0": {
+      "abs_error": 5.012462195308487e-08,
+      "actual": -0.09120312305474387,
+      "expected": -0.09120307293012192,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_near_support_excluded_d_le_0p5h_ci1": {
+      "abs_error": 2.2904277877100476e-08,
+      "actual": -0.08162296479201517,
+      "expected": -0.08162294188773729,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_outer_d_gt_0p5h": {
+      "abs_error": 5.946097547671059e-08,
+      "actual": -0.06734288086243567,
+      "expected": -0.06734294032341115,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_outer_d_gt_0p5h_ci0": {
+      "abs_error": 3.356563421652581e-08,
+      "actual": -0.0720213259828454,
+      "expected": -0.07202129241721118,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_no_wall_outer_d_gt_0p5h_ci1": {
+      "abs_error": 2.3178876679130767e-08,
+      "actual": -0.06276412579207474,
+      "expected": -0.06276414897095142,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_producer_code_identity": {
+      "origin_producer_sha256": "df41b7d8524d42e0b3d33892bdcaf9bad636d1fb7961014527800b835926ed20",
+      "pass": true,
+      "path_sanitized_release_producer_sha256": "559f065d5ef3dc3e42ff85362059a037aec7f4ee434d3de3a7bff69e2cbd7ae7"
+    },
+    "point_registration_wording_bounded": {
+      "pass": true
+    },
+    "point_result_hash": {
+      "actual": "0fc302421d622879e00ef16a14636fb8849ee65c0680c85491659788807f914d",
+      "pass": true
+    },
+    "point_wrong_wall_full_support_excluded": {
+      "abs_error": 1.459897114308717e-08,
+      "actual": -0.31371033501147094,
+      "expected": -0.3137103204124998,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_full_support_excluded_ci0": {
+      "abs_error": 1.5240687101236716e-08,
+      "actual": -0.34421929554316744,
+      "expected": -0.34421928030248033,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_full_support_excluded_ci1": {
+      "abs_error": 3.327685460519092e-09,
+      "actual": -0.2771815139720096,
+      "expected": -0.2771815106443241,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_near_support_excluded_d_le_0p5h": {
+      "abs_error": 4.451494728385796e-09,
+      "actual": -0.48587744895313323,
+      "expected": -0.4858774445016385,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_near_support_excluded_d_le_0p5h_ci0": {
+      "abs_error": 1.2107450486631421e-08,
+      "actual": -0.546765241088465,
+      "expected": -0.5467652531959155,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_near_support_excluded_d_le_0p5h_ci1": {
+      "abs_error": 5.998063312695479e-08,
+      "actual": -0.418359261341037,
+      "expected": -0.41835932132167014,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_outer_d_gt_0p5h": {
+      "abs_error": 6.337090363572884e-08,
+      "actual": -0.13752729962948695,
+      "expected": -0.1375273630003906,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_outer_d_gt_0p5h_ci0": {
+      "abs_error": 3.424911221294735e-08,
+      "actual": -0.14940728031767309,
+      "expected": -0.1494073145667853,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "point_wrong_wall_outer_d_gt_0p5h_ci1": {
+      "abs_error": 2.517114017219768e-08,
+      "actual": -0.12583270138943264,
+      "expected": -0.12583272656057282,
+      "pass": true,
+      "tolerance": 1e-07
+    },
+    "preregistration_restored_and_pinned": {
+      "actual_sha256": "3f4bfdace6efb5d4162ca0b129dfb4d42077960010ead234be66edff745cc4de",
+      "pass": true
+    },
+    "provisional_origin_absent_from_active_claims": {
+      "pass": true,
+      "scanned": [
+        "manuscript/main.tex",
+        "manuscript/supplementary.tex",
+        "manuscript/cover_letter.md",
+        "manuscript/nature_communications_checklist.md",
+        "manuscript/source_data/README.md",
+        "codes/build_submission_source_data.py",
+        "codes/figures/fig5_physical_composite.py",
+        "codes/release_manifest.txt",
+        "SUBMISSION_RELEASE_MANIFEST.json"
+      ]
+    },
+    "quarantine_exact_values_absent_from_active_claims": {
+      "forbidden": [
+        "0.61667",
+        "0.6166723436748704",
+        "0.53176",
+        "0.5317590917967943"
+      ],
+      "pass": true,
+      "scanned": [
+        "manuscript/main.tex",
+        "manuscript/supplementary.tex",
+        "manuscript/cover_letter.md",
+        "manuscript/nature_communications_checklist.md",
+        "manuscript/source_data/README.md",
+        "codes/build_submission_source_data.py",
+        "codes/figures/fig5_physical_composite.py",
+        "codes/release_manifest.txt",
+        "SUBMISSION_RELEASE_MANIFEST.json"
+      ]
+    },
+    "rapid_claim_boundary": {
+      "pass": true
+    },
+    "rapid_component_spectrum_log_rmse_correct": {
+      "abs_error": 0.0,
+      "actual": 0.2002317914270228,
+      "expected": 0.2002317914270228,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.15648665592188207,
+      "expected": 0.15648665592188207,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.2454282362529155,
+      "expected": 0.2454282362529155,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_vs_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0017375351943075656,
+      "expected": 0.0017375351943075656,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_vs_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": -0.018657840253034994,
+      "expected": -0.018657840253034994,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_vs_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.02257910938517538,
+      "expected": 0.02257910938517538,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_vs_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0639385763802193,
+      "expected": 0.0639385763802193,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_vs_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.050833240967826175,
+      "expected": 0.050833240967826175,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_correct_vs_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.07759768302836008,
+      "expected": 0.07759768302836008,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.2019693266213304,
+      "expected": 0.2019693266213304,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.16704095467555427,
+      "expected": 0.16704095467555427,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.23886115479623293,
+      "expected": 0.23886115479623293,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.2641703678072421,
+      "expected": 0.2641703678072421,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.22358035943910973,
+      "expected": 0.22358035943910973,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_component_spectrum_log_rmse_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.3077835623224561,
+      "expected": 0.3077835623224561,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_components_hash": {
+      "actual": "a7f1c74f909e1a805d4a3642db83285371ecd80e4a59cd11a873a14253010e2d",
+      "pass": true
+    },
+    "rapid_coverage80_abs_error_correct": {
+      "abs_error": 0.0,
+      "actual": 0.2859237351064907,
+      "expected": 0.2859237351064907,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.27226078091774397,
+      "expected": 0.27226078091774397,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.3003261339248547,
+      "expected": 0.3003261339248547,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_vs_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.024482084894409378,
+      "expected": 0.024482084894409378,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_vs_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.016634369269022623,
+      "expected": 0.016634369269022623,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_vs_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.031583026479928215,
+      "expected": 0.031583026479928215,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_vs_no_wall": {
+      "abs_error": 0.0,
+      "actual": -0.0057307488383344,
+      "expected": -0.0057307488383344,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_vs_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": -0.010887475687295372,
+      "expected": -0.010887475687295372,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_correct_vs_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.0009104831002970294,
+      "expected": 0.0009104831002970294,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.31040582000090017,
+      "expected": 0.31040582000090017,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.29705407018935437,
+      "expected": 0.29705407018935437,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.32450268125358633,
+      "expected": 0.32450268125358633,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.2801929862681563,
+      "expected": 0.2801929862681563,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.2633379352554258,
+      "expected": 0.2633379352554258,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage80_abs_error_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.3000849718478922,
+      "expected": 0.3000849718478922,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_coverage_component_correct": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_coverage_component_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_coverage_component_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_energy_component_correct": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_energy_component_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_energy_component_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_energy_score_correct": {
+      "abs_error": 0.0,
+      "actual": 0.5701657654965356,
+      "expected": 0.5701657654965356,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.5555550535095274,
+      "expected": 0.5555550535095274,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.5865953263706273,
+      "expected": 0.5865953263706273,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_vs_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.025996276452849975,
+      "expected": 0.025996276452849975,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_vs_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.019766465228614437,
+      "expected": 0.019766465228614437,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_vs_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.03228912949474173,
+      "expected": 0.03228912949474173,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_vs_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.005555112229880491,
+      "expected": 0.005555112229880491,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_vs_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.0015079392323578665,
+      "expected": 0.0015079392323578665,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_correct_vs_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.01028799905094186,
+      "expected": 0.01028799905094186,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.5961620419493856,
+      "expected": 0.5961620419493856,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.5755493300661302,
+      "expected": 0.5755493300661302,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.618725837598117,
+      "expected": 0.618725837598117,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.5757208777264161,
+      "expected": 0.5757208777264161,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.5577272009425848,
+      "expected": 0.5577272009425848,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_energy_score_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.595767627005325,
+      "expected": 0.595767627005325,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_historical_gate_replay_and_coverage_withdrawal": {
+      "pass": true,
+      "valid_physical_wins": {
+        "component_spectrum_log_rmse": false,
+        "reynolds_stress_profile_nrmse": false
+      },
+      "withdrawn_family": "coverage80_abs_error"
+    },
+    "rapid_index_contract": {
+      "pass": true
+    },
+    "rapid_producer_code_identity": {
+      "origin_producer_sha256": "bee8fb78eb4fad2ac57aa244f716d2a6430406aab3e447b3b61df8c55fd169b8",
+      "pass": true,
+      "path_sanitized_release_producer_sha256": "464b52df572c136fe23c60b19a67de7f9564c16bbd81d0c97a82777d7460958f"
+    },
+    "rapid_profile_component_correct": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_profile_component_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_profile_component_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_result_hash": {
+      "actual": "c70342f6fc4bf8e21f0883ba76de806f01eb8cfc34f9b0d52018443beba00588",
+      "pass": true
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct": {
+      "abs_error": 0.0,
+      "actual": 0.4392412174690891,
+      "expected": 0.4392412174690891,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.40211411815803555,
+      "expected": 0.40211411815803555,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.4751429332536067,
+      "expected": 0.4751429332536067,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_vs_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.009512628710316258,
+      "expected": 0.009512628710316258,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_vs_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": -0.004513906262355141,
+      "expected": -0.004513906262355141,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_vs_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.02430774735375634,
+      "expected": 0.02430774735375634,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_vs_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.053708718209935224,
+      "expected": 0.053708718209935224,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_vs_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.046098294812859354,
+      "expected": 0.046098294812859354,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_correct_vs_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.0616791370536856,
+      "expected": 0.0616791370536856,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.44875384617940534,
+      "expected": 0.44875384617940534,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_far_time_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.41733832614839617,
+      "expected": 0.41733832614839617,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_far_time_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.4745383131002818,
+      "expected": 0.4745383131002818,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.49294993567902434,
+      "expected": 0.49294993567902434,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_no_wall_ci0": {
+      "abs_error": 0.0,
+      "actual": 0.45900485762122234,
+      "expected": 0.45900485762122234,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_reynolds_stress_profile_nrmse_no_wall_ci1": {
+      "abs_error": 0.0,
+      "actual": 0.5272837806746591,
+      "expected": 0.5272837806746591,
+      "pass": true,
+      "tolerance": 2e-10
+    },
+    "rapid_spectrum_component_correct": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_spectrum_component_far_time_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "rapid_spectrum_component_no_wall": {
+      "abs_error": 0.0,
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true,
+      "tolerance": 2e-12
+    },
+    "readme_current_reproduction_contract": {
+      "pass": true
+    },
+    "release_manifest_paths_exist": {
+      "missing": [],
+      "pass": true
+    },
+    "release_text_has_no_unreviewed_machine_paths_or_credentials": {
+      "findings": {},
+      "pass": true,
+      "reviewed_nonsecret_paths": {
+        "codes/gpu/eval_cube_wiener_floor_bench.py": [
+          "/root/autodl-tmp/cube_les/cube_ds2_float16.complete.npy"
+        ]
+      }
+    },
+    "rendered_artist_collision_audit": {
+      "figures": [
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+          "stem": "fig1_architecture",
+          "text_artists_checked": 41,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        },
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+          "stem": "fig2_generation",
+          "text_artists_checked": 115,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        },
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+          "stem": "fig3_propagation",
+          "text_artists_checked": 104,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        },
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+          "stem": "fig6_interface",
+          "text_artists_checked": 75,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        },
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0123734533183353,
+          "stem": "fig7_direct_traction",
+          "text_artists_checked": 60,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        },
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+          "stem": "fig8_closure_composition",
+          "text_artists_checked": 100,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        },
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+          "stem": "fig11_reachgated_composition",
+          "text_artists_checked": 138,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        },
+        {
+          "all_pass": true,
+          "canvas_overflow": [],
+          "effective_font_pt_range_at_180mm": [
+            9.718785151856018,
+            9.718785151856018
+          ],
+          "final_font_size_failures": [],
+          "final_stroke_failures": [],
+          "final_width_mm": 180.0,
+          "minimum_effective_stroke_pt_at_180mm": 1.0528683914510688,
+          "stem": "fig14_slot_interface",
+          "text_artists_checked": 129,
+          "text_patch_containment_failures": [],
+          "text_reference_line_collisions": [],
+          "text_text_collisions": []
+        }
+      ],
+      "pass": true
+    },
+    "source_data_les_provenance": {
+      "pass": true
+    },
+    "source_data_staged_build": {
+      "pass": true,
+      "stderr": "",
+      "stdout": "PEER_REVIEW_AUDIT_PASS <STAGED_SOURCE_DATA>/review_audit/derived_peer_review_statistics.json\nSOURCE_DATA_BUILD_PASS\n"
+    },
+    "source_data_staged_completeness": {
+      "files": [
+        "current_fig5/INVALIDATED.json",
+        "current_fig5/SOURCE_INVALID_evaluated_bridge_rendering.png",
+        "current_fig5/l2_case1_closure_results.json",
+        "current_fig5/wallstress_cond_case1_bh1_results.json",
+        "diagnostic_e2/case1_closure_inputs.json",
+        "diagnostic_e2/causal_wall_history_results.json",
+        "diagnostic_e2/runtime_closure_conditioning_results.json",
+        "diagnostic_e2/wallstress_cond_case1_bh1_results.json",
+        "fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR2.json",
+        "fig11_reachgated/DECISION_RULE_OUTCOME_REPAIR3.json",
+        "fig11_reachgated/e2_cube_reachgated_components.npz",
+        "fig11_reachgated/e2_cube_reachgated_results.json",
+        "fig11_reachgated/e2_grouped_hills_band_results.json",
+        "fig11_reachgated/e2_grouped_hills_components.npz",
+        "fig11_reachgated/hill_context_frame.npz",
+        "fig11_reachgated/hill_context_frame_provenance.json",
+        "fig11_reachgated/hill_hierarchical_intervals.json",
+        "fig11_reachgated/hill_positive_control_audit.json",
+        "fig1_v2/fig1_overview_derived.npz",
+        "fig1_v2/fig1_overview_derived_provenance.json",
+        "fig2/cube3d_representative_fields.npz",
+        "fig2/cube3d_time_pair.npz",
+        "fig2/cube3d_time_sequence.npz",
+        "fig2/cube3d_timeline.json",
+        "fig3/cube_periodic_topology_components.npz",
+        "fig3/cube_periodic_topology_results.json",
+        "fig4/cube_distributional_rapid_components.npz",
+        "fig4/cube_distributional_rapid_results.json",
+        "fig6/grouped_hill_supporting.json",
+        "fig6_interface/e2_traction_interface_components.npz",
+        "fig6_interface/e2_traction_interface_conservative_blocks.json",
+        "fig6_interface/e2_traction_interface_results.json",
+        "fig7/capacity_crossed_adjudication.json",
+        "fig7_direct/e2_direct_traction_components.npz",
+        "fig7_direct/e2_direct_traction_results.json",
+        "fig8_closure/e2_closure_composition_components.npz",
+        "fig8_closure/e2_closure_composition_results.json",
+        "fig_slot/DECISION_RULE_OUTCOME_NODE011.json",
+        "fig_slot/PREREGISTRATION_SLOT_INTERFACE.md",
+        "fig_slot/PREREG_HASHES.txt",
+        "fig_slot/PREREG_SNAPSHOT_v1.md",
+        "fig_slot/PREREG_SNAPSHOT_v1a_postA1.md",
+        "fig_slot/PREREG_SNAPSHOT_v2.md",
+        "fig_slot/V2_FROZEN_PARAMS.json",
+        "fig_slot/apply_decision_rule_node011.py",
+        "fig_slot/block_inference_calibration.json",
+        "fig_slot/case2_contact_ledger.json",
+        "fig_slot/channel_context_frame.npz",
+        "fig_slot/channel_context_frame_provenance.json",
+        "fig_slot/e2_slot_channel_final_components.npz",
+        "fig_slot/e2_slot_channel_final_results.json",
+        "fig_slot/e2_slot_channel_final_results.sha256",
+        "fig_slot/eval_e2_slot_channel.py",
+        "fig_slot/fig14_slot_interface.py",
+        "methods/cube3d_native_yplus_temporally_separated.json",
+        "methods/cube_les_provenance.json",
+        "methods/cube_production_complete.json",
+        "review_audit/case1_source_native_audit.json",
+        "review_audit/closure_interface_custody.json",
+        "review_audit/cube3d_coupling_adequate_results.json",
+        "review_audit/cube3d_coupling_results.json",
+        "review_audit/cube_train_band_retrieval_components.npz",
+        "review_audit/cube_train_band_retrieval_results.json",
+        "review_audit/cube_wiener_floor_bench_results_seed2234.json",
+        "review_audit/cube_wiener_floor_bench_results_seed3234.json",
+        "review_audit/derived_peer_review_statistics.json",
+        "review_audit/legacy_metadata_supersession.json",
+        "review_audit/legacy_success_gate_disposition.json",
+        "review_audit/publication_provenance_facts.json",
+        "review_audit/publication_quantitative_contract.json",
+        "review_audit/publication_semantic_contract.json",
+        "review_audit/wiener_seed_chain_node005.json"
+      ],
+      "pass": true
+    },
+    "spectral_methods_match_producer": {
+      "pass": true
+    },
+    "spectral_producer_executable_semantics": {
+      "averaged_axes": "selected y planes and spanwise z",
+      "max_abs_error": 6.938893903907228e-18,
+      "pass": true,
+      "power_normalization": "48^2",
+      "retained_modes": "1--12",
+      "transform_axis": "x (axis 1 after component axis)",
+      "transform_length": 48
+    },
+    "spectral_staged_array_and_producer_axis_contract": {
+      "complete_wall_normal_plane_indices": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "model_axis_order": "[time, component, x, y, z]",
+      "model_grid": [
+        48,
+        96,
+        48
+      ],
+      "pass": true,
+      "truth_reynolds_profile_shape": [
+        160,
+        6,
+        48
+      ],
+      "truth_spectrum_shape": [
+        160,
+        3,
+        12
+      ]
+    },
+    "stale_backups_excluded_from_release": {
+      "pass": true
+    },
+    "text_required_0161cc69": {
+      "pass": true,
+      "phrase": "14,176"
+    },
+    "text_required_117a8342": {
+      "pass": true,
+      "phrase": "equal-support interior"
+    },
+    "text_required_1777763f": {
+      "pass": true,
+      "phrase": "pools standardised components, locations and times"
+    },
+    "text_required_356347d4": {
+      "pass": true,
+      "phrase": "first-contact comparison"
+    },
+    "text_required_3bdbac8c": {
+      "pass": true,
+      "phrase": "51.4"
+    },
+    "text_required_3e3a94a2": {
+      "pass": true,
+      "phrase": "-0.04678"
+    },
+    "text_required_4b670460": {
+      "pass": true,
+      "phrase": "native first-cell audit"
+    },
+    "text_required_523ff9c0": {
+      "pass": true,
+      "phrase": "independent confirmatory test"
+    },
+    "text_required_56112a72": {
+      "pass": true,
+      "phrase": "model-development sensitivity"
+    },
+    "text_required_571589fd": {
+      "pass": true,
+      "phrase": "runtime software"
+    },
+    "text_required_587c1aee": {
+      "pass": true,
+      "phrase": "2.800"
+    },
+    "text_required_5ad77523": {
+      "pass": true,
+      "phrase": "oracle wall-band propagation"
+    },
+    "text_required_7e9ab7bc": {
+      "pass": true,
+      "phrase": "0.10308"
+    },
+    "text_required_8a926ed8": {
+      "pass": true,
+      "phrase": "122.4817"
+    },
+    "text_required_8b1c0716": {
+      "pass": true,
+      "phrase": "1.92126"
+    },
+    "text_required_8d9b3d9f": {
+      "pass": true,
+      "phrase": "solver-coupled"
+    },
+    "text_required_99ab9203": {
+      "pass": true,
+      "phrase": "0.28386"
+    },
+    "text_required_9cc298b0": {
+      "pass": true,
+      "phrase": "TOMBO2"
+    },
+    "text_required_b7b1ef4b": {
+      "pass": true,
+      "phrase": "derived from the target time mean"
+    },
+    "text_required_d1273716": {
+      "pass": true,
+      "phrase": "off-diagonal U-statistic"
+    },
+    "text_required_d2e4a819": {
+      "pass": true,
+      "phrase": "0.30688"
+    },
+    "text_required_d88825fc": {
+      "pass": true,
+      "phrase": "0.12049"
+    },
+    "text_required_db219bc8": {
+      "pass": true,
+      "phrase": "explicit Euler"
+    },
+    "text_required_e0df1dd4": {
+      "pass": true,
+      "phrase": "causal runtime composition"
+    },
+    "text_required_e1d2f5e4": {
+      "pass": true,
+      "phrase": "not a finite-ensemble-valid calibration test"
+    },
+    "text_required_ebbb65e4": {
+      "pass": true,
+      "phrase": "post-selection"
+    },
+    "text_required_edafa624": {
+      "pass": true,
+      "phrase": "57 evaluation"
+    },
+    "text_required_f6908649": {
+      "pass": true,
+      "phrase": "0.17548"
+    },
+    "topology_ablation_scoped": {
+      "pass": true
+    },
+    "traction_basis_is_geometry_anchored": {
+      "pass": true
+    },
+    "traction_canonical_planar_sign": {
+      "normal_convention": "solid-to-fluid",
+      "pass": true,
+      "positive_lower_wall_shear": [
+        -0.2,
+        0.0,
+        0.0
+      ],
+      "reversed_lower_wall_shear": [
+        0.2,
+        0.0,
+        0.0
+      ],
+      "traction_convention": "wall-on-fluid"
+    },
+    "traction_text_equation_and_package_sync": {
+      "pass": true,
+      "synchronized_paths": {
+        "manuscript/sections/discussion.tex": true,
+        "manuscript/source_data/README.md": true,
+        "manuscript/supplementary.tex": true
+      }
+    },
+    "wall_band_threshold_and_nominal_thickness": {
+      "nominal_two_cell_thickness_h": 0.08333333333333333,
+      "numerical_mask_threshold_h": 0.08374999999999999,
+      "pass": true
+    }
+  },
+  "passed": 222,
+  "schema": "gwt-submission-methodology-verification-v1",
+  "total": 222
+}

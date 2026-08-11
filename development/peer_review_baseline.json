@@ -1,0 +1,31 @@
+{
+  "campaign": "nature_communications_peer_review_and_revision",
+  "created_at": "2026-07-30T15:00:00+01:00",
+  "source_checkout": "<development-checkout>",
+  "source_repository": "https://github.com/JianouJiang/generative-wall-turbulence.git",
+  "source_branch": "<development-branch>",
+  "source_commit": "6e5901b28b4bcb8383d8a6de419c179d8c20d30a",
+  "draft_pull_request": "<retained in the authors' archive>",
+  "coordination_issue_update": "<retained in the authors' archive>",
+  "active_project": "<project-root>",
+  "sync_policy": "<retained in the authors' archive>",
+  "pre_sync_snapshot": "<retained in the authors' archive>",
+  "baseline_sha256": {
+    "manuscript/main.tex": "bc930b450c8d170df2211d2d67d0a8bbdc4aaa0127b41c6dbbf4e7777cf143e1",
+    "manuscript/main.pdf": "134a93a5d2a147f480d73971373e44e012c21b7ba5cbff530d4be34b25cf50c4",
+    "manuscript/supplementary_information.pdf": "46e85986c025474bdcb229d00dd860559c44925c43c5a9e45615a0ddc5bc5a5f"
+  },
+  "starting_status": {
+    "main_pages": 22,
+    "supplementary_pages": 6,
+    "main_figures": 8,
+    "main_tables": 2,
+    "display_items": 10,
+    "new_simulations_in_baseline_revision": false
+  },
+  "binding_scope": [
+    "Peer review and revision only; no new research round.",
+    "Keep the current topic, story and claim boundaries.",
+    "New simulations only when absolutely necessary under the operator-control gate."
+  ]
+}

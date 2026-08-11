@@ -1,0 +1,35 @@
+{
+  "produced_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06",
+  "produces": "fig1_overview_derived.npz",
+  "recipes": {
+    "channel": "u_plane minus u_mean_profile per wall-normal index; profile icon = lower 100 points normalised by their maximum.",
+    "hill_boundary": "matplotlib 0.5-level contour of the hill solid mask on the unit square.",
+    "planes": "truth/correct u-component minus per-height fluid-mean profile of the truth frame; transposed index planes at y-index 4 (matching band), 2 (in-band), 30 (above cube), 40 (generator icon) and mid-span x-index 24 cropped to the lowest 48 heights.",
+    "streamlines": "unit-speed Heun tracer on the three-snapshot mean field (truth + time-pair target/donor), triple 5-point binomial smoothing, forward drift = height-mean profile floored at 0.35 median, fluctuations capped at 0.55 base, no-penetration slip on the drawn cube inflated by the band shell, 42 seeds on a 7x6 (y,z) grid, oblique projection x+0.55z / y+0.34z, split front/back at seed depth 0.475 (or height 0.95).",
+    "tau_floor_maps": "first 1,728 entries (C-order over the floor grid with the 12:36 footprint removed) of tau_native_test / tau_closure_test frame 0, component 0.",
+    "tau_plane": "signed near-wall streamwise shear proxy: truth u at y-index 1, cube footprint 12:36 masked.",
+    "tau_variants": "wrong-instant = same plane from the donor frame of cube3d_time_pair; shuffled = fixed-seed (rng 3) permutation of the off-footprint values; equilibrium = six passes of a separable 5-point binomial smoother."
+  },
+  "upstream": {
+    "channel": {
+      "path": "manuscript/source_data/fig_slot/channel_context_frame.npz",
+      "sha256": "186358276e56aefc2d1f2eb5ff61293037b495098f5b3ceb7ee7864d97101be7"
+    },
+    "e2cube": {
+      "path": "manuscript/source_data/fig11_reachgated/e2_cube_reachgated_components.npz",
+      "sha256": "76ecdc84ef8e2e7502f999aa3a957f602a813ed500055e0bf109e1a3f31ac626"
+    },
+    "hill": {
+      "path": "manuscript/source_data/fig11_reachgated/hill_context_frame.npz",
+      "sha256": "ee54bb091a58848ee2467b266669471a9f7be7f7aefb4c326c0e685c0fe4836a"
+    },
+    "pair": {
+      "path": "manuscript/source_data/fig2/cube3d_time_pair.npz",
+      "sha256": "271579db255fea1d096cfde2a3177f48697e42c816672835164b4abd80e48e0e"
+    },
+    "rep": {
+      "path": "manuscript/source_data/fig2/cube3d_representative_fields.npz",
+      "sha256": "a50f378be740b639da81b6f96b40c1ecd809dd9c8907e3de207e1c96a602a29f"
+    }
+  }
+}

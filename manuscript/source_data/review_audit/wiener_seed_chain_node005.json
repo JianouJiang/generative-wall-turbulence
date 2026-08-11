@@ -1,0 +1,33 @@
+{
+ "driver": "run_wiener_bench_seed_chain.py",
+ "producer_sha256": "90b72cb3297be710155935d004131f968a93ffe60d8667af3954fdf5a0cc5d8d",
+ "seeds_requested": [
+  2234,
+  3234
+ ],
+ "runs": [
+  {
+   "seed": 2234,
+   "rc": 0,
+   "status": "TERMINAL",
+   "results": "cube_wiener_floor_bench_results_seed2234.json",
+   "results_sha256": "77e6ff62f926130616cd8b09b044024c02a953f1f3d463758f85e5bca753f48c",
+   "components": "cube_wiener_floor_bench_components_seed2234.npz",
+   "components_sha256": "f084fb9de0788ec04b97d4287a145768158dd1adafb2f0f1a94036fb57e53ff1",
+   "ckpt_rf": "cube_wiener_floor_bench_rf_seed2234.pt",
+   "ckpt_det": "cube_wiener_floor_bench_det_seed2234.pt"
+  },
+  {
+   "seed": 3234,
+   "rc": 0,
+   "status": "TERMINAL",
+   "results": "cube_wiener_floor_bench_results_seed3234.json",
+   "results_sha256": "1ee765378277f3264db777574bbe8ef8e91c75a1c2a20fb6d1ca1051af704918",
+   "components": "cube_wiener_floor_bench_components_seed3234.npz",
+   "components_sha256": "d4fd8375c1399a09ecc3b39fa8163183f243728250bcb74156afb231c1348dc6",
+   "ckpt_rf": "cube_wiener_floor_bench_rf_seed3234.pt",
+   "ckpt_det": "cube_wiener_floor_bench_det_seed3234.pt"
+  }
+ ],
+ "wall_seconds": 11726.4
+}

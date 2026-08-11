@@ -1,0 +1,17 @@
+c-----------------------------------------------------------------------
+c  Cube-array LES -- map character wall BC ('W') to boundaryID 1 so the
+c  nekRS boundaryTypeMap (zeroDirichlet) applies no-slip on floor+cube+top.
+c  Periodic ('P') faces carry no boundaryID (handled as internal wrap).
+c-----------------------------------------------------------------------
+      subroutine usrdat2()
+      include 'SIZE'
+      include 'TOTAL'
+      integer e,f
+      do e=1,nelt
+      do f=1,2*ndim
+        if (cbc(f,e,1) .eq. 'W  ') boundaryID(f,e) = 1
+      enddo
+      enddo
+      return
+      end
+c-----------------------------------------------------------------------

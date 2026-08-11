@@ -1,0 +1,384 @@
+{
+  "actual_closure_map": {
+    "branch_source": "Krank Re=10595 target member's own ten-station, wall-stress-free set",
+    "beta_p_definition": "beta_p=dstar_resolved*dpdx/u_p^2; u_p=(nu*abs(dpdx))^(1/3); sign is carried by dpdx; beta_p=0 when dpdx=0",
+    "displacement_thickness_calibration": "integral over the resolved interval y_m<=y<=delta99",
+    "equation": "Cf_hat=<T(Phi),B(S)>+b",
+    "local_features": [
+      "U_m/U_e",
+      "y_m/delta99",
+      "delta99*dpdx/U_e^2",
+      "dstar_resolved*dpdx/U_e^2"
+    ],
+    "pressure_convention": "p is kinematic pressure (dynamic pressure divided by density)",
+    "pressure_gradient_calibration": "source-native differentiated wall-pressure trace",
+    "set_features": [
+      "U_m/U_e",
+      "y_m/delta99",
+      "delta99*dpdx/U_e^2",
+      "dstar_resolved*dpdx/U_e^2",
+      "beta_p"
+    ]
+  },
+  "adjudication": {
+    "calibration_shift_load_bearing": true,
+    "fixed_embedding_transplant_permitted": false,
+    "paired_mlp_disposition": "adverse secondary closure-side baseline; cannot identify the value of the family-set input",
+    "paired_mlp_information_matched_to_family_branch": false,
+    "required_before_any_e2_launch": [
+      "nominate a source and record closure-corpus/source overlap",
+      "freeze calibration-consistent native pressure and resolved dstar inputs",
+      "freeze a leakage-safe source for the member station set S",
+      "export or otherwise custody the branch network and set normalisation",
+      "include an information-matched data-only comparator",
+      "keep launch_allowed=false until panel and operator authority"
+    ],
+    "source_general_branch_reconstruction_from_header_possible": false
+  },
+  "candidate_local_adapter": {
+    "branch": "reuses fixed Krank embedding",
+    "displacement_thickness": "integral over the full wall-to-delta99 profile",
+    "pressure_gradient": "-U_e*dU_e/dx after five-station edge-padded smoothing",
+    "scientific_status": "diagnostic only; not calibration-consistent or source-general"
+  },
+  "compute": "deterministic CPU audit of retained profiles and frozen forward only",
+  "frozen_header_contract": {
+    "architecture": {
+      "descriptor_knot_count": 10,
+      "frozen_embedding_dimension": 16,
+      "latent_dimension": 16,
+      "local_input_dimension": 4,
+      "trunk_hidden_width": 64
+    },
+    "contains_branch_network_weights": false,
+    "contains_set_normalisation": false,
+    "member_comment": "krank_10595 (Re=10595)",
+    "sha256": "63e4941f682996ef2f95f8882363d73ca440199cd7b5ccee61002f1c5fa99280"
+  },
+  "metrics": {
+    "calibration_feature_cf_r2_all": 0.5578085777175092,
+    "candidate_feature_cf_r2_all": 0.17076056447853738,
+    "closure_output_relative_rmse": 0.40805516702006367,
+    "closure_output_sign_changes": 1,
+    "dstar_full_over_resolved_max": 2.366179892605776,
+    "dstar_full_over_resolved_median": 1.3453986932359179,
+    "dstar_full_over_resolved_min": 1.2918835515330793,
+    "exported_forward_max_abs_difference": 2.5454455145242083e-10,
+    "frozen_x2_cf_r2_separated": -2.0370108978093215,
+    "paired_local_mlp_cf_r2_all": 0.7917753430496026,
+    "paired_local_mlp_cf_r2_separated": 0.7224407473251363,
+    "pressure_surrogate_pearson": 0.09774023832390974,
+    "pressure_surrogate_relative_rmse": 0.9614344091404543,
+    "reference_cf_max_abs_difference": 0.0
+  },
+  "retained_arrays": {
+    "calibration_features": [
+      [
+        0.0892724203686486,
+        0.1,
+        0.024004062580055857,
+        0.005501176964864682
+      ],
+      [
+        0.392583483694879,
+        0.1,
+        0.1630668523753377,
+        0.011274936797572145
+      ],
+      [
+        -0.10557945330183734,
+        0.1,
+        0.009493487808025242,
+        0.002305034898740306
+      ],
+      [
+        -0.16691834457805915,
+        0.1,
+        0.05443138060082584,
+        0.01893858764943202
+      ],
+      [
+        -0.07890943111203945,
+        0.1,
+        0.20443811244731908,
+        0.06627756408296602
+      ],
+      [
+        0.07987317741749979,
+        0.1,
+        0.1581864459244676,
+        0.04731014973350215
+      ],
+      [
+        0.21477828336481344,
+        0.1,
+        0.10411036351458319,
+        0.028750086272208854
+      ],
+      [
+        0.30147601460311685,
+        0.1,
+        0.08822670480679547,
+        0.02329747283752889
+      ],
+      [
+        0.29549541704630145,
+        0.1,
+        0.15060497404823314,
+        0.040666921443803364
+      ],
+      [
+        0.42434931494641737,
+        0.1,
+        -0.2951780043452667,
+        -0.05704996516836102
+      ]
+    ],
+    "candidate_dpdx": [
+      0.0005785273271066757,
+      0.007405411169623019,
+      0.015440045978636859,
+      0.02077362665601378,
+      0.026910057681070337,
+      0.025972682899970526,
+      0.0149111098721168,
+      0.0026153021422434075,
+      -0.004882756164188759,
+      -0.008337415015692556
+    ],
+    "candidate_features": [
+      [
+        0.0892724203686486,
+        0.1,
+        4.153831232397925e-05,
+        1.4141210881720729e-05
+      ],
+      [
+        0.392583483694879,
+        0.1,
+        0.009077604997134375,
+        0.0014851402494505553
+      ],
+      [
+        -0.10557945330183734,
+        0.1,
+        0.024665454245452214,
+        0.008701031296096595
+      ],
+      [
+        -0.16691834457805915,
+        0.1,
+        0.04238501204647401,
+        0.019863033459219047
+      ],
+      [
+        -0.07890943111203945,
+        0.1,
+        0.058629675492980274,
+        0.025700861252609872
+      ],
+      [
+        0.07987317741749979,
+        0.1,
+        0.06168395436376906,
+        0.024526624816635867
+      ],
+      [
+        0.21477828336481344,
+        0.1,
+        0.03811750784723046,
+        0.013776324254353564
+      ],
+      [
+        0.30147601460311685,
+        0.1,
+        0.0069804631936395784,
+        0.002381312355547661
+      ],
+      [
+        0.29549541704630145,
+        0.1,
+        -0.012871843079624563,
+        -0.004512484985624379
+      ],
+      [
+        0.42434931494641737,
+        0.1,
+        -0.015831538501568505,
+        -0.004112074278080149
+      ]
+    ],
+    "cf_calibration": [
+      0.0007345146389793392,
+      0.0014662424761452836,
+      -0.0004218563853380556,
+      -0.0009414122443777698,
+      -0.0013675038716633075,
+      -7.546322344281081e-05,
+      0.0013659432381028277,
+      0.002207759783481939,
+      0.0016976634123432922,
+      0.003368988315245173
+    ],
+    "cf_candidate": [
+      0.0007441087558967154,
+      0.003138034552683344,
+      -0.0004804163836062172,
+      -0.0009724887510358132,
+      -0.0005712268428583971,
+      0.000526278864635381,
+      0.0017767979782189703,
+      0.002482530823464358,
+      0.0023205462144958665,
+      0.003329229568097124
+    ],
+    "cf_reference": [
+      -0.0001302883604006726,
+      -0.0015627712411919157,
+      -0.0007513056017904515,
+      -0.001977345013524016,
+      -0.0028158646330485176,
+      -0.0009453777155697048,
+      0.0006975931147691862,
+      0.0014558607958731866,
+      0.00022678353277715384,
+      0.005949016344381432
+    ],
+    "delta99": [
+      0.0802718,
+      1.3907441299999999,
+      1.82659123,
+      2.275778,
+      2.275778,
+      2.275778,
+      2.275778,
+      2.2863592,
+      2.3108964,
+      1.84890373
+    ],
+    "dstar_full": [
+      0.027327553483679108,
+      0.22753249175328932,
+      0.6443517033681205,
+      1.0665056437919567,
+      0.9976083634770404,
+      0.9048893467948437,
+      0.8225053900317412,
+      0.7799676412793048,
+      0.810131481857498,
+      0.4802331415879888
+    ],
+    "dstar_resolved": [
+      0.018396443336017886,
+      0.09616026763828053,
+      0.4434994404610485,
+      0.7918230375180889,
+      0.7377930681710428,
+      0.6806360514074646,
+      0.6284562999074538,
+      0.6037445405615054,
+      0.6239969360737757,
+      0.3573433380651697
+    ],
+    "edge_velocity": [
+      1.0573506,
+      1.0651544,
+      1.0693021,
+      1.0561241,
+      1.0220297,
+      0.97889757,
+      0.94353428,
+      0.92553116,
+      0.93627276,
+      0.98675946
+    ],
+    "matching_velocity": [
+      0.09439224724024281,
+      0.4181620250249286,
+      -0.1128963311325066,
+      -0.1762864864409926,
+      -0.08064778220660834,
+      0.07818765928216942,
+      0.2026506729542552,
+      0.2790254455077997,
+      0.2766643096852917,
+      0.41873070086789677
+    ],
+    "native_dpdx": [
+      0.33431801599999994,
+      0.13302816000000028,
+      0.005942720000000179,
+      0.026677760000000106,
+      0.09383373440000001,
+      0.06660607999999968,
+      0.04072672000000033,
+      0.0330550400000007,
+      0.0571299199999995,
+      -0.15545056000000024
+    ],
+    "stored_cf_mlp": [
+      -0.0007275575622731427,
+      -0.00105914969337418,
+      -0.0005010266605085924,
+      -0.0018065266894988774,
+      -0.002170523885094924,
+      -0.0005490239943992158,
+      0.0008008779591552143,
+      0.0018480835666760352,
+      0.0010837500673720585,
+      0.0029442868454529546
+    ],
+    "stored_cf_x2": [
+      0.0007345145457775657,
+      0.0014662422890288282,
+      -0.0004218566168146731,
+      -0.0009414121407253441,
+      -0.0013675036594018217,
+      -7.546328712816413e-05,
+      0.0013659429835582763,
+      0.0022077596194747446,
+      0.0016976633981493428,
+      0.003368988423670269
+    ],
+    "x": [
+      0.05,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0
+    ]
+  },
+  "schema": "gwt-closure-interface-custody-v1",
+  "source_artifacts": {
+    "descriptor_builder": {
+      "path": "companion:beta_bridge_crosskind.py",
+      "sha256": "15f0207db3bd03f74afbc21e53cf2f3b0cd1728cf0ccd778c109ae7f9e1c95d8"
+    },
+    "export_result": {
+      "path": "companion:node004_re10595_apriori.json",
+      "sha256": "bcbf569a1225c3913a5d72249ab91b0bb699fd26d8e695386750aff252b52d1f"
+    },
+    "exporter": {
+      "path": "companion:node004_x2_export.py",
+      "sha256": "9222b04afe5a756ff3db0929821c46d2ab74d3be4a51c3c66bbf6834e74c47f3"
+    },
+    "header": {
+      "path": "codes/closure/x2fam_weights.h",
+      "sha256": "63e4941f682996ef2f95f8882363d73ca440199cd7b5ccee61002f1c5fa99280"
+    },
+    "profile": {
+      "path": "companion:krank_pehill_Re10595_wall_profiles.npz",
+      "sha256": "09889bbb54b5acff2fa56c8f47dcfc320ac3f1f4389a8a8507900ec824f41c1c"
+    },
+    "stagea_adapter": {
+      "path": "companion:stageA_corpus_adapter.py",
+      "sha256": "31cb150470d4e5a8a4b5fff6c85d709489e1c17eb1c9e901bbe0ddc5b4e94570"
+    }
+  },
+  "status": "hard_launch_block_calibration_and_branch_contract_not_source_general"
+}

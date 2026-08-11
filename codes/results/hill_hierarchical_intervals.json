@@ -1,0 +1,5453 @@
+{
+ "_meta": {
+  "probe": "hill_hierarchical_intervals.py",
+  "B": 4000,
+  "seed": 20260804,
+  "primary_estimator": "hierarchical: seeds resampled with replacement, then circular moving-block resample in physical time (the estimator declared in Methods)",
+  "secondary_estimator": "seed-conditional: per-frame SSE averaged over the realised seeds, then moving-block resample in time (the estimator used by the released audit)",
+  "calibration_status": "DIAGNOSTIC, not a gate; see module docstring",
+  "reads": "retained per-frame components only; no training, no sampling"
+ },
+ "tags": {
+  "e2_grouped_hills": {
+   "block": 123,
+   "representation": "tau",
+   "oracle_arm": "tau_native",
+   "method_arm": "tau_closure",
+   "cells": {
+    "H1": {
+     "family": "F_flow_matching",
+     "seeds": [
+      "0",
+      "9811",
+      "9812"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "tau_native": {
+        "delta_vs_absent": -0.05022001266479492,
+        "ci95_hierarchical": [
+         -0.20713276267051697,
+         0.0956251084804535
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.20825659930706025,
+         0.0975822538137436
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.04120075702667236,
+         -0.05492961406707764,
+         -0.05452907085418701
+        ]
+       },
+       "tau_closure": {
+        "delta_vs_absent": -0.10970699787139893,
+        "ci95_hierarchical": [
+         -0.2710543662309647,
+         0.03696340322494512
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.2704909652471542,
+         0.03719936013221743
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.10185396671295166,
+         -0.12509143352508545,
+         -0.10217547416687012
+        ]
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": -0.05385756492614746,
+        "ci95_hierarchical": [
+         -0.13277647495269776,
+         0.03599554002285005
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.13181609213352202,
+         0.024840721487998964
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.03118884563446045,
+         -0.08272314071655273,
+         -0.0476604700088501
+        ]
+       },
+       "tau_fartime": {
+        "delta_vs_absent": -0.29246222972869873,
+        "ci95_hierarchical": [
+         -0.34782769083976744,
+         -0.2192109227180481
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.34581735730171204,
+         -0.22448888123035432
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2667793035507202,
+         -0.3008216619491577,
+         -0.3097853660583496
+        ]
+       },
+       "tau_random": {
+        "delta_vs_absent": -0.1854039430618286,
+        "ci95_hierarchical": [
+         -0.25996396541595457,
+         -0.10550030767917633
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2561655879020691,
+         -0.10959794819355011
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.17664611339569092,
+         -0.16897547245025635,
+         -0.21059012413024902
+        ]
+       },
+       "absent_absolute_R2": -0.06773293018341064,
+       "_paired_method_contrasts": {
+        "tau_native": {
+         "delta": -0.059486985206604004,
+         "ci95_hierarchical": [
+          -0.09754280745983124,
+          -0.027913734316825856
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "tau_eqwm": {
+         "delta": -0.055849432945251465,
+         "ci95_hierarchical": [
+          -0.14616280198097228,
+          0.027605766057968155
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_fartime": {
+         "delta": 0.1827552318572998,
+         "ci95_hierarchical": [
+          0.04048402309417725,
+          0.31537027657032013
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "tau_random": {
+         "delta": 0.07569694519042969,
+         "ci95_hierarchical": [
+          -0.1577402889728546,
+          0.29068768620491026
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "tau_native": {
+        "delta_vs_absent": -0.04924023151397705,
+        "ci95_hierarchical": [
+         -0.31121080815792085,
+         0.1857302114367485
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.3059490531682968,
+         0.1852110400795937
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.03232407569885254,
+         -0.023003220558166504,
+         -0.09239339828491211
+        ]
+       },
+       "tau_closure": {
+        "delta_vs_absent": -0.06663227081298828,
+        "ci95_hierarchical": [
+         -0.31674317717552186,
+         0.14541316777467728
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.31607129275798795,
+         0.1477206364274025
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.061449408531188965,
+         -0.056307435035705566,
+         -0.08214008808135986
+        ]
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": -0.03673434257507324,
+        "ci95_hierarchical": [
+         -0.19546837508678436,
+         0.07345330715179445
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.17626842558383943,
+         0.061521455645561225
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.004449248313903809,
+         -0.024532556533813477,
+         -0.09011971950531006
+        ]
+       },
+       "tau_fartime": {
+        "delta_vs_absent": -0.45409905910491943,
+        "ci95_hierarchical": [
+         -0.5397202223539352,
+         -0.3367851138114929
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.5251585051417351,
+         -0.3458445280790329
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.438388466835022,
+         -0.4189906120300293,
+         -0.5049176216125488
+        ]
+       },
+       "tau_random": {
+        "delta_vs_absent": -0.11263275146484375,
+        "ci95_hierarchical": [
+         -0.27922157347202303,
+         0.024046869575977334
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.27402845919132235,
+         0.02166919112205507
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.13247442245483398,
+         -0.09894263744354248,
+         -0.10648131370544434
+        ]
+       },
+       "absent_absolute_R2": -0.04863548278808594,
+       "_paired_method_contrasts": {
+        "tau_native": {
+         "delta": -0.01739203929901123,
+         "ci95_hierarchical": [
+          -0.06802360266447068,
+          0.03152540624141695
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_eqwm": {
+         "delta": -0.02989792823791504,
+         "ci95_hierarchical": [
+          -0.17004624605178834,
+          0.10390748977661136
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_fartime": {
+         "delta": 0.38746678829193115,
+         "ci95_hierarchical": [
+          0.15268088579177858,
+          0.6019681915640831
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "tau_random": {
+         "delta": 0.04600048065185547,
+         "ci95_hierarchical": [
+          -0.23395031094551086,
+          0.3046582266688347
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "tau_native": {
+        "delta_vs_absent": -0.05049872398376465,
+        "ci95_hierarchical": [
+         -0.18435667753219603,
+         0.07358520776033402
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.18703967928886414,
+         0.07386226356029511
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.0436246395111084,
+         -0.06362533569335938,
+         -0.04424619674682617
+        ]
+       },
+       "tau_closure": {
+        "delta_vs_absent": -0.12144768238067627,
+        "ci95_hierarchical": [
+         -0.25965180397033694,
+         0.011032825708389283
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.25808338820934296,
+         0.008655023574829104
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.11286652088165283,
+         -0.14382731914520264,
+         -0.10764920711517334
+        ]
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": -0.058527231216430664,
+        "ci95_hierarchical": [
+         -0.14482657313346864,
+         0.03498543798923494
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.13826795518398285,
+         0.022452291846275344
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.04088771343231201,
+         -0.09856772422790527,
+         -0.03612625598907471
+        ]
+       },
+       "tau_fartime": {
+        "delta_vs_absent": -0.2485799789428711,
+        "ci95_hierarchical": [
+         -0.29960341155529024,
+         -0.1853529542684555
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2955735146999359,
+         -0.19191149473190308
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.22017884254455566,
+         -0.26876211166381836,
+         -0.2567988634109497
+        ]
+       },
+       "tau_random": {
+        "delta_vs_absent": -0.20523905754089355,
+        "ci95_hierarchical": [
+         -0.29210889637470244,
+         -0.11359807252883909
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2871402531862259,
+         -0.11695293784141539
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.18870186805725098,
+         -0.18806195259094238,
+         -0.2389531135559082
+        ]
+       },
+       "absent_absolute_R2": -0.07319128513336182,
+       "_paired_method_contrasts": {
+        "tau_native": {
+         "delta": -0.07094895839691162,
+         "ci95_hierarchical": [
+          -0.10975456237792969,
+          -0.04045481383800506
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "tau_eqwm": {
+         "delta": -0.0629204511642456,
+         "ci95_hierarchical": [
+          -0.14751657843589783,
+          0.01566233038902284
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_fartime": {
+         "delta": 0.12713229656219482,
+         "ci95_hierarchical": [
+          0.010806533694267274,
+          0.24326842427253725
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "tau_random": {
+         "delta": 0.08379137516021729,
+         "ci95_hierarchical": [
+          -0.14369839131832124,
+          0.2914396792650223
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "tau_native": {
+        "delta_vs_absent": 0.04607324302196503,
+        "ci95_hierarchical": [
+         0.02491790517233312,
+         0.06779819447547197
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_closure": {
+        "delta_vs_absent": 0.05325322598218918,
+        "ci95_hierarchical": [
+         0.03407990112900734,
+         0.07334969341754914
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": 0.03601156547665596,
+        "ci95_hierarchical": [
+         0.02136841621249914,
+         0.04757410418242216
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_fartime": {
+        "delta_vs_absent": 0.07985393702983856,
+        "ci95_hierarchical": [
+         0.062314765993505716,
+         0.09432549439370633
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_random": {
+        "delta_vs_absent": 0.06608410179615021,
+        "ci95_hierarchical": [
+         0.04968565506860614,
+         0.08406258746981621
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "tau_native": {
+        "delta_vs_absent": 0.07386653870344162,
+        "ci95_hierarchical": [
+         0.04279565736651421,
+         0.10534027516841889
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_closure": {
+        "delta_vs_absent": 0.08800497651100159,
+        "ci95_hierarchical": [
+         0.059737278055399655,
+         0.11741112619638444
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": 0.05785816162824631,
+        "ci95_hierarchical": [
+         0.035819032788276674,
+         0.07480512373149395
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_fartime": {
+        "delta_vs_absent": 0.12856696546077728,
+        "ci95_hierarchical": [
+         0.10255943946540355,
+         0.15014064759016038
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_random": {
+        "delta_vs_absent": 0.10950341820716858,
+        "ci95_hierarchical": [
+         0.08256766833364963,
+         0.1391589753329754
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.3721925616264343,
+       "ci95_hierarchical": [
+        0.35742636024951935,
+        0.3845173344016075
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "tau_native": {
+       "extreme_bin_mass": 0.5580599308013916,
+       "ci95_hierarchical": [
+        0.5452008068561554,
+        0.5716431558132171
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "tau_closure": {
+       "extreme_bin_mass": 0.55442875623703,
+       "ci95_hierarchical": [
+        0.5405477032065391,
+        0.5665913417935371
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "tau_eqwm": {
+       "extreme_bin_mass": 0.5220575332641602,
+       "ci95_hierarchical": [
+        0.5016518637537957,
+        0.5465601697564125
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "tau_fartime": {
+       "extreme_bin_mass": 0.5685151815414429,
+       "ci95_hierarchical": [
+        0.5390727132558822,
+        0.5923109605908394
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "tau_random": {
+       "extreme_bin_mass": 0.5624470710754395,
+       "ci95_hierarchical": [
+        0.5438235536217689,
+        0.5844383120536805
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      }
+     }
+    },
+    "H2": {
+     "family": "G_denoising_diffusion",
+     "seeds": [
+      "0",
+      "9821",
+      "9822"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "tau_native": {
+        "delta_vs_absent": 0.05794334411621094,
+        "ci95_hierarchical": [
+         0.008696973323822021,
+         0.10674161612987519
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.009710574150085449,
+         0.10471575260162354
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.05113089084625244,
+         0.06980741024017334,
+         0.05289125442504883
+        ]
+       },
+       "tau_closure": {
+        "delta_vs_absent": 0.06223249435424805,
+        "ci95_hierarchical": [
+         0.01722496747970581,
+         0.10573027431964875
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.017090305685997013,
+         0.10030106008052826
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.048822641372680664,
+         0.07721126079559326,
+         0.060663580894470215
+        ]
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": 0.05168747901916504,
+        "ci95_hierarchical": [
+         0.030770784616470336,
+         0.0763075977563858
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.031862154603004456,
+         0.0694544404745102
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.03823137283325195,
+         0.0659264326095581,
+         0.05090451240539551
+        ]
+       },
+       "tau_fartime": {
+        "delta_vs_absent": 0.01675891876220703,
+        "ci95_hierarchical": [
+         -0.0009891659021377564,
+         0.034762674570083626
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         0.005393850803375244,
+         0.03168784677982331
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.015706896781921387,
+         0.0273970365524292,
+         0.007172584533691406
+        ]
+       },
+       "tau_random": {
+        "delta_vs_absent": 0.03638863563537598,
+        "ci95_hierarchical": [
+         0.024216163158416747,
+         0.04567452669143677
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.03201196193695068,
+         0.04083505868911743
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.026385903358459473,
+         0.043904662132263184,
+         0.038875579833984375
+        ]
+       },
+       "absent_absolute_R2": -0.20962393283843994,
+       "_paired_method_contrasts": {
+        "tau_native": {
+         "delta": 0.004289150238037109,
+         "ci95_hierarchical": [
+          -0.006505611538887023,
+          0.016942092776298524
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_eqwm": {
+         "delta": 0.010545015335083008,
+         "ci95_hierarchical": [
+          -0.0147370845079422,
+          0.0313839077949524
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_fartime": {
+         "delta": 0.045473575592041016,
+         "ci95_hierarchical": [
+          0.0011650890111923238,
+          0.08642611801624299
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "tau_random": {
+         "delta": 0.02584385871887207,
+         "ci95_hierarchical": [
+          -0.020511490106582642,
+          0.06723810136318206
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "tau_native": {
+        "delta_vs_absent": 0.06344842910766602,
+        "ci95_hierarchical": [
+         -0.020808351039886475,
+         0.15975962579250336
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.02173267602920532,
+         0.14997727870941163
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.035445451736450195,
+         0.0772172212600708,
+         0.0776827335357666
+        ]
+       },
+       "tau_closure": {
+        "delta_vs_absent": 0.0629878044128418,
+        "ci95_hierarchical": [
+         -0.021813485026359557,
+         0.15166484117507936
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.022052904963493346,
+         0.13688535690307618
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.026611924171447754,
+         0.07732415199279785,
+         0.08502721786499023
+        ]
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": 0.05654275417327881,
+        "ci95_hierarchical": [
+         0.01115310788154602,
+         0.11431239545345306
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.016106796264648438,
+         0.09449197351932526
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.016457200050354004,
+         0.0704946517944336,
+         0.08267641067504883
+        ]
+       },
+       "tau_fartime": {
+        "delta_vs_absent": -0.038187623023986816,
+        "ci95_hierarchical": [
+         -0.08101273179054261,
+         0.019200900197029126
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.0805291473865509,
+         0.01116719543933869
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.055168867111206055,
+         -0.024335622787475586,
+         -0.03505837917327881
+        ]
+       },
+       "tau_random": {
+        "delta_vs_absent": 0.02840423583984375,
+        "ci95_hierarchical": [
+         -0.010654148459434508,
+         0.060427555441856386
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         0.017613619565963745,
+         0.03628848791122437
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.008071184158325195,
+         0.03140604496002197,
+         0.061878085136413574
+        ]
+       },
+       "absent_absolute_R2": -0.11959707736968994,
+       "_paired_method_contrasts": {
+        "tau_native": {
+         "delta": -0.00046062469482421875,
+         "ci95_hierarchical": [
+          -0.021456599235534668,
+          0.0248181164264679
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_eqwm": {
+         "delta": 0.006445050239562988,
+         "ci95_hierarchical": [
+          -0.03927136659622192,
+          0.043799661099910736
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_fartime": {
+         "delta": 0.10117542743682861,
+         "ci95_hierarchical": [
+          0.016596078872680668,
+          0.17022911906242372
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "tau_random": {
+         "delta": 0.03458356857299805,
+         "ci95_hierarchical": [
+          -0.057001706957817075,
+          0.118876713514328
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "tau_native": {
+        "delta_vs_absent": 0.05646061897277832,
+        "ci95_hierarchical": [
+         0.015884530544281007,
+         0.09386085867881776
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.017468148469924928,
+         0.09267962872982026
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.05540907382965088,
+         0.0678095817565918,
+         0.04616284370422363
+        ]
+       },
+       "tau_closure": {
+        "delta_vs_absent": 0.0620424747467041,
+        "ci95_hierarchical": [
+         0.02700183093547821,
+         0.094320148229599
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.028145173192024232,
+         0.09038387537002564
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.05487465858459473,
+         0.07719957828521729,
+         0.054053306579589844
+        ]
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": 0.05037999153137207,
+        "ci95_hierarchical": [
+         0.033272913098335265,
+         0.06922377049922944
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.03610692322254181,
+         0.06281526684761048
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.04416203498840332,
+         0.06470048427581787,
+         0.04227733612060547
+        ]
+       },
+       "tau_fartime": {
+        "delta_vs_absent": 0.03170478343963623,
+        "ci95_hierarchical": [
+         0.018315374851226807,
+         0.04405086636543274
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.025283610820770266,
+         0.03787356019020081
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.03498435020446777,
+         0.04147160053253174,
+         0.01865839958190918
+        ]
+       },
+       "tau_random": {
+        "delta_vs_absent": 0.038568854331970215,
+        "ci95_hierarchical": [
+         0.030519554018974306,
+         0.0476277619600296
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.034592163562774655,
+         0.04267277419567108
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.03576254844665527,
+         0.04731416702270508,
+         0.032629966735839844
+        ]
+       },
+       "absent_absolute_R2": -0.23440563678741455,
+       "_paired_method_contrasts": {
+        "tau_native": {
+         "delta": 0.005581855773925781,
+         "ci95_hierarchical": [
+          -0.0038386881351470947,
+          0.015332522988319398
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_eqwm": {
+         "delta": 0.011662483215332031,
+         "ci95_hierarchical": [
+          -0.00812646746635437,
+          0.028129333257675176
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_fartime": {
+         "delta": 0.03033769130706787,
+         "ci95_hierarchical": [
+          -0.005331441760063171,
+          0.06451894938945771
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "tau_random": {
+         "delta": 0.023473620414733887,
+         "ci95_hierarchical": [
+          -0.010852083563804626,
+          0.05385853350162506
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "tau_native": {
+        "delta_vs_absent": -0.010925195179879665,
+        "ci95_hierarchical": [
+         -0.018720629205927253,
+         -0.003002936916891485
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_closure": {
+        "delta_vs_absent": -0.012413541786372662,
+        "ci95_hierarchical": [
+         -0.01881588897667825,
+         -0.005576424277387559
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": -0.011315790005028248,
+        "ci95_hierarchical": [
+         -0.014499276014976203,
+         -0.008132829889655113
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_fartime": {
+        "delta_vs_absent": -0.00556813832372427,
+        "ci95_hierarchical": [
+         -0.0075322576449252665,
+         -0.0026708434161264436
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_random": {
+        "delta_vs_absent": -0.01015380397439003,
+        "ci95_hierarchical": [
+         -0.011915849125944077,
+         -0.00839850625488907
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "tau_native": {
+        "delta_vs_absent": -0.015519796870648861,
+        "ci95_hierarchical": [
+         -0.02671560808084905,
+         -0.0045084087876603
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_closure": {
+        "delta_vs_absent": -0.017167791724205017,
+        "ci95_hierarchical": [
+         -0.02677522674202919,
+         -0.0075507654924876905
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_eqwm": {
+        "delta_vs_absent": -0.015350216999650002,
+        "ci95_hierarchical": [
+         -0.020447760773822665,
+         -0.010762189980596304
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_fartime": {
+        "delta_vs_absent": -0.007147503085434437,
+        "ci95_hierarchical": [
+         -0.009985208604484796,
+         -0.003084412036696448
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "tau_random": {
+        "delta_vs_absent": -0.012979340739548206,
+        "ci95_hierarchical": [
+         -0.0152918889420107,
+         -0.01045981808565557
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.2407100647687912,
+       "ci95_hierarchical": [
+        0.22055163122713567,
+        0.25750339329242705
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "tau_native": {
+       "extreme_bin_mass": 0.22859442234039307,
+       "ci95_hierarchical": [
+        0.2101666122674942,
+        0.2432948626577854
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "tau_closure": {
+       "extreme_bin_mass": 0.22634653747081757,
+       "ci95_hierarchical": [
+        0.2087955094873905,
+        0.23988814391195773
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "tau_eqwm": {
+       "extreme_bin_mass": 0.2262883335351944,
+       "ci95_hierarchical": [
+        0.20875462107360362,
+        0.24015223532915114
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "tau_fartime": {
+       "extreme_bin_mass": 0.23241521418094635,
+       "ci95_hierarchical": [
+        0.2126504849642515,
+        0.24896352402865887
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "tau_random": {
+       "extreme_bin_mass": 0.22501195967197418,
+       "ci95_hierarchical": [
+        0.20921323783695697,
+        0.23762433156371116
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      }
+     }
+    }
+   }
+  },
+  "e2_grouped_hills_band": {
+   "block": 123,
+   "representation": "band",
+   "oracle_arm": "band_oracle",
+   "method_arm": "band_closure",
+   "cells": {
+    "H1": {
+     "family": "F_flow_matching",
+     "seeds": [
+      "0",
+      "9812",
+      "9813"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.0592656135559082,
+        "ci95_hierarchical": [
+         -0.14218152761459352,
+         0.01303876638412476
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.14221146404743196,
+         0.010986787080764771
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.05819737911224365,
+         -0.0637580156326294,
+         -0.05584073066711426
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.18324589729309082,
+        "ci95_hierarchical": [
+         -0.30401947498321535,
+         -0.0894909083843231
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.30258382856845856,
+         -0.09013373553752899
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.16838514804840088,
+         -0.1863718032836914,
+         -0.19498062133789062
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.1122356653213501,
+        "ci95_hierarchical": [
+         -0.16932705342769622,
+         -0.05731789171695707
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.1692105621099472,
+         -0.061394563317298874
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1030653715133667,
+         -0.1124124526977539,
+         -0.12122905254364014
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.27612805366516113,
+        "ci95_hierarchical": [
+         -0.32303762435913086,
+         -0.21806780099868775
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.32129746675491333,
+         -0.21941175758838652
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2786383628845215,
+         -0.2605900764465332,
+         -0.2891559600830078
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.19029760360717773,
+        "ci95_hierarchical": [
+         -0.25183306336402894,
+         -0.1379574328660965
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.24166041910648345,
+         -0.14793106019496918
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.15854883193969727,
+         -0.21520006656646729,
+         -0.1971435546875
+        ]
+       },
+       "absent_absolute_R2": -0.07527804374694824,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.12398028373718262,
+         "ci95_hierarchical": [
+          -0.17494008243083953,
+          -0.07432355284690857
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.07101023197174072,
+         "ci95_hierarchical": [
+          -0.1826389968395233,
+          0.010229149460792543
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.09288215637207031,
+         "ci95_hierarchical": [
+          -0.015075448155403137,
+          0.18947431445121765
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.007051706314086914,
+         "ci95_hierarchical": [
+          -0.15385519564151764,
+          0.15234089195728304
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.008446812629699707,
+        "ci95_hierarchical": [
+         -0.20200636684894563,
+         0.16004708856344232
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.20037748515605927,
+         0.1542258083820343
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.018090486526489258,
+         -0.02464890480041504,
+         0.017398834228515625
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.1900404691696167,
+        "ci95_hierarchical": [
+         -0.42224591672420503,
+         -0.013695943355560292
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.42303781807422636,
+         -0.018075233697891227
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1689082384109497,
+         -0.21252310276031494,
+         -0.1886894702911377
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.12451827526092529,
+        "ci95_hierarchical": [
+         -0.19390886425971984,
+         -0.04591306596994399
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.18551907539367676,
+         -0.052929937839508036
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.12372457981109619,
+         -0.1369645595550537,
+         -0.11286568641662598
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.36325526237487793,
+        "ci95_hierarchical": [
+         -0.4678102254867554,
+         -0.23807573914527885
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.46376572251319886,
+         -0.23999716639518737
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.33677077293395996,
+         -0.382909893989563,
+         -0.3700847625732422
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.21256625652313232,
+        "ci95_hierarchical": [
+         -0.35989035069942477,
+         -0.06279312223196026
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.3528191149234772,
+         -0.0625406324863433
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.19655168056488037,
+         -0.23445403575897217,
+         -0.20669317245483398
+        ]
+       },
+       "absent_absolute_R2": -0.0612640380859375,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.181593656539917,
+         "ci95_hierarchical": [
+          -0.25044026374816897,
+          -0.13321533501148222
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.0655221939086914,
+         "ci95_hierarchical": [
+          -0.28030632734298705,
+          0.1398292660713196
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.17321479320526123,
+         "ci95_hierarchical": [
+          0.010412815213203433,
+          0.31707804501056674
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.022525787353515625,
+         "ci95_hierarchical": [
+          -0.247669580578804,
+          0.28563988506793975
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.07309961318969727,
+        "ci95_hierarchical": [
+         -0.1267094522714615,
+         -0.02366037666797637
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.12792066633701324,
+         -0.025490835309028622
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.06911849975585938,
+         -0.07440900802612305,
+         -0.07577121257781982
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.1814436912536621,
+        "ci95_hierarchical": [
+         -0.2732483595609665,
+         -0.10602173805236816
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.27399427592754366,
+         -0.10713270306587219
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.16828489303588867,
+         -0.17930662631988525,
+         -0.1967397928237915
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.10892343521118164,
+        "ci95_hierarchical": [
+         -0.19975319802761077,
+         -0.03035142719745633
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2010859042406082,
+         -0.03247750997543334
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.09747302532196045,
+         -0.10576379299163818,
+         -0.12353348731994629
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.2525036334991455,
+        "ci95_hierarchical": [
+         -0.30400029122829436,
+         -0.20233699977397918
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2988299638032913,
+         -0.20672865808010102
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2628992795944214,
+         -0.22739148139953613,
+         -0.267220139503479
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.18428897857666016,
+        "ci95_hierarchical": [
+         -0.24289706349372864,
+         -0.11861900091171264
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2283041536808014,
+         -0.1288926213979721
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1482539176940918,
+         -0.21001756191253662,
+         -0.19459569454193115
+        ]
+       },
+       "absent_absolute_R2": -0.07935595512390137,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.10834407806396484,
+         "ci95_hierarchical": [
+          -0.15533444583415984,
+          -0.05558425486087799
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.07252025604248047,
+         "ci95_hierarchical": [
+          -0.16942720413208007,
+          0.022065562009811402
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.0710599422454834,
+         "ci95_hierarchical": [
+          -0.023361584544181822,
+          0.15970791280269625
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.002845287322998047,
+         "ci95_hierarchical": [
+          -0.14094693064689637,
+          0.12154812812805176
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": 0.04446330666542053,
+        "ci95_hierarchical": [
+         0.036214813124388456,
+         0.05343091385439038
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.0608183778822422,
+        "ci95_hierarchical": [
+         0.04728110320866108,
+         0.077740260027349
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.047125183045864105,
+        "ci95_hierarchical": [
+         0.03884465955197811,
+         0.05567480707541108
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.07195042818784714,
+        "ci95_hierarchical": [
+         0.06247421838343144,
+         0.08215876761823893
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.07297515869140625,
+        "ci95_hierarchical": [
+         0.05918235378339887,
+         0.08934007585048676
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": 0.07164768874645233,
+        "ci95_hierarchical": [
+         0.0605514332652092,
+         0.08374347500503063
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.09880925714969635,
+        "ci95_hierarchical": [
+         0.07850735746324063,
+         0.12396903745830061
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.07721273601055145,
+        "ci95_hierarchical": [
+         0.06393927186727524,
+         0.09116847701370716
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.12038695067167282,
+        "ci95_hierarchical": [
+         0.10409338809549809,
+         0.13588239178061484
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.11684171110391617,
+        "ci95_hierarchical": [
+         0.0968302445486188,
+         0.14046128392219545
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.3706272840499878,
+       "ci95_hierarchical": [
+        0.3569260410964489,
+        0.38330313712358477
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.5371266603469849,
+       "ci95_hierarchical": [
+        0.5256077766418457,
+        0.5476615741848946
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.5343068242073059,
+       "ci95_hierarchical": [
+        0.5147523328661918,
+        0.5526185438036919
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.5305336117744446,
+       "ci95_hierarchical": [
+        0.5103111460804939,
+        0.5487947493791581
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.5399475693702698,
+       "ci95_hierarchical": [
+        0.5221187114715576,
+        0.5623096093535424
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.5682033896446228,
+       "ci95_hierarchical": [
+        0.5488867431879043,
+        0.5869664683938026
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      }
+     }
+    },
+    "H2": {
+     "family": "G_denoising_diffusion",
+     "seeds": [
+      "0",
+      "9822",
+      "9823"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.05688583850860596,
+        "ci95_hierarchical": [
+         0.011471202969551087,
+         0.10739954113960266
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.014364969730377198,
+         0.10076346397399903
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.03171563148498535,
+         0.06677937507629395,
+         0.07216227054595947
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.038436293601989746,
+        "ci95_hierarchical": [
+         -0.016885384917259216,
+         0.09128544330596924
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.01573592126369476,
+         0.08516421318054201
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.01781785488128662,
+         0.04164230823516846,
+         0.05584883689880371
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.027815818786621094,
+        "ci95_hierarchical": [
+         -0.0022094815969467157,
+         0.05979610085487366
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         0.0013543456792831424,
+         0.052081075310707096
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.0074967145919799805,
+         0.03317117691040039,
+         0.04277932643890381
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.0032432079315185547,
+        "ci95_hierarchical": [
+         -0.02561940550804138,
+         0.03076559603214264
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.019838413596153258,
+         0.0233748733997345
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.01228344440460205,
+         0.00032591819763183594,
+         0.021686553955078125
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": 0.010610461235046387,
+        "ci95_hierarchical": [
+         -0.0019540071487426755,
+         0.02266855835914612
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         0.007244375348091125,
+         0.013582655787467956
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.00290834903717041,
+         0.011691808700561523,
+         0.023047447204589844
+        ]
+       },
+       "absent_absolute_R2": -0.17769384384155273,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.01844954490661621,
+         "ci95_hierarchical": [
+          -0.03532461524009704,
+          -0.0027136683464050277
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": 0.010620474815368652,
+         "ci95_hierarchical": [
+          -0.01744697690010071,
+          0.03413490056991578
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.03519308567047119,
+         "ci95_hierarchical": [
+          -0.0058488637208938595,
+          0.06882919669151306
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.02782583236694336,
+         "ci95_hierarchical": [
+          -0.029159557819366452,
+          0.08016502261161805
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.09634500741958618,
+        "ci95_hierarchical": [
+         0.017537330090999604,
+         0.1892248541116715
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.020471476018428806,
+         0.1796112224459648
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.06272673606872559,
+         0.11444467306137085,
+         0.11186325550079346
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.035726308822631836,
+        "ci95_hierarchical": [
+         -0.060927453637123104,
+         0.13039131760597233
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.05964255034923553,
+         0.12399575114250187
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.00912618637084961,
+         0.04238927364349365,
+         0.055663228034973145
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.023329854011535645,
+        "ci95_hierarchical": [
+         -0.024290056526660917,
+         0.07913894653320314
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.02230975776910782,
+         0.06991398036479951
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.0025533437728881836,
+         0.040224671363830566,
+         0.032318115234375
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.044191598892211914,
+        "ci95_hierarchical": [
+         -0.11879906058311462,
+         0.02784321904182435
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.11492502093315124,
+         0.0208547055721283
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.05919027328491211,
+         -0.047850728034973145,
+         -0.02553415298461914
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.00345456600189209,
+        "ci95_hierarchical": [
+         -0.022831112146377563,
+         0.015907332301139835
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.01688008904457092,
+         0.012007862329483034
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.018664121627807617,
+         0.006078481674194336,
+         0.0022215843200683594
+        ]
+       },
+       "absent_absolute_R2": -0.08664584159851074,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.060618698596954346,
+         "ci95_hierarchical": [
+          -0.0995524600148201,
+          -0.02630407363176345
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": 0.012396454811096191,
+         "ci95_hierarchical": [
+          -0.038994732499122615,
+          0.05607739686965943
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.07991790771484375,
+         "ci95_hierarchical": [
+          0.005006083846092225,
+          0.13161233961582186
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.039180874824523926,
+         "ci95_hierarchical": [
+          -0.07156137675046921,
+          0.14406054317951203
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.04616963863372803,
+        "ci95_hierarchical": [
+         0.008970421552658082,
+         0.08676079511642457
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.011737951636314392,
+         0.07984319627285004
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.023290395736694336,
+         0.05383408069610596,
+         0.06138408184051514
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.03918290138244629,
+        "ci95_hierarchical": [
+         -0.005106824636459347,
+         0.08192380964756013
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.004109346866607664,
+         0.07518985271453857
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.02018570899963379,
+         0.041449666023254395,
+         0.05591320991516113
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.029042601585388184,
+        "ci95_hierarchical": [
+         0.0031839251518249513,
+         0.05633839666843414
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.007758072018623352,
+         0.04729288220405579
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.010231494903564453,
+         0.031261324882507324,
+         0.04563462734222412
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.016143083572387695,
+        "ci95_hierarchical": [
+         -0.003296735882759094,
+         0.034170815348625184
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         0.006910234689712524,
+         0.02463202476501465
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.000469207763671875,
+         0.013427019119262695,
+         0.034532904624938965
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": 0.01443779468536377,
+        "ci95_hierarchical": [
+         0.0017320841550827028,
+         0.02725784778594972
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.01251186728477478,
+         0.0166645348072052
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.0013753175735473633,
+         0.013221144676208496,
+         0.028716564178466797
+        ]
+       },
+       "absent_absolute_R2": -0.20274531841278076,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.006986737251281738,
+         "ci95_hierarchical": [
+          -0.019287261366844177,
+          0.0040643185377121
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_eqwm": {
+         "delta": 0.010140299797058105,
+         "ci95_hierarchical": [
+          -0.011902695894241333,
+          0.02825025618076325
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.023039817810058594,
+         "ci95_hierarchical": [
+          -0.012183928489685058,
+          0.053632488846778875
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.02474510669708252,
+         "ci95_hierarchical": [
+          -0.017252537608146667,
+          0.06338018774986268
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": -0.008895785547792912,
+        "ci95_hierarchical": [
+         -0.017610586294904352,
+         -0.0008977222416433503
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.006594543345272541,
+        "ci95_hierarchical": [
+         -0.016146331559866667,
+         0.002558537147706375
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.006054078694432974,
+        "ci95_hierarchical": [
+         -0.012440640735439957,
+         -6.624265561185782e-05
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.0017861769301816821,
+        "ci95_hierarchical": [
+         -0.00668930186657235,
+         0.003224163129925728
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_random": {
+        "delta_vs_absent": -0.004291384480893612,
+        "ci95_hierarchical": [
+         -0.0075846630148589615,
+         0.0001274496673431733
+        ],
+        "excludes_zero_hierarchical": false
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": -0.013431702740490437,
+        "ci95_hierarchical": [
+         -0.025766682485118507,
+         -0.0025167659623548367
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.009661721996963024,
+        "ci95_hierarchical": [
+         -0.02308354862034321,
+         0.003192531090462583
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.008486337959766388,
+        "ci95_hierarchical": [
+         -0.017330996738746763,
+         -0.00040802938383421394
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.00226425938308239,
+        "ci95_hierarchical": [
+         -0.008955401508137584,
+         0.004499480419326574
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_random": {
+        "delta_vs_absent": -0.005195555277168751,
+        "ci95_hierarchical": [
+         -0.009541882178746163,
+         0.0003353179345140235
+        ],
+        "excludes_zero_hierarchical": false
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.24820128083229065,
+       "ci95_hierarchical": [
+        0.22093304954469203,
+        0.27456052601337433
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.24164283275604248,
+       "ci95_hierarchical": [
+        0.21282033436000347,
+        0.26710202172398567
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.24290883541107178,
+       "ci95_hierarchical": [
+        0.2131116610020399,
+        0.27060542032122614
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.24075892567634583,
+       "ci95_hierarchical": [
+        0.21237740404903888,
+        0.2664098381996155
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.24641376733779907,
+       "ci95_hierarchical": [
+        0.21561614312231542,
+        0.2763278320431709
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.24123889207839966,
+       "ci95_hierarchical": [
+        0.21469771675765514,
+        0.26550551876425743
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      }
+     }
+    }
+   }
+  },
+  "e2_grouped_hills_band_r64": {
+   "block": 123,
+   "representation": "band",
+   "oracle_arm": "band_oracle",
+   "method_arm": "band_closure",
+   "cells": {
+    "H1": {
+     "family": "F_flow_matching",
+     "seeds": [
+      "0",
+      "9812",
+      "9813"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.06209230422973633,
+        "ci95_hierarchical": [
+         -0.13750593066215516,
+         0.00024951994419098036
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.13763532638549805,
+         -0.0017965108156204168
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.059042930603027344,
+         -0.05942392349243164,
+         -0.0678105354309082
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.17971265316009521,
+        "ci95_hierarchical": [
+         -0.28802999258041384,
+         -0.09761653542518614
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.28685218691825864,
+         -0.09844251871109008
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1677185297012329,
+         -0.18402528762817383,
+         -0.1873939037322998
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.11262726783752441,
+        "ci95_hierarchical": [
+         -0.16691578924655914,
+         -0.05243252813816069
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.16691748201847076,
+         -0.06191472411155699
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.09811365604400635,
+         -0.10737192630767822,
+         -0.13239657878875732
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.2719014883041382,
+        "ci95_hierarchical": [
+         -0.3221105009317398,
+         -0.21063902676105498
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.3187065929174423,
+         -0.2131147891283035
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.262306809425354,
+         -0.26096975803375244,
+         -0.2924278974533081
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.1948920488357544,
+        "ci95_hierarchical": [
+         -0.2521943747997284,
+         -0.14322854876518248
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.24670184254646302,
+         -0.1486229419708252
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.16682744026184082,
+         -0.21191787719726562,
+         -0.20593035221099854
+        ]
+       },
+       "absent_absolute_R2": -0.0727231502532959,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.11762034893035889,
+         "ci95_hierarchical": [
+          -0.16624535024166107,
+          -0.06551714539527892
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.0670853853225708,
+         "ci95_hierarchical": [
+          -0.17381310164928437,
+          0.007042431831359868
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.09218883514404297,
+         "ci95_hierarchical": [
+          0.007468393445014955,
+          0.16382628679275513
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.01517939567565918,
+         "ci95_hierarchical": [
+          -0.1364278644323349,
+          0.14394621551036835
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.023337721824645996,
+        "ci95_hierarchical": [
+         -0.21708987951278685,
+         0.13222504854202274
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.21468263268470764,
+         0.125886107981205
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.015453219413757324,
+         -0.026167631149291992,
+         -0.028392434120178223
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.19471848011016846,
+        "ci95_hierarchical": [
+         -0.4205855071544647,
+         -0.03677286207675927
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.4166884750127792,
+         -0.04121043384075164
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.17058110237121582,
+         -0.22615480422973633,
+         -0.18742024898529053
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.1258488893508911,
+        "ci95_hierarchical": [
+         -0.20735402703285216,
+         -0.05015520453453061
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.1885281980037689,
+         -0.052205386757850594
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.10812759399414062,
+         -0.12994885444641113,
+         -0.13947045803070068
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.36467790603637695,
+        "ci95_hierarchical": [
+         -0.4810001939535141,
+         -0.23140466213226318
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.47984473705291747,
+         -0.23657052814960478
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.3414522409439087,
+         -0.38204050064086914,
+         -0.370540976524353
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.1783580780029297,
+        "ci95_hierarchical": [
+         -0.32908124625682833,
+         -0.027024431526660918
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.31527013182640073,
+         -0.028065477311611155
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1397871971130371,
+         -0.18787407875061035,
+         -0.20741331577301025
+        ]
+       },
+       "absent_absolute_R2": -0.0568537712097168,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.17138075828552246,
+         "ci95_hierarchical": [
+          -0.23752767145633696,
+          -0.12289289832115172
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.06886959075927734,
+         "ci95_hierarchical": [
+          -0.28305730521678923,
+          0.11801836788654342
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.1699594259262085,
+         "ci95_hierarchical": [
+          0.022056692838668825,
+          0.2968573868274689
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": -0.01636040210723877,
+         "ci95_hierarchical": [
+          -0.27263604998588564,
+          0.21545813381671905
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.07264649868011475,
+        "ci95_hierarchical": [
+         -0.11930451691150665,
+         -0.03306980729103088
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.11771570146083832,
+         -0.033760422468185426
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.07091116905212402,
+         -0.0684821605682373,
+         -0.07854640483856201
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.17567658424377441,
+        "ci95_hierarchical": [
+         -0.253957462310791,
+         -0.10872642993927
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2542340099811554,
+         -0.10910206139087676
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.16698193550109863,
+         -0.1726144552230835,
+         -0.18743324279785156
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.10905992984771729,
+        "ci95_hierarchical": [
+         -0.1989919662475586,
+         -0.027690154314041128
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.19863146245479582,
+         -0.03346433341503139
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.09541499614715576,
+         -0.10125899314880371,
+         -0.13050580024719238
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.24673986434936523,
+        "ci95_hierarchical": [
+         -0.2946431219577789,
+         -0.19912295341491698
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.28734532594680784,
+         -0.2035768002271652
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.24084973335266113,
+         -0.22811102867126465,
+         -0.27125871181488037
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.19943642616271973,
+        "ci95_hierarchical": [
+         -0.2543692708015442,
+         -0.13035176694393158
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.24857374131679535,
+         -0.13632974028587339
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.17422235012054443,
+         -0.21850883960723877,
+         -0.20557808876037598
+        ]
+       },
+       "absent_absolute_R2": -0.07730484008789062,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.10303008556365967,
+         "ci95_hierarchical": [
+          -0.14942730367183685,
+          -0.04693797230720517
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.06661665439605713,
+         "ci95_hierarchical": [
+          -0.1587507665157318,
+          0.016488853096962
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.07106328010559082,
+         "ci95_hierarchical": [
+          -0.00022168457508087088,
+          0.13521227538585665
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.023759841918945312,
+         "ci95_hierarchical": [
+          -0.11364900171756745,
+          0.12826108932495117
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": 0.04434834420681,
+        "ci95_hierarchical": [
+         0.037198569159954786,
+         0.052574549615383145
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.06004349887371063,
+        "ci95_hierarchical": [
+         0.04804535685107112,
+         0.07476276531815529
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.04614754766225815,
+        "ci95_hierarchical": [
+         0.03621904142200947,
+         0.055933461897075175
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.07209769636392593,
+        "ci95_hierarchical": [
+         0.06317092329263688,
+         0.08093984797596931
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.07528038322925568,
+        "ci95_hierarchical": [
+         0.06313100010156632,
+         0.08965241704136133
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": 0.07159916311502457,
+        "ci95_hierarchical": [
+         0.06202431879937649,
+         0.08241988122463227
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.09744907915592194,
+        "ci95_hierarchical": [
+         0.07933057826012373,
+         0.11956340316683053
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.07591485977172852,
+        "ci95_hierarchical": [
+         0.060181514266878365,
+         0.09131432548165322
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.12014450132846832,
+        "ci95_hierarchical": [
+         0.10453926008194685,
+         0.1344923671334982
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.11969595402479172,
+        "ci95_hierarchical": [
+         0.1021653477102518,
+         0.14100658372044564
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.3689795434474945,
+       "ci95_hierarchical": [
+        0.35529096573591235,
+        0.38072643280029295
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.5337103009223938,
+       "ci95_hierarchical": [
+        0.5235419407486915,
+        0.5440167561173439
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.5323358774185181,
+       "ci95_hierarchical": [
+        0.5138051494956016,
+        0.550790236890316
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.5245776772499084,
+       "ci95_hierarchical": [
+        0.5033087253570556,
+        0.5437358796596528
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.539566159248352,
+       "ci95_hierarchical": [
+        0.5227844506502152,
+        0.5600630551576614
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.5720923542976379,
+       "ci95_hierarchical": [
+        0.5611631825566292,
+        0.5834126502275467
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      }
+     }
+    },
+    "H2": {
+     "family": "G_denoising_diffusion",
+     "seeds": [
+      "0",
+      "9822",
+      "9823"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.05652940273284912,
+        "ci95_hierarchical": [
+         0.012132221460342407,
+         0.10587652921676637
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.012014269828796388,
+         0.10219729840755463
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.04436802864074707,
+         0.06706118583679199,
+         0.05815911293029785
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.037529587745666504,
+        "ci95_hierarchical": [
+         -0.017072701454162596,
+         0.08983902633190155
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.017049503326416016,
+         0.08616077899932861
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.0296858549118042,
+         0.04774332046508789,
+         0.03515958786010742
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.023204565048217773,
+        "ci95_hierarchical": [
+         -0.0035802453756332395,
+         0.05277503132820129
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.0029355406761169428,
+         0.04777350723743439
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.019443631172180176,
+         0.03258323669433594,
+         0.017586469650268555
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.0005400180816650391,
+        "ci95_hierarchical": [
+         -0.022506511211395262,
+         0.020248395204544068
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.020954445004463196,
+         0.018814641237258914
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.0017812252044677734,
+         -0.00243222713470459,
+         0.0058335065841674805
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": 0.00690305233001709,
+        "ci95_hierarchical": [
+         0.002085980772972107,
+         0.011836189031600955
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.0030295312404632567,
+         0.010254186391830445
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.004384279251098633,
+         0.00572657585144043,
+         0.010598182678222656
+        ]
+       },
+       "absent_absolute_R2": -0.18595564365386963,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.018999814987182617,
+         "ci95_hierarchical": [
+          -0.03387959897518158,
+          -0.0031712442636489856
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": 0.01432502269744873,
+         "ci95_hierarchical": [
+          -0.014413955807685851,
+          0.03939470648765564
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.036989569664001465,
+         "ci95_hierarchical": [
+          -0.0063912361860275265,
+          0.07768093645572663
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.030626535415649414,
+         "ci95_hierarchical": [
+          -0.026992857456207272,
+          0.08563240170478821
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.09415781497955322,
+        "ci95_hierarchical": [
+         0.01276388168334961,
+         0.1901228219270706
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.012450879812240601,
+         0.18083826005458836
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.06900942325592041,
+         0.11905121803283691,
+         0.09441268444061279
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.03656327724456787,
+        "ci95_hierarchical": [
+         -0.06199783682823181,
+         0.1377642154693604
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.06253298223018645,
+         0.12946273982524872
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.017209172248840332,
+         0.06030535697937012,
+         0.03217506408691406
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.020467758178710938,
+        "ci95_hierarchical": [
+         -0.02687789797782898,
+         0.08308528065681457
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.026691719889640808,
+         0.06796013116836548
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.005715847015380859,
+         0.04897880554199219,
+         0.006708025932312012
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.04524683952331543,
+        "ci95_hierarchical": [
+         -0.11453942954540253,
+         0.021062135696411133
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.11373447179794312,
+         0.017839264869689942
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.054295897483825684,
+         -0.046984195709228516,
+         -0.03446078300476074
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.0030747652053833008,
+        "ci95_hierarchical": [
+         -0.015525051951408386,
+         0.009418132901191712
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.013191792368888854,
+         0.007558456063270569
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.010449528694152832,
+         0.004356861114501953,
+         -0.003131866455078125
+        ]
+       },
+       "absent_absolute_R2": -0.12945663928985596,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.05759453773498535,
+         "ci95_hierarchical": [
+          -0.0955183207988739,
+          -0.022208291292190544
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": 0.016095519065856934,
+         "ci95_hierarchical": [
+          -0.03747892379760742,
+          0.06285475790500641
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.0818101167678833,
+         "ci95_hierarchical": [
+          0.0019542545080184948,
+          0.14946192502975464
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.03963804244995117,
+         "ci95_hierarchical": [
+          -0.06911824941635132,
+          0.14722755253314973
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.046311020851135254,
+        "ci95_hierarchical": [
+         0.010430839657783509,
+         0.08402616679668427
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.010433369874954225,
+         0.08127026557922364
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.03767800331115723,
+         0.052939772605895996,
+         0.048314809799194336
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.03780174255371094,
+        "ci95_hierarchical": [
+         -0.004777631163597106,
+         0.07696612179279327
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.0047201037406921385,
+         0.07441779971122742
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.03308606147766113,
+         0.04433894157409668,
+         0.0359799861907959
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.023954391479492188,
+        "ci95_hierarchical": [
+         0.002616429328918457,
+         0.044991353154182435
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.003307229280471802,
+         0.042379891872406004
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.023181676864624023,
+         0.02813267707824707,
+         0.02054905891418457
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.012991189956665039,
+        "ci95_hierarchical": [
+         0.0029975414276123048,
+         0.021095120906829835
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.0051041185855865475,
+         0.02083808183670044
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.012498855590820312,
+         0.009682297706604004,
+         0.0167924165725708
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": 0.009618043899536133,
+        "ci95_hierarchical": [
+         0.005401715636253357,
+         0.014893645048141481
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.007076594233512879,
+         0.012422198057174682
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.008419036865234375,
+         0.006100296974182129,
+         0.014334559440612793
+        ]
+       },
+       "absent_absolute_R2": -0.2016141414642334,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.008509278297424316,
+         "ci95_hierarchical": [
+          -0.018941619992256166,
+          0.002265721559524541
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_eqwm": {
+         "delta": 0.01384735107421875,
+         "ci95_hierarchical": [
+          -0.008051678538322449,
+          0.03322120606899262
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.0248105525970459,
+         "ci95_hierarchical": [
+          -0.011159095168113706,
+          0.059064319729805005
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.028183698654174805,
+         "ci95_hierarchical": [
+          -0.015471410751342772,
+          0.06925185024738312
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": -0.008283031173050404,
+        "ci95_hierarchical": [
+         -0.016242908826097847,
+         -0.0013443198491586363
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.005978334695100784,
+        "ci95_hierarchical": [
+         -0.01463559209369123,
+         0.0024660102208144967
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.004755097907036543,
+        "ci95_hierarchical": [
+         -0.009691740036942065,
+         -0.00043113505016662945
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.0011700063478201628,
+        "ci95_hierarchical": [
+         -0.004108234483283013,
+         0.0021439144620671873
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_random": {
+        "delta_vs_absent": -0.0031181471422314644,
+        "ci95_hierarchical": [
+         -0.0053332664188928906,
+         -0.0007458508349373002
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": -0.01292343158274889,
+        "ci95_hierarchical": [
+         -0.02408964578062296,
+         -0.0033029323385562748
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.009153311140835285,
+        "ci95_hierarchical": [
+         -0.02131844419054687,
+         0.0027412629395257688
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.006993780843913555,
+        "ci95_hierarchical": [
+         -0.01369498884305358,
+         -0.0010838257643626989
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.0016866163350641727,
+        "ci95_hierarchical": [
+         -0.005400688538793474,
+         0.0027555857435800145
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_random": {
+        "delta_vs_absent": -0.003881528042256832,
+        "ci95_hierarchical": [
+         -0.00649368716403842,
+         -0.0013708174839848653
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.23340585827827454,
+       "ci95_hierarchical": [
+        0.20671357475221158,
+        0.26019351184368134
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.22851543128490448,
+       "ci95_hierarchical": [
+        0.20077664591372013,
+        0.2557242147624493
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.2295072078704834,
+       "ci95_hierarchical": [
+        0.20164741836488248,
+        0.25771891623735427
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.22808246314525604,
+       "ci95_hierarchical": [
+        0.20108506716787816,
+        0.2555202655494213
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.23298130929470062,
+       "ci95_hierarchical": [
+        0.20327452197670937,
+        0.26431332975625993
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.2285643219947815,
+       "ci95_hierarchical": [
+        0.20222638882696628,
+        0.25455340147018435
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": true,
+       "direction": "under-dispersed"
+      }
+     }
+    }
+   }
+  },
+  "e2_grouped_hills_band_r96": {
+   "block": 123,
+   "representation": "band",
+   "oracle_arm": "band_oracle",
+   "method_arm": "band_closure",
+   "cells": {
+    "H1": {
+     "family": "F_flow_matching",
+     "seeds": [
+      "0",
+      "9812",
+      "9813"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.024897336959838867,
+        "ci95_hierarchical": [
+         -0.07225367426872253,
+         0.10577382147312164
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.07235676646232606,
+         0.1039628565311432
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.009100198745727539,
+         0.03309047222137451,
+         0.032501220703125
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.04514575004577637,
+        "ci95_hierarchical": [
+         -0.15242683589458467,
+         0.05108710229396821
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.1516622096300125,
+         0.050411069393157974
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.04746091365814209,
+         -0.04630255699157715,
+         -0.04167330265045166
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.03250277042388916,
+        "ci95_hierarchical": [
+         -0.09993616938591003,
+         0.03277453482151032
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.09996174275875092,
+         0.03126677870750429
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.03925347328186035,
+         -0.03856778144836426,
+         -0.019687414169311523
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.11369895935058594,
+        "ci95_hierarchical": [
+         -0.1695185273885727,
+         -0.04850982725620269
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.16382173001766204,
+         -0.0483006715774536
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1246950626373291,
+         -0.10896968841552734,
+         -0.10743260383605957
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.15122652053833008,
+        "ci95_hierarchical": [
+         -0.20589127242565156,
+         -0.08934496641159057
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2025611639022827,
+         -0.09517241120338439
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.16591954231262207,
+         -0.15877211093902588,
+         -0.1289881467819214
+        ]
+       },
+       "absent_absolute_R2": -0.11770033836364746,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.07004308700561523,
+         "ci95_hierarchical": [
+          -0.09267521798610687,
+          -0.0461402952671051
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.012642979621887207,
+         "ci95_hierarchical": [
+          -0.057692182064056394,
+          0.027820140123367313
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.06855320930480957,
+         "ci95_hierarchical": [
+          -0.003656119108200073,
+          0.12384342253208161
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.10608077049255371,
+         "ci95_hierarchical": [
+          -0.048535308241844176,
+          0.25176879167556765
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.08500564098358154,
+        "ci95_hierarchical": [
+         -0.10942954421043395,
+         0.2674801737070084
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.11221732795238495,
+         0.27016531676054
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.05223274230957031,
+         0.10136735439300537,
+         0.10141664743423462
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.05417037010192871,
+        "ci95_hierarchical": [
+         -0.28922090530395506,
+         0.1828849792480469
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.28676227629184725,
+         0.18342769891023636
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.0662384033203125,
+         -0.060796499252319336,
+         -0.035475969314575195
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.09678041934967041,
+        "ci95_hierarchical": [
+         -0.24397055804729462,
+         0.03687187731266024
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.24476665258407593,
+         0.034823402762413025
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.11650454998016357,
+         -0.10054373741149902,
+         -0.07329285144805908
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.2626330852508545,
+        "ci95_hierarchical": [
+         -0.41500389873981475,
+         -0.08978263437747952
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.41275169551372526,
+         -0.08987270295619962
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2851759195327759,
+         -0.23204362392425537,
+         -0.2706797122955322
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.2913442850112915,
+        "ci95_hierarchical": [
+         -0.4168269455432892,
+         -0.1694015800952911
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.4063779413700104,
+         -0.18741813004016875
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.34730684757232666,
+         -0.27133071422576904,
+         -0.2553952932357788
+        ]
+       },
+       "absent_absolute_R2": -0.10007405281066895,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.13917601108551025,
+         "ci95_hierarchical": [
+          -0.19723352193832397,
+          -0.07566941976547241
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": 0.0426100492477417,
+         "ci95_hierarchical": [
+          -0.06380578279495239,
+          0.15465097129344943
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.20846271514892578,
+         "ci95_hierarchical": [
+          0.06630196869373321,
+          0.32198604941368103
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.2371739149093628,
+         "ci95_hierarchical": [
+          -0.05230505168437958,
+          0.5262755468487741
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.00783395767211914,
+        "ci95_hierarchical": [
+         -0.06425804197788239,
+         0.06191428303718568
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.06366535723209381,
+         0.06043266355991364
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.0031442642211914062,
+         0.013708114624023438,
+         0.012937664985656738
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.04258453845977783,
+        "ci95_hierarchical": [
+         -0.1232806235551834,
+         0.015419733524322521
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.12123066484928131,
+         0.014588016271591201
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.04213118553161621,
+         -0.04218912124633789,
+         -0.043433547019958496
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.014256000518798828,
+        "ci95_hierarchical": [
+         -0.06262689530849457,
+         0.03315303921699526
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.062474414706230164,
+         0.031521007418632514
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.017323732376098633,
+         -0.02097463607788086,
+         -0.004469871520996094
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.07142090797424316,
+        "ci95_hierarchical": [
+         -0.10629636645317078,
+         -0.030914551019668578
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.10065395534038543,
+         -0.03144884705543518
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.0791391134262085,
+         -0.07403278350830078,
+         -0.061091065406799316
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.11145210266113281,
+        "ci95_hierarchical": [
+         -0.16861700415611267,
+         -0.04722728133201598
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.16315551698207856,
+         -0.0493765264749527
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.11442935466766357,
+         -0.1268213987350464,
+         -0.09310555458068848
+        ]
+       },
+       "absent_absolute_R2": -0.1227273941040039,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.05041849613189697,
+         "ci95_hierarchical": [
+          -0.06901309490203858,
+          -0.03347023725509644
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.028328537940979004,
+         "ci95_hierarchical": [
+          -0.07630224525928497,
+          0.008091372251510649
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.028836369514465332,
+         "ci95_hierarchical": [
+          -0.03897816240787506,
+          0.08389477133750917
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.06886756420135498,
+         "ci95_hierarchical": [
+          -0.06880956292152404,
+          0.17801875472068787
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": 0.013886626809835434,
+        "ci95_hierarchical": [
+         0.006293481378816068,
+         0.023936241632327448
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.024055849760770798,
+        "ci95_hierarchical": [
+         0.011930347816087306,
+         0.037478291336447
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.01847607083618641,
+        "ci95_hierarchical": [
+         0.012888392084278166,
+         0.023887234600260855
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.03271348401904106,
+        "ci95_hierarchical": [
+         0.02661775853484869,
+         0.037985226791352036
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.05382513999938965,
+        "ci95_hierarchical": [
+         0.03985832324251533,
+         0.06911190059036017
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": 0.023648694157600403,
+        "ci95_hierarchical": [
+         0.01110313127283007,
+         0.03885155376046896
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.03950602188706398,
+        "ci95_hierarchical": [
+         0.019865260226652026,
+         0.060046754684299236
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.031202280893921852,
+        "ci95_hierarchical": [
+         0.020510742114856838,
+         0.040462199598550797
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.057604752480983734,
+        "ci95_hierarchical": [
+         0.04732226459309459,
+         0.06653432492166758
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.08675295859575272,
+        "ci95_hierarchical": [
+         0.06742179170250892,
+         0.10866624359041453
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.3549824059009552,
+       "ci95_hierarchical": [
+        0.342062059789896,
+        0.3664508551359177
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.4290320575237274,
+       "ci95_hierarchical": [
+        0.41506209447979925,
+        0.4406577229499817
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.43012458086013794,
+       "ci95_hierarchical": [
+        0.4133799456059933,
+        0.44929427206516265
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.4186543822288513,
+       "ci95_hierarchical": [
+        0.4036385029554367,
+        0.431215000897646
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.4332783818244934,
+       "ci95_hierarchical": [
+        0.4202070876955986,
+        0.44968408793210984
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.48474687337875366,
+       "ci95_hierarchical": [
+        0.4622976377606392,
+        0.5109497874975204
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      }
+     }
+    },
+    "H2": {
+     "family": "G_denoising_diffusion",
+     "seeds": [
+      "0",
+      "9822",
+      "9823"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.07919001579284668,
+        "ci95_hierarchical": [
+         0.027489885687828064,
+         0.13054664433002472
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.03256271183490753,
+         0.12830326259136202
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.09623873233795166,
+         0.07634806632995605,
+         0.06498312950134277
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.05871689319610596,
+        "ci95_hierarchical": [
+         -0.011111015081405638,
+         0.12215485274791718
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.006094810366630554,
+         0.12068415582180024
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.07960033416748047,
+         0.051984548568725586,
+         0.044565796852111816
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.04799520969390869,
+        "ci95_hierarchical": [
+         0.013650813698768617,
+         0.07922725975513459
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.018821442127227785,
+         0.07586649954319001
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.06328034400939941,
+         0.04408717155456543,
+         0.03661811351776123
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.0024079084396362305,
+        "ci95_hierarchical": [
+         -0.025314491987228394,
+         0.029473841190338135
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.01989251971244812,
+         0.0259076863527298
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.017609000205993652,
+         -0.004476428031921387,
+         -0.005908966064453125
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": 0.018438100814819336,
+        "ci95_hierarchical": [
+         0.004060378670692445,
+         0.0378993570804596
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.012078335881233216,
+         0.026529350876808168
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.03406071662902832,
+         0.0028312206268310547,
+         0.01842188835144043
+        ]
+       },
+       "absent_absolute_R2": -0.38865160942077637,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.020473122596740723,
+         "ci95_hierarchical": [
+          -0.04226026237010956,
+          -0.0011366635560989375
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": 0.010721683502197266,
+         "ci95_hierarchical": [
+          -0.02655450999736786,
+          0.04532672166824341
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.05630898475646973,
+         "ci95_hierarchical": [
+          -0.007265314459800719,
+          0.11199156939983368
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.04027879238128662,
+         "ci95_hierarchical": [
+          -0.030241125822067255,
+          0.10784632563591005
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.15235376358032227,
+        "ci95_hierarchical": [
+         0.03978608250617981,
+         0.2772200882434845
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.041619673371315,
+         0.2729832947254181
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.13072526454925537,
+         0.18331623077392578,
+         0.143019437789917
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.08424341678619385,
+        "ci95_hierarchical": [
+         -0.05762583315372467,
+         0.2280515491962433
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.05623789131641388,
+         0.22673498988151553
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.07275450229644775,
+         0.11076140403747559,
+         0.0692138671875
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.05782628059387207,
+        "ci95_hierarchical": [
+         -0.013240811228752137,
+         0.13587890267372132
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.009432023763656617,
+         0.1271079510450363
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         0.03586125373840332,
+         0.09105730056762695,
+         0.046559929847717285
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.0750657320022583,
+        "ci95_hierarchical": [
+         -0.14585444927215577,
+         -0.0010584890842437657
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.14050171673297882,
+         -0.008246728777885433
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.08932411670684814,
+         -0.050417542457580566,
+         -0.08545637130737305
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.020250678062438965,
+        "ci95_hierarchical": [
+         -0.04552316963672638,
+         -0.002075374126434315
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.036853659152984615,
+         -0.003423824906349168
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.03449404239654541,
+         -0.01243436336517334,
+         -0.013823747634887695
+        ]
+       },
+       "absent_absolute_R2": -0.25680625438690186,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.06811034679412842,
+         "ci95_hierarchical": [
+          -0.11450762152671815,
+          -0.026996505260467516
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": 0.026417136192321777,
+         "ci95_hierarchical": [
+          -0.04916821718215943,
+          0.10023602545261384
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.15930914878845215,
+         "ci95_hierarchical": [
+          0.03351626396179199,
+          0.26716084182262423
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.10449409484863281,
+         "ci95_hierarchical": [
+          -0.044680687785148616,
+          0.2539559036493302
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": 0.05842149257659912,
+        "ci95_hierarchical": [
+         0.019068488478660585,
+         0.0950501024723053
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.028908425569534303,
+         0.08770923614501953
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.08645057678222656,
+         0.04598283767700195,
+         0.04283106327056885
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.051471590995788574,
+        "ci95_hierarchical": [
+         -0.0020419389009475705,
+         0.09709642827510834
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         0.007615301012992859,
+         0.09088273048400879
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.08154535293579102,
+         0.03529965877532959,
+         0.037569403648376465
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.04520535469055176,
+        "ci95_hierarchical": [
+         0.016139870882034304,
+         0.07237749993801118
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.02673908770084381,
+         0.0613893061876297
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.07106566429138184,
+         0.03075408935546875,
+         0.03379654884338379
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.02440166473388672,
+        "ci95_hierarchical": [
+         0.0028729200363159183,
+         0.04802232682704926
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.01604989469051361,
+         0.03524467945098877
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.0479663610458374,
+         0.008565545082092285,
+         0.01667320728302002
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": 0.029421687126159668,
+        "ci95_hierarchical": [
+         0.008603492379188537,
+         0.053547587990760814
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         0.02450451850891113,
+         0.0357085257768631
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         0.05352342128753662,
+         0.007164955139160156,
+         0.027576208114624023
+        ]
+       },
+       "absent_absolute_R2": -0.4261096715927124,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.006949901580810547,
+         "ci95_hierarchical": [
+          -0.02276373505592346,
+          0.006516882777214052
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_eqwm": {
+         "delta": 0.006266236305236816,
+         "ci95_hierarchical": [
+          -0.020276463031768797,
+          0.029885789752006533
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.027069926261901855,
+         "ci95_hierarchical": [
+          -0.019268542528152466,
+          0.06906309723854066
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.022049903869628906,
+         "ci95_hierarchical": [
+          -0.02689024209976196,
+          0.06780655682086945
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": -0.009981842711567879,
+        "ci95_hierarchical": [
+         -0.017355251731351017,
+         -0.002856384316692128
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.006870286539196968,
+        "ci95_hierarchical": [
+         -0.016562203969806434,
+         0.00335336413118057
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.00759760569781065,
+        "ci95_hierarchical": [
+         -0.011944296862930059,
+         -0.0027237832371611137
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.00028645884594880044,
+        "ci95_hierarchical": [
+         -0.0036148312676232306,
+         0.00264502379577607
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_random": {
+        "delta_vs_absent": -0.004658374935388565,
+        "ci95_hierarchical": [
+         -0.006634686910547316,
+         -0.0022916859365068355
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": -0.01578923687338829,
+        "ci95_hierarchical": [
+         -0.026057591242715717,
+         -0.005675782496109605
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.010986869223415852,
+        "ci95_hierarchical": [
+         -0.024198827799409628,
+         0.003202974039595576
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.011066140606999397,
+        "ci95_hierarchical": [
+         -0.016941908979788423,
+         -0.004269570391625165
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.0012571342522278428,
+        "ci95_hierarchical": [
+         -0.005896379635669291,
+         0.003249431506264955
+        ],
+        "excludes_zero_hierarchical": false
+       },
+       "band_random": {
+        "delta_vs_absent": -0.005955420900136232,
+        "ci95_hierarchical": [
+         -0.009637116314843297,
+         -0.002271060558268797
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.11104917526245117,
+       "ci95_hierarchical": [
+        0.10187148284167051,
+        0.12071056347340345
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "over-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.10756735503673553,
+       "ci95_hierarchical": [
+        0.09861948154866695,
+        0.11662682816386223
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "over-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.10979306697845459,
+       "ci95_hierarchical": [
+        0.10014137104153634,
+        0.12026884332299233
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "over-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.10691428184509277,
+       "ci95_hierarchical": [
+        0.09805047884583473,
+        0.11583690941333771
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "over-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.1137048602104187,
+       "ci95_hierarchical": [
+        0.10215547177940607,
+        0.12493775859475136
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "over-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.10894744098186493,
+       "ci95_hierarchical": [
+        0.09947998281568289,
+        0.11832712199538947
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "over-dispersed"
+      }
+     }
+    }
+   }
+  },
+  "e2_hill_sde_h1s": {
+   "block": 123,
+   "representation": "band",
+   "oracle_arm": "band_oracle",
+   "method_arm": "band_closure",
+   "cells": {
+    "H1S": {
+     "family": "F_flow_matching_stochastic_sampler",
+     "seeds": [
+      "0",
+      "9812",
+      "9813"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.13408291339874268,
+        "ci95_hierarchical": [
+         -0.19033283591270447,
+         -0.0840329736471176
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.18540889918804168,
+         -0.09045487344264984
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1404188871383667,
+         -0.14513003826141357,
+         -0.11669957637786865
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.22382497787475586,
+        "ci95_hierarchical": [
+         -0.31875483095645907,
+         -0.15100916326045988
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.31661213636398317,
+         -0.15164392888545988
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.23713696002960205,
+         -0.21252000331878662,
+         -0.22181761264801025
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.11733901500701904,
+        "ci95_hierarchical": [
+         -0.15981377959251403,
+         -0.08465989530086517
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.15492744743824005,
+         -0.0865908622741699
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.13130617141723633,
+         -0.10798180103302002,
+         -0.11272883415222168
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.319766640663147,
+        "ci95_hierarchical": [
+         -0.373219233751297,
+         -0.26067471504211426
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.36281931698322295,
+         -0.26960664987564087
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.34855401515960693,
+         -0.2928776741027832,
+         -0.3178682327270508
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.22641384601593018,
+        "ci95_hierarchical": [
+         -0.30652418434619905,
+         -0.13933634757995603
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.29849281907081604,
+         -0.15842493772506713
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2629861831665039,
+         -0.23569834232330322,
+         -0.18055689334869385
+        ]
+       },
+       "absent_absolute_R2": -0.1091545820236206,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.08974206447601318,
+         "ci95_hierarchical": [
+          -0.1587327837944031,
+          -0.013343825936317432
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.10648596286773682,
+         "ci95_hierarchical": [
+          -0.19500947296619414,
+          -0.03707828521728515
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_fartime": {
+         "delta": 0.09594166278839111,
+         "ci95_hierarchical": [
+          0.022635272145271303,
+          0.15839187204837799
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.0025888681411743164,
+         "ci95_hierarchical": [
+          -0.15816726982593537,
+          0.14909198880195618
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.08450484275817871,
+        "ci95_hierarchical": [
+         -0.233628311753273,
+         0.03614050745964051
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.2260710120201111,
+         0.029836779832839982
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.08300650119781494,
+         -0.11697769165039062,
+         -0.05353057384490967
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.20925509929656982,
+        "ci95_hierarchical": [
+         -0.4020750612020493,
+         -0.06883376836776729
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.4013897657394409,
+         -0.07058583199977875
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.19970715045928955,
+         -0.21930420398712158,
+         -0.20875370502471924
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.10217034816741943,
+        "ci95_hierarchical": [
+         -0.1897285670042038,
+         -0.008487328886985758
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.18800681829452515,
+         -0.0176804333925247
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.12207543849945068,
+         -0.1036597490310669,
+         -0.08077609539031982
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.3925647735595703,
+        "ci95_hierarchical": [
+         -0.48075844943523405,
+         -0.2965061455965042
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.4753016263246536,
+         -0.30043230950832367
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.38635456562042236,
+         -0.40923380851745605,
+         -0.3821061849594116
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.21488237380981445,
+        "ci95_hierarchical": [
+         -0.41344812214374543,
+         -0.025610402226447983
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.3965584099292755,
+         -0.030660560727119406
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.23743021488189697,
+         -0.2657155990600586,
+         -0.14150142669677734
+        ]
+       },
+       "absent_absolute_R2": -0.0815962553024292,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.12475025653839111,
+         "ci95_hierarchical": [
+          -0.2091509908437729,
+          -0.044456711411476134
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.10708475112915039,
+         "ci95_hierarchical": [
+          -0.311395862698555,
+          0.08475488126277923
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.1833096742630005,
+         "ci95_hierarchical": [
+          0.0486393928527832,
+          0.3029529631137848
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.005627274513244629,
+         "ci95_hierarchical": [
+          -0.2559910029172897,
+          0.25944651663303386
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.1475982666015625,
+        "ci95_hierarchical": [
+         -0.18591063618659973,
+         -0.11284722685813903
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.18248332440853118,
+         -0.1185735285282135
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1560664176940918,
+         -0.15282177925109863,
+         -0.13390636444091797
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.2278425693511963,
+        "ci95_hierarchical": [
+         -0.3000046104192734,
+         -0.16308284997940065
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.29663831293582915,
+         -0.16448061168193817
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.24737441539764404,
+         -0.21072804927825928,
+         -0.2254253625869751
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.12149298191070557,
+        "ci95_hierarchical": [
+         -0.19376558661460877,
+         -0.06515761613845825
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.1936637282371521,
+         -0.06590159833431243
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.13384902477264404,
+         -0.10918402671813965,
+         -0.12144577503204346
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.3000495433807373,
+        "ci95_hierarchical": [
+         -0.35887944102287295,
+         -0.24038249254226682
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.34256741404533386,
+         -0.2541127324104309
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.33836138248443604,
+         -0.2613089084625244,
+         -0.30047857761383057
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.2296057939529419,
+        "ci95_hierarchical": [
+         -0.3068195551633835,
+         -0.1445324659347534
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.29353815615177153,
+         -0.15765677988529206
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2700011730194092,
+         -0.22759413719177246,
+         -0.1912221908569336
+        ]
+       },
+       "absent_absolute_R2": -0.11692404747009277,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.08024430274963379,
+         "ci95_hierarchical": [
+          -0.1468415915966034,
+          -0.003029692173004149
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.10634958744049072,
+         "ci95_hierarchical": [
+          -0.18350906074047088,
+          -0.03285682201385497
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_fartime": {
+         "delta": 0.07220697402954102,
+         "ci95_hierarchical": [
+          0.010820171236991886,
+          0.1281238317489624
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.0017632246017456055,
+         "ci95_hierarchical": [
+          -0.1412882924079895,
+          0.12511121928691865
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": 0.04247404634952545,
+        "ci95_hierarchical": [
+         0.034565528947860004,
+         0.04978703688830138
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.05382155254483223,
+        "ci95_hierarchical": [
+         0.04507395215332508,
+         0.06417167875915766
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.03408484160900116,
+        "ci95_hierarchical": [
+         0.028102402668446304,
+         0.03937134379521012
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.06283203512430191,
+        "ci95_hierarchical": [
+         0.05371655505150556,
+         0.07073758542537689
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.054450616240501404,
+        "ci95_hierarchical": [
+         0.03727502133697271,
+         0.07079704664647579
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": 0.06774464249610901,
+        "ci95_hierarchical": [
+         0.05679152654483914,
+         0.07803810723125935
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.08630014210939407,
+        "ci95_hierarchical": [
+         0.07234081644564867,
+         0.1031006770208478
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.0562363862991333,
+        "ci95_hierarchical": [
+         0.04640522636473179,
+         0.06530295088887214
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.10528626292943954,
+        "ci95_hierarchical": [
+         0.08980653919279576,
+         0.11820100657641888
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.0882088840007782,
+        "ci95_hierarchical": [
+         0.062163285072892906,
+         0.1131290914490819
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.1809375286102295,
+       "ci95_hierarchical": [
+        0.17225406058132647,
+        0.1886636383831501
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "over-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.28169384598731995,
+       "ci95_hierarchical": [
+        0.27011406794190407,
+        0.2956153817474842
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.28197628259658813,
+       "ci95_hierarchical": [
+        0.26887628734111785,
+        0.29328968599438665
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.26503992080688477,
+       "ci95_hierarchical": [
+        0.25388154685497283,
+        0.27866350039839743
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.28586897253990173,
+       "ci95_hierarchical": [
+        0.2710089236497879,
+        0.29687145799398423
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.2880300283432007,
+       "ci95_hierarchical": [
+        0.2726781778037548,
+        0.302785574644804
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      }
+     }
+    },
+    "H1S0": {
+     "family": "F_flow_matching_deterministic_port_control",
+     "seeds": [
+      "0",
+      "9812",
+      "9813"
+     ],
+     "n_seeds": 3,
+     "regions": {
+      "full_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.0592656135559082,
+        "ci95_hierarchical": [
+         -0.14592193961143493,
+         0.013046514987945559
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.1460249662399292,
+         0.01099667251110077
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.05819737911224365,
+         -0.0637580156326294,
+         -0.05584073066711426
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.18324589729309082,
+        "ci95_hierarchical": [
+         -0.3110774993896484,
+         -0.08979686796665191
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.3097006052732468,
+         -0.09090604484081266
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.16838514804840088,
+         -0.1863718032836914,
+         -0.19498062133789062
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.1122356653213501,
+        "ci95_hierarchical": [
+         -0.17066372632980348,
+         -0.05618823766708374
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.17143127620220183,
+         -0.06174452304840087
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1030653715133667,
+         -0.1124124526977539,
+         -0.12122905254364014
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.27612805366516113,
+        "ci95_hierarchical": [
+         -0.322890442609787,
+         -0.2161558985710144
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.3210159093141556,
+         -0.21990559101104734
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2786383628845215,
+         -0.2605900764465332,
+         -0.2891559600830078
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.19029760360717773,
+        "ci95_hierarchical": [
+         -0.25142444372177125,
+         -0.13681973814964293
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.23926807940006256,
+         -0.14716389179229736
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.15854883193969727,
+         -0.21520006656646729,
+         -0.1971435546875
+        ]
+       },
+       "absent_absolute_R2": -0.07527804374694824,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.12398028373718262,
+         "ci95_hierarchical": [
+          -0.17483588457107543,
+          -0.07373008131980895
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.07101023197174072,
+         "ci95_hierarchical": [
+          -0.18725355267524718,
+          0.00937740802764893
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.09288215637207031,
+         "ci95_hierarchical": [
+          -0.01934775710105896,
+          0.18911807835102082
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.007051706314086914,
+         "ci95_hierarchical": [
+          -0.16009312868118286,
+          0.1508229374885559
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "near_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.008446812629699707,
+        "ci95_hierarchical": [
+         -0.21874313950538635,
+         0.15703013986349107
+        ],
+        "excludes_zero_hierarchical": false,
+        "ci95_seed_conditional": [
+         -0.2143305540084839,
+         0.15419830232858664
+        ],
+        "excludes_zero_seed_conditional": false,
+        "per_seed_delta": [
+         -0.018090486526489258,
+         -0.02464890480041504,
+         0.017398834228515625
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.1900404691696167,
+        "ci95_hierarchical": [
+         -0.4366286933422089,
+         -0.014706107974052385
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.4394652217626572,
+         -0.01904071569442748
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1689082384109497,
+         -0.21252310276031494,
+         -0.1886894702911377
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.12451827526092529,
+        "ci95_hierarchical": [
+         -0.19371017813682556,
+         -0.04630846083164212
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.18592771589756013,
+         -0.0517284020781517
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.12372457981109619,
+         -0.1369645595550537,
+         -0.11286568641662598
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.36325526237487793,
+        "ci95_hierarchical": [
+         -0.4659601584076881,
+         -0.2414604276418686
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.46197946071624757,
+         -0.24302612841129304
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.33677077293395996,
+         -0.382909893989563,
+         -0.3700847625732422
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.21256625652313232,
+        "ci95_hierarchical": [
+         -0.3566707491874695,
+         -0.0586095079779624
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.35374921262264253,
+         -0.06167128235101697
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.19655168056488037,
+         -0.23445403575897217,
+         -0.20669317245483398
+        ]
+       },
+       "absent_absolute_R2": -0.0612640380859375,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.181593656539917,
+         "ci95_hierarchical": [
+          -0.2507767051458359,
+          -0.13308099806308746
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.0655221939086914,
+         "ci95_hierarchical": [
+          -0.2876059263944626,
+          0.13615978360176087
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.17321479320526123,
+         "ci95_hierarchical": [
+          0.0006062746047973643,
+          0.31768391728401185
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_random": {
+         "delta": 0.022525787353515625,
+         "ci95_hierarchical": [
+          -0.2555873245000839,
+          0.27906068861484534
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      },
+      "outer_srcex": {
+       "band_oracle": {
+        "delta_vs_absent": -0.07309961318969727,
+        "ci95_hierarchical": [
+         -0.1285380244255066,
+         -0.025016063451766962
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.12845199406147004,
+         -0.025646653771400442
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.06911849975585938,
+         -0.07440900802612305,
+         -0.07577121257781982
+        ]
+       },
+       "band_closure": {
+        "delta_vs_absent": -0.1814436912536621,
+        "ci95_hierarchical": [
+         -0.2792538911104202,
+         -0.10670638382434845
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.2793466240167618,
+         -0.10795301795005798
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.16828489303588867,
+         -0.17930662631988525,
+         -0.1967397928237915
+        ]
+       },
+       "band_eqwm": {
+        "delta_vs_absent": -0.10892343521118164,
+        "ci95_hierarchical": [
+         -0.2029642015695572,
+         -0.03007624745368956
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.20330650210380555,
+         -0.03315293490886686
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.09747302532196045,
+         -0.10576379299163818,
+         -0.12353348731994629
+        ]
+       },
+       "band_fartime": {
+        "delta_vs_absent": -0.2525036334991455,
+        "ci95_hierarchical": [
+         -0.302059406042099,
+         -0.20025960206985471
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.29736027121543884,
+         -0.20753179192543028
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.2628992795944214,
+         -0.22739148139953613,
+         -0.267220139503479
+        ]
+       },
+       "band_random": {
+        "delta_vs_absent": -0.18428897857666016,
+        "ci95_hierarchical": [
+         -0.2426829755306244,
+         -0.1164084792137146
+        ],
+        "excludes_zero_hierarchical": true,
+        "ci95_seed_conditional": [
+         -0.22720350027084352,
+         -0.12758818864822388
+        ],
+        "excludes_zero_seed_conditional": true,
+        "per_seed_delta": [
+         -0.1482539176940918,
+         -0.21001756191253662,
+         -0.19459569454193115
+        ]
+       },
+       "absent_absolute_R2": -0.07935595512390137,
+       "_paired_method_contrasts": {
+        "band_oracle": {
+         "delta": -0.10834407806396484,
+         "ci95_hierarchical": [
+          -0.15635546147823334,
+          -0.054669815301895144
+         ],
+         "excludes_zero_hierarchical": true
+        },
+        "band_eqwm": {
+         "delta": -0.07252025604248047,
+         "ci95_hierarchical": [
+          -0.1729971796274185,
+          0.021061334013938917
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_fartime": {
+         "delta": 0.0710599422454834,
+         "ci95_hierarchical": [
+          -0.02719915211200714,
+          0.1584835171699524
+         ],
+         "excludes_zero_hierarchical": false
+        },
+        "band_random": {
+         "delta": 0.002845287322998047,
+         "ci95_hierarchical": [
+          -0.1480497896671295,
+          0.1187170535326004
+         ],
+         "excludes_zero_hierarchical": false
+        }
+       }
+      }
+     },
+     "proper": {
+      "crps": {
+       "band_oracle": {
+        "delta_vs_absent": 0.04446330666542053,
+        "ci95_hierarchical": [
+         0.0363460149616003,
+         0.054054518602788454
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.0608183778822422,
+        "ci95_hierarchical": [
+         0.04717538598924875,
+         0.07868653312325478
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.047125183045864105,
+        "ci95_hierarchical": [
+         0.03864481560885906,
+         0.056062941811978816
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.07195042818784714,
+        "ci95_hierarchical": [
+         0.06228934191167355,
+         0.08196797519922257
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.07297515869140625,
+        "ci95_hierarchical": [
+         0.05942689348012209,
+         0.08893941510468722
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      },
+      "escore": {
+       "band_oracle": {
+        "delta_vs_absent": 0.07164768874645233,
+        "ci95_hierarchical": [
+         0.06050618756562472,
+         0.08439779244363307
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_closure": {
+        "delta_vs_absent": 0.09880925714969635,
+        "ci95_hierarchical": [
+         0.07820415925234556,
+         0.12562660165131093
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_eqwm": {
+        "delta_vs_absent": 0.07721273601055145,
+        "ci95_hierarchical": [
+         0.06347387637943029,
+         0.09176448024809361
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_fartime": {
+        "delta_vs_absent": 0.12038695067167282,
+        "ci95_hierarchical": [
+         0.10384386349469424,
+         0.13607033640146257
+        ],
+        "excludes_zero_hierarchical": true
+       },
+       "band_random": {
+        "delta_vs_absent": 0.11684171110391617,
+        "ci95_hierarchical": [
+         0.0967021219432354,
+         0.1399517297744751
+        ],
+        "excludes_zero_hierarchical": true
+       }
+      }
+     },
+     "calibration": {
+      "absent": {
+       "extreme_bin_mass": 0.3706272840499878,
+       "ci95_hierarchical": [
+        0.35702215135097504,
+        0.38283460438251493
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_oracle": {
+       "extreme_bin_mass": 0.5371266603469849,
+       "ci95_hierarchical": [
+        0.5253169953823089,
+        0.547637702524662
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_closure": {
+       "extreme_bin_mass": 0.5343068242073059,
+       "ci95_hierarchical": [
+        0.5151672795414924,
+        0.553763622045517
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_eqwm": {
+       "extreme_bin_mass": 0.5305336117744446,
+       "ci95_hierarchical": [
+        0.5107776552438736,
+        0.5494389757514
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_fartime": {
+       "extreme_bin_mass": 0.5399475693702698,
+       "ci95_hierarchical": [
+        0.522274361550808,
+        0.562503133714199
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      },
+      "band_random": {
+       "extreme_bin_mass": 0.5682033896446228,
+       "ci95_hierarchical": [
+        0.5481346279382706,
+        0.5867348745465278
+       ],
+       "uniform_reference": 0.2222222222222222,
+       "interval_covers_uniform": false,
+       "direction": "under-dispersed"
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,1335 @@
+{
+  "_meta": {
+    "script": "eval_e2_direct_traction.py",
+    "script_sha256": "f53372b2e3cbb33c9a54637e598aa4fe1fcc20096f991e492ee0f2c974f7424c",
+    "data_memmap_sha256": "8bac93f1537eab6667d692282b76c7bccd28f28965d35ea97668bcc2567bc45a",
+    "n_post_spinup": 1101,
+    "n_train": 660,
+    "split_gap_snapshots": 98,
+    "n_test_available": 343,
+    "n_eval_used": 240,
+    "tau_integral_snapshots": 97.59202614855501,
+    "effective_independent_test_events": 2.4592173097694574,
+    "seeds": [
+      7701,
+      7702,
+      7703
+    ],
+    "base_width": 32,
+    "train_updates": 20000,
+    "batch": 4,
+    "posterior_members": 8,
+    "sampler_steps": 32,
+    "nu": 0.0002,
+    "d_anchor": 0.020833333333333332,
+    "traction_definition": "tau_wf = -nu * u_t / d, one-sided from no-slip; tangential projection removes pressure identically",
+    "traction_normalisation": "training-window per-channel RMS over wall cells",
+    "tau_sd_train": [
+      0.001878993702121079,
+      0.0008387363632209599,
+      0.0008215549751184881
+    ],
+    "traction_cells": 4512,
+    "traction_support": "physical walls only (floor, cube top, four cube vertical faces); computational lid excluded",
+    "clamp_used_traction_arms": false,
+    "clamp_used_band_arms": true,
+    "conditioning_dropout": 0.25,
+    "physical_gates": {
+      "tangential_only_pressure_free": true,
+      "tau_dot_ut_negative_all_faces": true,
+      "tau_dot_ut_per_face": {
+        "floor": -0.27906930446624756,
+        "cube_top": -0.7283700108528137,
+        "cube_xlo": -0.3149919807910919,
+        "cube_xhi": -0.06231854110956192,
+        "cube_zlo": -0.23175108432769775,
+        "cube_zhi": -0.5341992974281311
+      },
+      "wall_on_fluid_x_force_negative": true,
+      "fx_viscous_mean_ds2_fd_physwall": -0.007680770629469568,
+      "fx_viscous_mean_native_quadrature_physwall": [
+        -0.007418,
+        -0.006391
+      ],
+      "ratio_fd_to_native_quadrature": [
+        1.0354233795456413,
+        1.2018104568095083
+      ],
+      "ratio_within_0p5_2p0": true,
+      "traction_cells": 4512,
+      "multi_face_cells": 96,
+      "faces_used": [
+        "floor",
+        "cube_top",
+        "cube_xlo",
+        "cube_xhi",
+        "cube_zlo",
+        "cube_zhi"
+      ],
+      "computational_lid_excluded": true
+    },
+    "region_cells": {
+      "full_support_excluded": 193352,
+      "near_support_excluded_d_le_0p5h": 74844,
+      "outer_d_gt_0p5h": 118508,
+      "uniq_raster_support_excluded": 126536
+    },
+    "evidence_level": "offline oracle wall-traction propagation on held-out LES; not closure-accuracy and not solver-coupled WMLES",
+    "wall_seconds_total": 11593.0,
+    "device": "cuda"
+  },
+  "evaluation": {
+    "arms": {
+      "tau_native": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.014318582657032008,
+          "ci95": [
+            -0.021432107059299748,
+            -0.0075558907977830644
+          ],
+          "ci95_conservative_block": [
+            -0.021026680121715942,
+            -0.00829249138228879
+          ],
+          "per_seed": [
+            -0.014052880882698071,
+            -0.01551163565615199,
+            -0.013391231432245965
+          ],
+          "seed_sd": 0.0010848855206208533
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": 0.04571351180552452,
+          "ci95": [
+            0.03690880849228328,
+            0.05413019383469235
+          ],
+          "ci95_conservative_block": [
+            0.03920818436983898,
+            0.05171403228620468
+          ],
+          "per_seed": [
+            0.045508494933566346,
+            0.043610517142757765,
+            0.04802152334024912
+          ],
+          "seed_sd": 0.002212638211935557
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.07581185334630436,
+          "ci95": [
+            -0.08498903174451324,
+            -0.06763211750078865
+          ],
+          "ci95_conservative_block": [
+            -0.08426909300630327,
+            -0.06821102002867588
+          ],
+          "per_seed": [
+            -0.07506493942963566,
+            -0.07607356074172134,
+            -0.07629705986755675
+          ],
+          "seed_sd": 0.0006564284149833719
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": 0.004392147748966346,
+          "ci95": [
+            -0.0034154239105771587,
+            0.011919724703383797
+          ],
+          "ci95_conservative_block": [
+            -0.002584430622265554,
+            0.010696312385365168
+          ],
+          "per_seed": [
+            0.004911994876492742,
+            0.003274504442736914,
+            0.0049899439276699376
+          ],
+          "seed_sd": 0.0009686918672182392
+        }
+      },
+      "absent": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.08846840672829792,
+          "ci95": [
+            -0.0933596224614065,
+            -0.08357077668376842
+          ],
+          "ci95_conservative_block": [
+            -0.09308625659997422,
+            -0.08424861429267151
+          ],
+          "per_seed": [
+            -0.08896896115736741,
+            -0.08963189525353243,
+            -0.08680436377399459
+          ],
+          "seed_sd": 0.0014787324366801512
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.0945288494279557,
+          "ci95": [
+            -0.10045761687545818,
+            -0.08858712388117987
+          ],
+          "ci95_conservative_block": [
+            -0.10041323418847364,
+            -0.08946703303262109
+          ],
+          "per_seed": [
+            -0.09537556321222596,
+            -0.09696031820859696,
+            -0.09125066686304395
+          ],
+          "seed_sd": 0.002947494325066441
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.08230562435504907,
+          "ci95": [
+            -0.09004520525659881,
+            -0.07623688099930312
+          ],
+          "ci95_conservative_block": [
+            -0.08896037244781341,
+            -0.07615789844442189
+          ],
+          "per_seed": [
+            -0.08245174971899893,
+            -0.08217243808001973,
+            -0.08229268526612832
+          ],
+          "seed_sd": 0.00014010464993670125
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": -0.09064838367885941,
+          "ci95": [
+            -0.0954839229509922,
+            -0.08574919579037632
+          ],
+          "ci95_conservative_block": [
+            -0.09497847355274674,
+            -0.08667201261219276
+          ],
+          "per_seed": [
+            -0.09093938846865668,
+            -0.09183265774053329,
+            -0.08917310482738783
+          ],
+          "seed_sd": 0.0013534468091576043
+        }
+      },
+      "tau_trainmean": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.09099011597696638,
+          "ci95": [
+            -0.09697836545504991,
+            -0.084226712987187
+          ],
+          "ci95_conservative_block": [
+            -0.0962460025719648,
+            -0.0863142701574499
+          ],
+          "per_seed": [
+            -0.09099011597696638
+          ],
+          "seed_sd": null
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.09521356986624308,
+          "ci95": [
+            -0.10852507893284244,
+            -0.08318206086413792
+          ],
+          "ci95_conservative_block": [
+            -0.10678952731495785,
+            -0.08493467847427259
+          ],
+          "per_seed": [
+            -0.09521356986624308
+          ],
+          "seed_sd": null
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.08670819229222126,
+          "ci95": [
+            -0.09378997604303248,
+            -0.08103880579503582
+          ],
+          "ci95_conservative_block": [
+            -0.09261096114083628,
+            -0.08130437216064712
+          ],
+          "per_seed": [
+            -0.08670819229222126
+          ],
+          "seed_sd": null
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": -0.09141113814863133,
+          "ci95": [
+            -0.09806959158272956,
+            -0.0843796567867602
+          ],
+          "ci95_conservative_block": [
+            -0.09711923606259164,
+            -0.08624772413405898
+          ],
+          "per_seed": [
+            -0.09141113814863133
+          ],
+          "seed_sd": null
+        }
+      },
+      "tau_fartime": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.14681516251595972,
+          "ci95": [
+            -0.1612841732105567,
+            -0.13028917545042937
+          ],
+          "ci95_conservative_block": [
+            -0.15884820238158948,
+            -0.13621816768974035
+          ],
+          "per_seed": [
+            -0.14681516251595972
+          ],
+          "seed_sd": null
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.21205322446068986,
+          "ci95": [
+            -0.23753437098810415,
+            -0.18266669441241346
+          ],
+          "ci95_conservative_block": [
+            -0.23555760059636957,
+            -0.19198352523624387
+          ],
+          "per_seed": [
+            -0.21205322446068986
+          ],
+          "seed_sd": null
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.08007579798792741,
+          "ci95": [
+            -0.08658319384740554,
+            -0.07467642312969337
+          ],
+          "ci95_conservative_block": [
+            -0.08578663032130715,
+            -0.07488431125706481
+          ],
+          "per_seed": [
+            -0.08007579798792741
+          ],
+          "seed_sd": null
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": -0.16619851296811983,
+          "ci95": [
+            -0.1828027047194553,
+            -0.14681219770499168
+          ],
+          "ci95_conservative_block": [
+            -0.18010949222680914,
+            -0.15399478864210184
+          ],
+          "per_seed": [
+            -0.16619851296811983
+          ],
+          "seed_sd": null
+        }
+      },
+      "tau_signflip": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.21835030984617454,
+          "ci95": [
+            -0.24024399201715094,
+            -0.19595941900442626
+          ],
+          "ci95_conservative_block": [
+            -0.23799219845597155,
+            -0.199705498964993
+          ],
+          "per_seed": [
+            -0.21835030984617454
+          ],
+          "seed_sd": null
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.37966849098159594,
+          "ci95": [
+            -0.41715639815640104,
+            -0.34771896119164336
+          ],
+          "ci95_conservative_block": [
+            -0.4104162857624919,
+            -0.3519316704626565
+          ],
+          "per_seed": [
+            -0.37966849098159594
+          ],
+          "seed_sd": null
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.05325652812630932,
+          "ci95": [
+            -0.06615235789084103,
+            -0.042002784638702585
+          ],
+          "ci95_conservative_block": [
+            -0.06461533210148496,
+            -0.042500205473342934
+          ],
+          "per_seed": [
+            -0.05325652812630932
+          ],
+          "seed_sd": null
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": -0.27330278725271384,
+          "ci95": [
+            -0.300772995147587,
+            -0.2448853457558369
+          ],
+          "ci95_conservative_block": [
+            -0.2971166128225766,
+            -0.2506719472693265
+          ],
+          "per_seed": [
+            -0.27330278725271384
+          ],
+          "seed_sd": null
+        }
+      },
+      "tau_shuffle": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.1103974523851774,
+          "ci95": [
+            -0.12114765728045343,
+            -0.09791963201952132
+          ],
+          "ci95_conservative_block": [
+            -0.12072655962627228,
+            -0.10048271605026034
+          ],
+          "per_seed": [
+            -0.1103974523851774
+          ],
+          "seed_sd": null
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.13292442835799045,
+          "ci95": [
+            -0.15011471842850846,
+            -0.1167743998176062
+          ],
+          "ci95_conservative_block": [
+            -0.14631644619993495,
+            -0.12073052131657813
+          ],
+          "per_seed": [
+            -0.13292442835799045
+          ],
+          "seed_sd": null
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.08737830805269509,
+          "ci95": [
+            -0.0993915883522549,
+            -0.0774068915139661
+          ],
+          "ci95_conservative_block": [
+            -0.09779410331486538,
+            -0.07752737990381459
+          ],
+          "per_seed": [
+            -0.08737830805269509
+          ],
+          "seed_sd": null
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": -0.1193211414991131,
+          "ci95": [
+            -0.1318213347846807,
+            -0.10441713079177281
+          ],
+          "ci95_conservative_block": [
+            -0.13102588178693106,
+            -0.10787889117382418
+          ],
+          "per_seed": [
+            -0.1193211414991131
+          ],
+          "seed_sd": null
+        }
+      },
+      "band_phys": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": 0.02933364095418045,
+          "ci95": [
+            0.0202227111046375,
+            0.0374242870551239
+          ],
+          "ci95_conservative_block": [
+            0.020875139130570326,
+            0.03684374545588688
+          ],
+          "per_seed": [
+            0.029016838229513398,
+            0.028766885908558137,
+            0.030217198724469818
+          ],
+          "seed_sd": 0.0007753223786056796
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": 0.12835963296208486,
+          "ci95": [
+            0.1178170302392768,
+            0.13842644721480504
+          ],
+          "ci95_conservative_block": [
+            0.12015053019398324,
+            0.13589790521511202
+          ],
+          "per_seed": [
+            0.12730225286008734,
+            0.12728658015397687,
+            0.13049006587219036
+          ],
+          "seed_sd": 0.0018450256629040879
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.07207660571126895,
+          "ci95": [
+            -0.08182693353099577,
+            -0.06330656037672568
+          ],
+          "ci95_conservative_block": [
+            -0.08127357902286272,
+            -0.06390692062169372
+          ],
+          "per_seed": [
+            -0.0716358235013157,
+            -0.07212445617119667,
+            -0.07246953746129425
+          ],
+          "seed_sd": 0.00041891167523984944
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": 0.06062009937865054,
+          "ci95": [
+            0.050376871887522136,
+            0.06963008174326304
+          ],
+          "ci95_conservative_block": [
+            0.05145825765327486,
+            0.06876875773599586
+          ],
+          "per_seed": [
+            0.06036234683467534,
+            0.06003727162122874,
+            0.06146067968004765
+          ],
+          "seed_sd": 0.0007458886685839468
+        }
+      },
+      "absent_B": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.08816558660614326,
+          "ci95": [
+            -0.09300708942763701,
+            -0.08320008943468761
+          ],
+          "ci95_conservative_block": [
+            -0.09283788091973344,
+            -0.08394248620783323
+          ],
+          "per_seed": [
+            -0.08758022075384253,
+            -0.08814671954379327,
+            -0.08876981952079399
+          ],
+          "seed_sd": 0.0005950237651677434
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.09537189858092066,
+          "ci95": [
+            -0.10171078464104727,
+            -0.08916682294801058
+          ],
+          "ci95_conservative_block": [
+            -0.10168185128964215,
+            -0.08995265213995925
+          ],
+          "per_seed": [
+            -0.09484956247138054,
+            -0.0966771690229089,
+            -0.09458896424847207
+          ],
+          "seed_sd": 0.0011378822669732584
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.08082978192799994,
+          "ci95": [
+            -0.0884654909692987,
+            -0.07492620936119566
+          ],
+          "ci95_conservative_block": [
+            -0.08726951554217521,
+            -0.07491483357967953
+          ],
+          "per_seed": [
+            -0.08017812143978564,
+            -0.07945578922523722,
+            -0.08285543511897675
+          ],
+          "seed_sd": 0.001791059489416731
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": -0.09056235367199772,
+          "ci95": [
+            -0.09533804080407703,
+            -0.08560689462582846
+          ],
+          "ci95_conservative_block": [
+            -0.09496637090327598,
+            -0.08652728777370801
+          ],
+          "per_seed": [
+            -0.08991277092483019,
+            -0.09090583390003881,
+            -0.0908684561911246
+          ],
+          "seed_sd": 0.0005628655099971497
+        }
+      },
+      "det_tau": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.21947289826007887,
+          "ci95": [
+            -0.2447965216148875,
+            -0.19905603515807263
+          ],
+          "ci95_conservative_block": [
+            -0.24358119487468308,
+            -0.19819732767510495
+          ],
+          "per_seed": [
+            -0.21947289826007887
+          ],
+          "seed_sd": null
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.12199590400863825,
+          "ci95": [
+            -0.14250666130571482,
+            -0.10664652674250022
+          ],
+          "ci95_conservative_block": [
+            -0.14018508078579694,
+            -0.10665012397674631
+          ],
+          "per_seed": [
+            -0.12199590400863825
+          ],
+          "seed_sd": null
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.3193058331122862,
+          "ci95": [
+            -0.35259219640994316,
+            -0.28961884661770826
+          ],
+          "ci95_conservative_block": [
+            -0.35242319919511367,
+            -0.28972491285178364
+          ],
+          "per_seed": [
+            -0.3193058331122862
+          ],
+          "seed_sd": null
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": -0.22489802535408177,
+          "ci95": [
+            -0.24977877124659903,
+            -0.20432448656592786
+          ],
+          "ci95_conservative_block": [
+            -0.24892317866461708,
+            -0.2036295909562885
+          ],
+          "per_seed": [
+            -0.22489802535408177
+          ],
+          "seed_sd": null
+        }
+      },
+      "det_absent": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": 0.0005664971062734336,
+          "ci95": [
+            0.0001242483783983034,
+            0.001095447980151401
+          ],
+          "ci95_conservative_block": [
+            0.00013921385423666945,
+            0.0009877566050204456
+          ],
+          "per_seed": [
+            0.0005664971062734336
+          ],
+          "seed_sd": null
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": 0.0006584606866714138,
+          "ci95": [
+            -4.9937986229431325e-05,
+            0.0015846084468139011
+          ],
+          "ci95_conservative_block": [
+            -2.9614788166554257e-05,
+            0.0013603569620094403
+          ],
+          "per_seed": [
+            0.0006584606866714138
+          ],
+          "seed_sd": null
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": 0.00043378544339056635,
+          "ci95": [
+            -7.842143694631875e-05,
+            0.0009309473361735516
+          ],
+          "ci95_conservative_block": [
+            -8.076898627796813e-05,
+            0.0008946963024496463
+          ],
+          "per_seed": [
+            0.00043378544339056635
+          ],
+          "seed_sd": null
+        },
+        "uniq_raster_support_excluded": {
+          "R2_fluct_balanced": 0.0005470517577229606,
+          "ci95": [
+            -8.113440684731628e-06,
+            0.0011762956786364354
+          ],
+          "ci95_conservative_block": [
+            4.4490620536422054e-05,
+            0.0010349403199469975
+          ],
+          "per_seed": [
+            0.0005470517577229606
+          ],
+          "seed_sd": null
+        }
+      }
+    },
+    "deltas": {
+      "tau_native_minus_absent": {
+        "seeds_used": [
+          "7701",
+          "7702",
+          "7703"
+        ],
+        "full_support_excluded": {
+          "point": 0.07414982407126591,
+          "ci95": [
+            0.06897078873595464,
+            0.07845104200460398
+          ],
+          "ci95_conservative_block": [
+            0.06999229685695552,
+            0.0778696887521151
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.07491608027466934,
+            0.07412025959738044,
+            0.07341313234174862
+          ],
+          "seed_sd": 0.0007519100118064444,
+          "all_seeds_same_sign": true
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "point": 0.14024236123348022,
+          "ci95": [
+            0.13315587731962883,
+            0.14800660113387332
+          ],
+          "ci95_conservative_block": [
+            0.13503131978759328,
+            0.1454986230628062
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.1408840581457923,
+            0.14057083535135473,
+            0.13927219020329307
+          ],
+          "seed_sd": 0.0008546642619177127,
+          "all_seeds_same_sign": true
+        },
+        "outer_d_gt_0p5h": {
+          "point": 0.006493771008744709,
+          "ci95": [
+            0.0013675795784301669,
+            0.012656414782552338
+          ],
+          "ci95_conservative_block": [
+            0.001403552561373339,
+            0.01125664105613337
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.007386810289363277,
+            0.006098877338298392,
+            0.005995625398571569
+          ],
+          "seed_sd": 0.000775115867667881,
+          "all_seeds_same_sign": true
+        },
+        "uniq_raster_support_excluded": {
+          "point": 0.09504053142782576,
+          "ci95": [
+            0.08921649396648253,
+            0.10000215143013941
+          ],
+          "ci95_conservative_block": [
+            0.09032373310880983,
+            0.09932676684234261
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.09585138334514942,
+            0.0951071621832702,
+            0.09416304875505777
+          ],
+          "seed_sd": 0.0008461372023515505,
+          "all_seeds_same_sign": true
+        }
+      },
+      "tau_native_minus_trainmean": {
+        "seeds_used": [
+          "7701"
+        ],
+        "full_support_excluded": {
+          "point": 0.07693723509426831,
+          "ci95": [
+            0.07200703810852171,
+            0.08251589153238591
+          ],
+          "ci95_conservative_block": [
+            0.07326752722803631,
+            0.08047128799470675
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.07693723509426831
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "point": 0.14072206479980942,
+          "ci95": [
+            0.12675047811660958,
+            0.15570561655623874
+          ],
+          "ci95_conservative_block": [
+            0.1293562717780489,
+            0.15240379043730579
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.14072206479980942
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "outer_d_gt_0p5h": {
+          "point": 0.011643252862585607,
+          "ci95": [
+            0.0067988233727656385,
+            0.01738538811806826
+          ],
+          "ci95_conservative_block": [
+            0.006853380701043382,
+            0.016152153507700336
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.011643252862585607
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "uniq_raster_support_excluded": {
+          "point": 0.09632313302512407,
+          "ci95": [
+            0.09005871127402679,
+            0.10361197239658679
+          ],
+          "ci95_conservative_block": [
+            0.0913889326878136,
+            0.10100287945957648
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.09632313302512407
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        }
+      },
+      "tau_native_minus_fartime": {
+        "seeds_used": [
+          "7701"
+        ],
+        "full_support_excluded": {
+          "point": 0.13276228163326165,
+          "ci95": [
+            0.11899165547583243,
+            0.1449119950953265
+          ],
+          "ci95_conservative_block": [
+            0.12691373389072882,
+            0.139332364400888
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.13276228163326165
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "point": 0.2575617193942562,
+          "ci95": [
+            0.22754596603644306,
+            0.2841031032407472
+          ],
+          "ci95_conservative_block": [
+            0.23986996353210968,
+            0.2775718287344709
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.2575617193942562
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "outer_d_gt_0p5h": {
+          "point": 0.005010858558291753,
+          "ci95": [
+            0.0017963955665914965,
+            0.00847252519203327
+          ],
+          "ci95_conservative_block": [
+            0.0017309260099125203,
+            0.007928089304836856
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.005010858558291753
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "uniq_raster_support_excluded": {
+          "point": 0.17111050784461257,
+          "ci95": [
+            0.15389297200983132,
+            0.18638388762509606
+          ],
+          "ci95_conservative_block": [
+            0.16336736790909853,
+            0.17977206438084833
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.17111050784461257
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        }
+      },
+      "tau_native_minus_signflip": {
+        "seeds_used": [
+          "7701"
+        ],
+        "full_support_excluded": {
+          "point": 0.20429742896347647,
+          "ci95": [
+            0.18476517548267019,
+            0.22266406261216204
+          ],
+          "ci95_conservative_block": [
+            0.18917802162999245,
+            0.2199821650431532
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.20429742896347647
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "point": 0.4251769859151623,
+          "ci95": [
+            0.39855529594665184,
+            0.4578395281978467
+          ],
+          "ci95_conservative_block": [
+            0.40099410193500457,
+            0.4520101721828118
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.4251769859151623
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "outer_d_gt_0p5h": {
+          "point": -0.021808411303326336,
+          "ci95": [
+            -0.03345981591997275,
+            -0.009241880503213418
+          ],
+          "ci95_conservative_block": [
+            -0.032405257919757055,
+            -0.011171425248425997
+          ],
+          "ci_positive": false,
+          "ci_positive_conservative": false,
+          "per_seed_delta": [
+            -0.021808411303326336
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "uniq_raster_support_excluded": {
+          "point": 0.2782147821292066,
+          "ci95": [
+            0.25339004817281174,
+            0.302148066587309
+          ],
+          "ci95_conservative_block": [
+            0.2593546601205792,
+            0.2977926098765542
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.2782147821292066
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        }
+      },
+      "tau_native_minus_shuffle": {
+        "seeds_used": [
+          "7701"
+        ],
+        "full_support_excluded": {
+          "point": 0.09634457150247933,
+          "ci95": [
+            0.0864767245832653,
+            0.10481463855623185
+          ],
+          "ci95_conservative_block": [
+            0.08809256354630689,
+            0.10445871690647605
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.09634457150247933
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "point": 0.1784329232915568,
+          "ci95": [
+            0.16833070079198886,
+            0.1900604038370543
+          ],
+          "ci95_conservative_block": [
+            0.16995028583355745,
+            0.18800018040884617
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.1784329232915568
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "outer_d_gt_0p5h": {
+          "point": 0.012313368623059429,
+          "ci95": [
+            0.0018078110013287352,
+            0.02410186181934472
+          ],
+          "ci95_conservative_block": [
+            0.002379913663884947,
+            0.022176236919804637
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.012313368623059429
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "uniq_raster_support_excluded": {
+          "point": 0.12423313637560585,
+          "ci95": [
+            0.1128348385041426,
+            0.13390821996995297
+          ],
+          "ci95_conservative_block": [
+            0.11502986897172882,
+            0.13340302141655866
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.12423313637560585
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        }
+      },
+      "band_phys_minus_absentB": {
+        "seeds_used": [
+          "7701",
+          "7702",
+          "7703"
+        ],
+        "full_support_excluded": {
+          "point": 0.11749922756032372,
+          "ci95": [
+            0.11041644823828403,
+            0.12325923342843449
+          ],
+          "ci95_conservative_block": [
+            0.11147557312565093,
+            0.12272727940411227
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.11659705898335593,
+            0.11691360545235141,
+            0.11898701824526381
+          ],
+          "seed_sd": 0.0012981491664690393,
+          "all_seeds_same_sign": true
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "point": 0.2237315315430055,
+          "ci95": [
+            0.21665740450767207,
+            0.2320902637298128
+          ],
+          "ci95_conservative_block": [
+            0.21795377814150993,
+            0.2295059662817716
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.22215181533146788,
+            0.22396374917688577,
+            0.22507903012066244
+          ],
+          "seed_sd": 0.0014773592581473172,
+          "all_seeds_same_sign": true
+        },
+        "outer_d_gt_0p5h": {
+          "point": 0.008753176216730996,
+          "ci95": [
+            0.002504510999847476,
+            0.015595869153778436
+          ],
+          "ci95_conservative_block": [
+            0.002541463074431244,
+            0.014415380299267378
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.008542297938469945,
+            0.007331333054040545,
+            0.010385897657682497
+          ],
+          "seed_sd": 0.0015381623664741436,
+          "all_seeds_same_sign": true
+        },
+        "uniq_raster_support_excluded": {
+          "point": 0.15118245305064826,
+          "ci95": [
+            0.14315102783150524,
+            0.15788589755035
+          ],
+          "ci95_conservative_block": [
+            0.1441726642146459,
+            0.1573019450916254
+          ],
+          "ci_positive": true,
+          "ci_positive_conservative": true,
+          "per_seed_delta": [
+            0.15027511775950553,
+            0.15094310552126755,
+            0.15232913587117225
+          ],
+          "seed_sd": 0.0010477180110264805,
+          "all_seeds_same_sign": true
+        }
+      },
+      "det_tau_minus_det_absent": {
+        "seeds_used": [
+          "7701"
+        ],
+        "full_support_excluded": {
+          "point": -0.2200393953663523,
+          "ci95": [
+            -0.24502371304880224,
+            -0.19973134630265063
+          ],
+          "ci95_conservative_block": [
+            -0.24403705971849363,
+            -0.19893462776717857
+          ],
+          "ci_positive": false,
+          "ci_positive_conservative": false,
+          "per_seed_delta": [
+            -0.2200393953663523
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "point": -0.12265436469530966,
+          "ci95": [
+            -0.14312600851880133,
+            -0.10737555011239332
+          ],
+          "ci95_conservative_block": [
+            -0.14094501241708143,
+            -0.10727577128604689
+          ],
+          "ci_positive": false,
+          "ci_positive_conservative": false,
+          "per_seed_delta": [
+            -0.12265436469530966
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "outer_d_gt_0p5h": {
+          "point": -0.3197396185556768,
+          "ci95": [
+            -0.35258171561251944,
+            -0.2904621540238018
+          ],
+          "ci95_conservative_block": [
+            -0.3523646739919529,
+            -0.29062168418703976
+          ],
+          "ci_positive": false,
+          "ci_positive_conservative": false,
+          "per_seed_delta": [
+            -0.3197396185556768
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        },
+        "uniq_raster_support_excluded": {
+          "point": -0.22544507711180473,
+          "ci95": [
+            -0.2500859872238807,
+            -0.20511182386578436
+          ],
+          "ci95_conservative_block": [
+            -0.24916021236752015,
+            -0.20447404170723435
+          ],
+          "ci_positive": false,
+          "ci_positive_conservative": false,
+          "per_seed_delta": [
+            -0.22544507711180473
+          ],
+          "seed_sd": null,
+          "all_seeds_same_sign": true
+        }
+      }
+    },
+    "n_eval": 240,
+    "eval_block": 98,
+    "eval_block_conservative": 123,
+    "transmission_ratio": {
+      "full_support_excluded": {
+        "point": 0.6310664811238664,
+        "ci95": [
+          0.621995319096405,
+          0.6392234387593176
+        ],
+        "denominator_ci_excludes_zero": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "point": 0.6268332419050326,
+        "ci95": [
+          0.6126002075368755,
+          0.6398575189652643
+        ],
+        "denominator_ci_excludes_zero": true
+      },
+      "outer_d_gt_0p5h": {
+        "point": 0.7418759599895162,
+        "ci95": [
+          0.4622214392775747,
+          0.8493726548872896
+        ],
+        "denominator_ci_excludes_zero": true
+      },
+      "uniq_raster_support_excluded": {
+        "point": 0.6286478986816403,
+        "ci95": [
+          0.6191706601967846,
+          0.6373952063516505
+        ],
+        "denominator_ci_excludes_zero": true
+      }
+    }
+  }
+}

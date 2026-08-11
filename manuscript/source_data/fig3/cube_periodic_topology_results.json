@@ -1,0 +1,356 @@
+{
+  "_meta": {
+    "band_cells": 14008,
+    "band_thickness_h": 0.08333333333333333,
+    "baseline_correct_R2": {
+      "full_support_excluded": 0.08948777489375381,
+      "near_support_excluded_d_le_0p5h": 0.24156180692557772,
+      "outer_d_gt_0p5h": -0.06622817328211594
+    },
+    "bootstrap_block_snapshots": 98,
+    "checkpoint_sha256": "6f507fd1fb97a7e52dd60a631507dbc37d2005fdd12abd856f165eed8f6135c2",
+    "common_sampler_noise_across_arms": true,
+    "components": "cube_periodic_topology_components.npz",
+    "components_sha256": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18",
+    "correct_R2_change_from_zero_padding": {
+      "full_support_excluded": 0.031004060588804228,
+      "near_support_excluded_d_le_0p5h": 0.04230070681587628,
+      "outer_d_gt_0p5h": 0.0194435149331309
+    },
+    "data_memmap_sha256": "8bac93f1537eab6667d692282b76c7bccd28f28965d35ea97668bcc2567bc45a",
+    "device": "cuda",
+    "effective_independent_post_spinup": 11.281659408567387,
+    "evidence_level": "held-out LES oracle near-wall-band propagation; not closure-conditioned and not solver-coupled",
+    "fluid_cells": 207360,
+    "mechanism": "exact circular x/z convolutional topology; zero y padding",
+    "model_grid_full_domain": [
+      48,
+      96,
+      48
+    ],
+    "n_post_spinup": 1101,
+    "n_raw_rasters": 1234,
+    "n_test_available": 343,
+    "n_train": 660,
+    "parameter_matched_baseline": "cube3d_coupling_adequate_results.json",
+    "parameter_matched_baseline_sha256": "6762e9a89855c38538463c217698dab0e33c587a00d2fac1f937cf5ce35e982b",
+    "producer_script": "eval_cube_periodic_topology.py",
+    "producer_script_sha256": "df41b7d8524d42e0b3d33892bdcaf9bad636d1fb7961014527800b835926ed20",
+    "regime": "genuinely-3D Coceal aligned cube array, lambda_p=0.25, pitch=2h, Re_h=5000",
+    "script": "eval_cube_3d_coupling.py",
+    "single_changed_factor": "convolutional padding topology",
+    "source_grid": [
+      96,
+      192,
+      96
+    ],
+    "split_gap_snapshots": 98,
+    "split_rule": "first 60% train; one integral-correlation-time gap; chronological remainder test",
+    "stationarity_energy_drift_middle_to_final": 0.0015475580402026837,
+    "support_excluded_scoring": true,
+    "tau_integral_snapshots": 97.59202614855501,
+    "test_span_in_integral_times": 3.514631405212183,
+    "time_minmax_post_spinup": [
+      40.20043128999,
+      370.0004874808
+    ],
+    "wall_seconds_total": 8152.9,
+    "yplus_preflight": {
+      "area_mean_utau_from_momentum_balance": 0.1656638162061951,
+      "area_mean_yplus": {
+        "cube_top": 0.42476202475268426,
+        "cube_vertical_faces": 0.6371430371290263,
+        "floor_between_cubes": 0.42476202475268426
+      },
+      "conservative_local_utau_bound": 0.35,
+      "conservative_yplus_bound": {
+        "cube_top": 0.8973999999999999,
+        "cube_vertical_faces": 1.3460999999999999,
+        "floor_between_cubes": 0.8973999999999999
+      },
+      "constant_flow_force_last": 0.0219556,
+      "first_interior_distance_h": {
+        "cube_top": 0.0005128,
+        "cube_vertical_faces": 0.0007692,
+        "floor_between_cubes": 0.0005128
+      },
+      "mesh_sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128",
+      "method": "validated-run momentum balance plus conservative local-friction bound",
+      "nu": 0.0002,
+      "pass_yplus_le_2_all_reported_walls": true,
+      "validation_CFL_last": 1.646,
+      "validation_CFL_max": 6.675,
+      "validation_log_sha256": "4428786f28cb3453649850ce10a3a9f94134eb5e2fdd7f02c2c851fea6bda2a9",
+      "validation_steps": 4000
+    }
+  },
+  "evaluation": {
+    "arms": {
+      "correct": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": 0.12049183548255804,
+          "ci95": [
+            0.10265152234364688,
+            0.13436029471756522
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": 0.283862513741454,
+          "ci95": [
+            0.2673224152514689,
+            0.2973130266541125
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.04678465834898504,
+          "ci95": [
+            -0.06523535006583968,
+            -0.02843147049274847
+          ]
+        }
+      },
+      "no_wall": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.07691635509131722,
+          "ci95": [
+            -0.08050387364588527,
+            -0.07325442901347777
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.08630636043294038,
+          "ci95": [
+            -0.09120307293012192,
+            -0.08162294188773729
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.06734294032341115,
+          "ci95": [
+            -0.07202129241721118,
+            -0.06276414897095142
+          ]
+        }
+      },
+      "wrong_wall": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.3137103204124998,
+          "ci95": [
+            -0.34421928030248033,
+            -0.2771815106443241
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.4858774445016385,
+          "ci95": [
+            -0.5467652531959155,
+            -0.41835932132167014
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.1375273630003906,
+          "ci95": [
+            -0.1494073145667853,
+            -0.12583272656057282
+          ]
+        }
+      }
+    },
+    "deltas": {
+      "correct_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.18182029143366565,
+            0.20924542749119174
+          ],
+          "ci_positive": true,
+          "point": 0.19740819057387526
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.3547120294630848,
+            0.38420241892782114
+          ],
+          "ci_positive": true,
+          "point": 0.37016887417439437
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            0.005822317959948276,
+            0.03655004253823372
+          ],
+          "ci_positive": true,
+          "point": 0.020558281974426107
+        }
+      },
+      "correct_minus_wrong_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.4066229129595755,
+            0.45765919965619334
+          ],
+          "ci_positive": true,
+          "point": 0.43420215589505784
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.7039800915867489,
+            0.825882317199672
+          ],
+          "ci_positive": true,
+          "point": 0.7697399582430925
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            0.06880939625697029,
+            0.11187989092612244
+          ],
+          "ci_positive": true,
+          "point": 0.09074270465140555
+        }
+      }
+    },
+    "eval_block": 49,
+    "n_eval": 160
+  },
+  "gates": {
+    "correct_beats_no_wall_support_excluded": true,
+    "correct_beats_wrong_wall_support_excluded": true,
+    "correct_near_skill_positive": true,
+    "snapshot_count_ge_1000": true
+  },
+  "topology_gates": {
+    "outer_correct_beats_no_wall": true,
+    "outer_correct_beats_wrong_wall": true,
+    "positive_outer_absolute_skill": false,
+    "same_parameter_count_as_baseline": true
+  },
+  "training": {
+    "batch": 2,
+    "losses": [
+      [
+        3000,
+        0.3232167959213257
+      ],
+      [
+        6000,
+        0.3838970959186554
+      ],
+      [
+        9000,
+        0.1849767416715622
+      ],
+      [
+        12000,
+        0.23095251619815826
+      ],
+      [
+        15000,
+        0.2601313889026642
+      ],
+      [
+        18000,
+        0.42473942041397095
+      ],
+      [
+        21000,
+        0.20590132474899292
+      ],
+      [
+        24000,
+        0.288977712392807
+      ],
+      [
+        27000,
+        0.21001079678535461
+      ],
+      [
+        30000,
+        0.21231511235237122
+      ],
+      [
+        33000,
+        0.13784867525100708
+      ],
+      [
+        36000,
+        0.18607288599014282
+      ],
+      [
+        39000,
+        0.14202800393104553
+      ],
+      [
+        42000,
+        0.16858716309070587
+      ],
+      [
+        45000,
+        0.20424047112464905
+      ],
+      [
+        48000,
+        0.12540358304977417
+      ],
+      [
+        51000,
+        0.24601633846759796
+      ],
+      [
+        54000,
+        0.14302368462085724
+      ],
+      [
+        57000,
+        0.1841830462217331
+      ],
+      [
+        60000,
+        0.17362619936466217
+      ],
+      [
+        63000,
+        0.1875787228345871
+      ],
+      [
+        66000,
+        0.18090426921844482
+      ],
+      [
+        69000,
+        0.1251806616783142
+      ],
+      [
+        72000,
+        0.18148207664489746
+      ],
+      [
+        75000,
+        0.3981403112411499
+      ],
+      [
+        78000,
+        0.1759004294872284
+      ],
+      [
+        81000,
+        0.31827035546302795
+      ],
+      [
+        84000,
+        0.1278253197669983
+      ],
+      [
+        87000,
+        0.1329631358385086
+      ],
+      [
+        90000,
+        0.14414896070957184
+      ]
+    ],
+    "n_parameters": 8647587,
+    "steps": 90000,
+    "wall_seconds": 6906.2
+  }
+}

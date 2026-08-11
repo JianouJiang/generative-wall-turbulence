@@ -1,0 +1,20 @@
+{
+  "_derived_from": "e2_slot_channel_rehearsal_results.json (development only)",
+  "closure_rehearsal_fidelity": 0.092020069768323,
+  "matched_r": 0.54601,
+  "matched_ell": 2.268,
+  "c5_margin_m5": 0.02,
+  "ladder_interpolant_rms": 0.000776,
+  "c9_band": "buffer",
+  "c9_exact_flux_t": {
+    "log": 2.7484737809257354,
+    "buffer": 3.0173708624253233
+  },
+  "t_star": 4.5,
+  "c5_rule": "pass iff closure_gain - max(white_curve_prediction, matched_noise_gain) <= c5_margin_m5; white-curve residual reported alongside (AMENDMENT A3)",
+  "c5_structure_premium_rehearsal": {
+    "closure": 0.0124,
+    "matched_probe_ell6": 0.013,
+    "learned_dataonly": 0.019
+  }
+}

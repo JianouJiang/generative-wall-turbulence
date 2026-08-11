@@ -1,0 +1,346 @@
+{
+  "_meta": {
+    "band_cells": 14008,
+    "band_thickness_h": 0.08333333333333333,
+    "bootstrap_block_snapshots": 98,
+    "capacity_repair": {
+      "base_width": 48,
+      "claim_boundary": "does not add independent LES times",
+      "les_bytes_frozen": true,
+      "posterior_members": 8,
+      "sampler_steps": 32,
+      "train_updates": 90000
+    },
+    "checkpoint_sha256": "447b628e8624b4be9a7af6d6a264d27744a7daff3fd540b53fcfc82584929c53",
+    "common_sampler_noise_across_arms": true,
+    "components": "cube3d_coupling_adequate_components.npz",
+    "components_sha256": "5c8ae9fbdf7a4d6d19d10387dd077c2c04083b5e5f52b5f2c22b3a2c6abe9006",
+    "data_memmap_sha256": "8bac93f1537eab6667d692282b76c7bccd28f28965d35ea97668bcc2567bc45a",
+    "device": "cuda",
+    "effective_independent_post_spinup": 11.281659408567387,
+    "evidence_level": "held-out LES oracle near-wall-band propagation; not closure-conditioned and not solver-coupled",
+    "fluid_cells": 207360,
+    "model_grid_full_domain": [
+      48,
+      96,
+      48
+    ],
+    "n_post_spinup": 1101,
+    "n_raw_rasters": 1234,
+    "n_test_available": 343,
+    "n_train": 660,
+    "parent_script": "eval_cube_3d_coupling.py",
+    "parent_script_sha256": "ebe012fbeb817640cf2486d5cbeb1eda05fce4e4a17822a1198842f212d8b0a3",
+    "producer_script": "eval_cube_3d_coupling_adequate.py",
+    "producer_script_sha256": "4244262ec2647f4650df258dc21bd6580cda02ba75b58b7c0876eaeed5c8fd17",
+    "regime": "genuinely-3D Coceal aligned cube array, lambda_p=0.25, pitch=2h, Re_h=5000",
+    "script": "eval_cube_3d_coupling.py",
+    "source_grid": [
+      96,
+      192,
+      96
+    ],
+    "split_gap_snapshots": 98,
+    "split_rule": "first 60% train; one integral-correlation-time gap; chronological remainder test",
+    "stationarity_energy_drift_middle_to_final": 0.0015475580402026837,
+    "support_excluded_scoring": true,
+    "tau_integral_snapshots": 97.59202614855501,
+    "test_span_in_integral_times": 3.514631405212183,
+    "time_minmax_post_spinup": [
+      40.20043128999,
+      370.0004874808
+    ],
+    "wall_seconds_total": 5078.2,
+    "yplus_preflight": {
+      "area_mean_utau_from_momentum_balance": 0.1656638162061951,
+      "area_mean_yplus": {
+        "cube_top": 0.42476202475268426,
+        "cube_vertical_faces": 0.6371430371290263,
+        "floor_between_cubes": 0.42476202475268426
+      },
+      "conservative_local_utau_bound": 0.35,
+      "conservative_yplus_bound": {
+        "cube_top": 0.8973999999999999,
+        "cube_vertical_faces": 1.3460999999999999,
+        "floor_between_cubes": 0.8973999999999999
+      },
+      "constant_flow_force_last": 0.0219556,
+      "first_interior_distance_h": {
+        "cube_top": 0.0005128,
+        "cube_vertical_faces": 0.0007692,
+        "floor_between_cubes": 0.0005128
+      },
+      "mesh_sha256": "09a68e5c763ba500c5dfe9d7281ef2d34557b1c4632707fd36a03ee4ce0b4128",
+      "method": "validated-run momentum balance plus conservative local-friction bound",
+      "nu": 0.0002,
+      "pass_yplus_le_2_all_reported_walls": true,
+      "validation_CFL_last": 1.646,
+      "validation_CFL_max": 6.675,
+      "validation_log_sha256": "4428786f28cb3453649850ce10a3a9f94134eb5e2fdd7f02c2c851fea6bda2a9",
+      "validation_steps": 4000
+    }
+  },
+  "evaluation": {
+    "arms": {
+      "correct": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": 0.08948777489375381,
+          "ci95": [
+            0.07243606443728373,
+            0.10363370705055523
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": 0.24156180692557772,
+          "ci95": [
+            0.22591249424488616,
+            0.2540589125636389
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.06622817328211594,
+          "ci95": [
+            -0.0845792955322907,
+            -0.04735650676946786
+          ]
+        }
+      },
+      "no_wall": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.08435861067324524,
+          "ci95": [
+            -0.0880931462151549,
+            -0.08083794263832887
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.0904228213542122,
+          "ci95": [
+            -0.09460945969890062,
+            -0.08688469998659025
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.07818844374701106,
+          "ci95": [
+            -0.08308111537255211,
+            -0.07341851676150245
+          ]
+        }
+      },
+      "wrong_wall": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.3235607952594748,
+          "ci95": [
+            -0.35739445768608114,
+            -0.28439596031433767
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.49552407618890637,
+          "ci95": [
+            -0.5624247472313634,
+            -0.425249055200678
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.14758666289192401,
+          "ci95": [
+            -0.15883030130235457,
+            -0.1350161804408881
+          ]
+        }
+      }
+    },
+    "deltas": {
+      "correct_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.15911053604008207,
+            0.18542113376410904
+          ],
+          "ci_positive": true,
+          "point": 0.17384638556699905
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.3172529675355141,
+            0.3445195068175409
+          ],
+          "ci_positive": true,
+          "point": 0.3319846282797899
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.002318719540220954,
+            0.0273294318605091
+          ],
+          "ci_positive": false,
+          "point": 0.011960270464895117
+        }
+      },
+      "correct_minus_wrong_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.38421525233986575,
+            0.43776226722241535
+          ],
+          "ci_positive": true,
+          "point": 0.4130485701532286
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.6711214940915103,
+            0.7974510036775571
+          ],
+          "ci_positive": true,
+          "point": 0.7370858831144841
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            0.06346236974842104,
+            0.0979252355663145
+          ],
+          "ci_positive": true,
+          "point": 0.08135848960980807
+        }
+      }
+    },
+    "eval_block": 49,
+    "n_eval": 160
+  },
+  "gates": {
+    "correct_beats_no_wall_support_excluded": true,
+    "correct_beats_wrong_wall_support_excluded": true,
+    "correct_near_skill_positive": true,
+    "snapshot_count_ge_1000": true
+  },
+  "training": {
+    "batch": 2,
+    "losses": [
+      [
+        3000,
+        0.3317222595214844
+      ],
+      [
+        6000,
+        0.40607261657714844
+      ],
+      [
+        9000,
+        0.19669711589813232
+      ],
+      [
+        12000,
+        0.2559427320957184
+      ],
+      [
+        15000,
+        0.2806679308414459
+      ],
+      [
+        18000,
+        0.42842715978622437
+      ],
+      [
+        21000,
+        0.21925202012062073
+      ],
+      [
+        24000,
+        0.29922398924827576
+      ],
+      [
+        27000,
+        0.2198735773563385
+      ],
+      [
+        30000,
+        0.22002924978733063
+      ],
+      [
+        33000,
+        0.14654900133609772
+      ],
+      [
+        36000,
+        0.19374723732471466
+      ],
+      [
+        39000,
+        0.15092353522777557
+      ],
+      [
+        42000,
+        0.17638961970806122
+      ],
+      [
+        45000,
+        0.21983416378498077
+      ],
+      [
+        48000,
+        0.13146546483039856
+      ],
+      [
+        51000,
+        0.2550716996192932
+      ],
+      [
+        54000,
+        0.15191107988357544
+      ],
+      [
+        57000,
+        0.18857988715171814
+      ],
+      [
+        60000,
+        0.1872442066669464
+      ],
+      [
+        63000,
+        0.19394466280937195
+      ],
+      [
+        66000,
+        0.18716244399547577
+      ],
+      [
+        69000,
+        0.1309080570936203
+      ],
+      [
+        72000,
+        0.19383683800697327
+      ],
+      [
+        75000,
+        0.4096895158290863
+      ],
+      [
+        78000,
+        0.18859589099884033
+      ],
+      [
+        81000,
+        0.34602630138397217
+      ],
+      [
+        84000,
+        0.13396744430065155
+      ],
+      [
+        87000,
+        0.14132696390151978
+      ],
+      [
+        90000,
+        0.156252920627594
+      ]
+    ],
+    "n_parameters": 8647587,
+    "steps": 90000,
+    "wall_seconds": 4128.7
+  }
+}

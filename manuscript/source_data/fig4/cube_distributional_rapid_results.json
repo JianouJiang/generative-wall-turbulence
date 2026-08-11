@@ -1,0 +1,250 @@
+{
+  "_meta": {
+    "bootstrap": {
+      "block_evaluation_samples": 49,
+      "draws": 4000,
+      "kind": "circular moving physical-time blocks",
+      "seed": 20260723
+    },
+    "common_random_numbers": true,
+    "complete_outer_y_planes": 48,
+    "components": "cube_distributional_rapid_components.npz",
+    "components_sha256": "a7f1c74f909e1a805d4a3642db83285371ecd80e4a59cd11a873a14253010e2d",
+    "device": "cuda",
+    "effective_test_events_approx": 3.514631405212183,
+    "evidence_level": "held-out LES oracle near-wall-band propagation; not closure-conditioned and not solver-coupled",
+    "inference_only": true,
+    "input_sha256": {
+      "checkpoint": "6f507fd1fb97a7e52dd60a631507dbc37d2005fdd12abd856f165eed8f6135c2",
+      "component_ref": "28264e996586f961b1a3cd8c369f494f62d39d4d18d73f0625fc4983e4ab3d18",
+      "data": "8bac93f1537eab6667d692282b76c7bccd28f28965d35ea97668bcc2567bc45a",
+      "terminal_result": "0fc302421d622879e00ef16a14636fb8849ee65c0680c85491659788807f914d",
+      "times": "99e8e0a45cf6c361bcefc10b251ceac15bd60992d42255cf76c945eae9655482"
+    },
+    "low_event_count_warning": "The test interval spans only about 3.5 estimated integral times; block resampling does not create independent physical events.",
+    "members": 8,
+    "n_eval": 160,
+    "n_post_spinup": 1101,
+    "outer_cells": 118508,
+    "preregistration": "development/nodes/node_006/preregistration.md",
+    "producer": "eval_cube_distributional_rapid.py",
+    "producer_sha256": "bee8fb78eb4fad2ac57aa244f716d2a6430406aab3e447b3b61df8c55fd169b8",
+    "regime": "genuinely-3D Coceal aligned cube array, lambda_p=0.25, pitch=2h, Re_h=5000",
+    "sample_steps": 32,
+    "sampler_seed_rule": "910000 + frozen test position, identical across arms",
+    "support": "solid- and supplied-band-excluded d/h>0.5 outer volume",
+    "test_span_integral_times": 3.514631405212183,
+    "wall_seconds": 1387.9
+  },
+  "claim_boundary": {
+    "distributional_claim_requires_registered_gates": true,
+    "positive_outer_pointwise_mean_claim": false,
+    "terminal_outer_posterior_mean_R2": -0.04678465834898504
+  },
+  "coverage_descriptives": {
+    "correct": {
+      "coverage80": 0.5140762648935093,
+      "mean_standardized_width": 0.9580061167605651
+    },
+    "far_time_wall": {
+      "coverage80": 0.48959417999909993,
+      "mean_standardized_width": 0.9570965781409092
+    },
+    "no_wall": {
+      "coverage80": 0.5198070137318437,
+      "mean_standardized_width": 0.9709091600836989
+    }
+  },
+  "primary_energy_score": {
+    "arms": {
+      "correct": {
+        "ci95": [
+          0.5555550535095274,
+          0.5865953263706273
+        ],
+        "mean_loss": 0.5701657654965356
+      },
+      "far_time_wall": {
+        "ci95": [
+          0.5755493300661302,
+          0.618725837598117
+        ],
+        "mean_loss": 0.5961620419493856
+      },
+      "no_wall": {
+        "ci95": [
+          0.5577272009425848,
+          0.595767627005325
+        ],
+        "mean_loss": 0.5757208777264161
+      }
+    },
+    "improvements": {
+      "correct_vs_far_time_wall": {
+        "ci95": [
+          0.019766465228614437,
+          0.03228912949474173
+        ],
+        "ci_positive": true,
+        "control_minus_correct": 0.025996276452849975,
+        "secondary_multiplicity_label": true
+      },
+      "correct_vs_no_wall": {
+        "ci95": [
+          0.0015079392323578665,
+          0.01028799905094186
+        ],
+        "ci_positive": true,
+        "control_minus_correct": 0.005555112229880491,
+        "secondary_multiplicity_label": true
+      }
+    }
+  },
+  "registered_gates": {
+    "physical_at_least_two_of_three": false,
+    "physical_family_wins": {
+      "component_spectrum_log_rmse": false,
+      "coverage80_abs_error": false,
+      "reynolds_stress_profile_nrmse": false
+    },
+    "primary_correct_beats_both_controls_ci95": true,
+    "rapid_distributional_claim_pass": false
+  },
+  "secondary_physical_statistics": {
+    "component_spectrum_log_rmse": {
+      "arms": {
+        "correct": {
+          "ci95": [
+            0.15648665592188207,
+            0.2454282362529155
+          ],
+          "mean_loss": 0.2002317914270228
+        },
+        "far_time_wall": {
+          "ci95": [
+            0.16704095467555427,
+            0.23886115479623293
+          ],
+          "mean_loss": 0.2019693266213304
+        },
+        "no_wall": {
+          "ci95": [
+            0.22358035943910973,
+            0.3077835623224561
+          ],
+          "mean_loss": 0.2641703678072421
+        }
+      },
+      "improvements": {
+        "correct_vs_far_time_wall": {
+          "ci95": [
+            -0.018657840253034994,
+            0.02257910938517538
+          ],
+          "ci_positive": false,
+          "control_minus_correct": 0.0017375351943075656,
+          "secondary_multiplicity_label": true
+        },
+        "correct_vs_no_wall": {
+          "ci95": [
+            0.050833240967826175,
+            0.07759768302836008
+          ],
+          "ci_positive": true,
+          "control_minus_correct": 0.0639385763802193,
+          "secondary_multiplicity_label": true
+        }
+      }
+    },
+    "coverage80_abs_error": {
+      "arms": {
+        "correct": {
+          "ci95": [
+            0.27226078091774397,
+            0.3003261339248547
+          ],
+          "mean_loss": 0.2859237351064907
+        },
+        "far_time_wall": {
+          "ci95": [
+            0.29705407018935437,
+            0.32450268125358633
+          ],
+          "mean_loss": 0.31040582000090017
+        },
+        "no_wall": {
+          "ci95": [
+            0.2633379352554258,
+            0.3000849718478922
+          ],
+          "mean_loss": 0.2801929862681563
+        }
+      },
+      "improvements": {
+        "correct_vs_far_time_wall": {
+          "ci95": [
+            0.016634369269022623,
+            0.031583026479928215
+          ],
+          "ci_positive": true,
+          "control_minus_correct": 0.024482084894409378,
+          "secondary_multiplicity_label": true
+        },
+        "correct_vs_no_wall": {
+          "ci95": [
+            -0.010887475687295372,
+            0.0009104831002970294
+          ],
+          "ci_positive": false,
+          "control_minus_correct": -0.0057307488383344,
+          "secondary_multiplicity_label": true
+        }
+      }
+    },
+    "reynolds_stress_profile_nrmse": {
+      "arms": {
+        "correct": {
+          "ci95": [
+            0.40211411815803555,
+            0.4751429332536067
+          ],
+          "mean_loss": 0.4392412174690891
+        },
+        "far_time_wall": {
+          "ci95": [
+            0.41733832614839617,
+            0.4745383131002818
+          ],
+          "mean_loss": 0.44875384617940534
+        },
+        "no_wall": {
+          "ci95": [
+            0.45900485762122234,
+            0.5272837806746591
+          ],
+          "mean_loss": 0.49294993567902434
+        }
+      },
+      "improvements": {
+        "correct_vs_far_time_wall": {
+          "ci95": [
+            -0.004513906262355141,
+            0.02430774735375634
+          ],
+          "ci_positive": false,
+          "control_minus_correct": 0.009512628710316258,
+          "secondary_multiplicity_label": true
+        },
+        "correct_vs_no_wall": {
+          "ci95": [
+            0.046098294812859354,
+            0.0616791370536856
+          ],
+          "ci_positive": true,
+          "control_minus_correct": 0.053708718209935224,
+          "secondary_multiplicity_label": true
+        }
+      }
+    }
+  }
+}

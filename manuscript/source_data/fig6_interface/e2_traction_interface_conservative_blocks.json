@@ -1,0 +1,955 @@
+{
+  "_what": "Figure 6 intervals recomputed at the release's conservative bootstrap block from the hash-pinned per-target components. The frozen result JSON is not modified; point estimates are re-derived and asserted equal to the frozen ones.",
+  "_why": "The node-004 producer registered intervals at the historical block; the rest of the release uses the conservative 1.2551*tau rule. The panel required one convention.",
+  "arms": {
+    "correct": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": 0.08948776477543363,
+        "ci95_conservative_block": [
+          0.07283704788234878,
+          0.10426955535286521
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": 0.24156180465339594,
+        "ci95_conservative_block": [
+          0.22773761260195463,
+          0.2529052954913639
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.06622811388324346,
+        "ci95_conservative_block": [
+          -0.08418738531796945,
+          -0.0467921834427794
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": 0.07870835231829765,
+        "ci95_conservative_block": [
+          0.06340138745567729,
+          0.09230529005581924
+        ]
+      }
+    },
+    "correct_physwall": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": 0.017174361351607548,
+        "ci95_conservative_block": [
+          0.006463815739305795,
+          0.027653924342266552
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": 0.12108376987337088,
+        "ci95_conservative_block": [
+          0.11319580952414714,
+          0.1298798743120008
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.089219928623256,
+        "ci95_conservative_block": [
+          -0.10702573604012468,
+          -0.07192528522906043
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": 0.04568825299835244,
+        "ci95_conservative_block": [
+          0.034999015681826964,
+          0.05583682613200789
+        ]
+      }
+    },
+    "no_wall": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": -0.0843586227234816,
+        "ci95_conservative_block": [
+          -0.08782307508187334,
+          -0.08074379231177213
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": -0.09042282462097662,
+        "ci95_conservative_block": [
+          -0.09434816753690686,
+          -0.08724793511188078
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.07818838368183978,
+        "ci95_conservative_block": [
+          -0.08288571405059117,
+          -0.07322120463875509
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": -0.08609424405901778,
+        "ci95_conservative_block": [
+          -0.08909957065863448,
+          -0.08273411841225024
+        ]
+      }
+    },
+    "tau_lift_fartime": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": -0.31622251383565847,
+        "ci95_conservative_block": [
+          -0.3584608634559152,
+          -0.27189952883952273
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": -0.5068317277621797,
+        "ci95_conservative_block": [
+          -0.582869195049522,
+          -0.43262633840435527
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.12116307021084083,
+        "ci95_conservative_block": [
+          -0.14201255498302748,
+          -0.0979723324335882
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": -0.3805250433866929,
+        "ci95_conservative_block": [
+          -0.4280535517484571,
+          -0.3299806773372854
+        ]
+      }
+    },
+    "tau_lift_model_predicted": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": -0.1695292243071178,
+        "ci95_conservative_block": [
+          -0.18522450090895354,
+          -0.15487861920302146
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": -0.248424392117792,
+        "ci95_conservative_block": [
+          -0.2749986814206112,
+          -0.22792757470100744
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.08881538525309729,
+        "ci95_conservative_block": [
+          -0.09914957848441958,
+          -0.07762340070835
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": -0.19620491806627238,
+        "ci95_conservative_block": [
+          -0.21310539583156934,
+          -0.18066894269896747
+        ]
+      }
+    },
+    "tau_lift_oracle": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": -0.11683922835743243,
+        "ci95_conservative_block": [
+          -0.13415183637852507,
+          -0.10253198064400303
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": -0.13071233799470217,
+        "ci95_conservative_block": [
+          -0.1519963741460504,
+          -0.11296138020136962
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.10267783528078689,
+        "ci95_conservative_block": [
+          -0.11953858109456496,
+          -0.08288918177405544
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": -0.12486253566638328,
+        "ci95_conservative_block": [
+          -0.14212842969181524,
+          -0.11077563387035415
+        ]
+      }
+    },
+    "tau_lift_trainmean": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": -0.15341250543065033,
+        "ci95_conservative_block": [
+          -0.1687046821929307,
+          -0.14010185837781083
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": -0.21478043918425516,
+        "ci95_conservative_block": [
+          -0.2433480032106001,
+          -0.19352144321930898
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.09063765477206465,
+        "ci95_conservative_block": [
+          -0.09796965974021452,
+          -0.08261032795183136
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": -0.17430380566853154,
+        "ci95_conservative_block": [
+          -0.19135847054166435,
+          -0.1598225910674922
+        ]
+      }
+    },
+    "wrong_wall": {
+      "full_support_excluded": {
+        "R2_fluct_balanced": -0.32356080996791214,
+        "ci95_conservative_block": [
+          -0.3578387406632516,
+          -0.28498560457374245
+        ]
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "R2_fluct_balanced": -0.4955240806693013,
+        "ci95_conservative_block": [
+          -0.5639713083604798,
+          -0.42529507400798927
+        ]
+      },
+      "outer_d_gt_0p5h": {
+        "R2_fluct_balanced": -0.14758659896062332,
+        "ci95_conservative_block": [
+          -0.15895378191900628,
+          -0.13522033604136466
+        ]
+      },
+      "raster_unique_support_excluded": {
+        "R2_fluct_balanced": -0.33290690214175167,
+        "ci95_conservative_block": [
+          -0.3615538849605805,
+          -0.298240986484635
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "correct_minus_correct_physwall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          0.0648480409783968,
+          0.07896626824627352
+        ],
+        "ci95_release_block": [
+          0.0647840893584778,
+          0.07895914975498611
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.995990625292462,
+        "point": 0.07231340262022334,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          0.11201731069191201,
+          0.1278066540231924
+        ],
+        "ci95_release_block": [
+          0.11198863970532684,
+          0.1280524219663897
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.982915671706553,
+        "point": 0.12047803441908855,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          0.018439267721567905,
+          0.027547724266321263
+        ],
+        "ci95_release_block": [
+          0.018595656241344162,
+          0.027487237784461337
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 1.024391049059665,
+        "point": 0.022991816020871525,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          0.02721931019564456,
+          0.03825873466004525
+        ],
+        "ci95_release_block": [
+          0.02721027044576854,
+          0.03829865857319848
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9955842397951306,
+        "point": 0.033020097650322655,
+        "significance_preserved": true
+      }
+    },
+    "correct_minus_no_wall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          0.15988757482176685,
+          0.18568956426585834
+        ],
+        "ci95_release_block": [
+          0.15911053604008207,
+          0.18542113376410904
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9806690716315037,
+        "point": 0.17384638556699905,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          0.3192437049765732,
+          0.3422464581155893
+        ],
+        "ci95_release_block": [
+          0.3172529675355141,
+          0.3445195068175409
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.8436256945221776,
+        "point": 0.3319846282797899,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          -0.002070532279883913,
+          0.02722656794689628
+        ],
+        "ci95_release_block": [
+          -0.002318719540220954,
+          0.0273294318605091
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9881594245386504,
+        "point": 0.011960270464895117,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          0.15181392879769376,
+          0.17584963608859325
+        ],
+        "ci95_release_block": [
+          0.15098238571647643,
+          0.17586288133220515
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9660461617052684,
+        "point": 0.16480258804426573,
+        "significance_preserved": true
+      }
+    },
+    "correct_minus_wrong_wall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          0.38699173502247874,
+          0.4360382364083697
+        ],
+        "ci95_release_block": [
+          0.38421525233986575,
+          0.43776226722241535
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9159521122413621,
+        "point": 0.4130485701532286,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          0.6725178289402828,
+          0.796762564262755
+        ],
+        "ci95_release_block": [
+          0.6711214940915103,
+          0.7974510036775571
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9834973295597697,
+        "point": 0.7370858831144841,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          0.062490232605636416,
+          0.09845857743588282
+        ],
+        "ci95_release_block": [
+          0.06346236974842104,
+          0.0979252355663145
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 1.043684092330223,
+        "point": 0.08135848960980807,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          0.3871698240686457,
+          0.4332926642378363
+        ],
+        "ci95_release_block": [
+          0.38434552469054994,
+          0.43705377802755196
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.8750591652941694,
+        "point": 0.4116152336472071,
+        "significance_preserved": true
+      }
+    },
+    "correct_physwall_minus_no_wall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          0.0930933551086591,
+          0.10893098173680447
+        ],
+        "ci95_release_block": [
+          0.09263649892316764,
+          0.1090435046909255
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9652965844181395,
+        "point": 0.10153298294677571,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          0.20362021984738277,
+          0.2205707536358698
+        ],
+        "ci95_release_block": [
+          0.20192887828332248,
+          0.22244426886928556
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.8262350023247834,
+        "point": 0.21150659386070136,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          -0.02508789149056815,
+          0.0018287640918395022
+        ],
+        "ci95_release_block": [
+          -0.025204187306161047,
+          0.0020558241620812776
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9874044115412541,
+        "point": -0.011031545555976408,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          0.1231573117652005,
+          0.13930409389035428
+        ],
+        "ci95_release_block": [
+          0.12236804695454342,
+          0.13975916599707547
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.928449864880167,
+        "point": 0.13178249039394307,
+        "significance_preserved": true
+      }
+    },
+    "correct_physwall_minus_tau_lift_oracle": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          0.12876076453870763,
+          0.14108122299577489
+        ],
+        "ci95_release_block": [
+          0.12840771462964207,
+          0.14188549605687326
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9141310477238024,
+        "point": 0.1340135882197766,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          0.24175492628090786,
+          0.26635759058113256
+        ],
+        "ci95_release_block": [
+          0.2397643283166073,
+          0.26872819309132084
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.84942615536942,
+        "point": 0.2517961071137248,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          0.003817639465063033,
+          0.02278538571360335
+        ],
+        "ci95_release_block": [
+          0.0043209166780710795,
+          0.022872876953539564
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 1.0224119697809848,
+        "point": 0.013457907407262049,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          0.1650428510984512,
+          0.1781331080295991
+        ],
+        "ci95_release_block": [
+          0.16399869826520214,
+          0.17886906052170334
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.8802917309848954,
+        "point": 0.1705507800410353,
+        "significance_preserved": true
+      }
+    },
+    "tau_lift_fartime_minus_no_wall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          -0.2718478102232373,
+          -0.18927131309846976
+        ],
+        "ci95_release_block": [
+          -0.2714098217901817,
+          -0.1882936376236115
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.993506835675696,
+        "point": -0.2318638885355251,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          -0.48892234293269593,
+          -0.3438060861375573
+        ],
+        "ci95_release_block": [
+          -0.48591105180430766,
+          -0.3433827156026012
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 1.0181572356936077,
+        "point": -0.4164089018936963,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          -0.06307813411500397,
+          -0.020715353485764386
+        ],
+        "ci95_release_block": [
+          -0.06286612651373963,
+          -0.020640594399626698
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 1.0032503679232685,
+        "point": -0.04297468892309286,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          -0.3400697769120665,
+          -0.24516698671335582
+        ],
+        "ci95_release_block": [
+          -0.3401293134990995,
+          -0.24398773093713091
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9871149160410441,
+        "point": -0.29443078444012727,
+        "significance_preserved": true
+      }
+    },
+    "tau_lift_model_predicted_minus_no_wall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          -0.09806527155192142,
+          -0.07368701219431052
+        ],
+        "ci95_release_block": [
+          -0.09837509910847202,
+          -0.07293859158242458
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.958396483190435,
+        "point": -0.0851706006371542,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          -0.1809509882116525,
+          -0.13986213950829077
+        ],
+        "ci95_release_block": [
+          -0.18142360888402018,
+          -0.13916465622422786
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9723110990030785,
+        "point": -0.15800156702346335,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          -0.017488772171902072,
+          -0.003693342523633769
+        ],
+        "ci95_release_block": [
+          -0.017338763093599763,
+          -0.0036655336446667517
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 1.0089371863312677,
+        "point": -0.01062700216328083,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          -0.1251448967093316,
+          -0.09691787262001811
+        ],
+        "ci95_release_block": [
+          -0.12553093750061045,
+          -0.09623892444682937
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9636423429652227,
+        "point": -0.11011066843963757,
+        "significance_preserved": true
+      }
+    },
+    "tau_lift_oracle_minus_no_wall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          -0.0470656954411308,
+          -0.021159001047978503
+        ],
+        "ci95_release_block": [
+          -0.04821142515981131,
+          -0.021023383526856648
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9528709254936096,
+        "point": -0.032480605273000895,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          -0.06074900614908911,
+          -0.02279750820070861
+        ],
+        "ci95_release_block": [
+          -0.06406185394929716,
+          -0.019410135958590036
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.8499448544461141,
+        "point": -0.040289513253023435,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          -0.0373036354291003,
+          -0.0089332229341747
+        ],
+        "ci95_release_block": [
+          -0.037520753782305336,
+          -0.00794883678379953
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9593700840009487,
+        "point": -0.024489452963238456,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          -0.053984887934778396,
+          -0.027296933266401934
+        ],
+        "ci95_release_block": [
+          -0.05538389364011844,
+          -0.026504350283122955
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9241127651664147,
+        "point": -0.038768289647092224,
+        "significance_preserved": true
+      }
+    },
+    "tau_lift_oracle_minus_tau_lift_fartime": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          0.1631943919935445,
+          0.23705227576334242
+        ],
+        "ci95_release_block": [
+          0.16155569029094133,
+          0.23937204834526504
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9491305635023118,
+        "point": 0.1993832832625242,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          0.3053638661117857,
+          0.44774634708342187
+        ],
+        "ci95_release_block": [
+          0.3015531930454046,
+          0.4532185404699232
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9387937547335766,
+        "point": 0.37611938864067285,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          0.00032455117713208755,
+          0.03409792903062969
+        ],
+        "ci95_release_block": [
+          -1.012237439140775e-05,
+          0.03353185383085306
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 1.006898867461988,
+        "point": 0.018485235959854407,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          0.21154653401438137,
+          0.30049494557657563
+        ],
+        "ci95_release_block": [
+          0.20940135464304582,
+          0.3040222953067126
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9400499608048106,
+        "point": 0.25566249479303504,
+        "significance_preserved": true
+      }
+    },
+    "tau_lift_oracle_minus_tau_lift_trainmean": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          0.021694485268760798,
+          0.05158655155040241
+        ],
+        "ci95_release_block": [
+          0.020699834224760415,
+          0.05384649994502482
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.9018121621616657,
+        "point": 0.036573276666787446,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          0.05772965795677716,
+          0.11749769371041904
+        ],
+        "ci95_release_block": [
+          0.05413507905459766,
+          0.1224866725856077
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.874420517007055,
+        "point": 0.08406810093769601,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          -0.022567665282940796,
+          -0.00016523125203630874
+        ],
+        "ci95_release_block": [
+          -0.022627906168032303,
+          0.0007318230211707918
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9590194239605709,
+        "point": -0.01204018117947303,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          0.032609519798900456,
+          0.06797992139032481
+        ],
+        "ci95_release_block": [
+          0.030739080571407302,
+          0.0710258780227916
+        ],
+        "ci_negative_conservative": false,
+        "ci_positive_conservative": true,
+        "interval_width_ratio_conservative_over_release": 0.8779650860584597,
+        "point": 0.04944126750220845,
+        "significance_preserved": true
+      }
+    },
+    "tau_lift_trainmean_minus_no_wall": {
+      "full_support_excluded": {
+        "ci95_conservative_block": [
+          -0.08221630399718324,
+          -0.05833998588260342
+        ],
+        "ci95_release_block": [
+          -0.0825717756711323,
+          -0.05781762072683051
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9645377985353512,
+        "point": -0.06905388193978834,
+        "significance_preserved": true
+      },
+      "near_support_excluded_d_le_0p5h": {
+        "ci95_conservative_block": [
+          -0.1498872366648695,
+          -0.10491843347573926
+        ],
+        "ci95_release_block": [
+          -0.15015270233835468,
+          -0.10447560569039485
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9844934658547038,
+        "point": -0.12435761419071945,
+        "significance_preserved": true
+      },
+      "outer_d_gt_0p5h": {
+        "ci95_conservative_block": [
+          -0.016610845325700056,
+          -0.008419914054999676
+        ],
+        "ci95_release_block": [
+          -0.0166926200011543,
+          -0.008381924686928709
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9855891668510325,
+        "point": -0.012449271783765425,
+        "significance_preserved": true
+      },
+      "raster_unique_support_excluded": {
+        "ci95_conservative_block": [
+          -0.10415309995893596,
+          -0.07548386724201112
+        ],
+        "ci95_release_block": [
+          -0.10469519820628333,
+          -0.07480389888729304
+        ],
+        "ci_negative_conservative": true,
+        "ci_positive_conservative": false,
+        "interval_width_ratio_conservative_over_release": 0.9591163104345534,
+        "point": -0.08820955714930068,
+        "significance_preserved": true
+      }
+    }
+  },
+  "inputs": {
+    "components": {
+      "path": "manuscript/source_data/fig6_interface/e2_traction_interface_components.npz",
+      "sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+    },
+    "results": {
+      "path": "manuscript/source_data/fig6_interface/e2_traction_interface_results.json",
+      "sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+    }
+  },
+  "protocol": {
+    "block_snapshots_conservative": 122.99980000000001,
+    "block_snapshots_release": 98,
+    "boot": 4000,
+    "eval_block_conservative": 61,
+    "eval_block_release": 49,
+    "n_eval": 160,
+    "point_reproduction_max_abs_deviation": 6.980462829986323e-08,
+    "point_reproduction_tolerance": 1e-06,
+    "resampler": "circular moving block, identical implementation to the producers",
+    "seed": 45,
+    "stride_snapshots": 2,
+    "tau_integral_snapshots": 97.59202614855501
+  },
+  "significance_lost_under_conservative_block": []
+}

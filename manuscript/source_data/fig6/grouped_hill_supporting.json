@@ -1,0 +1,185 @@
+{
+  "claim_boundary": "Supporting physical-time-grouped hill evidence only; absolute skill is negative and the separately parameterized flow-matching replication fails.",
+  "diffusion": {
+    "arms": {
+      "correct": -0.08405208587646484,
+      "no_wall": -0.22606492042541504,
+      "random": -0.20251739025115967,
+      "wrong_swap": -0.23807084560394287
+    },
+    "bootstrap": {
+      "_B": 4000,
+      "_block": 116,
+      "_n_eff": 3.189655172413793,
+      "correct": {
+        "ci95": [
+          -0.11027312278747559,
+          -0.06049758940935135
+        ],
+        "mean": -0.08430279046297073
+      },
+      "d_correct_minus_no_wall": {
+        "ci95": [
+          0.09420748054981232,
+          0.20137092471122742
+        ],
+        "mean": 0.14183969795703888
+      },
+      "d_correct_minus_random": {
+        "ci95": [
+          0.059685118496418,
+          0.18405602872371674
+        ],
+        "mean": 0.11797663569450378
+      },
+      "d_correct_minus_wrong_mean": {
+        "ci95": [
+          -0.00015178621106315404,
+          0.04039672017097473
+        ],
+        "mean": 0.019697917625308037
+      },
+      "d_correct_minus_wrong_swap": {
+        "ci95": [
+          0.1193985641002655,
+          0.18360811471939087
+        ],
+        "mean": 0.15391144156455994
+      },
+      "no_wall": {
+        "ci95": [
+          -0.276442289352417,
+          -0.17887552082538605
+        ],
+        "mean": -0.22614248096942902
+      },
+      "random": {
+        "ci95": [
+          -0.2580782473087311,
+          -0.1459946483373642
+        ],
+        "mean": -0.20227941870689392
+      },
+      "wrong_mean": {
+        "ci95": [
+          -0.13021384179592133,
+          -0.08299834281206131
+        ],
+        "mean": -0.10400070250034332
+      },
+      "wrong_swap": {
+        "ci95": [
+          -0.2554180324077606,
+          -0.2230239361524582
+        ],
+        "mean": -0.23821420967578888
+      }
+    },
+    "checkpoint_sha256": "bf9dda25545fea74a4598575876150627560b887ada3c79aed4e61c06c8c90b9"
+  },
+  "flow_matching": {
+    "arms": {
+      "correct": -0.4847155809402466,
+      "no_wall": -0.16738879680633545,
+      "random": -0.3548988103866577,
+      "wrong_swap": -0.6158154010772705
+    },
+    "bootstrap": {
+      "_B": 4000,
+      "_block": 116,
+      "_n_eff": 3.189655172413793,
+      "correct": {
+        "ci95": [
+          -0.5860713720321655,
+          -0.3891097605228424
+        ],
+        "mean": -0.4844767451286316
+      },
+      "d_correct_minus_no_wall": {
+        "ci95": [
+          -0.4073965847492218,
+          -0.23417788743972778
+        ],
+        "mean": -0.31693485379219055
+      },
+      "d_correct_minus_random": {
+        "ci95": [
+          -0.21931582689285278,
+          -0.04046593979001045
+        ],
+        "mean": -0.12856431305408478
+      },
+      "d_correct_minus_wrong_mean": {
+        "ci95": [
+          -0.16205719113349915,
+          0.07720161229372025
+        ],
+        "mean": -0.06141737848520279
+      },
+      "d_correct_minus_wrong_swap": {
+        "ci95": [
+          0.05455181002616882,
+          0.2265041172504425
+        ],
+        "mean": 0.13259302079677582
+      },
+      "no_wall": {
+        "ci95": [
+          -0.1963304728269577,
+          -0.14380457997322083
+        ],
+        "mean": -0.16754187643527985
+      },
+      "random": {
+        "ci95": [
+          -0.42009997367858887,
+          -0.3040579855442047
+        ],
+        "mean": -0.3559124171733856
+      },
+      "wrong_mean": {
+        "ci95": [
+          -0.5123277902603149,
+          -0.31813478469848633
+        ],
+        "mean": -0.423059344291687
+      },
+      "wrong_swap": {
+        "ci95": [
+          -0.6718816161155701,
+          -0.5605974197387695
+        ],
+        "mean": -0.6170697808265686
+      }
+    },
+    "checkpoint_sha256": "8131ef38507ef1ca866661cacf97d66efe10b5d8593c7aa625dfbb24f9cb92ae",
+    "paired_regen_consistent": true
+  },
+  "schema": "gwt-grouped-hill-supporting-v1",
+  "sources": {
+    "diffusion": {
+      "path": "codes/results/split_integrity_adequacy_l0_results.json",
+      "sha256": "2ed0b8c3914f9faa28157a9a30e07de960f7ba2b6739f1af982254be03b8898f"
+    },
+    "flow_matching": {
+      "path": "codes/results/l2_families_results.json",
+      "sha256": "439f311197c93375beac4b7d72bec94a82054210b178484175f7413147bd7053"
+    }
+  },
+  "split": {
+    "effective_test_events": 3.189655172413793,
+    "planes_grouped_by_physical_time": true,
+    "test_physical_times": [
+      590,
+      959
+    ],
+    "train_physical_times": [
+      0,
+      479
+    ],
+    "validation_physical_times": [
+      500,
+      569
+    ]
+  }
+}

@@ -1,0 +1,955 @@
+{
+  "_meta": {
+    "C_reichardt": 7.8,
+    "anchor_wall_distance_h": 0.020833333333333332,
+    "arms": [
+      "correct",
+      "no_wall",
+      "wrong_wall",
+      "correct_physwall",
+      "tau_lift_oracle",
+      "tau_lift_fartime",
+      "tau_lift_trainmean",
+      "tau_lift_model_predicted"
+    ],
+    "boot": 4000,
+    "bootstrap_block_snapshots": 98,
+    "cell_size_h": 0.041666666666666664,
+    "checkpoint_sha256": "447b628e8624b4be9a7af6d6a264d27744a7daff3fd540b53fcfc82584929c53",
+    "common_sampler_noise_across_arms": true,
+    "components": "e2_traction_interface_components.npz",
+    "components_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131",
+    "data_memmap_sha256": "8bac93f1537eab6667d692282b76c7bccd28f28965d35ea97668bcc2567bc45a",
+    "device": "cuda",
+    "evidence_level": "offline interface test: frozen generator, frozen equilibrium lift, oracle (target-derived) wall traction. NOT closure performance, NOT solver-coupled WMLES.",
+    "kappa": 0.41,
+    "members": 8,
+    "n_train": 660,
+    "nu": 0.0002,
+    "parent_script": "eval_cube_3d_coupling.py",
+    "parent_script_sha256": "b9082a36f0dc856eed15acab929cd7c3dc35e42b500fd0059971e74ed8d8e514",
+    "preregistration": "development/nodes/node_004/PREREGISTRATION_E2_INTERFACE.md",
+    "sample_steps": 32,
+    "script": "eval_e2_traction_interface.py",
+    "script_sha256": "9ea494d62d4aa2eba98e5108f44486ab9cdc553ad88744f645cb7ea9361de395",
+    "split_gap_snapshots": 98,
+    "tau_integral_snapshots": 97.59202614855501,
+    "training_performed": false,
+    "wall_seconds_total": 2507.2
+  },
+  "evaluation": {
+    "a_priori_interface": {
+      "band_cells": 14008,
+      "band_fluctuation_R2_of_lift_vs_true_band": {
+        "lift_model": {
+          "max": -0.1353609561920166,
+          "mean": -0.5451527439057827,
+          "min": -0.9738153219223022,
+          "sd": 0.15301176886148957
+        },
+        "lift_oracle": {
+          "max": 0.32453227043151855,
+          "mean": -0.10944517739117146,
+          "min": -0.5437300205230713,
+          "sd": 0.184715157888473
+        },
+        "lift_trainmean": {
+          "max": 0.023769259452819824,
+          "mean": -0.32782538011670115,
+          "min": -0.5796821117401123,
+          "sd": 0.10772341200834264
+        }
+      },
+      "fidelity_support": "physical-wall band (floor + cube), lid excluded",
+      "physical_wall_band_cells": 9400,
+      "surface_ownership": {
+        "cube_top": 1356,
+        "cube_xhi": 1198,
+        "cube_xlo": 1198,
+        "cube_zhi": 1150,
+        "cube_zlo": 1150,
+        "floor": 3348,
+        "top": 4608
+      },
+      "utau_corr_model_vs_oracle_mean": 0.7816527080903818,
+      "utau_model_predicted_band_mean": 0.036586914806486404,
+      "utau_oracle_band_mean": 0.026268678744171485
+    },
+    "arms": {
+      "correct": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": 0.08948777489375381,
+          "ci95": [
+            0.07243606443728373,
+            0.10363370705055523
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": 0.24156180692557772,
+          "ci95": [
+            0.22591249424488616,
+            0.2540589125636389
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.06622817328211594,
+          "ci95": [
+            -0.0845792955322907,
+            -0.04735650676946786
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": 0.07870839890232839,
+          "ci95": [
+            0.06295475049888001,
+            0.09204882867644558
+          ]
+        }
+      },
+      "correct_physwall": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": 0.01717437227353047,
+          "ci95": [
+            0.006225316269473968,
+            0.027523947723714717
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": 0.12108377250648916,
+          "ci95": [
+            0.11176230810580809,
+            0.13143263814368783
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.08921998930298747,
+          "ci95": [
+            -0.10703670538595933,
+            -0.07242928116179359
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": 0.045688301252005736,
+          "ci95": [
+            0.034513134875750154,
+            0.05610699347143917
+          ]
+        }
+      },
+      "no_wall": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.08435861067324524,
+          "ci95": [
+            -0.0880931462151549,
+            -0.08083794263832887
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.0904228213542122,
+          "ci95": [
+            -0.09460945969890062,
+            -0.08688469998659025
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.07818844374701106,
+          "ci95": [
+            -0.08308111537255211,
+            -0.07341851676150245
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": -0.08609418914193734,
+          "ci95": [
+            -0.0895502120207165,
+            -0.08285893051090548
+          ]
+        }
+      },
+      "tau_lift_fartime": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.3162224992087703,
+          "ci95": [
+            -0.3576553234156305,
+            -0.27029482249831127
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.5068317232479085,
+          "ci95": [
+            -0.5792319760440998,
+            -0.4321621065868913
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.12116313267010392,
+          "ci95": [
+            -0.14152630350244436,
+            -0.09830892527743375
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": -0.3805249735820646,
+          "ci95": [
+            -0.42757302262102864,
+            -0.32856181164812687
+          ]
+        }
+      },
+      "tau_lift_model_predicted": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.16952921131039944,
+          "ci95": [
+            -0.18513975514092765,
+            -0.15432032901549028
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.24842438837767555,
+          "ci95": [
+            -0.27509794421668693,
+            -0.22702069545837716
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.08881544591029189,
+          "ci95": [
+            -0.099060590409805,
+            -0.07820175137049112
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": -0.1962048575815749,
+          "ci95": [
+            -0.21334411435079942,
+            -0.17997511727379045
+          ]
+        }
+      },
+      "tau_lift_oracle": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.11683921594624613,
+          "ci95": [
+            -0.13487998820752212,
+            -0.10287788855285303
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.13071233460723564,
+          "ci95": [
+            -0.15510268861513588,
+            -0.11036381447634172
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.10267789671024952,
+          "ci95": [
+            -0.11961240788704425,
+            -0.08285242501720146
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": -0.12486247878902956,
+          "ci95": [
+            -0.14351476344918657,
+            -0.11067067971653109
+          ]
+        }
+      },
+      "tau_lift_trainmean": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.15341249261303358,
+          "ci95": [
+            -0.16906415780764378,
+            -0.1395234225748194
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.21478043554493165,
+          "ci95": [
+            -0.24338381647408555,
+            -0.19259870909853136
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.09063771553077649,
+          "ci95": [
+            -0.09814848828972864,
+            -0.08304676756113119
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": -0.17430374629123802,
+          "ci95": [
+            -0.19188898867869492,
+            -0.15917419194094595
+          ]
+        }
+      },
+      "wrong_wall": {
+        "full_support_excluded": {
+          "R2_fluct_balanced": -0.3235607952594748,
+          "ci95": [
+            -0.35739445768608114,
+            -0.28439596031433767
+          ]
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "R2_fluct_balanced": -0.49552407618890637,
+          "ci95": [
+            -0.5624247472313634,
+            -0.425249055200678
+          ]
+        },
+        "outer_d_gt_0p5h": {
+          "R2_fluct_balanced": -0.14758666289192401,
+          "ci95": [
+            -0.15883030130235457,
+            -0.1350161804408881
+          ]
+        },
+        "raster_unique_support_excluded": {
+          "R2_fluct_balanced": -0.3329068347448787,
+          "ci95": [
+            -0.3634096663879001,
+            -0.29707281753294246
+          ]
+        }
+      }
+    },
+    "deltas": {
+      "correct_minus_correct_physwall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.0647840893584778,
+            0.07895914975498611
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.07231340262022334
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.11198863970532684,
+            0.1280524219663897
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.12047803441908855
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            0.018595656241344162,
+            0.027487237784461337
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.022991816020871525
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            0.02721027044576854,
+            0.03829865857319848
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.033020097650322655
+        }
+      },
+      "correct_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.15911053604008207,
+            0.18542113376410904
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.17384638556699905
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.3172529675355141,
+            0.3445195068175409
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.3319846282797899
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.002318719540220954,
+            0.0273294318605091
+          ],
+          "ci_negative": false,
+          "ci_positive": false,
+          "point": 0.011960270464895117
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            0.15098238571647643,
+            0.17586288133220515
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.16480258804426573
+        }
+      },
+      "correct_minus_wrong_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.38421525233986575,
+            0.43776226722241535
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.4130485701532286
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.6711214940915103,
+            0.7974510036775571
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.7370858831144841
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            0.06346236974842104,
+            0.0979252355663145
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.08135848960980807
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            0.38434552469054994,
+            0.43705377802755196
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.4116152336472071
+        }
+      },
+      "correct_physwall_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            0.09263649892316764,
+            0.1090435046909255
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.10153298294677571
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.20192887828332248,
+            0.22244426886928556
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.21150659386070136
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.025204187306161047,
+            0.0020558241620812776
+          ],
+          "ci_negative": false,
+          "ci_positive": false,
+          "point": -0.011031545555976408
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            0.12236804695454342,
+            0.13975916599707547
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.13178249039394307
+        }
+      },
+      "correct_physwall_minus_tau_lift_oracle": {
+        "full_support_excluded": {
+          "ci95": [
+            0.12840771462964207,
+            0.14188549605687326
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.1340135882197766
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.2397643283166073,
+            0.26872819309132084
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.2517961071137248
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            0.0043209166780710795,
+            0.022872876953539564
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.013457907407262049
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            0.16399869826520214,
+            0.17886906052170334
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.1705507800410353
+        }
+      },
+      "tau_lift_fartime_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            -0.2714098217901817,
+            -0.1882936376236115
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.2318638885355251
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            -0.48591105180430766,
+            -0.3433827156026012
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.4164089018936963
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.06286612651373963,
+            -0.020640594399626698
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.04297468892309286
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            -0.3401293134990995,
+            -0.24398773093713091
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.29443078444012727
+        }
+      },
+      "tau_lift_model_predicted_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            -0.09837509910847202,
+            -0.07293859158242458
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.0851706006371542
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            -0.18142360888402018,
+            -0.13916465622422786
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.15800156702346335
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.017338763093599763,
+            -0.0036655336446667517
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.01062700216328083
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            -0.12553093750061045,
+            -0.09623892444682937
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.11011066843963757
+        }
+      },
+      "tau_lift_oracle_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            -0.04821142515981131,
+            -0.021023383526856648
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.032480605273000895
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            -0.06406185394929716,
+            -0.019410135958590036
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.040289513253023435
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.037520753782305336,
+            -0.00794883678379953
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.024489452963238456
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            -0.05538389364011844,
+            -0.026504350283122955
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.038768289647092224
+        }
+      },
+      "tau_lift_oracle_minus_tau_lift_fartime": {
+        "full_support_excluded": {
+          "ci95": [
+            0.16155569029094133,
+            0.23937204834526504
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.1993832832625242
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.3015531930454046,
+            0.4532185404699232
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.37611938864067285
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -1.012237439140775e-05,
+            0.03353185383085306
+          ],
+          "ci_negative": false,
+          "ci_positive": false,
+          "point": 0.018485235959854407
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            0.20940135464304582,
+            0.3040222953067126
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.25566249479303504
+        }
+      },
+      "tau_lift_oracle_minus_tau_lift_trainmean": {
+        "full_support_excluded": {
+          "ci95": [
+            0.020699834224760415,
+            0.05384649994502482
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.036573276666787446
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            0.05413507905459766,
+            0.1224866725856077
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.08406810093769601
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.022627906168032303,
+            0.0007318230211707918
+          ],
+          "ci_negative": false,
+          "ci_positive": false,
+          "point": -0.01204018117947303
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            0.030739080571407302,
+            0.0710258780227916
+          ],
+          "ci_negative": false,
+          "ci_positive": true,
+          "point": 0.04944126750220845
+        }
+      },
+      "tau_lift_trainmean_minus_no_wall": {
+        "full_support_excluded": {
+          "ci95": [
+            -0.0825717756711323,
+            -0.05781762072683051
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.06905388193978834
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            -0.15015270233835468,
+            -0.10447560569039485
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.12435761419071945
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -0.0166926200011543,
+            -0.008381924686928709
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.012449271783765425
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            -0.10469519820628333,
+            -0.07480389888729304
+          ],
+          "ci_negative": true,
+          "ci_positive": false,
+          "point": -0.08820955714930068
+        }
+      }
+    },
+    "eval_block": 49,
+    "n_eval": 160,
+    "raster_audit": {
+      "all_snapshot_checks_pass": true,
+      "duplicate_y_rows": [
+        41,
+        43,
+        51,
+        54,
+        55,
+        57,
+        58,
+        61,
+        65,
+        67,
+        68,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76,
+        77,
+        78,
+        79,
+        82,
+        83,
+        84,
+        85,
+        88,
+        89,
+        90,
+        91,
+        93,
+        94
+      ],
+      "identically_zero_row": 95,
+      "lid_band_cells": 4608,
+      "lid_band_fraction_of_supplied_band": 0.3289548829240434,
+      "n_duplicate_row_pairs": 30,
+      "verified_time_invariant_snapshots": [
+        0,
+        137,
+        274,
+        411,
+        548,
+        685,
+        822,
+        959,
+        1100
+      ]
+    },
+    "region_sizes": {
+      "full_support_excluded": 193352,
+      "near_support_excluded_d_le_0p5h": 74844,
+      "outer_d_gt_0p5h": 118508,
+      "raster_unique_support_excluded": 126536
+    },
+    "reproduction_guard": {
+      "all_within_tolerance": true,
+      "checks": [
+        {
+          "abs_diff": 0.0,
+          "arm": "correct",
+          "pass": true,
+          "published": 0.08948777489375381,
+          "region": "full_support_excluded",
+          "reproduced": 0.08948777489375381
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "correct",
+          "pass": true,
+          "published": 0.24156180692557772,
+          "region": "near_support_excluded_d_le_0p5h",
+          "reproduced": 0.24156180692557772
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "correct",
+          "pass": true,
+          "published": -0.06622817328211594,
+          "region": "outer_d_gt_0p5h",
+          "reproduced": -0.06622817328211594
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "no_wall",
+          "pass": true,
+          "published": -0.08435861067324524,
+          "region": "full_support_excluded",
+          "reproduced": -0.08435861067324524
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "no_wall",
+          "pass": true,
+          "published": -0.0904228213542122,
+          "region": "near_support_excluded_d_le_0p5h",
+          "reproduced": -0.0904228213542122
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "no_wall",
+          "pass": true,
+          "published": -0.07818844374701106,
+          "region": "outer_d_gt_0p5h",
+          "reproduced": -0.07818844374701106
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "wrong_wall",
+          "pass": true,
+          "published": -0.3235607952594748,
+          "region": "full_support_excluded",
+          "reproduced": -0.3235607952594748
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "wrong_wall",
+          "pass": true,
+          "published": -0.49552407618890637,
+          "region": "near_support_excluded_d_le_0p5h",
+          "reproduced": -0.49552407618890637
+        },
+        {
+          "abs_diff": 0.0,
+          "arm": "wrong_wall",
+          "pass": true,
+          "published": -0.14758666289192401,
+          "region": "outer_d_gt_0p5h",
+          "reproduced": -0.14758666289192401
+        }
+      ],
+      "tolerance": 0.005
+    },
+    "transmission_ratio": {
+      "correct": {
+        "full_support_excluded": {
+          "ci95": [
+            -0.3012611343822638,
+            -0.11442195353880133
+          ],
+          "denominator_ci_excludes_zero": true,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": -0.18683509103203713
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            -0.20086792066939152,
+            -0.056544187147840534
+          ],
+          "denominator_ci_excludes_zero": true,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": -0.12135957457364034
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -30.448964386132715,
+            19.66867681801658
+          ],
+          "denominator_ci_excludes_zero": false,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": -2.0475668200914057
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            -0.365721597665976,
+            -0.152433931308205
+          ],
+          "denominator_ci_excludes_zero": true,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": -0.2352407817568928
+        }
+      },
+      "correct_physwall": {
+        "full_support_excluded": {
+          "ci95": [
+            -0.5174941719850262,
+            -0.19400261078557074
+          ],
+          "denominator_ci_excludes_zero": true,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": -0.3199020094783136
+        },
+        "near_support_excluded_d_le_0p5h": {
+          "ci95": [
+            -0.3144404576084456,
+            -0.08751601443847996
+          ],
+          "denominator_ci_excludes_zero": true,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": -0.19048821371289343
+        },
+        "outer_d_gt_0p5h": {
+          "ci95": [
+            -6.037829932896418,
+            11.014045055841324
+          ],
+          "denominator_ci_excludes_zero": false,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": 2.219947589299592
+        },
+        "raster_unique_support_excluded": {
+          "ci95": [
+            -0.4522649116542625,
+            -0.19098798725134547
+          ],
+          "denominator_ci_excludes_zero": true,
+          "note": "ratio of paired gains; unstable when the denominator interval spans zero",
+          "point": -0.29418392027044343
+        }
+      }
+    }
+  }
+}

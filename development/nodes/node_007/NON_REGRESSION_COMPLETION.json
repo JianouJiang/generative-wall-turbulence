@@ -1,0 +1,324 @@
+{
+ "_what": "post-registration completion of the 31 July non-regression mandate from retained arrays; node 006's registered decision rule is untouched",
+ "_no_new_computation": true,
+ "oracle_band_ceiling": {
+  "unit": "node005 CONFIRM_ALL (240 frames)",
+  "block": 119,
+  "regions": {
+   "full_support_excluded": {
+    "point": 0.11749922439503147,
+    "ci_block": [
+     0.11165764629726034,
+     0.1227795436257183
+    ],
+    "ci_hierarchical_seed_x_block": [
+     0.11150950291563567,
+     0.12332140634840416
+    ],
+    "per_seed": [
+     0.11659705584236701,
+     0.1169136023028351,
+     0.11898701503989206
+    ]
+   },
+   "near_support_excluded_d_le_0p5h": {
+    "point": 0.2237315229791763,
+    "ci_block": [
+     0.21785886235392776,
+     0.229559660365836
+    ],
+    "ci_hierarchical_seed_x_block": [
+     0.21765252133561616,
+     0.2302423787272274
+    ],
+    "per_seed": [
+     0.22215180682810598,
+     0.22396374060416824,
+     0.22507902150525483
+    ]
+   },
+   "outer_d_gt_0p5h": {
+    "point": 0.008753176380766448,
+    "ci_block": [
+     0.0026478412604336587,
+     0.014394826748807705
+    ],
+    "ci_hierarchical_seed_x_block": [
+     0.0025016071925082206,
+     0.014804235383856812
+    ],
+    "per_seed": [
+     0.008542298098553447,
+     0.0073313331914306445,
+     0.010385897852315695
+    ]
+   },
+   "uniq_raster_support_excluded": {
+    "point": 0.1511824391120482,
+    "ci_block": [
+     0.14430943785182954,
+     0.15748542749787417
+    ],
+    "ci_hierarchical_seed_x_block": [
+     0.14410731632215668,
+     0.15788657034669032
+    ],
+    "per_seed": [
+     0.1502751039045589,
+     0.15094309160473451,
+     0.1523291218268511
+    ]
+   }
+  },
+  "reproduction": {
+   "full_support_excluded": {
+    "published": 0.11749922756032372,
+    "recomputed": 0.11749922439503147,
+    "abs_diff": 3.1652922505287506e-09,
+    "reproduces_within_1e-6": true
+   },
+   "near_support_excluded_d_le_0p5h": {
+    "published": 0.2237315315430055,
+    "recomputed": 0.2237315229791763,
+    "abs_diff": 8.563829201335693e-09,
+    "reproduces_within_1e-6": true
+   },
+   "outer_d_gt_0p5h": {
+    "published": 0.008753176216730996,
+    "recomputed": 0.008753176380766448,
+    "abs_diff": 1.6403545188836688e-10,
+    "reproduces_within_1e-6": true
+   },
+   "uniq_raster_support_excluded": {
+    "published": 0.15118245305064826,
+    "recomputed": 0.1511824391120482,
+    "abs_diff": 1.3938600051943695e-08,
+    "reproduces_within_1e-6": true
+   }
+  }
+ },
+ "closure_transmission_vs_band_ceiling": {
+  "_unit": "node 005's exact 240-frame unit, identical regions",
+  "_note": "the ceiling arm comes from node 005's frozen Family-B checkpoints and the closure arm from node 006's Family K; they share the unit and the region definitions, not the network",
+  "regions": {
+   "full_support_excluded": {
+    "closure_minus_absent": {
+     "point": 0.08849561155787278,
+     "ci_block": [
+      0.0846019226035715,
+      0.09192706701567956
+     ],
+     "ci_hierarchical_seed_x_block": [
+      0.08362094478030056,
+      0.09244369855591031
+     ],
+     "per_seed": [
+      0.08677476205425705,
+      0.09080011628201867,
+      0.08791195633734294
+     ]
+    },
+    "oracle_band_ceiling": 0.11749922439503147,
+    "transmission_ratio_of_ceiling": 0.7531591124410424
+   },
+   "near_support_excluded_d_le_0p5h": {
+    "closure_minus_absent": {
+     "point": 0.16553049525991603,
+     "ci_block": [
+      0.15955783597427503,
+      0.17200825998332364
+     ],
+     "ci_hierarchical_seed_x_block": [
+      0.1585847355856962,
+      0.17395137735565977
+     ],
+     "per_seed": [
+      0.1636401065346823,
+      0.1688682287878951,
+      0.16408315045717115
+     ]
+    },
+    "oracle_band_ceiling": 0.2237315229791763,
+    "transmission_ratio_of_ceiling": 0.7398621931131389
+   },
+   "outer_d_gt_0p5h": {
+    "closure_minus_absent": {
+     "point": 0.009639316246488061,
+     "ci_block": [
+      0.003998961792047423,
+      0.014855620054320456
+     ],
+     "ci_hierarchical_seed_x_block": [
+      0.0034189789728178376,
+      0.014932128442123572
+     ],
+     "per_seed": [
+      0.008092178756291535,
+      0.010883627327528345,
+      0.009942142655643416
+     ]
+    },
+    "oracle_band_ceiling": 0.008753176380766448,
+    "transmission_ratio_of_ceiling": 1.1012363771931695
+   },
+   "uniq_raster_support_excluded": {
+    "closure_minus_absent": {
+     "point": 0.11360655465495506,
+     "ci_block": [
+      0.10906578644722863,
+      0.11761290252618159
+     ],
+     "ci_hierarchical_seed_x_block": [
+      0.10804111474637013,
+      0.11823098919184695
+     ],
+     "per_seed": [
+      0.11208332295317425,
+      0.11625878126885092,
+      0.11247755974283924
+     ]
+    },
+    "oracle_band_ceiling": 0.1511824391120482,
+    "transmission_ratio_of_ceiling": 0.7514533785948252
+   }
+  }
+ },
+ "node006_primary_recomputed": {
+  "_registered_value_unchanged": 0.06063890283162299,
+  "_registered_ci_block": [
+   0.056849515435761847,
+   0.06359499520628534
+  ],
+  "recomputed_point": 0.06063890733515542,
+  "recomputed_ci_block": [
+   0.05657215018459974,
+   0.06354197656192774
+  ],
+  "GENUINE_hierarchical_seed_x_block_ci": [
+   0.055954331388095836,
+   0.06399294481932946
+  ],
+  "withdrawn_label": "node 006's published 'crossed seed x block' interval [0.054653663104625515, 0.06477018082271366] was a concatenation of per-seed block distributions, not a crossed estimator; it is replaced by the hierarchical interval above",
+  "block_used": 41,
+  "block_matches_node006_published": true,
+  "node006_published_block_conservative": 41,
+  "per_seed": [
+   0.05906095623993246,
+   0.06257964585047593,
+   0.060276119915058324
+  ]
+ },
+ "paired_distributional_endpoints": {
+  "crps": {
+   "levels": {
+    "tau_closure": 0.4284383532105912,
+    "absent": 0.4414250750371939,
+    "tau_native": 0.43123838604461023,
+    "tau_eqwm": 0.43251563941390764,
+    "tau_fartime": 0.44940028636200907
+   },
+   "paired_contrasts": {
+    "closure_minus_absent": {
+     "mean": -0.012986721826602727,
+     "ci_block": [
+      -0.015061013058165519,
+      -0.011069185472422048
+     ],
+     "n": 103,
+     "excludes_zero": true
+    },
+    "closure_minus_tau_fartime": {
+     "mean": -0.020961933151417946,
+     "ci_block": [
+      -0.023086781905885645,
+      -0.019203945970265222
+     ],
+     "n": 103,
+     "excludes_zero": true
+    },
+    "closure_minus_tau_eqwm": {
+     "mean": -0.004077286203316501,
+     "ci_block": [
+      -0.004925347259418865,
+      -0.0031902957430356513
+     ],
+     "n": 103,
+     "excludes_zero": true
+    }
+   }
+  },
+  "energy": {
+   "levels": {
+    "tau_closure": 0.9220753960239079,
+    "absent": 0.9476989683209887,
+    "tau_native": 0.9280289471342339,
+    "tau_eqwm": 0.9291242436297888,
+    "tau_fartime": 0.9653302078108187
+   },
+   "paired_contrasts": {
+    "closure_minus_absent": {
+     "mean": -0.025623572297080812,
+     "ci_block": [
+      -0.02847985971996313,
+      -0.02283448167989168
+     ],
+     "n": 103,
+     "excludes_zero": true
+    },
+    "closure_minus_tau_fartime": {
+     "mean": -0.04325481178691085,
+     "ci_block": [
+      -0.04722276882156971,
+      -0.03960312626604894
+     ],
+     "n": 103,
+     "excludes_zero": true
+    },
+    "closure_minus_tau_eqwm": {
+     "mean": -0.007048847605881186,
+     "ci_block": [
+      -0.008273653406348419,
+      -0.005743495010828133
+     ],
+     "n": 103,
+     "excludes_zero": true
+    }
+   }
+  }
+ },
+ "rank_reliability": {
+  "tau_closure": {
+   "L1_deviation_from_uniform": 0.14592168433613661,
+   "n_bins": 9,
+   "_status": "descriptive; the retained rank arrays are already aggregated over frames, so no per-frame resampling interval is recoverable from disk. Reported as a descriptive calibration diagnostic, NOT as an established calibration result."
+  },
+  "absent": {
+   "L1_deviation_from_uniform": 0.16480780803113132,
+   "n_bins": 9,
+   "_status": "descriptive; the retained rank arrays are already aggregated over frames, so no per-frame resampling interval is recoverable from disk. Reported as a descriptive calibration diagnostic, NOT as an established calibration result."
+  },
+  "tau_native": {
+   "L1_deviation_from_uniform": 0.1602448361607866,
+   "n_bins": 9,
+   "_status": "descriptive; the retained rank arrays are already aggregated over frames, so no per-frame resampling interval is recoverable from disk. Reported as a descriptive calibration diagnostic, NOT as an established calibration result."
+  },
+  "tau_eqwm": {
+   "L1_deviation_from_uniform": 0.17287240842749213,
+   "n_bins": 9,
+   "_status": "descriptive; the retained rank arrays are already aggregated over frames, so no per-frame resampling interval is recoverable from disk. Reported as a descriptive calibration diagnostic, NOT as an established calibration result."
+  },
+  "tau_fartime": {
+   "L1_deviation_from_uniform": 0.1889367168150734,
+   "n_bins": 9,
+   "_status": "descriptive; the retained rank arrays are already aggregated over frames, so no per-frame resampling interval is recoverable from disk. Reported as a descriptive calibration diagnostic, NOT as an established calibration result."
+  }
+ },
+ "energy_score_estimator": {
+  "methods_equation": "off-diagonal M(M-1) normalisation",
+  "node006_producer": "diagonal-inclusive M^2 normalisation (eval_e2_closure_composition.py distributional_scores)",
+  "consequence": "the M^2 form subtracts a spread term that is smaller by a factor (M-1)/M = 7/8, so every node-006 energy score is biased HIGH by 1/8 of its ensemble-spread term. The bias is common to all arms and cannot change the sign of an arm contrast, but the absolute levels are estimator-specific.",
+  "resolution": "node 007's producer implements the M(M-1) estimator; the Methods text is corrected to state which estimator produced which number, and node-006 energy levels are labelled with their estimator rather than silently restated.",
+  "retained_arrays_permit_recomputation": false,
+  "_why": "the posterior members were scored on the fly and never written to disk, so only the aggregated per-frame score survives"
+ }
+}

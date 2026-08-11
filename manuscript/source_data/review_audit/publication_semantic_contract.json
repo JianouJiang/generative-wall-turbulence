@@ -1,0 +1,653 @@
+{
+  "schema": "gwt-source-first-publication-semantic-contract-v1",
+  "scope": "Reviewed headline, decision-bearing and previously misbound manuscript quantities. Source path and key are selected before value comparison. Mathematical definitions and cited facts are typed separately. Figure values are governed independently by producer-emitted artist manifests.",
+  "non_claim": "This contract does not assert that every typeset numeral is an empirical result or that bibliographic, equation, panel and layout numbers require data provenance.",
+  "entries": [
+    {
+      "id": "abstract_quantitative_headline",
+      "claim_class": "empirical_result",
+      "evidence_level": "offline closure composition (cube wall load) and channel slot",
+      "surface": "manuscript/main.tex",
+      "anchor": "the stress propagates",
+      "required_tokens": [
+        "two-fifths",
+        "three-quarters",
+        "one of two generative families"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig8_closure/e2_closure_composition_results.json",
+          "key": "units.CONFIRM_STRICT.wall_force.K:absent.relative_rmse",
+          "expected": 0.09943540900299996
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig8_closure/e2_closure_composition_results.json",
+          "key": "units.CONFIRM_STRICT.wall_force.K:tau_closure.relative_rmse",
+          "expected": 0.0609321773317784
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig_slot/DECISION_RULE_OUTCOME_NODE011.json",
+          "key": "clauses.C1.delta",
+          "expected": 0.16497128035711206
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig_slot/DECISION_RULE_OUTCOME_NODE011.json",
+          "key": "clauses.C2.delta",
+          "expected": 0.11983792386625124
+        }
+      ],
+      "amendment_rationale": "2026-08-04 peer-review round 2. The abstract was rewritten on the supervisor's dictated shape and no longer quotes the M0 first-contact aggregate, so an entry anchored on 'Here we show that a physics-grounded wall closure' and requiring M0 tokens could never pass. The entry is retargeted, not weakened: it now binds the two quantitative claims the abstract actually makes -- the cube wall-force error falling by two-fifths (0.09944 -> 0.06093) and the channel closure recovering three-quarters of the record's own traction benefit (0.11984 / 0.16497 = 0.726) -- each to its own source file, and additionally requires the abstract to state that the separating hill transmits in only one of the two generative families, so the adverse preregistered arm cannot be dropped from the abstract without failing this check. The retired M0 refs remain verified by the first_contact_m0 entries elsewhere in this contract.  2026-08-05 supervisor revision. The abstract was rewritten again on the supervisor's instruction (superlative softened, the equilibrium lift named as the commonly adopted fix, long sentences split, and the three records named with the rationale for choosing two hard ones). That rewrite removed the phrase 'Supplied instead as conditioning' on which this entry was anchored, so the entry matched an empty region and every token read false. The anchor is retargeted to 'the surface quantity propagates', which audit_level1_protocol independently requires the abstract to contain and which therefore cannot silently disappear. The three required tokens are unchanged in substance; the hill token is now stored without the embedded line break that tied it to one particular text wrapping. No guarantee is weakened: the abstract must still disclose both quantitative claims and the adverse one-of-two-families result.  2026-08-10 supervisor meeting revision. The abstract was expanded to the dictated opening (generative models gaining attention with the hope of a step change; a full stop after 'engineering loads'; a dedicated volume-averaged-objective sentence; 'commonly used' replacing 'obvious'; a closing refocus statement) and then trimmed back under the journal's 200-word ceiling. The trim shortened the propagation clause to 'the stress propagates', so the anchor is retargeted to that phrase, which audit_level1_protocol now independently requires. The three required tokens and all four source bindings are unchanged; no guarantee is weakened."
+    },
+    {
+      "id": "band_support_and_scored_fraction",
+      "claim_class": "deterministic_transform",
+      "evidence_level": "E1 support definition",
+      "surface": "manuscript/sections/results.tex",
+      "anchor": "The supplied band contains",
+      "required_tokens": [
+        "14,008 of 207,360",
+        "93.24\\%",
+        "$d/h=0.5$"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/cube3d_coupling_results.json",
+          "key": "_meta.fluid_cells",
+          "expected": 207360
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/cube3d_coupling_results.json",
+          "key": "_meta.band_cells",
+          "expected": 14008
+        }
+      ],
+      "derived": [
+        {
+          "kind": "percent_unsupplied",
+          "fluid_ref": 0,
+          "band_ref": 1,
+          "expected": 93.2445987654321
+        }
+      ],
+      "amendment_rationale": "2026-08-03 length revision (main text <5,000 words): claim wording compressed; the reader guarantee is unchanged and relocated values live in Methods/Supplementary Information. Region definitions and |U|=193,352 are stated exactly in Methods (sec:data)."
+    },
+    {
+      "id": "first_contact_complete_near_farther",
+      "claim_class": "empirical_result",
+      "evidence_level": "E1 first-contact terminal aggregate",
+      "surface": "manuscript/supplementary.tex",
+      "anchor": "Absolute and paired point estimates across sequential model development",
+      "required_tokens": [
+        "$+0.10308$",
+        "$+0.17548$",
+        "$+0.30688$",
+        "$+0.24311$",
+        "$-0.04030$",
+        "$+0.02774$",
+        "$+0.04408$"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "first_contact_m0.arms.correct.full_support_excluded",
+          "expected": 0.1030838276633651
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "first_contact_m0.differences.correct_minus_no_wall.full_support_excluded",
+          "expected": 0.17548029930792042
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "first_contact_m0.differences.correct_minus_wrong_wall.full_support_excluded",
+          "expected": 0.3068832641687512
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "first_contact_m0.arms.correct.near_support_excluded_d_le_0p5h",
+          "expected": 0.24310613742681053
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "first_contact_m0.arms.correct.outer_d_gt_0p5h",
+          "expected": -0.04029970494285218
+        }
+      ]
+    },
+    {
+      "id": "region_mask_code_contract",
+      "claim_class": "producer_configuration",
+      "evidence_level": "E1 scoring support",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "U_{\\mathrm{near}}=U",
+      "required_tokens": [
+        "d/h\\leq0.5",
+        "d/h>0.5"
+      ],
+      "source_refs": [
+        {
+          "kind": "code_regex",
+          "path": "codes/gpu/eval_cube_3d_coupling.py",
+          "pattern": "near_support_excluded_d_le_0p5h.*dist <= \\.5",
+          "expected": "near_support_excluded_d_le_0p5h\": fluid & (~band) & (dist <= .5"
+        },
+        {
+          "kind": "code_regex",
+          "path": "codes/gpu/eval_cube_3d_coupling.py",
+          "pattern": "outer_d_gt_0p5h.*dist > \\.5",
+          "expected": "outer_d_gt_0p5h\": fluid & (dist > .5"
+        }
+      ]
+    },
+    {
+      "id": "dropout_branch_configuration",
+      "claim_class": "producer_configuration",
+      "evidence_level": "E1 fitted-model protocol",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "With probability 0.25",
+      "required_tokens": [
+        "probability 0.25",
+        "training the absent-band",
+        "far-time condition is not a training class"
+      ],
+      "source_refs": [
+        {
+          "kind": "code_regex",
+          "path": "codes/gpu/eval_cube_3d_coupling.py",
+          "pattern": "keep = \\(torch\\.rand\\(batch, device=DEV\\) > \\.25\\)",
+          "expected": "keep = (torch.rand(batch, device=DEV) > .25)"
+        }
+      ]
+    },
+    {
+      "id": "optimizer_configuration",
+      "claim_class": "producer_configuration",
+      "evidence_level": "E1 fitted-model protocol",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "All three sequential models are",
+      "required_tokens": [
+        "learning rate $2\\times10^{-4}$",
+        "betas",
+        "$(0.9,0.99)$",
+        "weight decay $10^{-4}$",
+        "batch size 2"
+      ],
+      "source_refs": [
+        {
+          "kind": "code_regex",
+          "path": "codes/gpu/eval_cube_3d_coupling.py",
+          "pattern": "AdamW\\(model\\.parameters\\(\\), lr=2e-4, betas=\\(\\.9, \\.99\\), weight_decay=1e-4\\)",
+          "expected": "AdamW(model.parameters(), lr=2e-4, betas=(.9, .99), weight_decay=1e-4)"
+        }
+      ]
+    },
+    {
+      "id": "tensor_shape_from_retained_array",
+      "claim_class": "retained_array_shape",
+      "evidence_level": "E1 physical-diagnostic protocol",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "Each GLL field is mapped",
+      "required_tokens": [
+        "$96\\times192\\times96$",
+        "$48\\times96\\times48$"
+      ],
+      "source_refs": [
+        {
+          "kind": "npz_shape",
+          "path": "manuscript/source_data/fig2/cube3d_representative_fields.npz",
+          "key": "truth",
+          "expected": [
+            3,
+            48,
+            96,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quantile_definition_not_calibration",
+      "claim_class": "estimator_definition",
+      "evidence_level": "E1 post-selection diagnostic",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "coverage diagnostic compares interpolated",
+      "required_tokens": [
+        "interpolated 0.1/0.9 quantiles",
+        "against 0.8",
+        "not a finite-ensemble-valid calibration test"
+      ],
+      "source_refs": [
+        {
+          "kind": "code_regex",
+          "path": "codes/gpu/eval_cube_distributional_rapid.py",
+          "pattern": "lo = np\\.quantile\\(vals, 0\\.1, axis=0, method=\"linear\"\\)",
+          "expected": "lo = np.quantile(vals, 0.1, axis=0, method=\"linear\")"
+        },
+        {
+          "kind": "code_regex",
+          "path": "codes/gpu/eval_cube_distributional_rapid.py",
+          "pattern": "hi = np\\.quantile\\(vals, 0\\.9, axis=0, method=\"linear\"\\)",
+          "expected": "hi = np.quantile(vals, 0.9, axis=0, method=\"linear\")"
+        },
+        {
+          "kind": "code_regex",
+          "path": "codes/gpu/eval_cube_distributional_rapid.py",
+          "pattern": "abs\\(coverage - 0\\.8\\)",
+          "expected": "abs(coverage - 0.8)"
+        }
+      ]
+    },
+    {
+      "id": "energy_score_endpoint",
+      "claim_class": "empirical_result",
+      "evidence_level": "E1 post-selection contacted endpoint",
+      "surface": "manuscript/supplementary.tex",
+      "anchor": "Aligned, absent-band and far-time energy scores",
+      "required_tokens": [
+        "0.52235",
+        "0.52734",
+        "0.54838",
+        "+0.00499",
+        "+0.02603"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "fair_energy_score.block57_conservative.arms.correct.mean",
+          "expected": 0.5223475791451458
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "fair_energy_score.block57_conservative.arms.no_wall.mean",
+          "expected": 0.5273397689032656
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "fair_energy_score.block57_conservative.arms.far_time_wall.mean",
+          "expected": 0.548380648512697
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "fair_energy_score.block57_conservative.improvements.no_wall_minus_correct.mean",
+          "expected": 0.00499218975811978
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "fair_energy_score.block57_conservative.improvements.far_time_wall_minus_correct.mean",
+          "expected": 0.02603306936755126
+        }
+      ]
+    },
+    {
+      "id": "fig4_sign_direction",
+      "claim_class": "directional_semantic_invariant",
+      "evidence_level": "E1 post-selection contacted endpoint",
+      "surface": "manuscript/sections/results.tex",
+      "anchor": "energy-score",
+      "required_tokens": [
+        "favours the aligned arm over both controls",
+        "$0.522$",
+        "$0.527$",
+        "$0.548$"
+      ],
+      "forbidden_tokens": [
+        "$-0.00499$"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "fair_energy_score.block57_conservative.improvements.no_wall_minus_correct.mean",
+          "expected": 0.00499218975811978
+        }
+      ],
+      "amendment_rationale": "2026-08-03 length revision (main text <5,000 words): claim wording compressed; the reader guarantee is unchanged and relocated values live in Methods/Supplementary Information. The sign direction is now carried by the score ordering; the exact paired improvements with intervals are in Supplementary Note 4."
+    },
+    {
+      "id": "physical_corroboration_null",
+      "claim_class": "empirical_result",
+      "evidence_level": "E1 post-selection contacted diagnostic",
+      "surface": "manuscript/sections/results.tex",
+      "anchor": "corroboration is null",
+      "required_tokens": [
+        "fail to beat both controls",
+        "withdrawn as invalid at eight members"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.component_spectrum_log_rmse.arms.correct.mean",
+          "expected": 0.2002317914270228
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.component_spectrum_log_rmse.arms.no_wall.mean",
+          "expected": 0.2641703678072421
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.component_spectrum_log_rmse.arms.far_time_wall.mean",
+          "expected": 0.2019693266213304
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.reynolds_stress_profile_nrmse.arms.correct.mean",
+          "expected": 0.4392412174690891
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.reynolds_stress_profile_nrmse.arms.no_wall.mean",
+          "expected": 0.49294993567902434
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.reynolds_stress_profile_nrmse.arms.far_time_wall.mean",
+          "expected": 0.44875384617940534
+        }
+      ],
+      "amendment_rationale": "2026-08-03 length revision (main text <5,000 words): claim wording compressed; the reader guarantee is unchanged and relocated values live in Methods/Supplementary Information. The null outcome remains bolded in Results; 'not softened' phrasing removed as self-referential."
+    },
+    {
+      "id": "descriptive_hit_fractions",
+      "claim_class": "empirical_result_with_withdrawn_adjudication",
+      "evidence_level": "E1 post-selection contacted diagnostic",
+      "surface": "manuscript/supplementary.tex",
+      "anchor": "descriptive hit fraction",
+      "required_tokens": [
+        "51.4\\%",
+        "[49.9\\%,52.8\\%]$",
+        "withdrawn from calibration"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.coverage80.arms.correct.mean",
+          "expected": 0.5140762648935093
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.coverage80.arms.no_wall.mean",
+          "expected": 0.5198070137318437
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/derived_peer_review_statistics.json",
+          "key": "physical_statistics.block57_conservative.coverage80.arms.far_time_wall.mean",
+          "expected": 0.48959417999909993
+        }
+      ]
+    },
+    {
+      "id": "grouped_hill_adverse_replication",
+      "claim_class": "empirical_result",
+      "evidence_level": "supporting nonconfirmatory test",
+      "surface": "manuscript/supplementary.tex",
+      "anchor": "The diffusion checkpoint has",
+      "required_tokens": [
+        "$N_{\\rm eff}=3.19$",
+        "$R^2=-0.08405$",
+        "$R^2=-0.48472$",
+        "[+0.09421,+0.20137]",
+        "[-0.40740,-0.23418]"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig6/grouped_hill_supporting.json",
+          "key": "diffusion.arms.correct",
+          "expected": -0.08405208587646484
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig6/grouped_hill_supporting.json",
+          "key": "flow_matching.arms.correct",
+          "expected": -0.4847155809402466
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig6/grouped_hill_supporting.json",
+          "key": "split.effective_test_events",
+          "expected": 3.189655172413793
+        }
+      ]
+    },
+    {
+      "id": "capacity_gate_failure",
+      "claim_class": "empirical_result",
+      "evidence_level": "supporting fixed-budget diagnostic",
+      "surface": "manuscript/supplementary.tex",
+      "anchor": "Widths 48, 96 and 120 were trained",
+      "required_tokens": [
+        "-0.07127",
+        "[-0.11239,-0.04276]",
+        "-0.01855",
+        "[-0.03451,-0.00030]",
+        "convergence parity"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig7/capacity_crossed_adjudication.json",
+          "key": "points.120.correct.mean_across_seed_point_estimates",
+          "expected": -0.0712697556631628
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig7/capacity_crossed_adjudication.json",
+          "key": "crossed_capacity_slopes.correct.mean",
+          "expected": -0.018546443450980978
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/fig7/capacity_crossed_adjudication.json",
+          "key": "gates.scaling_claim_pass",
+          "expected": false
+        }
+      ],
+      "window_characters": 4000
+    },
+    {
+      "id": "closure_interface_load_bearing_metrics",
+      "claim_class": "deterministic_interface_sensitivity",
+      "evidence_level": "interface custody, not transfer performance",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "Replaying ten retained Krank profiles",
+      "required_tokens": [
+        "relative RMSE $0.408$",
+        "$1.292$--$2.366$",
+        "correlation $0.098$",
+        "from $0.558$ to\n$0.171$"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/closure_interface_custody.json",
+          "key": "metrics.pressure_surrogate_relative_rmse",
+          "expected": 0.9614344091404543
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/closure_interface_custody.json",
+          "key": "metrics.pressure_surrogate_pearson",
+          "expected": 0.09774023832390974
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/closure_interface_custody.json",
+          "key": "metrics.closure_output_relative_rmse",
+          "expected": 0.40805516702006367
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/closure_interface_custody.json",
+          "key": "metrics.paired_local_mlp_cf_r2_separated",
+          "expected": 0.7224407473251363
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/closure_interface_custody.json",
+          "key": "metrics.frozen_x2_cf_r2_separated",
+          "expected": -2.0370108978093215
+        }
+      ]
+    },
+    {
+      "id": "beta_p_definition_and_zero_rule",
+      "claim_class": "empirical_interface_definition",
+      "evidence_level": "closure-side custody",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "permutation-invariant branch consumes",
+      "required_tokens": [
+        "\\beta_p=\\frac",
+        "u_p=(\\nu|\\partial_xp|)^{1/3}",
+        "$\\beta_p=0$ when $\\partial_xp=0$"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/closure_interface_custody.json",
+          "key": "actual_closure_map.beta_p_definition",
+          "expected": "beta_p=dstar_resolved*dpdx/u_p^2; u_p=(nu*abs(dpdx))^(1/3); sign is carried by dpdx; beta_p=0 when dpdx=0"
+        }
+      ]
+    },
+    {
+      "id": "case1_source_identity",
+      "claim_class": "source_identity",
+      "evidence_level": "withdrawn forensic E2 path",
+      "surface": "manuscript/supplementary.tex",
+      "anchor": "coordinates have shape",
+      "required_tokens": [
+        "$(918,2)$",
+        "$(16001,918,3)$",
+        "two-dimensional irregular pipe",
+        "$(u,v,p)$",
+        "withdrawn from physical interpretation"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/case1_source_native_audit.json",
+          "key": "raw_arrays.coords.shape",
+          "expected": [
+            918,
+            2
+          ]
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/case1_source_native_audit.json",
+          "key": "raw_arrays.data.shape",
+          "expected": [
+            16001,
+            918,
+            3
+          ]
+        },
+        {
+          "kind": "json",
+          "path": "manuscript/source_data/review_audit/case1_source_native_audit.json",
+          "key": "primary_source.reported_identity",
+          "expected": "two-dimensional irregular pipe with stochastic forcing; fields u,v,p"
+        }
+      ]
+    },
+    {
+      "id": "evidence_ladder_global",
+      "claim_class": "epistemic_scope",
+      "evidence_level": "oracle propagation / closure composition / closure-side transfer",
+      "surface": "manuscript/sections/methods.tex",
+      "anchor": "We distinguish three evidence classes",
+      "required_tokens": [
+        "The first, \\emph{oracle wall-band propagation}",
+        "The third, \\emph{closure-side transfer}, comprises companion evidence from separate\nfrozen models",
+        "nothing in this work advances a momentum equation"
+      ],
+      "source_refs": [],
+      "window_characters": 2600,
+      "amendment_rationale": "2026-08-03 editorial revision: the unperformed solver-coupled evidence level (formerly E4) is no longer enumerated in the taxonomy; its absence is stated once in Methods (no momentum equation advanced) and once in Discussion (future work). The scope guarantee is unchanged: no solver-coupled claim exists anywhere in the manuscript. | 2026-08-04: the internal E1/E2/E3 labels were removed from the manuscript on author instruction, so tokens quoting them could not match the surface they audit. The tokens now quote the plain-language taxonomy verbatim. The audited guarantee is unchanged and is in fact stricter: the three evidence classes must still be separately named in Methods, and the no-momentum-equation scope statement must still be present."
+    },
+    {
+      "id": "near_wall_prior_work_positioning",
+      "claim_class": "cited_physics_motivation",
+      "evidence_level": "motivation, not performance evidence",
+      "surface": "manuscript/sections/introduction.tex",
+      "anchor": "Representative whole-field formulations",
+      "required_tokens": [
+        "whole-field objectives",
+        "do not by\nthemselves give a thin wall region",
+        "CoNFiLD",
+        "documents larger discrepancies near the",
+        "universally ignores walls",
+        "none has an explicit wall-closure-to-generator"
+      ],
+      "source_refs": [],
+      "amendment_rationale": "2026-08-03 length revision (main text <5,000 words): claim wording compressed; the reader guarantee is unchanged and relocated values live in Methods/Supplementary Information. | 2026-08-04 peer-review round 2: the anchor tracked the compressed heading ('Representative whole-field formulations'). All six substantive guarantees are retained verbatim, including both respectfulness clauses and the explicit-interface novelty claim."
+    },
+    {
+      "id": "interface_gap_claim",
+      "claim_class": "cited_physics_motivation",
+      "evidence_level": "motivation, not performance evidence",
+      "surface": "manuscript/sections/introduction.tex",
+      "anchor": "Two things are missing between them",
+      "required_tokens": [
+        "no whole-field generative\nformulation takes its wall boundary from a closure",
+        "no wall closure has been judged by what a\ngenerator can propagate from it"
+      ],
+      "source_refs": [],
+      "amendment_rationale": "2026-08-04: added so the relocated 'no explicit wall-closure-to-generator interface' claim stays audited after the prior-work paragraph was compressed. This is the paper's central novelty claim about the literature and must not become unanchored."
+    },
+    {
+      "id": "hill_evidence_identity",
+      "claim_class": "empirical_result",
+      "evidence_level": "offline closure composition, separating record, indicative",
+      "surface": "manuscript/sections/results.tex",
+      "anchor": "The record passes that control in the diffusion family, and so does the method",
+      "window_characters": 2600,
+      "required_tokens": [
+        "+0.062\\,[+0.017,+0.106]",
+        "N_{\\rm eff}\\simeq3.3",
+        "separated from neither a magnitude-matched scrambled"
+      ],
+      "source_refs": [
+        {
+          "kind": "json",
+          "path": "codes/results/hill_hierarchical_intervals.json",
+          "key": "tags.e2_grouped_hills.cells.H2.regions.full_srcex.tau_closure.delta_vs_absent",
+          "expected": 0.06223249435424805
+        },
+        {
+          "kind": "json",
+          "path": "codes/results/hill_hierarchical_intervals.json",
+          "key": "tags.e2_grouped_hills.cells.H2.regions.full_srcex.tau_native.delta_vs_absent",
+          "expected": 0.05794334411621094
+        }
+      ],
+      "amendment_rationale": "2026-08-04: the periodic hill became a reported third demonstration in this revision. This entry binds its headline number to the released hierarchical-estimator JSON and -- deliberately -- also requires the two statements that bound it: the ~3.3 effective sample size and the non-separation from a scrambled traction. A future edit that keeps the favourable number while dropping either caveat fails this check."
+    }
+  ]
+}

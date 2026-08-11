@@ -1,0 +1,264 @@
+{
+  "claim_boundary": "Crossed seed/time capacity inference only; no source-geometry/few-shot scaling. A fixed-update result cannot pass while convergence_parity is false.",
+  "contract": {
+    "bootstrap_replicates": 10000,
+    "circular_time_block": 116,
+    "common_time_resample_across_all_width_seed_arms": true,
+    "max_absolute_tail_relative_drop_for_convergence": 0.01,
+    "physical_times": 370,
+    "planes_grouped_per_time": 3,
+    "seeds": [
+      1234,
+      2234,
+      3234
+    ],
+    "training_seed_resampled": true,
+    "widths": [
+      48,
+      96,
+      120
+    ]
+  },
+  "convergence": {
+    "parity_pass": false,
+    "rule": "Every width/seed requires >=3 explicit validation audits, <=1% energy-score improvement, <=2% wall-sensitivity change and non-worsening energetic spectrum; training-loss flattening alone is inadmissible.",
+    "training_loss_tail_relative_drop_diagnostic_only": {
+      "ch120_seed1234": 0.5514507820628765,
+      "ch120_seed2234": -0.6535046970105832,
+      "ch120_seed3234": -0.12874690558975674,
+      "ch48_seed1234": 0.4611460969476693,
+      "ch48_seed2234": -0.5517379872464346,
+      "ch48_seed3234": -0.16790782968164192,
+      "ch96_seed1234": 0.46300341678727525,
+      "ch96_seed2234": -0.6175125613604162,
+      "ch96_seed3234": -0.05836119037820778
+    },
+    "validation_audits": {
+      "ch120_seed1234": null,
+      "ch120_seed2234": null,
+      "ch120_seed3234": null,
+      "ch48_seed1234": null,
+      "ch48_seed2234": null,
+      "ch48_seed3234": null,
+      "ch96_seed1234": null,
+      "ch96_seed2234": null,
+      "ch96_seed3234": null
+    }
+  },
+  "crossed_capacity_slopes": {
+    "correct": {
+      "crossed_ci95": [
+        -0.03451147130217835,
+        -0.0002980902633140714
+      ],
+      "mean": -0.018546443450980978,
+      "units": "R2 per natural-log parameter"
+    },
+    "gain_no_wall": {
+      "crossed_ci95": [
+        -0.03927664884890613,
+        0.020672683661653767
+      ],
+      "mean": -0.009886631430423745,
+      "units": "R2 per natural-log parameter"
+    },
+    "gain_wrong_wall": {
+      "crossed_ci95": [
+        0.006327719470757517,
+        0.035632410397976086
+      ],
+      "mean": 0.02172531648634228,
+      "units": "R2 per natural-log parameter"
+    }
+  },
+  "evidence_level": "held-out DNS oracle near-wall-band propagation on one fixed hill corpus",
+  "gates": {
+    "convergence_parity": false,
+    "largest_correct_absolute_skill_positive": false,
+    "largest_correct_beats_no_wall": true,
+    "largest_correct_beats_wrong_wall": true,
+    "nondecreasing_gain_no_wall": false,
+    "nondecreasing_gain_wrong_wall": true,
+    "positive_size_slope": false,
+    "scaling_claim_pass": false,
+    "three_width_three_seed_matrix": true
+  },
+  "inputs": [
+    {
+      "components": "codes/results/hill_model_capacity_scaling_paired96_seed1234_components.npz",
+      "components_sha256": "78d96d103e4408f16c34f4611b321b82b521719747c70513e0bccbb882ca1f16",
+      "result": "codes/results/hill_model_capacity_scaling_paired96_seed1234_results.json",
+      "result_sha256": "de09ca2a5b0338ee0a82981cdbbf5ac08480fa7d740c700c342d4c91537ad168"
+    },
+    {
+      "components": "codes/results/hill_model_capacity_scaling_seed2234_3234_components.npz",
+      "components_sha256": "cb64d9fc25fc7567c24932d1f9a485f067ec0973631cffecd279587fc908aefd",
+      "result": "codes/results/hill_model_capacity_scaling_seed2234_3234_results.json",
+      "result_sha256": "b4994c2da90bef6a400fba4c378f59b4a63c08d47ab165f6aa79e4d140927fbc"
+    }
+  ],
+  "n_parameters": {
+    "120": 28765946,
+    "48": 4783538,
+    "96": 18524258
+  },
+  "points": {
+    "120": {
+      "correct": {
+        "crossed_ci95": [
+          -0.1123900932537887,
+          -0.04276143260266073
+        ],
+        "mean_across_seed_point_estimates": -0.0712697556631628,
+        "per_seed_point_estimates": {
+          "1234": -0.059894934522160215,
+          "2234": -0.053409949554121594,
+          "3234": -0.10050438291320662
+        }
+      },
+      "correct_minus_no_wall": {
+        "crossed_ci95": [
+          0.08384880891725073,
+          0.24529255593848845
+        ],
+        "mean": 0.16401370961868514
+      },
+      "correct_minus_wrong_wall": {
+        "crossed_ci95": [
+          0.10100150438703595,
+          0.17119811154260436
+        ],
+        "mean": 0.1369112982283415
+      },
+      "no_wall": {
+        "crossed_ci95": [
+          -0.29917731031286304,
+          -0.17293121907183628
+        ],
+        "mean_across_seed_point_estimates": -0.23594220924737316,
+        "per_seed_point_estimates": {
+          "1234": -0.2840790225314911,
+          "2234": -0.2224421278147306,
+          "3234": -0.20130547739589777
+        }
+      },
+      "wrong_wall": {
+        "crossed_ci95": [
+          -0.2399967803898449,
+          -0.17918857351769513
+        ],
+        "mean_across_seed_point_estimates": -0.20873740206314326,
+        "per_seed_point_estimates": {
+          "1234": -0.2018669691050461,
+          "2234": -0.18412716035545018,
+          "3234": -0.24021807672893347
+        }
+      }
+    },
+    "48": {
+      "correct": {
+        "crossed_ci95": [
+          -0.059871547196217845,
+          -0.010046391969036662
+        ],
+        "mean_across_seed_point_estimates": -0.03416422876000946,
+        "per_seed_point_estimates": {
+          "1234": -0.03441521906730505,
+          "2234": -0.030764348640134997,
+          "3234": -0.037313118572588344
+        }
+      },
+      "correct_minus_no_wall": {
+        "crossed_ci95": [
+          0.12713103270604337,
+          0.2339136991647694
+        ],
+        "mean": 0.17880144263544107
+      },
+      "correct_minus_wrong_wall": {
+        "crossed_ci95": [
+          0.07194773064233616,
+          0.13163528837110172
+        ],
+        "mean": 0.09869621213698879
+      },
+      "no_wall": {
+        "crossed_ci95": [
+          -0.2756092945785493,
+          -0.15520598601203733
+        ],
+        "mean_across_seed_point_estimates": -0.21281762400322393,
+        "per_seed_point_estimates": {
+          "1234": -0.19588076144650235,
+          "2234": -0.24391296527496586,
+          "3234": -0.1986591452882036
+        }
+      },
+      "wrong_wall": {
+        "crossed_ci95": [
+          -0.17392346933279254,
+          -0.09858492989658928
+        ],
+        "mean_across_seed_point_estimates": -0.1329292438145925,
+        "per_seed_point_estimates": {
+          "1234": -0.1437022820131404,
+          "2234": -0.12379430885140952,
+          "3234": -0.13129114057922764
+        }
+      }
+    },
+    "96": {
+      "correct": {
+        "crossed_ci95": [
+          -0.0865814627346784,
+          -0.02177306324935194
+        ],
+        "mean_across_seed_point_estimates": -0.04938580185585143,
+        "per_seed_point_estimates": {
+          "1234": -0.041986312552541705,
+          "2234": -0.047651001335321075,
+          "3234": -0.05852009167969152
+        }
+      },
+      "correct_minus_no_wall": {
+        "crossed_ci95": [
+          0.08730721721404638,
+          0.2317793312185615
+        ],
+        "mean": 0.15820591757232572
+      },
+      "correct_minus_wrong_wall": {
+        "crossed_ci95": [
+          0.0941422265131569,
+          0.17311814631228942
+        ],
+        "mean": 0.12996920554901115
+      },
+      "no_wall": {
+        "crossed_ci95": [
+          -0.26708414726780677,
+          -0.14886626330476535
+        ],
+        "mean_across_seed_point_estimates": -0.20759217970324265,
+        "per_seed_point_estimates": {
+          "1234": -0.1791941121772338,
+          "2234": -0.23936630834141437,
+          "3234": -0.2042161185910798
+        }
+      },
+      "wrong_wall": {
+        "crossed_ci95": [
+          -0.20605019128751653,
+          -0.15754274514394676
+        ],
+        "mean_across_seed_point_estimates": -0.1798631233936113,
+        "per_seed_point_estimates": {
+          "1234": -0.18733339212820277,
+          "2234": -0.1615721161165975,
+          "3234": -0.1906838619360336
+        }
+      }
+    }
+  },
+  "schema": "gwt-hill-capacity-crossed-adjudication-v1"
+}

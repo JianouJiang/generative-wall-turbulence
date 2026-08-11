@@ -1,0 +1,3136 @@
+{
+  "all_validated": true,
+  "binding_count": 62,
+  "bindings": [
+    {
+      "actual_payload_sha256": "b08cca0f0f6a7f50ff5f4c4e231af3dba5a22221f28449d6c692369a61ac8aac",
+      "artist_id": "fig6.a.error_map.representative__correct.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "b08cca0f0f6a7f50ff5f4c4e231af3dba5a22221f28449d6c692369a61ac8aac",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "3f9a9dbcba9cd3a9745f3b7da6727679aaa028952e649c23badaa173e07cc22b",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "066a1695e095d9f089962d739e08c2cf8cd319e0a324a313f34612225b98b3aa",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "e6350bd817c484cefdc588a900e0beed9c845cb7aae7b0de6fafb78d800369dc",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "eece1f712f49433d528865ad429f3e15afad2435e77e8467989613f45872f57a",
+      "artist_id": "fig6.a.error_map.representative__correct.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "eece1f712f49433d528865ad429f3e15afad2435e77e8467989613f45872f57a",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "e6b5d88e18b85d6e9ab5164c96b2cc5d593b3e32e664174ddc93adb59213d322",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "43f643dcf4a4ec8620e30877983cd68a4b2e08553bbc94f661a3223e34e62bdd",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "df2c23f0facdc2bd49f0a731bd018abb93774b14549ab3a54a8e7a59e3692351",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "378251bec2b5f9ecbde4f53ff15847f6221a8f582a90ea21af0cb005a6839d34",
+      "artist_id": "fig6.a.error_map.representative__correct.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "378251bec2b5f9ecbde4f53ff15847f6221a8f582a90ea21af0cb005a6839d34",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "6e2b1fe7554d3cd5432bd15e8644879a95306fa7cda9d4a5de712b7bb07f9160",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "57f87757fe3e583ac76dcc7ecb010d6bc6d97baa589b8f1fe0df8c8504b3a7fa",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "af29d49c205599d08cbebf0aee9dae2064cb91a0af6b60baca7a63643ef1758c",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "acc06a62534adb8511da04f28f148d8c796f0cd7326051ab52d25ff132f1f56f",
+      "artist_id": "fig6.a.error_map.representative__correct_physwall.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "acc06a62534adb8511da04f28f148d8c796f0cd7326051ab52d25ff132f1f56f",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "f705e88233ab3b64bedcaf6bbb636d1aca581b62a046137b04f87a2a33fdcf35",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "e475c509151003f6f5917be25c98b39ecc24327d8d5f43a7026af870ef4227f0",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "eb2673bce7611b8363c6ff066e481fdd2f25843a55750202d41853154051f991",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "fbaa43406267e6b3dd0ec801657b850f5c0b1d6f01b173e8102c4f3e3bed3291",
+      "artist_id": "fig6.a.error_map.representative__correct_physwall.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "fbaa43406267e6b3dd0ec801657b850f5c0b1d6f01b173e8102c4f3e3bed3291",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "6f144ed38e98eb6fa3460b4a0868d628a4498eab12f0377fb8cbdd17df443358",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "751699181521679935fc42054a9d780193f151aa944e0b18e05dad6266ead126",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "ee01e944b9de4db9b9fb9a003d0e3b18cde1c18494e488ad4f3ecda67cc3d530",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "cc02de466e5dcc1727528ff2eb7c0ed5ca32347bad592eda6e104bd958021a98",
+      "artist_id": "fig6.a.error_map.representative__correct_physwall.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "cc02de466e5dcc1727528ff2eb7c0ed5ca32347bad592eda6e104bd958021a98",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "20595ece14746a722aa4c5fea5c1ce8650572c5dd563def610c226b1fac96ca3",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "6d39a9294c0aca98ca95d72614401f48fd890d5f70dc2d922fbfd6a87b2e88dd",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__correct_physwall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "dff63bf58c59923c6ba255d6f7551a34aa0302535fbb77725e2984b662ca0b7a",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "eae3f186e64801178a44622fd2e0ebc076b05caed54e4dc69449a23aa8d17a46",
+      "artist_id": "fig6.a.error_map.representative__no_wall.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "eae3f186e64801178a44622fd2e0ebc076b05caed54e4dc69449a23aa8d17a46",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "efc40a4829dbf1719fac9ef33bb0d81f3cafff00359a76d57cdd6ef3523982e2",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "60ed2fc60dde3a5ef533e9939c6a7f1e687e71a586e4d62908b20beceba802ff",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "e282c1439210d1f3d141d2532f4d96a1567f04bab103abfb12b15126feaa72e3",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c0df309a27044f9c2114898598a4e0ce5b4055c4918f5eba4a08547408a643d1",
+      "artist_id": "fig6.a.error_map.representative__no_wall.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "c0df309a27044f9c2114898598a4e0ce5b4055c4918f5eba4a08547408a643d1",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "e295291097cbcc34611a822ff3f40b16014e6100434640cc48b4264a9c7a73da",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "80a86a6da79ccff68ed7ab6f9be077bb67d8aff92ce837b29bde859d86bff21e",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "229dcee127469854fb78faedcdf6ed2463fd2f52d4e7e94c1ee7a8a47e4f5aeb",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "8cafd7caf3c5cf57208ab29caebd883d867a71a9b3d3f3ff844b05626d71225c",
+      "artist_id": "fig6.a.error_map.representative__no_wall.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "8cafd7caf3c5cf57208ab29caebd883d867a71a9b3d3f3ff844b05626d71225c",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53206d87ba4e3ae1dd1df73561f583cc991d8854339004e8bccccbd750b27173",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "014468c4b93646d127858f29c3275afd7ed2bdd36c56f8b1f71ff0edc0ff79b8",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__no_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "10dcef22864524c777f740f74d54b8b8d1df2ffa6ed8eef4caecdf2a0e0b1d48",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "78adc9f7a4740fd9f3061e74df698ab2fec6b5bb7354339d8f2b9d44f57d77ea",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_fartime.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "78adc9f7a4740fd9f3061e74df698ab2fec6b5bb7354339d8f2b9d44f57d77ea",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "230b6ff09cee2aac23d9cd6dc67107c57380defd86795e7567b6dfa14091a05e",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "62d4955d11f442ebec54fd1024e69b777ec958403037709c71ae11465f31a337",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "364a2cf11d6636e1938e9e14b10860a6f0fd8bf2c326d5925ab246c1c0cfe1fa",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "10c678e85c5014ab5983d3003ea971d3dc118b0c57ad1c1480c73cf17f7fb3c5",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_fartime.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "10c678e85c5014ab5983d3003ea971d3dc118b0c57ad1c1480c73cf17f7fb3c5",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "99bb14fb8f21f8725ac46abb06e9b8c0d6080743c6ff8d8b763270329a039dae",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "ce35e25a76378f13badee76e7569abbd819b67ecc8b0b4731334878cc5724c45",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0003cad992549223f165ec97f1443a49ced492ff3f1870ff77040b801e08e8c6",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ffdac298c59b4df3a803cefff159e8f331201674bb71a888a40ac194b4de6db4",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_fartime.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "ffdac298c59b4df3a803cefff159e8f331201674bb71a888a40ac194b4de6db4",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "b250cb3d2a9fd9aff00e61a3d33a27775bf4cb4cece2780e741e8d325fb4e879",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "9d72e1b53b56ae425fce0f5d788ca34e2e672480701178f61e926c5bb152292f",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_fartime",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "b1877d16740322773a24a83d21905179f02b7be0327bf382f81d4706791dea3a",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "5ecb2af030b3608f212fe854926a7b244e1e3aaf5468f59d43535950c2896099",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_model_predicted.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "5ecb2af030b3608f212fe854926a7b244e1e3aaf5468f59d43535950c2896099",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0a91b9f5371b208467758b20c00e3af764687eb7134b504230330c4b4cf0852a",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "8bc1b0180f846f8af397806692d79c840b9626ebf670e57fc103afa5b834e31f",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "9fd28e55d4dd54fbd09ad91458c72d7af24d2d88c6b7671e5e6fa5360d93cdb2",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "f8e947c6e18a1331aa8142131e4556a90bf12b24dc4119e31cacd6344c4c9dac",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_model_predicted.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "f8e947c6e18a1331aa8142131e4556a90bf12b24dc4119e31cacd6344c4c9dac",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "20391de5a13088d6d6dbdf82ed6f1b72443487d864fd3dce5af8d103bdc4e134",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "3f0831e9cf4b6500733e923076fec852504f8ebd034e2f7c9d1799cc06e81e08",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "56ee59b4f7494961d29fc348232352e717876aec59531c7abad057395ab2d206",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ccb6feeffd454e56340be3c47160dd2cc904c8424699bd2208574179c6a48144",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_model_predicted.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "ccb6feeffd454e56340be3c47160dd2cc904c8424699bd2208574179c6a48144",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "7d3d8d395da64e49f685046c3c918f93cfc9e8db286d8a1c2d7c214454bbecf2",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "4ec5c84ce92fef907f94ed9650c6199a28d8e35f44da5d6dd20ade611c601256",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_model_predicted",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "a84a66ac3327f6b10638a843961a7207d67626cb09e2fdc6dcfea37d74cae2f5",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "1146afe16165deed89cbe4eee0f720a24b022748b2db919553384f3cee64ab95",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_oracle.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "1146afe16165deed89cbe4eee0f720a24b022748b2db919553384f3cee64ab95",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "685176cd1a4b9568034af1bb6db28a96cae8f4394d7f5c4bb820daa16ecb86e1",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "f6c2c515945b81df06151a4aed15886406a12a02765c33862fb08faa942e7840",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "9aceff1849d527d25d1d6ccefa3e85f263b6bcd4b773626332f6214e5e37b799",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "425755f967e717a880602adf800c029ea1f52d1b2b38bfa39cc3db7582fe33d3",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_oracle.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "425755f967e717a880602adf800c029ea1f52d1b2b38bfa39cc3db7582fe33d3",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "7bcffec6707bbbf1b73fb57387019962140f4ff180e6ae7088fa18ff5d3315a0",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1955ad8a4f52b8d8dee9b0b621216ca0ab6a63df9c829f1131627ca92e685652",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "cda42a1e8da4a45947b1a989cf513b51e58c2163989fdcff3fb004341c001857",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "5598faee4e4112075afd68bf1105b4bfb29eece8fef74ad392a37ce3542d4a77",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_oracle.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "5598faee4e4112075afd68bf1105b4bfb29eece8fef74ad392a37ce3542d4a77",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "18b2708527650c6c2ccdc7aba3aefb116acd8529c7d0d3315059631f801d81ca",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "22a3ea79ea97af2077b0ec856f7479b0d190c5c9a2a3b0c5b260184593416edb",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "90be0957dcad6011d3c986b577017104bcbb8fd20bb85795ee3740398e644e26",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e3954bae23b88c29d0895f0c1af4ead2c18ce8ac02e211cf2ba55866012638b9",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_trainmean.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "e3954bae23b88c29d0895f0c1af4ead2c18ce8ac02e211cf2ba55866012638b9",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "44d24cba9a1babd064aa8a6b321d5dc4ff077a3e6a1c7f727126b88b22067267",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "5cc6adc049566e2f3163b05644df6b52998ca4880e80192343f6ba08610ba633",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "e4f3867ead0db3897cc01e81029c0c375860c87a90827ffd485e04b429c74c0d",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "fe0deb61b8a9007cd4f96362725fbb924473cae806a9ec381a8f763ed9e020c9",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_trainmean.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "fe0deb61b8a9007cd4f96362725fbb924473cae806a9ec381a8f763ed9e020c9",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "badf1f726087aeb26f227e2902d14a903386be480c0a190f14173ddd8aa9a990",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "633fda8730e88ba1659e025c7a50707f75b66369350d3bc00cf18da3d58b2bd2",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "f233c53e7e361fce5bd568cabf988e7a1950e91b0bb4f0917e0dd14e13c27d4b",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "54c03711c5d3c5a21be8d1a57bb29d4c14147bb75981d96be9b294b35cf5789c",
+      "artist_id": "fig6.a.error_map.representative__tau_lift_trainmean.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "54c03711c5d3c5a21be8d1a57bb29d4c14147bb75981d96be9b294b35cf5789c",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "123152e441d14fc8ec7debff0dd19e8c63fae143de876a0075d91ae17353b3bb",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "fbc5daa12899393ad148b0549beb36279cc963049965aa8e92ec8ecfb35f7a89",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__tau_lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "471bc6a58fcbfa8941e5a2c73ce8221077f46b4f2139a6d0e1f07f577d606ff0",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b2f9912d5246bfe13ebd0b846d345c6e1e2aa5b4465880d418a9b5190d7f5d89",
+      "artist_id": "fig6.a.error_map.representative__wrong_wall.xy",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "b2f9912d5246bfe13ebd0b846d345c6e1e2aa5b4465880d418a9b5190d7f5d89",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "0195f427d84914885b0901daf50b81f462e5e61a8c4a1b5033839411f537acdc",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "613c2b0bb0eb88ad1d8c7e7fdbe657646014cb0db362d7ab3700851231272ec6",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "195994b05ad77951fa774019d1ee7128a0a9fb6659041505756e408ff2f4a1fd",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "bba7b9606dffaedbf485c6bc711f6d45d3409b2c42e6f20b31db474195e7a17f",
+          "slice": [
+            0,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "9e55ab1fd1df815ce0b15471773bc387929429dd886175e7140e9b5c2d18f6b0",
+          "slice": [
+            1,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "5ca19ae6dc3ad893fd55c63e024be66f48ecd7b1bc27a5227243ffe80d35dfbf",
+          "slice": [
+            2,
+            ":",
+            ":",
+            24
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xy plane at retained index 24; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "3fe83f535bc4dd87a7d99be0b4944f2710c5b821259f103a3658c68c1ae35c03",
+      "artist_id": "fig6.a.error_map.representative__wrong_wall.xz_near",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "3fe83f535bc4dd87a7d99be0b4944f2710c5b821259f103a3658c68c1ae35c03",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d3183e030efb27e72d6ae603c8a45c4bbdefef1fbf9088ce56af2ef5e97231e4",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "53d4d32b6afe9a0248f309340b69d90d48cef74d780e112b58f9b7f7170a6f28",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "2b685e5df1094163f5ac038ef9b1384dd24f35c5e0c3b1d579f47678c844d131",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "a41d34a78c0089d10da0c0f1a467a170b90056519605f362a379f543f0c5c6f1",
+          "slice": [
+            0,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "6377185dfdbd6396c4ec706438a8a724111b17a5363283a49bee4e0b25020048",
+          "slice": [
+            1,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "ecfdc22ccd7b7a2b2ed48293f9e71ca08cfb4e13b3edef9ce420db95998598ea",
+          "slice": [
+            2,
+            ":",
+            6,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_near plane at retained index 6; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "fc82e886140f738c739d9d89a59f1acccba5cc1a32abf7063568d34b6d31303f",
+      "artist_id": "fig6.a.error_map.representative__wrong_wall.xz_outer",
+      "artist_type": "AxesImage",
+      "evidence": "one retained illustrative target; quantitative inference uses all targets",
+      "expected_payload_sha256": "fc82e886140f738c739d9d89a59f1acccba5cc1a32abf7063568d34b6d31303f",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "846e6a0aa07c83d94649e57de14dc16fe7db02961e6bac2859c514b95502351e",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "1fb15c3759c78a2555bbc5e8c9fed7010eac7f55d48666d0b7810896d530bf22",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative_truth",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "61345cf93533bac9ee152d68c1fe830db880001aa9367db9b85dbca366f030df",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "6b0e33b7767c49657d4c9b0f9af656c07aeb470b3e1c8932d697b080538b7e93",
+          "slice": [
+            0,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "4bfd449d20908907303af906582b71dabde2a5da05021bc46a041e8bcd7e0be0",
+          "slice": [
+            1,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        },
+        {
+          "key": "representative__wrong_wall",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "d0f923cc3f84dc92a010841ac25e1381d047696da08419ff5ffcc3ce11ceadc0",
+          "slice": [
+            2,
+            ":",
+            35,
+            ":"
+          ],
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "three-component Euclidean error versus representative LES truth; xz_outer plane at retained index 35; solid cube masked",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "03905040b53d8c6689b9bb6444f9b22194e4a24c5369d060c8343ec6e5eeb2fa",
+      "artist_id": "fig6.b.absolute.correct",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "03905040b53d8c6689b9bb6444f9b22194e4a24c5369d060c8343ec6e5eeb2fa",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.correct.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "0c7a7e96d160221ddd792dad6223be8170458b0bdef1e08c861ca1e8fecfe053",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.correct.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "3728ecc2f20abe735e51ce3c72e999514bfe0c338edeeeb6481a1835f38be1e1",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "23de0ba35c77f6bbf7d11c7d6a1636be7fd475c5b612b9924bf622aa72184c2f",
+      "artist_id": "fig6.b.absolute.correct_physwall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "23de0ba35c77f6bbf7d11c7d6a1636be7fd475c5b612b9924bf622aa72184c2f",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.correct_physwall.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "1e8dc9252a8b6dc2fdc400e5f34782b5c77c1856c7a1680cb09ad55b108bc937",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.correct_physwall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "d78608481d7ee0c2d3ca18e61316e3221297eb7d8c695bde762d3a8057a82b53",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "58a0f19ce3ebdf65ab6a6111334f0f96985e96bdfb28f5fcecd1fd12a6ca4834",
+      "artist_id": "fig6.b.absolute.no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "58a0f19ce3ebdf65ab6a6111334f0f96985e96bdfb28f5fcecd1fd12a6ca4834",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.no_wall.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "970cf91d146f0029e76bf2a69fc2a8a664f3af2970b70e110995487812910424",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.no_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "7e693406d97c9fdad842837eb86af78b60ee45dc404b90ac6a08375b4bb48a39",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "8316084e12e3989fd99deccc958ae120aa381867a33bd83dd7570ed3628cbcc0",
+      "artist_id": "fig6.b.absolute.tau_lift_fartime",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "8316084e12e3989fd99deccc958ae120aa381867a33bd83dd7570ed3628cbcc0",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.tau_lift_fartime.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "d1cfbd610d44b8e3ae3a989f5a1b33154b32c919a577fd903b990f40af87ce08",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.tau_lift_fartime.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "9de70631b2be072cffbf45d6c2b0939996da6fa51df43a94f8f05739ba69fe66",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "fd0178f5646009fd0436045a4ef89d5ac90c95b093c7a8af3d16a7c8b989895e",
+      "artist_id": "fig6.b.absolute.tau_lift_model_predicted",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "fd0178f5646009fd0436045a4ef89d5ac90c95b093c7a8af3d16a7c8b989895e",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.tau_lift_model_predicted.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "c4df9dc12045b02e57ad031b4176ba3da93ea6cdfa31050b09dca0e3dad98702",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.tau_lift_model_predicted.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "dbee58e85fd24db6439c94587f74b37aa68191e723aadd166272fef2860d8ae2",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "0c7202f7ee9743adbf32390bd9e9379e931b38f70aa7804be805abf3f6aef200",
+      "artist_id": "fig6.b.absolute.tau_lift_oracle",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "0c7202f7ee9743adbf32390bd9e9379e931b38f70aa7804be805abf3f6aef200",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.tau_lift_oracle.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "a869bf7157fd8cda449ab4554cada8cb27ecdb2535c2d131af8b4b6e959b38a1",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.tau_lift_oracle.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "c13c4d40a8092f0b4a8a6385bd2eb9c489db390f0f62a90b44497c43eb042e15",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "67288ccee5685e629a9c4f1af432ca710544dbc34b06a2c5cc29102183a8d8ae",
+      "artist_id": "fig6.b.absolute.tau_lift_trainmean",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "67288ccee5685e629a9c4f1af432ca710544dbc34b06a2c5cc29102183a8d8ae",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.tau_lift_trainmean.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "b47a4082362d9b192b31780974c0376bcf98340cbdf69e295538e6072880df9f",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.tau_lift_trainmean.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "18134b2c292559a1e34c89d381dbec3645d84c40deccaf7a465bde5f312c6979",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "3d4d316206e028e00ca657113578ca62e87ae46824897bf206573f4ef9d71621",
+      "artist_id": "fig6.b.absolute.wrong_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "frozen generator; only conditioning payload differs",
+      "expected_payload_sha256": "3d4d316206e028e00ca657113578ca62e87ae46824897bf206573f4ef9d71621",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "evaluation.arms.wrong_wall.full_support_excluded.R2_fluct_balanced",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "e56df3755b1aed22e9fa1786bad501467c781d5843267117694bc808c00b9017",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "arms.wrong_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "2bce920bd6b6587dc29c1a3bd97cb0ada03031d09f58efc7917e1b44476c54ff",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "complete support-excluded point estimate and conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "f1a489c6c9231f36b864eed8ca93de875b265bfd136ec41d3631ece1b47bf9ea",
+      "artist_id": "fig6.c.full_support_excluded.correct_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "f1a489c6c9231f36b864eed8ca93de875b265bfd136ec41d3631ece1b47bf9ea",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_minus_no_wall.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "d224377341ac3052e979a1b742b7e2fcf5a3d3bd5e26f936b8890b7ebd8d6923",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_minus_no_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "f479088af368342ec0dcd761f73a44c0ce5542dbd0ff05695703d2e3abcea653",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "2182e6e25a06d07041d033c7a61d7e6c21b9923e2b649a4be2aace3bd177332d",
+      "artist_id": "fig6.c.full_support_excluded.correct_physwall_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "2182e6e25a06d07041d033c7a61d7e6c21b9923e2b649a4be2aace3bd177332d",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_physwall_minus_no_wall.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "a28a96aaac0740b2b3c4eba6112dbb85d1e8e4a5f4585a5077af38f7060a8553",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_physwall_minus_no_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "712ea0dbd4547e3513a844288da43b3e0d4bac60f018b08887cc9f65a227d454",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "3c22f4ad8b5d71eb7b9a0a9c40b9c0004af1e725d5e79f7e6200459f8242d488",
+      "artist_id": "fig6.c.full_support_excluded.tau_lift_fartime_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "3c22f4ad8b5d71eb7b9a0a9c40b9c0004af1e725d5e79f7e6200459f8242d488",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_fartime_minus_no_wall.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "6de47423a89b6b6ff8df33115d57dffe1abe02d5611f05d464949ccabd83c7ce",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_fartime_minus_no_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "b9a68a95f9b03ed4bfd31e1b294356e0015720901f4729b25d5ec35f123ba20d",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "7feffe54798c74aa6114db161ea29fded3b38280672ec4a688c35a0232bececc",
+      "artist_id": "fig6.c.full_support_excluded.tau_lift_model_predicted_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "7feffe54798c74aa6114db161ea29fded3b38280672ec4a688c35a0232bececc",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_model_predicted_minus_no_wall.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "6d095bb17b46f108915d25d0fd3a19ceae6a622a38e6191ce1b4f7039989f594",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_model_predicted_minus_no_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "48a1fd451dbe7ca0c518cc9ea082e06f0033db6b98d34b7745a76f3ef43d89b2",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "7108396baa87c89f18cfdcb2f598a0efb2bb353c71783853c912887cecbd95ce",
+      "artist_id": "fig6.c.full_support_excluded.tau_lift_oracle_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "7108396baa87c89f18cfdcb2f598a0efb2bb353c71783853c912887cecbd95ce",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_oracle_minus_no_wall.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "df213a1386f8bdd857ef041c8c16fc0d7eb81aa5fc545bf6ce1760533a1d9c41",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_oracle_minus_no_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "99fcda1a9f4aadbad85ffe434d0753ad67092bbbc5c481ebdc84283aa7511226",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "a70dcdc41327d8e8dd6abd7b4cfcaa4f8bf69c57ecd22fbf37d1966f41778703",
+      "artist_id": "fig6.c.full_support_excluded.tau_lift_trainmean_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "a70dcdc41327d8e8dd6abd7b4cfcaa4f8bf69c57ecd22fbf37d1966f41778703",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_trainmean_minus_no_wall.full_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "5e758ca594e591e1bb228b0b2809be49b8b3bd712d9649008d4b31cdd208c559",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_trainmean_minus_no_wall.full_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "0ea17370a0e8e3761735117c6ed803f683f6c388778cf368f64a7c50a738b1c6",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b01c10f714af4fe72a81b772929e6e1aa4946f4ba7e8aab9dc2badf8444b084d",
+      "artist_id": "fig6.c.near_support_excluded_d_le_0p5h.correct_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "b01c10f714af4fe72a81b772929e6e1aa4946f4ba7e8aab9dc2badf8444b084d",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_minus_no_wall.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "1850e6e52f4c95e7e1998fe2744c078f7b59314084d4b27332c0810d6f93c646",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_minus_no_wall.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "0af63538a05153247035fd6f50e10fbf62fd8beda9df13ea21643cf6bcc6b3a4",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "ee8b185385d619a2257471cea1045e0bc209b4759332de5fa86d178e2fc8b782",
+      "artist_id": "fig6.c.near_support_excluded_d_le_0p5h.correct_physwall_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "ee8b185385d619a2257471cea1045e0bc209b4759332de5fa86d178e2fc8b782",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_physwall_minus_no_wall.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "d554bc2711553d3cb44c9e1020c88d248f5584ca6b440b784b883cabe7c8526f",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_physwall_minus_no_wall.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "3a7c11c5c32a05fe4f0814db7dc57d6232a06c0335b9997c474c2c16b4bfbc7c",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "8297997dda32f83fec0159f4a57499d595d80b33ef697cc81ddc827cd0a53670",
+      "artist_id": "fig6.c.near_support_excluded_d_le_0p5h.tau_lift_fartime_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "8297997dda32f83fec0159f4a57499d595d80b33ef697cc81ddc827cd0a53670",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_fartime_minus_no_wall.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "a3d9cd50e9cee3eec346bf32276e77ae45bcdd0f90c27b77b48ed16ad4548bb8",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_fartime_minus_no_wall.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "62fb923d98d6ce9712eb1157f250dc2d805325f650b2e111308a7e6b62685738",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "8d71586f197938425b0086b96eb3df07f41c5615ffe54a765c5ac533c5987ead",
+      "artist_id": "fig6.c.near_support_excluded_d_le_0p5h.tau_lift_model_predicted_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "8d71586f197938425b0086b96eb3df07f41c5615ffe54a765c5ac533c5987ead",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_model_predicted_minus_no_wall.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "4e33b9e9c7b1a5cc6878256e354d9426c6f829325994cd91b4ef9e5268bd6103",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_model_predicted_minus_no_wall.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "0679e697b985523596c9559d1ebe936f1631413ba9feaffe96172c7eedab9914",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "de2061748ae34285b0ffe4e85e58d7dcc5a48eeed88c07fc5221f509c1b13103",
+      "artist_id": "fig6.c.near_support_excluded_d_le_0p5h.tau_lift_oracle_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "de2061748ae34285b0ffe4e85e58d7dcc5a48eeed88c07fc5221f509c1b13103",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_oracle_minus_no_wall.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "f2447eb444403634d9d273cd144fa236bfd3ddb661cab89b5e0fab62ace63920",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_oracle_minus_no_wall.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "dba34a7ad6a4d4f886c79e639976bb1f585d592208643ba9de06e95b5fb6b59e",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b45afbb665776d8a98a81400dfa2232d482b7c50ff67ae0f1beb33f5ac96db8c",
+      "artist_id": "fig6.c.near_support_excluded_d_le_0p5h.tau_lift_trainmean_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "b45afbb665776d8a98a81400dfa2232d482b7c50ff67ae0f1beb33f5ac96db8c",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_trainmean_minus_no_wall.near_support_excluded_d_le_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "97fabfe0ba8bb29e57b8c455b33d1af9cb693fdd950ea62ff27b07545e09b33b",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_trainmean_minus_no_wall.near_support_excluded_d_le_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "3a9526ec026a82fb6e9d21d9b7252fe2d3aaf0275c27d474cbcc0e3d24b775a3",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "de73bee8f9ee60b988e22970c3b1b815ace5a5c228bfa15a453abd94b7df2cc5",
+      "artist_id": "fig6.c.outer_d_gt_0p5h.correct_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "de73bee8f9ee60b988e22970c3b1b815ace5a5c228bfa15a453abd94b7df2cc5",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_minus_no_wall.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "fe88edae2203405bcdb3f8b6b8857b48c0864bee19eb1e894f6333ae985f729d",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_minus_no_wall.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "50c68c504ed13c3b88571b6ee75e26e20beab9586552d07ab710cf0d82135858",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "642e5ca58c7ba5b58a35b5df8f80d3896b85155fb6948981746b20b84c4d06ea",
+      "artist_id": "fig6.c.outer_d_gt_0p5h.correct_physwall_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "642e5ca58c7ba5b58a35b5df8f80d3896b85155fb6948981746b20b84c4d06ea",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_physwall_minus_no_wall.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "08e4e37e6b0dec17619e233b1ae7f0d448906cf6b9741ea21fdd48e0cc71d350",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_physwall_minus_no_wall.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "9d078716ff0fc31ab994151b6dc04bbe380cf2b2d0fe8945d62ab679f9e477fc",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b398eaacaa342bc7c453375c6bed38d2f8eabdcbbc41835d7149901985eeb04a",
+      "artist_id": "fig6.c.outer_d_gt_0p5h.tau_lift_fartime_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "b398eaacaa342bc7c453375c6bed38d2f8eabdcbbc41835d7149901985eeb04a",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_fartime_minus_no_wall.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "a365dd43dba099cfcde9aa9b1955603c3b312ecd2773bc05abd6b0f4c76d1007",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_fartime_minus_no_wall.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "e1992d224e1d44a22f0bd41ac96e0a6c9728e2c633c2ceba18b12429972f991b",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b39e177d66a12da99c5318c0f420991373dd948d7a8ad49e9b3bfda5b4946ca3",
+      "artist_id": "fig6.c.outer_d_gt_0p5h.tau_lift_model_predicted_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "b39e177d66a12da99c5318c0f420991373dd948d7a8ad49e9b3bfda5b4946ca3",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_model_predicted_minus_no_wall.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "cd58088170166d7828257eae6736f6be22fc8588fd3e4d86ce531112dfaeb6ed",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_model_predicted_minus_no_wall.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "541d6d3c36d1ea90498f0830aa6382249cf14c90fbd3ad1810ea08d6f8e56bae",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "94b75f1d872f761d80881d2b32b1b5bbeaac5442c0311df19402698c16b1a893",
+      "artist_id": "fig6.c.outer_d_gt_0p5h.tau_lift_oracle_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "94b75f1d872f761d80881d2b32b1b5bbeaac5442c0311df19402698c16b1a893",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_oracle_minus_no_wall.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "3a5e0e79187d99c9a8d5f58da4c5ace01911586eb5ca0eab73e1e860bd83b1d6",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_oracle_minus_no_wall.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "226cef886ecd484d08c6fe0a42de89887cb216ee557a665c0cab8672f0bf7e21",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "0e610dafba19678991cb7f9e6fbb4c4f89217b85fa208e0bd7bc1996ea836bdc",
+      "artist_id": "fig6.c.outer_d_gt_0p5h.tau_lift_trainmean_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "0e610dafba19678991cb7f9e6fbb4c4f89217b85fa208e0bd7bc1996ea836bdc",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_trainmean_minus_no_wall.outer_d_gt_0p5h.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "371acd45a2c491337c5295829da17eb2ad0c40238432648fa96f9383650c5bf3",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_trainmean_minus_no_wall.outer_d_gt_0p5h.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "d37e4b9a0702628c4866b7721b727140aa021031d1c9c6177e1ce4f095f114b3",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "036272f2ce888cd638a2e76e7b1f7d6bfc1f846aa479b15e5c85d03d844237e0",
+      "artist_id": "fig6.c.raster_unique_support_excluded.correct_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "036272f2ce888cd638a2e76e7b1f7d6bfc1f846aa479b15e5c85d03d844237e0",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_minus_no_wall.raster_unique_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "69d596ab5082e14b0dd000b740715a73d0a90484cd00d4e9516d8db2e62ae271",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_minus_no_wall.raster_unique_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "3770559f9d9c89bfa54312db1ffcbb557d2052ff112198cb1eaae98b86fbaebd",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "5f20d4114143eb9876e54defa2f8a33849916705ac38618c7e75e2d5cf2bab7c",
+      "artist_id": "fig6.c.raster_unique_support_excluded.correct_physwall_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "5f20d4114143eb9876e54defa2f8a33849916705ac38618c7e75e2d5cf2bab7c",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.correct_physwall_minus_no_wall.raster_unique_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "17a18340c4850547a381e3868bffe580945ce8ec0b3366f2c9b46ec351e4ebb5",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.correct_physwall_minus_no_wall.raster_unique_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "7ca8d931a5401234c858f7846c4cdc780a1d6516939f8246afda302cf81df47a",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "d6b9db5b230c143bec431227b0f17846955a898de53d8cea9c721d73ab04f733",
+      "artist_id": "fig6.c.raster_unique_support_excluded.tau_lift_fartime_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "d6b9db5b230c143bec431227b0f17846955a898de53d8cea9c721d73ab04f733",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_fartime_minus_no_wall.raster_unique_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "b915c0facc147374aa4fd8bfe7ff2a51038b516d5e83851da9299ce720c6b95a",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_fartime_minus_no_wall.raster_unique_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "035efc45d267fe4689ceb6d279dfc227c232c08ba6e81efb1cecbe3a6ef6f42b",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "91e13439ebc2ff89b33384057f8cc984eee4f7d0f30d26eaea0db356a25d6e69",
+      "artist_id": "fig6.c.raster_unique_support_excluded.tau_lift_model_predicted_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "91e13439ebc2ff89b33384057f8cc984eee4f7d0f30d26eaea0db356a25d6e69",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_model_predicted_minus_no_wall.raster_unique_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "e78a1dacbb3e37ec0149d3c539b4f23b93c3ad872d53100fcb577f05b83ec359",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_model_predicted_minus_no_wall.raster_unique_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "bc041c3c3bd6940f6376eb1d84c0c1036f08151ba50df670d6a196abcc52d83f",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "d1bcac1c7464e8b9485ada15e82f7726b9a2fce12bc2d0cc6a1091ffb06a1933",
+      "artist_id": "fig6.c.raster_unique_support_excluded.tau_lift_oracle_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "d1bcac1c7464e8b9485ada15e82f7726b9a2fce12bc2d0cc6a1091ffb06a1933",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_oracle_minus_no_wall.raster_unique_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "387acf6aeb9981565a2f1a57f9fae8e08c313c9ae82b53d846c70ee3153558c5",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_oracle_minus_no_wall.raster_unique_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "9f0735fee73067867dc6108bb0a7c9e44bba5e3a2f583fc9ed6983d84ad1069c",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "577766ee81b5be241b39bb4cd9f279995d61effbc057d4c9133eff32557e633d",
+      "artist_id": "fig6.c.raster_unique_support_excluded.tau_lift_trainmean_minus_no_wall",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "same targets, checkpoint, sampler noise and scoring mask",
+      "expected_payload_sha256": "577766ee81b5be241b39bb4cd9f279995d61effbc057d4c9133eff32557e633d",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "evaluation.deltas.tau_lift_trainmean_minus_no_wall.raster_unique_support_excluded.point",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "7534337ba2c9d1300f2251a372435d86a68c4e92d6c56aa2f3c62f6d76661d02",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "deltas.tau_lift_trainmean_minus_no_wall.raster_unique_support_excluded.ci95_conservative_block",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_conservative_blocks.json",
+          "resolved_payload_sha256": "666ff261d1107b7623c374f490c935ef60319a8af4e9a2ab40102b19b6d82e36",
+          "source_sha256": "ebe0a5b0f51b3af0bd36b00296c5cd3edb78faffea45ee69494caf84dbc5ab1a"
+        }
+      ],
+      "transform": "paired gain over absent band with conservative interval",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "40a7914a87c2072dd20e1c5b6235e07d16c92e3cbf64384bfcdcd892d3691843",
+      "artist_id": "fig6.d.mean_sd.lift_model",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "spread, not an inferential interval",
+      "expected_payload_sha256": "40a7914a87c2072dd20e1c5b6235e07d16c92e3cbf64384bfcdcd892d3691843",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "evaluation.a_priori_interface.band_fluctuation_R2_of_lift_vs_true_band.lift_model.mean",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "75f423443a408900c0b4147ed6b14d0a743bc79411037550ddd9ffceac8f658f",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "evaluation.a_priori_interface.band_fluctuation_R2_of_lift_vs_true_band.lift_model.sd",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "5edde1e79df0ec06f932f0a22de9a19fbc3e5b5e7230cecd3b0bb1f8dd2aaa93",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        }
+      ],
+      "transform": "mean with one standard deviation across evaluation targets",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "0f4b309cf94a64110fd5c54d038b142582e813c63273e427a24abe92ef5986c8",
+      "artist_id": "fig6.d.mean_sd.lift_oracle",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "spread, not an inferential interval",
+      "expected_payload_sha256": "0f4b309cf94a64110fd5c54d038b142582e813c63273e427a24abe92ef5986c8",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "evaluation.a_priori_interface.band_fluctuation_R2_of_lift_vs_true_band.lift_oracle.mean",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "8c613951849e9c0937c2df8a53d9f4d783e7487b04b691fca05b11fd8df0138c",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "evaluation.a_priori_interface.band_fluctuation_R2_of_lift_vs_true_band.lift_oracle.sd",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "5ab01c2c62fa15db3ec76ed463d491fb563284fcac8f2f8cb1a79446259ca3a5",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        }
+      ],
+      "transform": "mean with one standard deviation across evaluation targets",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "52bb177e778741b15fb0fcff1b9e3bfc0e154909ab6dfbc1add49d37fe7dfa30",
+      "artist_id": "fig6.d.mean_sd.lift_trainmean",
+      "artist_type": "ErrorbarContainer",
+      "evidence": "spread, not an inferential interval",
+      "expected_payload_sha256": "52bb177e778741b15fb0fcff1b9e3bfc0e154909ab6dfbc1add49d37fe7dfa30",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "evaluation.a_priori_interface.band_fluctuation_R2_of_lift_vs_true_band.lift_trainmean.mean",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "9d3ae229de60217987c30613bf2f24df07b53480cbdc80d4bafe9759bb558894",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        },
+        {
+          "key": "evaluation.a_priori_interface.band_fluctuation_R2_of_lift_vs_true_band.lift_trainmean.sd",
+          "kind": "json",
+          "path": "fig6_interface/e2_traction_interface_results.json",
+          "resolved_payload_sha256": "1b30fc46fc24caa4071d555d0bc489474309a6130dc88b5330febcb2a326156c",
+          "source_sha256": "f91f9387ae961e575de31ad076941539e5df3476cc337585d1591c9cb3f507a0"
+        }
+      ],
+      "transform": "mean with one standard deviation across evaluation targets",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "dade4311d01a7a4ef04047c7d485478ce087723eabf254c6ede6c0847609019d",
+      "artist_id": "fig6.d.targetwise.lift_model",
+      "artist_type": "PathCollection",
+      "evidence": "a-priori band fidelity before generator sampling",
+      "expected_payload_sha256": "dade4311d01a7a4ef04047c7d485478ce087723eabf254c6ede6c0847609019d",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "band_fidelity__lift_model",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "f828694a8c14f90208b713866049d6c3d1f4242ea3e93c601568384f565482cd",
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "deterministic rank jitter only; every retained target shown",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "c49e8aad27d24cc4e9365fb0287e253d33ac9f81d20aa93310ae8cc38c6f83e5",
+      "artist_id": "fig6.d.targetwise.lift_oracle",
+      "artist_type": "PathCollection",
+      "evidence": "a-priori band fidelity before generator sampling",
+      "expected_payload_sha256": "c49e8aad27d24cc4e9365fb0287e253d33ac9f81d20aa93310ae8cc38c6f83e5",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "band_fidelity__lift_oracle",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "16c96ad109446b6886e487025316d988d7b56123571052e072aa531c53891d9f",
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "deterministic rank jitter only; every retained target shown",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b6e81fae87924327616c7fe27288e9f211f2262a7d8127504d6ac03bae6a57c7",
+      "artist_id": "fig6.d.targetwise.lift_trainmean",
+      "artist_type": "PathCollection",
+      "evidence": "a-priori band fidelity before generator sampling",
+      "expected_payload_sha256": "b6e81fae87924327616c7fe27288e9f211f2262a7d8127504d6ac03bae6a57c7",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "band_fidelity__lift_trainmean",
+          "kind": "npz",
+          "path": "fig6_interface/e2_traction_interface_components.npz",
+          "resolved_payload_sha256": "32023d1c96563086a2fa5406599603e2675d1a3e484e1bb817d2bcd6b69ad142",
+          "source_sha256": "629140793df253b29d9a8882b053bc2e9a61d158865b5cfe5e03d28098e29131"
+        }
+      ],
+      "transform": "deterministic rank jitter only; every retained target shown",
+      "validated": true
+    }
+  ],
+  "figure": "fig6_interface",
+  "grouping": "One record per semantically indivisible plotted group (image, bar series, scatter series, error-bar series or data-bearing text).",
+  "schema": "gwt-producer-emitted-artist-manifest-v1"
+}

@@ -1,0 +1,698 @@
+{
+  "all_validated": true,
+  "binding_count": 30,
+  "bindings": [
+    {
+      "actual_payload_sha256": "05c576df3d2e7d3c9fc98ab917340574569c2ce21fc2ea50f1180754f93a169b",
+      "artist_id": "a_midspan_plane",
+      "artist_type": "AxesImage",
+      "evidence": "truth u-fluctuation mid-span plane (x-index 24, lowest 48 heights) with the cube section masked",
+      "expected_payload_sha256": "05c576df3d2e7d3c9fc98ab917340574569c2ce21fc2ea50f1180754f93a169b",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "plane_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "53428e8a90286e0dd9f1af00a27d58734e33057860987873162a4d4526a211e6",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "7a7bedca5543894481acab5c896eae97160ae868a14b6029c1c1b2d34d2e6841",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array drawn at mid-depth of the oblique box",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "0bfe2d57d4aee8d168d40f589f9b07527fc4dbfd0467be076bdd280b338f7989",
+      "artist_id": "a_near_wall_plane",
+      "artist_type": "AxesImage",
+      "evidence": "truth u-fluctuation plane at y-index 4 with the cube footprint masked, from the staged derived arrays",
+      "expected_payload_sha256": "0bfe2d57d4aee8d168d40f589f9b07527fc4dbfd0467be076bdd280b338f7989",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "plane_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "1a6e3dc35d170fa3b55a995b79572663250290039eec13513cac6e32dc4e4253",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array drawn obliquely at band height y=0.19h",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "5f546a9fe96bfdf0efc4abbc7449e6c1c8fb38b189c54a36907f3c5bab92ebf2",
+      "artist_id": "a_streamlines_behind",
+      "artist_type": "Line2D",
+      "evidence": "reconstructed 3-D streamlines seeded behind the cube (staging recipe: unit-speed tracer on the smoothed snapshot mean)",
+      "expected_payload_sha256": "5f546a9fe96bfdf0efc4abbc7449e6c1c8fb38b189c54a36907f3c5bab92ebf2",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "stream_back_xy",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "8a446a2bfa607eb697c1d4f5b3cd5f8c96fcf534896a26f70d6f5be91e3e96ea",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "NaN-separated projected polylines drawn as one line",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "25cc1b69a0f4f1d38355fb55178f32c2e30fec8235e408e1c1ffb8c6429e0d9d",
+      "artist_id": "a_streamlines_front",
+      "artist_type": "Line2D",
+      "evidence": "reconstructed 3-D streamlines seeded in front of or above the cube (same staging recipe as the behind group)",
+      "expected_payload_sha256": "25cc1b69a0f4f1d38355fb55178f32c2e30fec8235e408e1c1ffb8c6429e0d9d",
+      "panel": "a",
+      "source_refs": [
+        {
+          "key": "stream_front_xy",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "ed3619db41699b3feab4f63d0a04752cd43f0790842529bd9991a843f4ca32f7",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "NaN-separated projected polylines drawn as one line",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "bf9fda0f39595b3e59933d04e41bfe09bfaf4b27728ccfaf74222a0cb9f71c1b",
+      "artist_id": "b_closure_profile",
+      "artist_type": "Line2D",
+      "evidence": "recorded channel mean-velocity profile (lower half, normalised by its maximum)",
+      "expected_payload_sha256": "bf9fda0f39595b3e59933d04e41bfe09bfaf4b27728ccfaf74222a0cb9f71c1b",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "profile_pn",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "fbffe007b37a92d2afe1576617f1d8b395b6255155853debf8bd6bb29cf23afb",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "profile_yn",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "654650934a9981fa713c193df1722bf41a950d53f5eab282aa9861ea4610b364",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "normalised channel mean profile drawn as the closure glyph",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "1f4ee39e978e27c5d45b07ff86e23ad2e89046ef69656b3b3345769a3b3bc7c1",
+      "artist_id": "b_ctrl_tau_eq",
+      "artist_type": "AxesImage",
+      "evidence": "traction control arm 'equilibrium' (staging recipe in the fig1_v2 provenance ledger)",
+      "expected_payload_sha256": "1f4ee39e978e27c5d45b07ff86e23ad2e89046ef69656b3b3345769a3b3bc7c1",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "tau_eq",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "64076ba8704ab8830ff02d8811f318d0e0e6761207648c96682bb8f5b9325ba8",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array shown as a control-arm thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "13879362220e5c5525e666fc184c890136eadfec760d15134409bc0d4a677193",
+      "artist_id": "b_ctrl_tau_plane",
+      "artist_type": "AxesImage",
+      "evidence": "traction control arm 'exact' (staging recipe in the fig1_v2 provenance ledger)",
+      "expected_payload_sha256": "13879362220e5c5525e666fc184c890136eadfec760d15134409bc0d4a677193",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "tau_plane",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "ea7890bb57b0a8d6d2d3c74909ede666b780c43e08d7841b871f8e03f9a59090",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array shown as a control-arm thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "02280a1646762319fbd24f1f1b4a9879bdeaee350be95e44f54b0d2d8224ea7b",
+      "artist_id": "b_ctrl_tau_sh",
+      "artist_type": "AxesImage",
+      "evidence": "traction control arm 'shuffled' (staging recipe in the fig1_v2 provenance ledger)",
+      "expected_payload_sha256": "02280a1646762319fbd24f1f1b4a9879bdeaee350be95e44f54b0d2d8224ea7b",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "tau_sh",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "ea936ecc57f48cf9e519301406f52736ce435a87ba875420e1de41e457c0d137",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array shown as a control-arm thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "1a61a23a313d13872b39f12a8253595c4be56e022411cacccd8359632b81e7e9",
+      "artist_id": "b_ctrl_tau_wi",
+      "artist_type": "AxesImage",
+      "evidence": "traction control arm 'wrong instant' (staging recipe in the fig1_v2 provenance ledger)",
+      "expected_payload_sha256": "1a61a23a313d13872b39f12a8253595c4be56e022411cacccd8359632b81e7e9",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "tau_wi",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "df6446f4b3d92a5018137b7a351c0dd21b96425bffb21f1774ffca9f3119febd",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array shown as a control-arm thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "40a469e963a92d3178ab330906bb683511aa935bcfa1bcab622369f2e5ce5580",
+      "artist_id": "b_flow_state",
+      "artist_type": "AxesImage",
+      "evidence": "matching-height flow-state plane from the cube record",
+      "expected_payload_sha256": "40a469e963a92d3178ab330906bb683511aa935bcfa1bcab622369f2e5ce5580",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "plane_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "1a6e3dc35d170fa3b55a995b79572663250290039eec13513cac6e32dc4e4253",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array shown as the pipeline input thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "428c369ccc78d9f545cb3617f1eb135cd184a43eac8683c7182a62441606b904",
+      "artist_id": "b_generator_field",
+      "artist_type": "AxesImage",
+      "evidence": "generated-field plane above the cube (posterior mean, y-index 40), scaled to its own 99th percentile",
+      "expected_payload_sha256": "428c369ccc78d9f545cb3617f1eb135cd184a43eac8683c7182a62441606b904",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "gen_plane",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "b7bdce7bd4ad16973733a61816b2ee99dc7dca7b1e69234665d7aac311e8796f",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "plain array shown as the generator-output icon",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "241450d2732385aec8728f6b34de002876e900e0e29ba8dea1935487040b0d19",
+      "artist_id": "b_output_midspan",
+      "artist_type": "AxesImage",
+      "evidence": "generated (posterior-mean) mid-span plane with the cube section masked",
+      "expected_payload_sha256": "241450d2732385aec8728f6b34de002876e900e0e29ba8dea1935487040b0d19",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "out3d_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "2a64c19efe4ae3c251b4bd501cd38d61159c2b4a3083df95907913e8374ae6a6",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "7a7bedca5543894481acab5c896eae97160ae868a14b6029c1c1b2d34d2e6841",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array drawn at mid-depth of the mini oblique box",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "13879362220e5c5525e666fc184c890136eadfec760d15134409bc0d4a677193",
+      "artist_id": "b_traction",
+      "artist_type": "AxesImage",
+      "evidence": "signed near-wall shear footprint on the floor (truth u at y-index 1, cube footprint masked)",
+      "expected_payload_sha256": "13879362220e5c5525e666fc184c890136eadfec760d15134409bc0d4a677193",
+      "panel": "b",
+      "source_refs": [
+        {
+          "key": "tau_plane",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "ea7890bb57b0a8d6d2d3c74909ede666b780c43e08d7841b871f8e03f9a59090",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array shown as the slot thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "02d5a83dcff912c6b07ad84568481bc682f0b6463eafd78143769f3775ebb45c",
+      "artist_id": "c_channel_slab",
+      "artist_type": "AxesImage",
+      "evidence": "channel u-fluctuation slab (u_plane minus mean profile)",
+      "expected_payload_sha256": "02d5a83dcff912c6b07ad84568481bc682f0b6463eafd78143769f3775ebb45c",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "up_ch",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "0228bf68835a32ec2dec8a0ac58598acd114a18d0994e455aeb42fbbc89257de",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "plain array shown as the channel-record tile",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e4b680070e1373fa472244eef9845749d3b4221424b2ebac00c200a7f2e5250c",
+      "artist_id": "c_cube_section",
+      "artist_type": "AxesImage",
+      "evidence": "truth mid-span section of the cube record",
+      "expected_payload_sha256": "e4b680070e1373fa472244eef9845749d3b4221424b2ebac00c200a7f2e5250c",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "plane_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "53428e8a90286e0dd9f1af00a27d58734e33057860987873162a4d4526a211e6",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "7a7bedca5543894481acab5c896eae97160ae868a14b6029c1c1b2d34d2e6841",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array cropped to its lowest 32 rows so the tile keeps the true 3:2 aspect and the cube stays square",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "71fe0873e3e50d8b42af38f2edcad799af4b6fadacdbdeaf651ab90d43c5e331",
+      "artist_id": "c_hill_boundary",
+      "artist_type": "Line2D",
+      "evidence": "mapped hill boundary drawn in the band colour",
+      "expected_payload_sha256": "71fe0873e3e50d8b42af38f2edcad799af4b6fadacdbdeaf651ab90d43c5e331",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "hill_boundary_xy",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "c99bdc38fff0044ff344ad61adc0912fb7fd651c1595a6679ef5237b60b23f14",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "0.5-level contour polyline of the terrain mask",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "277832e77f0e66065cade3a2fe174e951936c9c1a27a3ea49543c13f98490654",
+      "artist_id": "c_hill_field",
+      "artist_type": "AxesImage",
+      "evidence": "standardised instantaneous hill field with the terrain masked",
+      "expected_payload_sha256": "277832e77f0e66065cade3a2fe174e951936c9c1a27a3ea49543c13f98490654",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "u_stdH",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "f1eae2c906020d87921d01e42519aba06f88ec92a347a87cf2d718650fb8e943",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "solidH",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "01b1dff6d4fa9d9269058fa861d6aea76bf38aef041eaa31c7660449409ace42",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "masked array shown as the hill tile",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "35272e31f0d43d78635ba0c0c562cf028156ae0b2d32866b13b3325abaebd25e",
+      "artist_id": "c_hill_solid",
+      "artist_type": "AxesImage",
+      "evidence": "hill solid mask from the staged hill context frame",
+      "expected_payload_sha256": "35272e31f0d43d78635ba0c0c562cf028156ae0b2d32866b13b3325abaebd25e",
+      "panel": "c",
+      "source_refs": [
+        {
+          "key": "solidH",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "01b1dff6d4fa9d9269058fa861d6aea76bf38aef041eaa31c7660449409ace42",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "terrain mask drawn as a flat grey overlay",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "b1e366fa58d04d0cab83f7e08e2f5a23df946b96024442a2a4f934243be26fa7",
+      "artist_id": "d_e1_band",
+      "artist_type": "AxesImage",
+      "evidence": "in-band truth plane (y-index 2) supplied to the generator",
+      "expected_payload_sha256": "b1e366fa58d04d0cab83f7e08e2f5a23df946b96024442a2a4f934243be26fa7",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "band_plane",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "09327f1ec58421c7d15e758944acbe78e852960b99ba357f38b7435e16f3f7eb",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "array shown as an evidence-ladder thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "10eccf0506cbb3493c4e4cf7054ca8e5fe0393ed430c1fd57bc25b67c312e9e4",
+      "artist_id": "d_e1_generated",
+      "artist_type": "AxesImage",
+      "evidence": "generated (posterior-mean) plane above the cube (y-index 30)",
+      "expected_payload_sha256": "10eccf0506cbb3493c4e4cf7054ca8e5fe0393ed430c1fd57bc25b67c312e9e4",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "out30",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "d5117ed879679723ac99b5b7cdc819ba930ed812b11bf2a48cf5e2539fe005e6",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "array shown as an evidence-ladder thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "6d432b353a335722dcfb923e76a958d2c08aeb69157cccfb99e931ed63acf665",
+      "artist_id": "d_e1_truth",
+      "artist_type": "AxesImage",
+      "evidence": "recorded truth plane above the cube (y-index 30)",
+      "expected_payload_sha256": "6d432b353a335722dcfb923e76a958d2c08aeb69157cccfb99e931ed63acf665",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "tru30",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "1637996d66e3f175c705cd4657e9085ad537ca5867de2a76fb029b2d51c2ea2c",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "array shown as an evidence-ladder thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "7242b2df57e54f255bb90830879042b7a417bb86fdf6c91cf32f988a0dad91ff",
+      "artist_id": "d_e2_state",
+      "artist_type": "AxesImage",
+      "evidence": "matching-height flow state entering the closure",
+      "expected_payload_sha256": "7242b2df57e54f255bb90830879042b7a417bb86fdf6c91cf32f988a0dad91ff",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "plane_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "1a6e3dc35d170fa3b55a995b79572663250290039eec13513cac6e32dc4e4253",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "array shown as an evidence-ladder thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "cf12bd11cf5092dd625314b5e5f291349c4c37e9a5939fe4f2fcef84d27827e8",
+      "artist_id": "d_e2_tau_closure",
+      "artist_type": "AxesImage",
+      "evidence": "closure-predicted floor traction (closure-composition result file, frame 0)",
+      "expected_payload_sha256": "cf12bd11cf5092dd625314b5e5f291349c4c37e9a5939fe4f2fcef84d27827e8",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "tau_clos_f",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "cc63607966861ab5ce8c8ebe5999aa0055e48ec3951352a9d4c5d833aacc8ed4",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "array shown as an evidence-ladder thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "57cbe36add2127c5501bd38acd3db9fb554915c569feb113ee9e9c01f9b46229",
+      "artist_id": "d_e2_tau_true",
+      "artist_type": "AxesImage",
+      "evidence": "recorded floor traction (closure-composition result file, frame 0)",
+      "expected_payload_sha256": "57cbe36add2127c5501bd38acd3db9fb554915c569feb113ee9e9c01f9b46229",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "tau_true_f",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9ee08c21128ba9749491c41d621edae33b20026a6d4f229e28e73b02164380d1",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "array shown as an evidence-ladder thumbnail",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "02d5a83dcff912c6b07ad84568481bc682f0b6463eafd78143769f3775ebb45c",
+      "artist_id": "d_e3_channel",
+      "artist_type": "AxesImage",
+      "evidence": "channel u-fluctuation slab (u_plane minus mean profile)",
+      "expected_payload_sha256": "02d5a83dcff912c6b07ad84568481bc682f0b6463eafd78143769f3775ebb45c",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "up_ch",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "0228bf68835a32ec2dec8a0ac58598acd114a18d0994e455aeb42fbbc89257de",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "channel slab repeated as a transfer-row target",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "e4b680070e1373fa472244eef9845749d3b4221424b2ebac00c200a7f2e5250c",
+      "artist_id": "d_e3_cube",
+      "artist_type": "AxesImage",
+      "evidence": "truth mid-span section of the cube record",
+      "expected_payload_sha256": "e4b680070e1373fa472244eef9845749d3b4221424b2ebac00c200a7f2e5250c",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "plane_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "53428e8a90286e0dd9f1af00a27d58734e33057860987873162a4d4526a211e6",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_v",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "7a7bedca5543894481acab5c896eae97160ae868a14b6029c1c1b2d34d2e6841",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "cube section (lowest 32 rows) repeated as a transfer-row target",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "277832e77f0e66065cade3a2fe174e951936c9c1a27a3ea49543c13f98490654",
+      "artist_id": "d_e3_hill",
+      "artist_type": "AxesImage",
+      "evidence": "standardised instantaneous hill field with the terrain masked",
+      "expected_payload_sha256": "277832e77f0e66065cade3a2fe174e951936c9c1a27a3ea49543c13f98490654",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "u_stdH",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "f1eae2c906020d87921d01e42519aba06f88ec92a347a87cf2d718650fb8e943",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "solidH",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "01b1dff6d4fa9d9269058fa861d6aea76bf38aef041eaa31c7660449409ace42",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "hill field repeated as a transfer-row target",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "71fe0873e3e50d8b42af38f2edcad799af4b6fadacdbdeaf651ab90d43c5e331",
+      "artist_id": "d_e3_hill_boundary",
+      "artist_type": "Line2D",
+      "evidence": "mapped hill boundary drawn in the band colour",
+      "expected_payload_sha256": "71fe0873e3e50d8b42af38f2edcad799af4b6fadacdbdeaf651ab90d43c5e331",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "hill_boundary_xy",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "c99bdc38fff0044ff344ad61adc0912fb7fd651c1595a6679ef5237b60b23f14",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "0.5-level contour polyline of the terrain mask",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "35272e31f0d43d78635ba0c0c562cf028156ae0b2d32866b13b3325abaebd25e",
+      "artist_id": "d_e3_hill_solid",
+      "artist_type": "AxesImage",
+      "evidence": "hill solid mask from the staged hill context frame",
+      "expected_payload_sha256": "35272e31f0d43d78635ba0c0c562cf028156ae0b2d32866b13b3325abaebd25e",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "solidH",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "01b1dff6d4fa9d9269058fa861d6aea76bf38aef041eaa31c7660449409ace42",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "terrain mask drawn as a flat grey overlay",
+      "validated": true
+    },
+    {
+      "actual_payload_sha256": "7242b2df57e54f255bb90830879042b7a417bb86fdf6c91cf32f988a0dad91ff",
+      "artist_id": "d_e3_state",
+      "artist_type": "AxesImage",
+      "evidence": "matching-height flow state entering the closure",
+      "expected_payload_sha256": "7242b2df57e54f255bb90830879042b7a417bb86fdf6c91cf32f988a0dad91ff",
+      "panel": "d",
+      "source_refs": [
+        {
+          "key": "plane_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "1a6e3dc35d170fa3b55a995b79572663250290039eec13513cac6e32dc4e4253",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        },
+        {
+          "key": "mask_h",
+          "kind": "npz",
+          "path": "manuscript/source_data/fig1_v2/fig1_overview_derived.npz",
+          "resolved_payload_sha256": "9097ec24d934c5eecff0d02ec4f51a0d828c752aea67ea5c7751cc040a9adfad",
+          "source_sha256": "f24c38c5534297967dbb7c477d54d50b0e08bbda5c4f2262d716935623dddc06"
+        }
+      ],
+      "transform": "array shown as an evidence-ladder thumbnail",
+      "validated": true
+    }
+  ],
+  "figure": "fig1_architecture",
+  "grouping": "One record per semantically indivisible plotted group (image, bar series, scatter series, error-bar series or data-bearing text).",
+  "schema": "gwt-producer-emitted-artist-manifest-v1"
+}
